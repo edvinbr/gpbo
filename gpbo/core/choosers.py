@@ -28,6 +28,11 @@ import os
 import time
 from copy import deepcopy
 
+try:
+	xrange
+except NameError:
+	xrange=range
+
 
 def always0(optstate,persist,**para):
     return 0,None,dict()

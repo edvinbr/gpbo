@@ -283,14 +283,14 @@ def draw_support(g, lb, ub, n, method, para=1.,pad_unif=True,weighted=False,rota
         for xm in unq:
             #gradient inference
             G,cG = g.infer_full_post(sp.vstack([xm]*d),[[i] for i in xrange(d)])
-            divs = [[]]*int((d*(d+1)/2))
+            divs = [[]]*((d*(d+1)//2))
             #hessian inference
             k=0
             for i in xrange(d):
                 for j in xrange(i+1):
                     divs[k]=[i,j]
                     k+=1
-            vecH,cvecH = g.infer_full_post(sp.vstack([xm]*int(d*(d+1)/2)),divs)
+            vecH,cvecH = g.infer_full_post(sp.vstack([xm]*(d*(d+1)//2)),divs)
             #build hesian matrix
             H = sp.empty(shape=[d,d])
             k=0
@@ -379,7 +379,7 @@ def draw_support(g, lb, ub, n, method, para=1.,pad_unif=True,weighted=False,rota
                     for i in range(nu):
                         M,vM,G,vG,H,Hvec,vH,A,vA = gpbo.core.optutils.gpYGH(g,unq[i])
                         c = spl.cholesky(vA,lower=True)
-                        draws = A.T+c.dot(sp.random.normal(size=[(d * (d + 1) / 2)+d+1,n]))
+                        draws = A.T+c.dot(sp.random.normal(size=[(d * (d + 1) // 2)+d+1,n]))
                         conB = np.hstack([1-rotation.dot(unq[i]),rotation.dot(unq[i])+1]).T
                         conA = np.vstack([np.eye(d),-np.eye(d)]).dot(rotation)
                         for j in range(draws.shape[1]):

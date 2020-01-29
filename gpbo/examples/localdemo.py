@@ -27,4 +27,4 @@ C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','stopping.csv')
 #set the target global regret
 C.choosepara['regretswitch']=1e-2
 out = gpbo.search(C)
-print out
+print (out)
