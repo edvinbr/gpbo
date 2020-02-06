@@ -1,0 +1,45 @@
+import gpbo
+import scipy as sp
+import numpy as np
+
+#dimensionality
+D=3
+#noise variance
+s=0.
+#number of step to take
+n=100
+
+#define a simple 2d objective in x which also varies with respect to the environmental variable
+def f(x,**ev):
+    #y=-sp.cos(x[0])-sp.cos(x[1])+2
+    # Scale axes
+    alpha = [1., 1.2, 3., 3.2]
+    A = [[3, 10, 30],
+        [0.1, 10, 35],
+        [3, 10, 35],
+        [0.1, 10, 35]]
+    P = [[0.3689, 0.1170, 0.2673],
+        [0.4699, 0.4387, 0.7470],
+        [0.1091, 0.8732, 0.5547],
+        [0.0381, 0.5743, 0.8828]]
+    y = 0
+    for i in range(0,4):
+        for j in range(0,3):
+            y = y - (alpha[i] * -(A[i][j]*pow(x[j]-P[i][j],2)))
+    #fixed cost
+    c=1.
+    #noise
+    n = sp.random.normal()*s
+    #we want to check the noiseless value when evaluating performance
+    if 'cheattrue' in ev.keys():
+        if ev['cheattrue']:
+            n=0
+    print('f inputs x:{} ev:{} outputs y:{} (n:{}) c:{}'.format(x,ev,y+n,n,c))
+    return y+n,c,dict()
+
+#arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','3dhartmann.csv')
+#set the target global regret
+C.choosepara['regretswitch']=1e-2
+out = gpbo.search(C)
+print (out)
