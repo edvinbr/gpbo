@@ -11,8 +11,7 @@ n=100
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
-    #y=-sp.cos(x[0])-sp.cos(x[1])+2
-    # Scale axes
+    # Scale axes, [-5,10]^3
     alpha = [1., 1.2, 3., 3.2]
     A = [[3, 10, 30],
         [0.1, 10, 35],
@@ -25,7 +24,8 @@ def f(x,**ev):
     y = 0
     for i in range(0,4):
         for j in range(0,3):
-            y = y - (alpha[i] * -(A[i][j]*pow(x[j]-P[i][j],2)))
+            y = y - (alpha[i] * -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2)))
+    y = sp.log(y - (-3.86278) + 1)
     #fixed cost
     c=1.
     #noise

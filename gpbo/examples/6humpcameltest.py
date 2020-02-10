@@ -6,13 +6,14 @@ D=2
 #noise variance
 s=0.
 #number of step to take
-n=100
+n=400
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
-    #y=-sp.cos(x[0])-sp.cos(x[1])+2
-    # Scale axes
+    # Scale axes, [-3,3] and [-2,2]
     y = (4 - 2.1*pow(x[0]*3,2) + pow(x[0]*3,4)/3)*pow(x[0]*3,2) + x[0]*3*x[1]*2 + (-4 + 4*pow(x[1]*2,2))*pow(x[1]*2,2)
+    #y = (4 - 2.1*pow(x[0],2) + pow(x[0],4)/3)*pow(x[0],2) + x[0]*x[1] + (-4 + 4*pow(x[1],2))*pow(x[1],2)
+    y = sp.log(y - (-1.0316) + 1)
     #fixed cost
     c=1.
     #noise
