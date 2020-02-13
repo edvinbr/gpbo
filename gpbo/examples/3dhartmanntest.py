@@ -7,11 +7,11 @@ D=3
 #noise variance
 s=0.
 #number of step to take
-n=100
+n=200
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
-    # Scale axes, [-5,10]^3
+    # Scale axes, [-5,10]^3 in thesis, [0,1]^3 online
     alpha = [1., 1.2, 3., 3.2]
     A = [[3, 10, 30],
         [0.1, 10, 35],
@@ -23,8 +23,12 @@ def f(x,**ev):
         [0.0381, 0.5743, 0.8828]]
     y = 0
     for i in range(0,4):
+        sum = 0
         for j in range(0,3):
-            y = y - (alpha[i] * -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2)))
+            #y = y - (alpha[i] * -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2)))
+            #y = y - (alpha[i] * -(A[i][j]*pow((x[j]*1/2+1/2)-P[i][j],2)))
+            sum = sum -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2))
+        y = y - alpha[i] * sp.exp(sum)
     y = sp.log(y - (-3.86278) + 1)
     #fixed cost
     c=1.
@@ -40,6 +44,6 @@ def f(x,**ev):
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
 C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','3dhartmann.csv')
 #set the target global regret
-C.choosepara['regretswitch']=1e-2
+C.choosepara['regretswitch']=1e-4
 out = gpbo.search(C)
 print (out)

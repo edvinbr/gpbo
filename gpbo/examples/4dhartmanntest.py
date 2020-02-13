@@ -18,10 +18,10 @@ def f(x,**ev):
         [3, 3.5, 1.7, 10, 17, 8],
         [17, 8, 0.05, 10, 0.1, 14]]
 
-    P = [[0.1312, 0.1696, 0.5569, 0.1240, 0.8283, 0.5886],
+    P = [[0.1312, 0.1696, 0.5569, 0.0124, 0.8283, 0.5886],
         [0.2329, 0.4135, 0.8307, 0.3736, 0.1004, 0.9991],
         [0.2348, 0.1451, 0.3522, 0.2883, 0.3047, 0.6650],
-        [0.4047, 0.8828, 0.8732, 0.5743, 0.1091, 0.3810]]
+        [0.4047, 0.8828, 0.8732, 0.5743, 0.1091, 0.0381]]
 
     y = 0
     for i in range(0,4):
@@ -45,6 +45,6 @@ def f(x,**ev):
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
 C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann.csv')
 #set the target global regret
-C.choosepara['regretswitch']=1e-2
+C.choosepara['regretswitch']=1e-4
 out = gpbo.search(C)
 print (out)
