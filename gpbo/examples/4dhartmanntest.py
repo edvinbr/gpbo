@@ -1,5 +1,6 @@
 import gpbo
 import scipy as sp
+from datetime import datetime
 
 #dimensionality
 D=4
@@ -42,8 +43,9 @@ def f(x,**ev):
     print('f inputs x:{} ev:{} outputs y:{} (n:{}) c:{}'.format(x,ev,y+n,n,c))
     return y+n,c,dict()
 
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann'+timestamp+'.csv')
 #set the target global regret
 C.choosepara['regretswitch']=1e-4
 out = gpbo.search(C)

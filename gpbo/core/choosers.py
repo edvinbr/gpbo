@@ -420,7 +420,7 @@ def globallocalregret(optstate,persist,**para):
         def fn2(x):
             print(x,para['cheatf'](sp.linalg.solve(C.T,x),**{'s':0.,'d':[sp.NaN]})[0])
             return para['cheatf'](sp.linalg.solve(C.T,x),**{'s':0.,'d':[sp.NaN]})[0]
-        R=minimize(fn2,C.T.dot(xmin),method='bfgs')
+        R=minimize(fn2,C.T.dot(xmin),method='Nelder-Mead')
         logger.warn('cheat testopt result with precondition {}:\n{}'.format(H,R))
 
     return rval,persist,{'start':xminr.flatten(),'H':H,'reuseH':[k.hyp for k in G.kf],'offsetEI':m,'ppveatx':pc,'rpve':rmax,'log10GRest':sp.log10(racc)}
