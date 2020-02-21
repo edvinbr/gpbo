@@ -2,6 +2,8 @@ import gpbo
 xrange=range
 from gpbo.core import GPdc as GPdc
 import scipy as sp
+import numpy as np
+import os
 
 
 class eimledefault():
@@ -453,13 +455,10 @@ class pesbslearns():
         return
 
 class switchdefault():
-    """
-        fixed s, space is [-1,1]^D
-
-        """
+        #fixed s, space is [-1,1]^D
 
     def __init__(self, f, D, ninit,nstop, s, path, fname):
-
+        print("switch default init")
         #the first acquisition function is standard PES
         C = gpbo.core.config.pesfspredictive(f, D, 10, s, 'results', 'introspection.csv',ninit=ninit)
         aq0 = C.aqfn
@@ -481,9 +480,9 @@ class switchdefault():
         aq2para['mprior']= aq0para['mprior']
         aq2para['sprior']= aq0para['sprior']
         aq2para['kindex']= aq0para['kindex']
-        #the chooser will secet which acquisition is used at each step
+        #the chooser will select which acquisition is used at each step
         self.chooser = gpbo.core.choosers.globallocalregret
-        self.choosepara = {
+        """self.choosepara = {
             'ev': aq0para['ev'],
             'lb': aq0para['lb'],
             'ub': aq0para['ub'],
@@ -509,8 +508,10 @@ class switchdefault():
             'lineSh':1e-4,
             'rotate':True,
             'nlineS':30+10*D
-        }
-
+        }"""
+        print("choosepara")
+        self.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "para.npy"),allow_pickle=True)).tolist()
+        print(self.choosepara)
         self.aqfn = [aq0,aq1,aq2]
         self.aqpara = [aq0para,aq1para,aq2para]
         self.multimode = True

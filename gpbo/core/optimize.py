@@ -60,7 +60,8 @@ class optimizer:
         self.dx = ojfchar['dx']
         self.dev = ojfchar['dev']
         if initdata:
-            self.state=pickle.load(open(initdata))[0]
+            self.state = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optstate.npy"), allow_pickle=True)).tolist()
+            #self.state=pickle.load(open(initdata))[0]
             print('init with \n{} \n{}'.format(self.state.x,self.state.y))
         else:
             self.state=optstate()

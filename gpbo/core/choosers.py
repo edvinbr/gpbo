@@ -12,6 +12,7 @@ from sklearn import mixture
 import logging
 import tqdm
 import gpbo
+import numpy as np
 from scipy.stats import norm as norms
 from scipy import integrate as spi
 from gpbo.core import GPdc as GP
@@ -294,10 +295,17 @@ def globallocalregret(optstate,persist,**para):
     rloc/=Q.shape[0]
     persist['localsampleregret'].append(rloc)
     #set switch to local if condition achieved
-    if racc<para['regretswitch']:
+    #if racc<para['regretswitch']:
+    #if 0<para['regretswitch']:
+    if racc < para['regretswitch']:
         rval=1
         persist['flip']=True
         optstate.startlocal=xmin
+        print("trying to save some stuff")
+        print(gpbo.core.debugoutput['path'])
+        np.save(os.path.join(gpbo.core.debugoutput['path'], "optstate"),optstate)
+        np.save(os.path.join(gpbo.core.debugoutput['path'], "persist"),persist)
+        np.save(os.path.join(gpbo.core.debugoutput['path'], "para"),para)
     elif maxRin<0.9*rmax:
         rval=2
 
