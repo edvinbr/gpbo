@@ -304,8 +304,8 @@ def globallocalregret(optstate,persist,**para):
         print("trying to save some stuff")
         print(gpbo.core.debugoutput['path'])
         np.save(os.path.join(gpbo.core.debugoutput['path'], "optstate"),optstate)
-        np.save(os.path.join(gpbo.core.debugoutput['path'], "persist"),persist)
-        np.save(os.path.join(gpbo.core.debugoutput['path'], "para"),para)
+        np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepersist"),persist)
+        np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepara"),para)
     elif maxRin<0.9*rmax:
         rval=2
 

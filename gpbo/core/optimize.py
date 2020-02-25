@@ -48,14 +48,14 @@ class optstate:
 
 
 class optimizer:
-    def __init__(self,dirpath,name,aqpara,aqfn,stoppara,stopfn,reccpara,reccfn,ojf,ojfchar,choosefn,choosepara,initdata=False):
+    def __init__(self,dirpath,name,aqpara,aqfn,stoppara,stopfn,reccpara,reccfn,ojf,ojfchar,choosefn,choosepara,choosepersist,initdata=False):
         self.dirpath = dirpath
         self.name = name
         self.setaq(aqpara,aqfn)
         self.setstopcon(stoppara,stopfn)
         self.setojf(ojf)
         self.setrecc(reccpara,reccfn)
-        self.setchoose(choosepara,choosefn)
+        self.setchoose(choosepara,choosefn,choosepersist)
         self.ojfchar = ojfchar
         self.dx = ojfchar['dx']
         self.dev = ojfchar['dev']
@@ -79,10 +79,10 @@ class optimizer:
         self.reccpersist = [None]*len(reccfn)
         return
 
-    def setchoose(self,choosepara,choosefn):
+    def setchoose(self,choosepara,choosefn,choosepersist):
         self.choosepara = choosepara
         self.choosefn =choosefn
-        self.choosepersist = None
+        self.choosepersist = choosepersist
         return
     def setstopcon(self,stoppara,stopfn):
         self.stoppara = stoppara
@@ -288,6 +288,11 @@ def wrap(fn,optstate,persist,**para):
         logger.error('numerical error in {} fn Raising noise to {}\n\n {}'.format(str(fn),optstate.condition,e))
         return wrap(fn,optstate,persist,**para)
 def search(optconfig,initdata=False):
+    #TODO: load chooser persist here and send to optimizer
+    if initdata:
+        choosepersist = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepersist.npy"), allow_pickle=True)).tolist()
+    else:
+        choosepersist = None
     if not hasattr(optconfig,'fname'):
         optconfig.fname='traces.csv'
     multi=False
@@ -299,11 +304,11 @@ def search(optconfig,initdata=False):
     if not multi:
         O = optimizer(optconfig.path, optconfig.fname, [optconfig.aqpara], [optconfig.aqfn], optconfig.stoppara,
                                      optconfig.stopfn, [optconfig.reccpara], [optconfig.reccfn], optconfig.ojf,
-                                     optconfig.ojfchar,gpbo.core.choosers.always0,dict(),initdata=initdata)
+                                     optconfig.ojfchar,gpbo.core.choosers.always0,dict(),choosepersist,initdata=initdata)
     else:
         O = optimizer(optconfig.path, optconfig.fname, optconfig.aqpara, optconfig.aqfn, optconfig.stoppara,
                                      optconfig.stopfn, optconfig.reccpara, optconfig.reccfn, optconfig.ojf,
-                                     optconfig.ojfchar,optconfig.chooser,optconfig.choosepara,initdata=initdata)
+                                     optconfig.ojfchar,optconfig.chooser,optconfig.choosepara,choosepersist,initdata=initdata)
 
     return O.run()
 

@@ -482,7 +482,7 @@ class switchdefault():
         aq2para['kindex']= aq0para['kindex']
         #the chooser will select which acquisition is used at each step
         self.chooser = gpbo.core.choosers.globallocalregret
-        """self.choosepara = {
+        self.choosepara = {
             'ev': aq0para['ev'],
             'lb': aq0para['lb'],
             'ub': aq0para['ub'],
@@ -508,9 +508,9 @@ class switchdefault():
             'lineSh':1e-4,
             'rotate':True,
             'nlineS':30+10*D
-        }"""
+        }
         print("choosepara")
-        self.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "para.npy"),allow_pickle=True)).tolist()
+        #self.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara.npy"),allow_pickle=True)).tolist()
         print(self.choosepara)
         self.aqfn = [aq0,aq1,aq2]
         self.aqpara = [aq0para,aq1para,aq2para]

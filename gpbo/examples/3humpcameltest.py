@@ -1,5 +1,7 @@
 import gpbo
 import scipy as sp
+import numpy as np
+import os
 
 # dimensionality
 D = 2
@@ -35,5 +37,8 @@ C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 
 print("before search")
-out = gpbo.search(C, True)
+initdata = True
+if initdata:
+    C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara.npy"),allow_pickle=True)).tolist()
+out = gpbo.search(C, initdata)
 print(out)
