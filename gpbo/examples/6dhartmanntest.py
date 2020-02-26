@@ -30,7 +30,7 @@ def f(x,**ev):
         for j in range(0,6):
             sum = sum -(A[i][j]*pow((x[j]*1/2+1/2)-P[i][j],2))
         y = y - alpha[i] * sp.exp(sum)
-    y = sp.log(y - (-3.32237) + 1)
+    y = sp.log(y - (-3.3223680114155138112) + 1)
     #fixed cost
     c=1.
     #noise

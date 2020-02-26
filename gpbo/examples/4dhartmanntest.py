@@ -31,7 +31,7 @@ def f(x,**ev):
             sum = sum -(A[i][j]*pow((x[j]*1/2+1/2)-P[i][j],2))
         y = y - alpha[i] * sp.exp(sum)
     y = 1/0.839*(1.1 + y) 
-    y = sp.log(y - (-3.135474) + 1)
+    y = sp.log(y - (-3.1344941412223984440892) + 1)
     #fixed cost
     c=1.
     #noise
@@ -47,6 +47,6 @@ timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
 C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann'+timestamp+'.csv')
 #set the target global regret
-C.choosepara['regretswitch']=1e-4
+C.choosepara['regretswitch']=1e-2
 out = gpbo.search(C)
 print (out)

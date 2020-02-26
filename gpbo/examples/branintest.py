@@ -11,9 +11,9 @@ n=200
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
-    # Scale axes, [0,1]^2
-    y = pow((-1.275*pow((x[0]*1/2+1/2)/sp.pi,2) + 5*(x[0]*1/2+1/2)/sp.pi + (x[1]*1/2+1/2) - 6), 2) + (10 - 5/(4*sp.pi))*sp.cos((x[0]*1/2+1/2)) + 10
-    y = sp.log(y - 0.397887 + 1)
+    # Scale axes, [0,1]^2 in paper, [-5,10]^2 in objectives.py, [-5,10]x[0,15] online
+    y = pow((-1.275*pow((x[0]*7.5+2.5)/sp.pi,2) + 5*(x[0]*7.5+2.5)/sp.pi + (x[1]*7.5+2.5) - 6), 2) + (10 - 5/(4*sp.pi))*sp.cos((x[0]*7.5+2.5)) + 10
+    y = sp.log(y - 0.39788735772973816 + 1)
     #fixed cost
     c=1.
     #noise
