@@ -685,3 +685,46 @@ def cmaesaq(optstate,persist,**para):
     logger.info('cmaesaq x {}'.format(x))
 
     return list(x),para['ev'],persist,{'msg':msg }
+
+def nmaq(optstate,persist,**para):
+    #logger.error( str(persist))
+    if persist==None:
+        persist={'n':0,'y':[],'z':[],'done':False}
+        for k in para['choosereturn'].keys():
+            persist[k]=para['choosereturn'][k]
+
+        if 'H' in persist.keys():
+            R = sp.linalg.cholesky(persist['H']).T
+            persist['R']=R
+        else:
+            logger.debug('no precondition provided')
+            persist['R']=sp.eye(len(persist['start']))
+    else:
+        persist['y'].append(optstate.y[-1])
+
+    global count
+    count=0
+    logger.info('nmlocalaq from {} ({}) step {}, tol {}'.format(persist['start'],persist['R'].dot(persist['start']),persist['n'], para['tol']))
+    def fwrap(z):
+        global count
+
+        if count>=persist['n']:
+            raise KeyError([i for i in z])
+        else:
+            assert sp.all(z==persist['z'][count])
+            #print 'fwrap {} count {} y {}'.format(x,count,persist['y'][count])
+            count+=1
+            return persist['y'][count-1]
+    try:
+        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead', tol = para['tol'])
+        persist['done']=True
+        optstate.localdone=True
+        logger.info('localopt finished with z: {} (x: {}) y: {} {}'.format(R.x,sp.linalg.solve(persist['R'],persist['z'][-1]),R.fun,R.message))
+        return list(sp.linalg.solve(persist['R'],persist['z'][-1])),para['ev'],persist,{'msg':'localopt is complete {}'.format(str(R))}
+    except KeyError as k:
+        z=k.args[0]
+    persist['z'].append(z)
+    persist['n']+=1
+    #print 'xtoev {}'.format(x)
+    x = sp.linalg.solve(persist['R'],z)
+    return list(x),para['ev'],persist,{'msg':'localopt' }

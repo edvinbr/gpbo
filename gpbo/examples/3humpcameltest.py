@@ -2,6 +2,8 @@ import gpbo
 import scipy as sp
 import numpy as np
 import os
+from datetime import datetime
+
 
 # dimensionality
 D = 2
@@ -11,10 +13,11 @@ s = 0.
 n = 100
 
 
-# define a simple 2d objective in x which also varies with respect to the environmental variable
-def f(x, **ev):
-    # Scale axes, [-5,5]^2
-    y = 2 * pow(x[0] * 5, 2) - 1.05 * pow(x[0] * 5, 4) + pow(x[0] * 5, 6) / 6 + x[0] * 5 * x[1] * 5 + pow(x[1] * 5, 2)
+#define a simple 2d objective in x which also varies with respect to the environmental variable
+def f(x,**ev):
+    # Scale axes, [-5,5]^2, [-0.2, 0.2]^2 in objectives.py
+    z = [xi*0.2 for xi in x]
+    y = 2*pow(z[0],2) - 1.05*pow(z[0],4) + pow(z[0],6)/6 + z[0]*z[1] + pow(z[1],2)
     y = sp.log(y + 1)
     # fixed cost
     c = 1.
@@ -28,8 +31,9 @@ def f(x, **ev):
     return y + n, c, dict()
 
 
-# arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
+#C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','3humpcamel'+timestamp+'.csv')
 C = gpbo.core.config.switchdefault(f, D, 10, n, s, 'results', '3humpcamel.csv')
 print(C)
 # set the target global regret
