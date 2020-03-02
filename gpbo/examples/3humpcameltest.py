@@ -40,6 +40,6 @@ print("before search")
 initdata = True
 if initdata:
     C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara.npy"),allow_pickle=True)).tolist()
-    C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
+    #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
 out = gpbo.search(C, initdata)
 print(out)
