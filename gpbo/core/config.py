@@ -580,3 +580,86 @@ class cmaesdefault:
         self.path = path
         self.fname = fname
         return
+
+class switchtest():
+    """
+        fixed s, space is [-1,1]^D
+
+        """
+
+    def __init__(self, f, D, ninit,nstop, s, path, fname):
+
+        #the first acquisition function is standard PES
+        C = gpbo.core.config.pesfspredictive(f, D, 10, s, 'results', 'introspection.csv',ninit=ninit)
+        aq0 = C.aqfn
+        aq0para = C.aqpara
+        #the second acquisition is local exploitation with Nelder-Mead
+        aq1 = gpbo.core.acquisitions.nmaq
+        aq1para = {
+            'ev': {'s': s, 'd': [sp.NaN]},
+            'lb': [-1.] * D,
+            'ub': [1.] * D,
+            'start': [0.] * D,
+            'tol': 1e-6
+        }
+        #finally the third acquisition is EI using sampled hyperparameters, which will be passed a modified incumbent value to use at each step
+        C2 = gpbo.core.config.eihypdefault(f, D, ninit, s, 'results', 'introspection.csv')
+
+        aq2 = C2.aqfn
+        aq2para = C2.aqpara
+        aq2para['priorshape']=aq0para['priorshape']
+        aq2para['mprior']= aq0para['mprior']
+        aq2para['sprior']= aq0para['sprior']
+        aq2para['kindex']= aq0para['kindex']
+        #the chooser will secet which acquisition is used at each step
+        self.chooser = gpbo.core.choosers.globallocalregret
+        self.choosepara = {
+            'ev': aq0para['ev'],
+            'lb': aq0para['lb'],
+            'ub': aq0para['ub'],
+            'mprior': aq0para['mprior'],
+            'sprior': aq0para['sprior'],
+            'kindex': aq0para['kindex'],
+            'priorshape': aq0para['priorshape'],
+            'nhyp' : aq0para['DH_SAMPLES'],
+            'onlyafter': aq0para['nrandinit'],
+            'weighted': aq0para['weighted'],
+            'check': True,
+            'everyn': 1,
+            'support': 1500,
+            'draws': 10000,
+            'regretswitch':1e-4,
+            'dpara': {'user_data': [],
+                      'algmethod': 1,
+                      'maxf': 2000,
+                      'logfilename': '/dev/null'},
+            'lpara': {'gtol': 0.00001,
+                      'maxfun': 400},
+            'pvetol':1e-2,
+            'lineSh':1e-4,
+            'rotate':True,
+            'nlineS':30+10*D
+        }
+
+        self.aqfn = [aq0,aq1,aq2]
+        self.aqpara = [aq0para,aq1para,aq2para]
+        self.multimode = True
+
+        self.stoppara = {'nmax': nstop}
+        self.stopfn = gpbo.core.optimize.norlocalstopfn
+
+        reccfn0 = C.reccfn
+        reccpara0 = C.reccpara
+        reccpara0['smode']='dthenl'
+        reccfn1 = gpbo.core.reccomenders.argminrecc
+        reccpara1 = {'check': True}
+
+        self.reccfn = [reccfn0,reccfn1,reccfn0]
+        self.reccpara = [reccpara0,reccpara1,reccpara0]
+
+        self.ojfchar = {'dx': len(aq0para['lb']), 'dev': len(aq0para['ev'])}
+        self.ojf = f
+
+        self.path = path
+        self.fname = fname
+        return

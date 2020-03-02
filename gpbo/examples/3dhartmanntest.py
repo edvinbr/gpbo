@@ -12,7 +12,8 @@ n=200
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
-    # Scale axes, [-5,10]^3 in thesis, [0,1]^3 online
+    # Scale axes, [-5,10]^3 in thesis, [0,1]^3 online, [0,1]^3 in objectives.py
+    z = [xi*0.5+0.5 for xi in x]
     alpha = [1., 1.2, 3., 3.2]
     A = [[3, 10, 30],
         [0.1, 10, 35],
@@ -28,7 +29,7 @@ def f(x,**ev):
         for j in range(0,3):
             #y = y - (alpha[i] * -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2)))
             #y = y - (alpha[i] * -(A[i][j]*pow((x[j]*1/2+1/2)-P[i][j],2)))
-            sum = sum -(A[i][j]*pow((x[j]*15/2+5/2)-P[i][j],2))
+            sum = sum -(A[i][j]*pow((z[j])-P[i][j],2))
         y = y - alpha[i] * sp.exp(sum)
     y = sp.log(y - (-3.862779787332660444) + 1)
     #fixed cost

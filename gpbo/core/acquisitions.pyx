@@ -700,7 +700,7 @@ def nmaq(optstate,persist,**para):
 
     global count
     count=0
-    logger.info('nmlocalaq from {} ({}) step {}'.format(persist['start'],persist['R'].dot(persist['start']),persist['n']))
+    logger.info('nmlocalaq from {} ({}) step {}, tol {}'.format(persist['start'],persist['R'].dot(persist['start']),persist['n'], para['tol']))
     def fwrap(z):
         global count
 
@@ -712,7 +712,7 @@ def nmaq(optstate,persist,**para):
             count+=1
             return persist['y'][count-1]
     try:
-        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead',options={'gtol':0.000001})
+        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead', tol = para['tol'])
         persist['done']=True
         optstate.localdone=True
         logger.info('localopt finished with z: {} (x: {}) y: {} {}'.format(R.x,sp.linalg.solve(persist['R'],persist['z'][-1]),R.fun,R.message))
