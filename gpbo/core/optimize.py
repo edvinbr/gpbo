@@ -61,7 +61,7 @@ class optimizer:
         self.dev = ojfchar['dev']
         self.initdata = initdata
         if initdata:
-            self.state = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optstate.npy"), allow_pickle=True)).tolist()
+            self.state = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optstate"+gpbo.core.debugoutput['pathsuffix']+".npy"), allow_pickle=True)).tolist()
             #self.state=pickle.load(open(initdata))[0]
             print('init with \n{} \n{}'.format(self.state.x,self.state.y))
         else:
@@ -105,8 +105,9 @@ class optimizer:
         checky=sp.NaN
         rxlast=[sp.NaN]*self.dx
         saveflag = False
+        print("Suffix: " + gpbo.core.debugoutput['pathsuffix'])
         if self.initdata:
-            aqchoosereturntemp = (np.load(os.path.join(gpbo.core.debugoutput['path'], "chooseaux.npy"), allow_pickle=True)).tolist()
+            aqchoosereturntemp = (np.load(os.path.join(gpbo.core.debugoutput['path'], "chooseaux"+gpbo.core.debugoutput['pathsuffix']+".npy"), allow_pickle=True)).tolist()
         else:
             saveflag = True
         aqchoosereturnflag = self.initdata
@@ -120,12 +121,13 @@ class optimizer:
             t0 = time.clock()
             mode,self.choosepersist,chooseaux = wrap(self.choosefn,self.state,self.choosepersist,**self.choosepara)
             if self.choosepersist['flip'] and saveflag:
-                print("trying to save some stuff")
-                print(gpbo.core.debugoutput['path'])
-                np.save(os.path.join(gpbo.core.debugoutput['path'], "optstate"),self.state)
-                np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepersist"),self.choosepersist)
-                np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepara"), self.choosepara)
-                np.save(os.path.join(gpbo.core.debugoutput['path'], "chooseaux"), chooseaux)
+                print("Saving some stuff")
+                print("Path: " + gpbo.core.debugoutput['path'])
+                print("Suffix: " + gpbo.core.debugoutput['pathsuffix'])
+                np.save(os.path.join(gpbo.core.debugoutput['path'], "optstate"+gpbo.core.debugoutput['pathsuffix']),self.state)
+                np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepersist"+gpbo.core.debugoutput['pathsuffix']),self.choosepersist)
+                np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepara"+gpbo.core.debugoutput['pathsuffix']), self.choosepara)
+                np.save(os.path.join(gpbo.core.debugoutput['path'], "chooseaux"+gpbo.core.debugoutput['pathsuffix']), chooseaux)
                 saveflag = False
             self.aqpara[mode]['choosereturn']=chooseaux
             if aqchoosereturnflag:
@@ -310,7 +312,7 @@ def wrap(fn,optstate,persist,**para):
 def search(optconfig,initdata=False):
     #TODO: load chooser persist here and send to optimizer
     if initdata:
-        choosepersist = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepersist.npy"), allow_pickle=True)).tolist()
+        choosepersist = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepersist"+gpbo.core.debugoutput['pathsuffix']+".npy"), allow_pickle=True)).tolist()
     else:
         choosepersist = None
     if not hasattr(optconfig,'fname'):

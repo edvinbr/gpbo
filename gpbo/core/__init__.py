@@ -1,6 +1,7 @@
 from collections import defaultdict
 debugoutput=defaultdict(lambda :False)
 debugoutput['path']='dbout'
+debugoutput['pathsuffix']='test'
 
 from .optimize import *
 from .optutils import *

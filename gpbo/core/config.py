@@ -509,9 +509,7 @@ class switchdefault():
             'rotate':True,
             'nlineS':30+10*D
         }
-        print("choosepara")
-        self.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara.npy"),allow_pickle=True)).tolist()
-        print(self.choosepara)
+        
         self.aqfn = [aq0,aq1,aq2]
         self.aqpara = [aq0para,aq1para,aq2para]
         self.multimode = True
