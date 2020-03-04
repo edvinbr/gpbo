@@ -590,8 +590,6 @@ def directaq(optstate,persist,**para):
 
 def splocalaq(optstate,persist,**para):
     #logger.error( str(persist))
-    logger.debug(para)
-    logger.debug(para.keys())
     if persist==None:
         persist={'n':0,'y':[],'z':[],'done':False}
         for k in para['choosereturn'].keys():
@@ -602,8 +600,6 @@ def splocalaq(optstate,persist,**para):
             persist['R']=R
         else:
             logger.debug('no precondition provided')
-            logger.debug(persist)
-            logger.debug(persist.keys())
             persist['R']=sp.eye(len(persist['start']))
     else:
         persist['y'].append(optstate.y[-1])
@@ -716,7 +712,7 @@ def nmaq(optstate,persist,**para):
             count+=1
             return persist['y'][count-1]
     try:
-        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead', tol = para['tol'])
+        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead', tol = para['tol'], options={'disp':True})
         persist['done']=True
         optstate.localdone=True
         logger.info('localopt finished with z: {} (x: {}) y: {} {}'.format(R.x,sp.linalg.solve(persist['R'],persist['z'][-1]),R.fun,R.message))

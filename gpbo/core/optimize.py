@@ -104,8 +104,11 @@ class optimizer:
         stepn=self.state.n
         checky=sp.NaN
         rxlast=[sp.NaN]*self.dx
+        saveflag = False
         if self.initdata:
             aqchoosereturntemp = (np.load(os.path.join(gpbo.core.debugoutput['path'], "chooseaux.npy"), allow_pickle=True)).tolist()
+        else:
+            saveflag = True
         aqchoosereturnflag = self.initdata
         while not self.stopfn(self.state,**self.stoppara):
             stepn+=1
@@ -116,18 +119,20 @@ class optimizer:
 
             t0 = time.clock()
             mode,self.choosepersist,chooseaux = wrap(self.choosefn,self.state,self.choosepersist,**self.choosepara)
-            if self.choosepersist['flip'] and not self.initdata:
+            if self.choosepersist['flip'] and saveflag:
+                print("trying to save some stuff")
+                print(gpbo.core.debugoutput['path'])
                 np.save(os.path.join(gpbo.core.debugoutput['path'], "optstate"),self.state)
                 np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepersist"),self.choosepersist)
                 np.save(os.path.join(gpbo.core.debugoutput['path'], "choosepara"), self.choosepara)
                 np.save(os.path.join(gpbo.core.debugoutput['path'], "chooseaux"), chooseaux)
-                return
+                saveflag = False
             self.aqpara[mode]['choosereturn']=chooseaux
             if aqchoosereturnflag:
                 self.aqpara[mode]['choosereturn'] = aqchoosereturntemp
                 aqchoosereturnflag = False
-            logger.debug('Chooseaux: ' + str(chooseaux))
-            logger.debug('Choosepersist: ' + str(self.choosepersist))
+            #logger.debug('Chooseaux: ' + str(chooseaux))
+            #logger.debug('Choosepersist: ' + str(self.choosepersist))
             x,ev,self.aqpersist[mode],aqaux = wrap(self.aqfn[mode],self.state,self.aqpersist[mode],**self.aqpara[mode])
             t1 = time.clock()
             self.state.aux = aqaux
