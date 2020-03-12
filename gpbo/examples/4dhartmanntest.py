@@ -1,6 +1,16 @@
 import gpbo
 import scipy as sp
 from datetime import datetime
+import sys
+import numpy as np
+import os
+
+try:
+    suffix = sys.argv[1]
+except IndexError:
+    suffix = ''
+gpbo.core.debugoutput['pathsuffix'] = suffix
+
 
 #dimensionality
 D=4
@@ -46,8 +56,17 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann'+timestamp+'.csv')
+#C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4dhartmann'+timestamp+'.csv')
+C=gpbo.core.config.switchtest(f,D,10,n,s,'results','4dhartmann.csv')
 #set the target global regret
 C.choosepara['regretswitch']=1e-2
-out = gpbo.search(C)
-print (out)
+C.aqpara[1]['tol']=None
+
+print("before search")
+# Add namesuffix as argument to use different savefiles
+initdata = True
+if initdata:
+    C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara"+gpbo.core.debugoutput['pathsuffix']+".npy"),allow_pickle=True)).tolist()
+    #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
+out = gpbo.search(C, initdata)
+print(out)
