@@ -17,7 +17,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 200
+n = 300
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -26,9 +26,9 @@ def f(x,**ev):
     z = [xi*sp.pi/2 + sp.pi/2 for xi in x]
     sum = 0
     for i in range(0,D):
-        sum += sp.sin(z[i])*sp.sin(i*(z[i]**2)/sp.pi)**(2*10)
+        sum += sp.sin(z[i])*sp.sin((i+1)*(z[i]**2)/sp.pi)**(2*10)
     y = -sum
-    y = sp.log(y -(-1) + 1)
+    y = sp.log(y -(-1.8013034101) + 1)
     # fixed cost
     c = 1.
     # noise
@@ -54,7 +54,7 @@ C.aqpara[1]['tol']=None#1e-6
 
 print("before search")
 # Add namesuffix as argument to use different savefiles
-initdata = True
+initdata = False
 if initdata:
     C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara"+gpbo.core.debugoutput['pathsuffix']+".npy"),allow_pickle=True)).tolist()
     #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
