@@ -17,9 +17,20 @@ def camel3(x,**ev):
     #3hump camel funciton
     z = [5*xi for xi in x]
     f = 2*z[0]**2-1.05*z[0]**4+(z[0]**6)/6. +z[0]*z[1] + z[1]**2
-    return f,1,dict()
+    return f
 
-def visual3d(): #TODO
+def michalewicz(x1, x2):
+    # Scale axes, 
+    z = [x1*sp.pi/2 + sp.pi/2, x2*sp.pi/2 + sp.pi/2]
+    sum = 0
+    for i in range(0,2):
+        sum += sp.sin(z[i])*(sp.sin((i+1)*(z[i]**2)/sp.pi))**(2*10)
+    y = -sum
+    #y = sp.log(y -(-1.8013034101) + 1)
+    return y
+
+
+def visual3d(f): #TODO
 	#temporary
 	y = f(x1,x2)
 
@@ -39,7 +50,7 @@ def visual3d(): #TODO
 	ax.set_xlabel('x0')
 	ax.set_ylabel('x1')
 	ax.set_zlabel('y')
-	plt.savefig('results/test', dpi=600)
+	plt.savefig('results/test3d', dpi=600)
 	return
 
 def visualize(f, path):
@@ -71,7 +82,7 @@ def visualize(f, path):
 path = sys.argv[1]
 try:
 	multi = sys.argv[2]
-except NameError:
+except IndexError:
 	multi = False
 
 # Single file
@@ -79,10 +90,11 @@ if not multi:
 	df = pd.read_csv(path, sep=', ', header=0)
 
 	#bounds
-	#x1Bound=[-0.05, 0.06]
-	#x2Bound=[-0.45, 0.45]
-	x1Bound=[-1., 1.]
-	x2Bound=[-1., 1.]
+	#x1Bound=[0.395, 0.410]
+	#x2Bound=[-0.01, 0.01]
+	x1Bound=[-1, 1.]
+	x2Bound=[-1, 1.]
+	
 
 	# Assume 2D functions
 	x1 = df['x0'].values.clip(x1Bound[0], x1Bound[1])
@@ -95,15 +107,14 @@ if not multi:
 	regret = sp.exp(ymins) - 1
 	truey = regret + minyvalue
 
+	visual3d(michalewicz)
+
 	fig = plt.figure()
 	print(regret)
 	plt.plot(regret)
 	plt.yscale('log')
 	plt.savefig('results/test', dpi=600)
-
-
-#Multi file
-else:
+else: #Multi file
 	#df = pd.concat([pd.read_csv(f, sep=', ', usecols=range(0,16)) for f in glob.glob(path+'*.csv')], ignore_index=True)
 	
 	minyvalue = -1.03162845348987744408920985 #6humpcamel
