@@ -18,6 +18,8 @@ from gpbo.core import PES
 import DIRECT
 from multiprocessing import Process, Pipe
 from gpbo.core.optutils import multilocal
+from dfoalgos.simplex import NelderMeadSimplexSearch
+import numpy as np
 
 try:
     from matplotlib import pyplot as plt
@@ -692,9 +694,17 @@ def nmaq(optstate,persist,**para):
         if 'H' in persist.keys():
             R = sp.linalg.cholesky(persist['H']).T
             persist['R']=R
+            logger.info('H: {}'.format(persist['H']))
         else:
             logger.debug('no precondition provided')
             persist['R']=sp.eye(len(persist['start']))
+
+        #build a GP with slice-samples hypers
+        logger.info('building GP')
+        #logger.info('Gstuff: {}'.format(persist['Gstuff']))
+        persist['G'] = PES.makeG(persist['Gstuff'][0], persist['Gstuff'][1], persist['Gstuff'][2], persist['Gstuff'][3], persist['Gstuff'][4],
+                    persist['Gstuff'][5], persist['Gstuff'][6], persist['Gstuff'][7], prior=persist['Gstuff'][8])
+
     else:
         persist['y'].append(optstate.y[-1])
 
@@ -711,16 +721,29 @@ def nmaq(optstate,persist,**para):
             #print 'fwrap {} count {} y {}'.format(x,count,persist['y'][count])
             count+=1
             return persist['y'][count-1]
+
+    def fgr(z):
+        GH = gpbo.core.optutils.gpGH(persist['G'],z)
+        Gr,cG,H,Hvec,varHvec,M,varM = GH
+        Grad = np.zeros_like(z)
+        for i in range(0,len(Grad)):
+            Grad[i] = Gr[0][i]
+        logger.info('Grad: {} (z: {})'.format(Grad, z))
+        return Grad
+
     try:
-        R=minimize(fwrap,persist['R'].dot(persist['start']),method='Nelder-Mead', tol = para['tol'], options={'disp':True})
+        logger.info('Start: ' + str(persist['start']))
+        logger.info('Start2 : ' +str(persist['R'].dot(persist['start'])))
+        R=minimize(fwrap,persist['start'],method='cg',  tol = para['tol'], options={'disp':True})#, 'xtol': 1e-8, 'eps': 1e-12})
+        #R = NelderMeadSimplexSearch.minimize(fwrap, persist['start'])#, bounds=[(-1,1) for x in persist['start']])
         persist['done']=True
         optstate.localdone=True
         logger.info('localopt finished with z: {} (x: {}) y: {} {}'.format(R.x,sp.linalg.solve(persist['R'],persist['z'][-1]),R.fun,R.message))
-        return list(sp.linalg.solve(persist['R'],persist['z'][-1])),para['ev'],persist,{'msg':'localopt is complete {}'.format(str(R))}
+        return list(R.x),para['ev'],persist,{'msg':'localopt is complete {}'.format(str(R))}
     except KeyError as k:
         z=k.args[0]
     persist['z'].append(z)
     persist['n']+=1
     #print 'xtoev {}'.format(x)
-    x = sp.linalg.solve(persist['R'],z)
+    x = z#sp.linalg.solve(persist['R'],z)
     return list(x),para['ev'],persist,{'msg':'localopt' }
