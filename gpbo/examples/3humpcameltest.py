@@ -8,7 +8,7 @@ import sys
 
 try:
     suffix = sys.argv[1]
-except NameError:
+except IndexError:
     suffix = ''
 gpbo.core.debugoutput['pathsuffix'] = suffix
 
@@ -42,16 +42,17 @@ def f(x,**ev):
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
 #C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','3humpcamel'+timestamp+'.csv')
-C = gpbo.core.config.switchdefault(f, D, 10, n, s, 'results', '3humpcamel.csv')
+C = gpbo.core.config.switchtest(f, D, 10, n, s, 'results', '3humpcamel.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
-#C.aqpara[1]['tol']=7.9e-4
+C.aqpara[1]['tol']=None#1e-6
 
 
 print("before search")
-initdata = False
+# Add namesuffix as argument to use different savefiles
+initdata = True
 if initdata:
     C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara"+gpbo.core.debugoutput['pathsuffix']+".npy"),allow_pickle=True)).tolist()
     #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
