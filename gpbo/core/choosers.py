@@ -125,6 +125,9 @@ def globallocalregret(optstate,persist,**para):
     GH = gpbo.core.optutils.gpGH(G,xmin)
     Gr,cG,H,Hvec,varHvec,M,varM = GH
 
+    Gsomething = gpbo.core.optutils.gpYGH(G,xmin)
+    logger.info('Var at xmin {}'.format(Gsomething[1]))
+
     #est the local regret
     Mdraws = gpbo.core.GPdc.draw(M[0,:],varM,200)
     lrest=0.
@@ -426,7 +429,7 @@ def globallocalregret(optstate,persist,**para):
         R=minimize(fn2,C.T.dot(xmin),method='bfgs')
         logger.warn('cheat testopt result with precondition {}:\n{}'.format(H,R))
 
-    return rval,persist,{'start':xminr.flatten(),'H':H,'reuseH':[k.hyp for k in G.kf],'offsetEI':m,'ppveatx':pc,'rpve':rmax,'log10GRest':sp.log10(racc)}
+    return rval,persist,{'start':xminr.flatten(),'H':H,'reuseH':[k.hyp for k in G.kf],'offsetEI':m,'ppveatx':pc,'rpve':rmax,'log10GRest':sp.log10(racc), 'Gstuff': [x, y, s, dx, para['kindex'], para['mprior'], para['sprior'], para['nhyp'], para['priorshape']]}
 
 
 def alternate(optstate,persist,**para):
