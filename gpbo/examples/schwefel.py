@@ -54,7 +54,7 @@ C.aqpara[1]['tol']=None#1e-6
 
 print("before search")
 # Add namesuffix as argument to use different savefiles
-initdata = False
+initdata = True
 if initdata:
     C.choosepara = (np.load(os.path.join(gpbo.core.debugoutput['path'], "choosepara"+gpbo.core.debugoutput['pathsuffix']+".npy"),allow_pickle=True)).tolist()
     #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
