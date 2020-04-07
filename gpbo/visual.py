@@ -84,6 +84,17 @@ def deceptive(x1,x2):
     y = -(1/2*sum1)**2
     return y
 
+def ackley(x1,x2):
+    # Scale axes, 
+    z = [x1*30, x2*30]
+    sum1 = 0
+    sum2 = 0
+    for i in range(0,2):
+        sum1 += z[i]**2
+        sum2 += sp.cos(2*sp.pi*z[i])
+    y = -20*sp.exp(-(1/2)*sp.sqrt(1/2*sum1)) - sp.exp((1/2)*sum2) + 20 + sp.exp(1)
+    return y
+
 
 
 def visual3d(f): #TODO
@@ -92,7 +103,7 @@ def visual3d(f): #TODO
 
 	# for noisy
 	y = df['y'].values
-	y = np.exp(y) - 2
+	#y = np.exp(y) - 2
 
 	# TODO: user defined space
 	xRange = np.linspace(x1Bound[0], x1Bound[1],100)
@@ -139,6 +150,28 @@ def visualize(f, path):
 
 	return 
 
+def tspCalc(y, ymin, r):
+	tsp = np.full((y.shape[0], y.shape[1]), -1)
+
+	for xidx, yp in enumerate(y):
+		for yidx, yr in enumerate(yp):
+			y0 = yr[0]
+			for zidx, yi in enumerate(yr):
+				if (y0 - yi >= (1-r)*(y0 - ymin)):
+					tsp[xidx][yidx] = zidx+1
+					break
+	return tsp
+
+def dataProfile(tsp, alpha, d):
+	numDone = 0
+	for tp in tsp:
+		for tr in tp:
+			if (tr/(d+1) <= alpha and tr > 0):
+				numDone += 1
+
+	ds = 1/tsp.shape[0]*numDone 
+	return ds
+
 path = sys.argv[1]
 try:
 	multi = sys.argv[2]
@@ -167,7 +200,7 @@ if not multi:
 	regret = sp.exp(ymins) - 1
 	truey = regret + minyvalue
 
-	visual3d(deceptive)
+	visual3d(ackley)
 
 	fig = plt.figure()
 	print(regret)
@@ -180,9 +213,10 @@ else: #Multi file
 	minyvalue = -1.03162845348987744408920985 #6humpcamel
 	
 	#regrets = [pd.read_csv(f, sep=', ', usecols=range(0,16)) for f in glob.glob(path+'*.csv')]
-	
+
 	regrets = []
 	lengths = []
+	trueys = []
 	for f in glob.glob(path+'*.csv'):
 		df = pd.read_csv(f, sep=', ', usecols=range(0,16))
 		lengths.append(len(df.index))
@@ -191,6 +225,7 @@ else: #Multi file
 		regret = sp.exp(ymins) - 1
 		#truey = regret + minyvalue
 		regrets.append(regret)
+		trueys.append(ymins)
 
 	maxlength = max(lengths)
 
@@ -233,3 +268,20 @@ else: #Multi file
 
 	fig.tight_layout()
 	plt.savefig('results/multitest', dpi=600)
+
+	ymin = 0
+	r = 0.1
+	tsp = tspCalc(trueys, ymin, r)
+	dps = []
+	for alpha in range(0,250):
+		dps.append(dataProfile(tsp, alpha+1,2))
+
+	fig, ax1 = plt.subplots()
+	ax1.set_xlabel('Alpha')
+	ax1.set_ylabel('ds(alpha)')
+	ax1.plot(ys, color='blue')
+	#ax1.set_yscale('log')
+	ax1.tick_params(axis='y')
+	
+	fig.tight_layout()
+	plt.savefig('results/dataprofiletest', dpi=600)
