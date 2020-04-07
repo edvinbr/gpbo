@@ -29,10 +29,70 @@ def michalewicz(x1, x2):
     #y = sp.log(y -(-1.8013034101) + 1)
     return y
 
+def expf(x1,x2):
+    # Scale axes, 
+    z = [x1, x2]
+    sum = 0
+    for i in range(0,2):
+        sum += z[i]**2
+    y = -sp.exp(-0.5*sum)
+    return y
+
+def xinsheyangN4(x1,x2):
+    # Scale axes, 
+    z = [x1*10,x2*10]
+    sum1 = 0
+    for i in range(0,2):
+        sum1 += np.sin(z[i])**2
+    sum2 = 0
+    for i in range(0,2):
+        sum2 += z[i]**2
+    sum3 = 0
+    for i in range(0,2):
+        sum3 += np.sin(np.sqrt(np.abs(z[i])))**2
+    y = (sum1 - np.exp(-sum2))*np.exp(-sum3)
+    return y
+
+def schwefel(x1,x2):
+    # Scale axes, 
+    z = [x1*500,x2*500]
+    sum1 = 0
+    for i in range(0,2):
+        sum1 += z[i] * np.sin(np.sqrt(np.abs(z[i])))
+    y = 418.982887272433799807913601398*2 - sum1
+    #y = 418.9829*D - sum1
+    #y = sp.log(y -(0) + 1)
+    return y
+
+def deceptive(x1,x2):
+    # Scale axes, 
+    print(x1)
+    print(x2)
+    z = [x1*0.5 + 0.5, x2*0.5+0.5]
+    sum1 = 0
+    for i in range(0,2):
+        alpha = (i+1)/(2+1)
+        print(z[i])
+        if(0 <= z[i] and z[i] < 4/5*alpha):
+            sum1 += -z[i]/alpha + 4/5
+        elif(4/5*alpha < z[i] and z[i] <= alpha):
+            sum1 += 5*z[i]/alpha - 4
+        elif(alpha < z[i] and z[i] <= (1+4*alpha)/5):
+            sum1 += 5*(z[i]-alpha)/(alpha-1) + 1
+        elif((1+4*alpha)/5 < z[i] and z[i] <= 1):
+            sum1 += (z[i]-1)/(1-alpha) + 4/5
+    y = -(1/2*sum1)**2
+    return y
+
+
 
 def visual3d(f): #TODO
 	#temporary
 	y = f(x1,x2)
+
+	# for noisy
+	y = df['y'].values
+	y = np.exp(y) - 2
 
 	# TODO: user defined space
 	xRange = np.linspace(x1Bound[0], x1Bound[1],100)
@@ -45,8 +105,8 @@ def visual3d(f): #TODO
 	fig = plt.figure()
 	ax = fig.add_subplot(111, projection='3d')
 	ax.scatter(x1, x2, y, c='red')
-	#ax.plot_surface(X, Y, Z, cmap='jet')
-	ax.plot_wireframe(X, Y, Z, rcount=20, ccount=20)
+	ax.plot_surface(X, Y, Z, cmap='jet', rcount=100, ccount=100)
+	#ax.plot_wireframe(X, Y, Z, rcount=100, ccount=100)
 	ax.set_xlabel('x0')
 	ax.set_ylabel('x1')
 	ax.set_zlabel('y')
@@ -107,7 +167,7 @@ if not multi:
 	regret = sp.exp(ymins) - 1
 	truey = regret + minyvalue
 
-	visual3d(michalewicz)
+	visual3d(deceptive)
 
 	fig = plt.figure()
 	print(regret)
