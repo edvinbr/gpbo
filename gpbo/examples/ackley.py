@@ -24,7 +24,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 500
+n = 250
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -36,8 +36,14 @@ def f(x,**ev):
     for i in range(0,D):
         sum1 += z[i]**2
         sum2 += sp.cos(2*sp.pi*z[i])
-    y = -20*sp.exp((1/2)/D*sum1) - sp.exp(1/D*sum2) + 20 + sp.exp(1)
-    y = sp.log(y -(0) + 1)
+    
+    print('sum1 {}'.format(sum1))
+    print('sum2 {}'.format(sum2))
+    print('term1 {}'.format(-20*sp.exp(-(1/2)*sp.sqrt(1/D*sum1))))
+    print('term2 {}'.format(- sp.exp((1/D)*sum2)))
+    print('exp {}'.format(sp.exp(1)))
+    y = -20*sp.exp(-(1/2)*sp.sqrt(1/D*sum1)) - sp.exp((1/D)*sum2) + 20 + sp.exp(1)
+    #y = sp.log(y -(0) + 1)
     # fixed cost
     c = 1.
     # noise

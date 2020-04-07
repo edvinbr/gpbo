@@ -24,7 +24,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 500
+n = 250
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -34,13 +34,13 @@ def f(x,**ev):
     sum1 = 0
     for i in range(0,D):
         alpha = (i+1)/(D+1)
-        if(z[i] < 4/5*alpha):
+        if(0 <= z[i] and z[i] < 4/5*alpha):
             sum1 += -z[i]/alpha + 4/5
         elif(4/5*alpha < z[i] and z[i] <= alpha):
             sum1 += 5*z[i]/alpha - 4
         elif(alpha < z[i] and z[i] <= (1+4*alpha)/5):
             sum1 += 5*(z[i]-alpha)/(alpha-1) + 1
-        else:
+        elif((1+4*alpha)/5 < z[i] and z[i] <= 1):
             sum1 += (z[i]-1)/(1-alpha) + 4/5
     y = -(1/D*sum1)**2
     y = sp.log(y -(-1) + 1)
