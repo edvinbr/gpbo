@@ -31,10 +31,10 @@ n = 250
 def f(x,**ev):
     # Scale axes, 
     z = [xi*5.12 for xi in x]
-    sum = 0
+    sum1 = 0
     for i in range(0,D):
-        sum += z[i]**2
-    y = sp.log(y -(0) + 1)
+        sum1 += z[i]**2
+    y = sp.log(sum1 -(0) + 1)
     # fixed cost
     c = 1.
     # noise

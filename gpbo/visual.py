@@ -207,24 +207,25 @@ if not multi:
 	plt.yscale('log')
 	plt.savefig('results/test', dpi=600)
 else: #Multi file
-	#df = pd.concat([pd.read_csv(f, sep=', ', usecols=range(0,16)) for f in glob.glob(path+'*.csv')], ignore_index=True)
 	
-	minyvalue = -1.03162845348987744408920985 #6humpcamel
-	
-	#regrets = [pd.read_csv(f, sep=', ', usecols=range(0,16)) for f in glob.glob(path+'*.csv')]
-
+	#minyvalue = -1.03162845348987744408920985 #6humpcamel
 	regrets = []
 	lengths = []
 	trueys = []
+	globalymin = [0, 0] #check order compared to file read order
+	numRuns = 6
+	numProblems = 1
+	count = 0
 	for f in sorted(glob.glob(path+'*.csv')):
 		df = pd.read_csv(f, sep=', ', usecols=range(0,16))
 		lengths.append(len(df.index))
 		sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
 		ymins = sepValues['truey at xrecc'].values.astype(float)
 		regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
-		#truey = regret + minyvalue
+		truey = regret + globalymin[count//numRuns]
 		regrets.append(regret)
-		trueys.append(ymins)
+		trueys.append(truey)
+		count += 1
 
 	### Regret plotting
 
@@ -272,11 +273,8 @@ else: #Multi file
 
 	### Dataprofile plotting
 
-	globalymin = [0, 0] #check order compared to trueys
 	r = 0.1
 	numIterations = 250
-	numRuns = 6
-	numProblems = 2
 	tsps = np.full((numProblems, numRuns),-1)
 	for i in range(0,numProblems):
 		tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
