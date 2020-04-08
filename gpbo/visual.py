@@ -216,15 +216,17 @@ else: #Multi file
 	regrets = []
 	lengths = []
 	trueys = []
-	for f in glob.glob(path+'*.csv'):
+	for f in sorted(glob.glob(path+'*.csv')):
 		df = pd.read_csv(f, sep=', ', usecols=range(0,16))
 		lengths.append(len(df.index))
 		sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
 		ymins = sepValues['truey at xrecc'].values.astype(float)
-		regret = sp.exp(ymins) - 1
+		regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
 		#truey = regret + minyvalue
 		regrets.append(regret)
 		trueys.append(ymins)
+
+	### Regret plotting
 
 	maxlength = max(lengths)
 
@@ -268,14 +270,17 @@ else: #Multi file
 	fig.tight_layout()
 	plt.savefig('results/multiregret', dpi=600)
 
-	ymin = 0
+	### Dataprofile plotting
+
+	globalymin = [0, 0] #check order compared to trueys
 	r = 0.1
 	numIterations = 250
 	numRuns = 6
-	numProblems = 1
-	tsp = tspCalc(trueys, ymin, r)
+	numProblems = 2
 	tsps = np.full((numProblems, numRuns),-1)
-	tsps[0] = tsp
+	for i in range(0,numProblems):
+		tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
+		tsps[i] = tsp
 	dps = []
 	for alpha in range(0,numIterations):
 		dps.append(dataProfile(tsps, alpha+1,2))
@@ -289,4 +294,3 @@ else: #Multi file
 	
 	fig.tight_layout()
 	plt.savefig('results/dataprofiletest', dpi=600)
-	
