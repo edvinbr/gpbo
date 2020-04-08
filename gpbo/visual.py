@@ -151,25 +151,24 @@ def visualize(f, path):
 	return 
 
 def tspCalc(y, ymin, r):
-	tsp = np.full((y.shape[0], y.shape[1]), -1)
+	tsp = np.full(len(y), -1)
 
-	for xidx, yp in enumerate(y):
-		for yidx, yr in enumerate(yp):
-			y0 = yr[0]
-			for zidx, yi in enumerate(yr):
-				if (y0 - yi >= (1-r)*(y0 - ymin)):
-					tsp[xidx][yidx] = zidx+1
-					break
+	for xidx, yr in enumerate(y):
+		y0 = yr[0]
+		for yidx, yi in enumerate(yr):
+			if (y0 - yi >= (1-r)*(y0 - ymin)):
+				tsp[xidx] = yidx+1
+				break
 	return tsp
 
-def dataProfile(tsp, alpha, d):
+def dataProfile(tsps, alpha, d):
 	numDone = 0
-	for tp in tsp:
-		for tr in tp:
+	for tsp in tsps:
+		for tr in tsp:
 			if (tr/(d+1) <= alpha and tr > 0):
 				numDone += 1
 
-	ds = 1/tsp.shape[0]*numDone 
+	ds = (1/(tsps.shape[0]*tsps.shape[1]))*numDone
 	return ds
 
 path = sys.argv[1]
@@ -267,21 +266,27 @@ else: #Multi file
 	ax2.tick_params(axis='y')
 
 	fig.tight_layout()
-	plt.savefig('results/multitest', dpi=600)
+	plt.savefig('results/multiregret', dpi=600)
 
 	ymin = 0
 	r = 0.1
+	numIterations = 250
+	numRuns = 6
+	numProblems = 1
 	tsp = tspCalc(trueys, ymin, r)
+	tsps = np.full((numProblems, numRuns),-1)
+	tsps[0] = tsp
 	dps = []
-	for alpha in range(0,250):
-		dps.append(dataProfile(tsp, alpha+1,2))
+	for alpha in range(0,numIterations):
+		dps.append(dataProfile(tsps, alpha+1,2))
 
 	fig, ax1 = plt.subplots()
-	ax1.set_xlabel('Alpha')
+	ax1.set_xlabel('alpha')
 	ax1.set_ylabel('ds(alpha)')
-	ax1.plot(ys, color='blue')
+	ax1.plot(dps, color='blue')
 	#ax1.set_yscale('log')
 	ax1.tick_params(axis='y')
 	
 	fig.tight_layout()
 	plt.savefig('results/dataprofiletest', dpi=600)
+	
