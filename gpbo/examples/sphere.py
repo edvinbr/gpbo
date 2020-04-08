@@ -11,7 +11,7 @@ except IndexError:
     suffix = ''
 gpbo.core.debugoutput['pathsuffix'] = suffix
 
-#gpbo.core.debugoutput['path']='dbout/deceptive'
+#gpbo.core.debugoutput['path']='dbout/sphere1'
 
 #gpbo.core.debugoutput['adaptive'] = True
 #gpbo.core.debugoutput['acqfn2d'] = True
@@ -30,24 +30,15 @@ n = 250
 #define a simple 2d objective in x which also varies with respect to the environmental variable
 def f(x,**ev):
     # Scale axes, 
-    z = [xi*30 for xi in x]
-    sum1 = 0
-    sum2 = 0
+    z = [xi*5.12 for xi in x]
+    sum = 0
     for i in range(0,D):
-        sum1 += z[i]**2
-        sum2 += sp.cos(2*sp.pi*z[i])
-    
-    print('sum1 {}'.format(sum1))
-    print('sum2 {}'.format(sum2))
-    print('term1 {}'.format(-20*sp.exp(-(1/2)*sp.sqrt(1/D*sum1))))
-    print('term2 {}'.format(- sp.exp((1/D)*sum2)))
-    print('exp {}'.format(sp.exp(1)))
-    y = -20*sp.exp(-(1/2)*sp.sqrt(1/D*sum1)) - sp.exp((1/D)*sum2) + 20 + sp.exp(1)
+        sum += z[i]**2
     y = sp.log(y -(0) + 1)
     # fixed cost
     c = 1.
     # noise
-    n = sp.random.normal() * s
+    n = sp.random.normal() * sp.sqrt(s)
     # we want to check the noiseless value when evaluating performance
     if 'cheattrue' in ev.keys():
         if ev['cheattrue']:
@@ -58,8 +49,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results',str(D)+'Dackley'+timestamp+'.csv')
-#C = gpbo.core.config.switchetest(f, D, 10, n, s, 'results', 'ackley.csv')
+C = gpbo.core.config.switchdefault(f, D, 10, n, s, 'results', str(D)+'Dsphere'+timestamp+'.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2
@@ -75,4 +65,6 @@ if initdata:
     #C = (np.load(os.path.join(gpbo.core.debugoutput['path'], "optconfig.npy"),allow_pickle=True)).tolist()
 out = gpbo.search(C, initdata)
 print(out)
+print('True value for noisy functions')
+f(out[0],cheattrue=True)[0]
 

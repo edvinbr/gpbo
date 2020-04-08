@@ -11,20 +11,20 @@ except IndexError:
     suffix = ''
 gpbo.core.debugoutput['pathsuffix'] = suffix
 
-gpbo.core.debugoutput['path']='dbout/schwefel1'
+#gpbo.core.debugoutput['path']='dbout/schwefel1'
 
 #gpbo.core.debugoutput['adaptive'] = True
-gpbo.core.debugoutput['acqfn2d'] = True
-gpbo.core.debugoutput['support'] = True
-gpbo.core.debugoutput['drawlap'] = True
-gpbo.core.debugoutput['tmp'] = True
+#gpbo.core.debugoutput['acqfn2d'] = True
+#gpbo.core.debugoutput['support'] = True
+#gpbo.core.debugoutput['drawlap'] = True
+#gpbo.core.debugoutput['tmp'] = True
 
 # dimensionality
 D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 500
+n = 250
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -36,7 +36,7 @@ def f(x,**ev):
         sum1 += z[i] * np.sin(np.sqrt(np.abs(z[i])))
     y = 418.982887272433799807913601398*D - sum1
     #y = 418.9829*D - sum1
-    y = sp.log(y -(0) + 1)
+    #y = sp.log(y -(0) + 1)
     # fixed cost
     c = 1.
     # noise
