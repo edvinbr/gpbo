@@ -159,6 +159,7 @@ def tspCalc(y, ymin, r):
 			if (y0 - yi >= (1-r)*(y0 - ymin)):
 				tsp[xidx] = yidx+1
 				break
+	print(tsp)
 	return tsp
 
 def dataProfile(tsps, alpha, d):
@@ -213,7 +214,7 @@ else: #Multi file
 	lengths = []
 	trueys = []
 	globalymin = [0, 0] #check order compared to file read order
-	numRuns = 6
+	numRuns = 3
 	numProblems = 1
 	count = 0
 	for f in sorted(glob.glob(path+'*.csv')):
@@ -221,7 +222,8 @@ else: #Multi file
 		lengths.append(len(df.index))
 		sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
 		ymins = sepValues['truey at xrecc'].values.astype(float)
-		regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
+		#regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
+		regret = ymins
 		truey = regret + globalymin[count//numRuns]
 		regrets.append(regret)
 		trueys.append(truey)
@@ -274,14 +276,14 @@ else: #Multi file
 	### Dataprofile plotting
 
 	r = 0.1
-	numIterations = 250
+	numIterations = 50
 	tsps = np.full((numProblems, numRuns),-1)
 	for i in range(0,numProblems):
 		tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
 		tsps[i] = tsp
-	dps = []
+	dps = [0]
 	for alpha in range(0,numIterations):
-		dps.append(dataProfile(tsps, alpha+1,2))
+		dps.append(dataProfile(tsps, alpha+1,0))
 
 	fig, ax1 = plt.subplots()
 	ax1.set_xlabel('alpha')
