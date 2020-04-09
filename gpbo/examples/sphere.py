@@ -24,7 +24,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 250
+n = 250*(D+1)
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -34,7 +34,8 @@ def f(x,**ev):
     sum1 = 0
     for i in range(0,D):
         sum1 += z[i]**2
-    y = sp.log(sum1 -(0) + 1)
+    y = sum1
+    #y = sp.log(sum1 -(0) + 1)
     # fixed cost
     c = 1.
     # noise
@@ -49,7 +50,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C = gpbo.core.config.switchdefault(f, D, 10, n, s, 'results', 'sphere-0.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', str(D)+'Dsphere'+timestamp+'.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2

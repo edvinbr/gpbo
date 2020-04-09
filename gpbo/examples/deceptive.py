@@ -24,7 +24,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 250
+n = 250*(D+1)
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -43,7 +43,7 @@ def f(x,**ev):
         elif((1+4*alpha)/5 < z[i] and z[i] <= 1):
             sum1 += (z[i]-1)/(1-alpha) + 4/5
     y = -(1/D*sum1)**2
-    y = sp.log(y -(-1) + 1)
+    #y = sp.log(y -(-1) + 1)
     # fixed cost
     c = 1.
     # noise

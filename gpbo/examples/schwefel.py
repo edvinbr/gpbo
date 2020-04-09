@@ -24,7 +24,7 @@ D = 2
 # noise variance
 s = 0.
 # number of step to take
-n = 250
+n = 250*(D+1)
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
