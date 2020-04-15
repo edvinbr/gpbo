@@ -50,7 +50,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', str(D)+'Dsphere'+timestamp+'.csv')
+C = gpbo.core.config.switchdefault(f, D, 10, n, s, 'results', 'sphere-5-SQUEXP-notrans.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2

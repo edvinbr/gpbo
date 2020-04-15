@@ -213,8 +213,8 @@ else: #Multi file
 	regrets = []
 	lengths = []
 	trueys = []
-	globalymin = [0, 0] #check order compared to file read order
-	numRuns = 3
+	globalymin = [-1, -1] #check order compared to file read order
+	numRuns = 4
 	numProblems = 1
 	count = 0
 	for f in sorted(glob.glob(path+'*.csv')):
@@ -226,7 +226,7 @@ else: #Multi file
 		regret = ymins
 		truey = regret + globalymin[count//numRuns]
 		regrets.append(regret)
-		trueys.append(truey)
+		trueys.append(ymins)
 		count += 1
 
 	### Regret plotting
@@ -276,7 +276,7 @@ else: #Multi file
 	### Dataprofile plotting
 
 	r = 0.1
-	numIterations = 50
+	numIterations = 250
 	tsps = np.full((numProblems, numRuns),-1)
 	for i in range(0,numProblems):
 		tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
@@ -288,7 +288,7 @@ else: #Multi file
 	fig, ax1 = plt.subplots()
 	ax1.set_xlabel('alpha')
 	ax1.set_ylabel('ds(alpha)')
-	ax1.plot(dps, color='blue')
+	ax1.plot(dps, color='blue',marker='o')
 	#ax1.set_yscale('log')
 	ax1.tick_params(axis='y')
 	
