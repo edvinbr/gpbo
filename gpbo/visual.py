@@ -6,9 +6,10 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import scipy as sp
 import glob
+import os
+from datetime import datetime
 
 
-# TODO: Add way for different functions
 def f(x, y):
 	return np.log(((4 - 2.1*pow(x*3,2) + pow(x*3,4)/3)*pow(x*3,2) + x*3*y*2 + (-4 + 4*pow(y*2,2))*pow(y*2,2)) - (-1.0316) + 1)
 	#return 2*pow(x,2) - 1.05*pow(x,4) + pow(x,6)/6 + x*y + pow(y,2)
@@ -159,7 +160,6 @@ def tspCalc(y, ymin, r):
 			if (y0 - yi >= (1-r)*(y0 - ymin)):
 				tsp[xidx] = yidx+1
 				break
-	print(tsp)
 	return tsp
 
 def dataProfile(tsps, alpha, d):
@@ -171,6 +171,37 @@ def dataProfile(tsps, alpha, d):
 
 	ds = (1/(tsps.shape[0]*tsps.shape[1]))*numDone
 	return ds
+
+def plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin):
+	dataProfiles = []
+	for trueys in manyTrueys:
+		tsps = np.full((numProblems, numRuns),-1)
+		for i in range(0,numProblems):
+			tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
+			tsps[i] = tsp
+		dps = [0]
+		for alpha in range(0,numIterations):
+			dps.append(dataProfile(tsps, alpha+1,2))
+		dataProfiles.append(dps)
+
+	fig, ax1 = plt.subplots()
+	ax1.set_xlabel('\u03B1')
+	ax1.set_ylabel('Dataprofile d(\u03B1)')
+	labels = ['Matern 5/2, 1e-2', 'Matern 5/2, 1e-4']
+	for idx, dp in enumerate(dataProfiles):
+		ax1.plot(dp, label=labels[idx])
+	ax1.set_xbound(0,numIterations)
+	ax1.set_ybound(0,1)
+	ax1.grid()
+	ax1.tick_params(axis='y')
+	ax1.legend()
+
+	ax1.annotate('\u03C4 = {}'.format(r), xy=(0.01, 0.96), xycoords='axes fraction', fontsize = 10)
+	
+	fig.tight_layout()
+	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+	plt.savefig('results/dataprofile' + timestamp, dpi=600)
+	return
 
 path = sys.argv[1]
 try:
@@ -210,27 +241,38 @@ if not multi:
 else: #Multi file
 	
 	#minyvalue = -1.03162845348987744408920985 #6humpcamel
-	regrets = []
-	lengths = []
-	trueys = []
-	globalymin = [0, 0] #check order compared to file read order
-	numRuns = 3
-	numProblems = 1
-	count = 0
-	for f in sorted(glob.glob(path+'*.csv')):
-		df = pd.read_csv(f, sep=', ', usecols=range(0,16))
-		lengths.append(len(df.index))
-		sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
-		ymins = sepValues['truey at xrecc'].values.astype(float)
-		#regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
-		regret = ymins
-		truey = regret + globalymin[count//numRuns]
-		regrets.append(regret)
-		trueys.append(truey)
-		count += 1
+	manyRegrets = []
+	manyLengths = []
+	manyTrueys = []
+	globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
+	numRuns = 6
+	numProblems = 6
+
+	for entry in os.listdir(path):
+		fullpath = os.path.join(path,entry)
+		if os.path.isdir(fullpath):
+			regrets = []
+			lengths = []
+			trueys = []
+
+			count = 0
+			for f in sorted(glob.glob(fullpath+'/*.csv')):
+				df = pd.read_csv(f, sep=', ', usecols=range(0,16))
+				lengths.append(len(df.index))
+				sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
+				ymins = sepValues['truey at xrecc'].values.astype(float)
+				#regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
+				regret = ymins
+				truey = regret + globalymin[count//numRuns]
+				regrets.append(regret)
+				trueys.append(truey)
+				count += 1
+			manyRegrets.append(regrets)
+			manyLengths.append(lengths)
+			manyTrueys.append(trueys)
 
 	### Regret plotting
-
+	# only does it for first batch of runs
 	maxlength = max(lengths)
 
 	n = len(regrets)
@@ -275,22 +317,9 @@ else: #Multi file
 
 	### Dataprofile plotting
 
-	r = 0.1
-	numIterations = 50
-	tsps = np.full((numProblems, numRuns),-1)
-	for i in range(0,numProblems):
-		tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
-		tsps[i] = tsp
-	dps = [0]
-	for alpha in range(0,numIterations):
-		dps.append(dataProfile(tsps, alpha+1,0))
-
-	fig, ax1 = plt.subplots()
-	ax1.set_xlabel('alpha')
-	ax1.set_ylabel('ds(alpha)')
-	ax1.plot(dps, color='blue')
-	#ax1.set_yscale('log')
-	ax1.tick_params(axis='y')
+	r = 1e-1
+	numIterations = 250
+	plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
+	r = 1e-2
+	plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
 	
-	fig.tight_layout()
-	plt.savefig('results/dataprofiletest', dpi=600)
