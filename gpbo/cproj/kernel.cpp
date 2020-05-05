@@ -245,7 +245,7 @@ double squexp(double *x1, double *x2, int d1, int d2, int D, double* ih, double*
 			int k = j+1;
 			while (V[k]==0){k+=1;}
 			int l = k+1;
-			while (V[k]==0){l+=1;}
+			while (V[l]==0){l+=1;}
 			return ih[l+1]*(x1[l]-x2[l])*ih[k+1]*(x1[k]-x2[k])*ih[j+1]*(x1[j]-x2[j])*ih[i+1]*(x1[i]-x2[i])*double(sign)*core;
 		}
 		else if (P==12){
