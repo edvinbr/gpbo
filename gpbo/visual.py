@@ -213,8 +213,8 @@ else: #Multi file
 	regrets = []
 	lengths = []
 	trueys = []
-	globalymin = [-1, -1] #check order compared to file read order
-	numRuns = 4
+	globalymin = [0, 0] #check order compared to file read order
+	numRuns = 5
 	numProblems = 1
 	count = 0
 	for f in sorted(glob.glob(path+'*.csv')):

@@ -20,7 +20,7 @@ gpbo.core.debugoutput['pathsuffix'] = suffix
 #gpbo.core.debugoutput['tmp'] = True
 
 # dimensionality
-D = 2
+D = 4
 # noise variance
 s = 0.
 # number of step to take
@@ -58,7 +58,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results',str(D)+'Ddeceptive'+timestamp+'.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','4Ddeceptive-e2-0noise-4.csv')
 #C = gpbo.core.config.switchetest(f, D, 10, n, s, 'results', 'deceptive.csv')
 
 # set the target global regret

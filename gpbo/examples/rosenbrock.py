@@ -20,7 +20,7 @@ gpbo.core.debugoutput['pathsuffix'] = suffix
 #gpbo.core.debugoutput['tmp'] = True
 
 # dimensionality
-D = 2
+D = 4
 # noise variance
 s = 0.
 # number of step to take
@@ -35,7 +35,7 @@ def f(x,**ev):
     for i in range(0,D-1):
         sum1 += 100*(z[i+1] - z[i]**2)**2 + (1-z[i])**2
     y = sum1
-    #y = sp.log(y -(0) + 1)
+    y = sp.log(y -(0) + 1)
     # fixed cost
     c = 1.
     # noise
@@ -50,8 +50,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', str(D)+'Drosenbrock'+timestamp+'.csv')
-#C = gpbo.core.config.switchetest(f, D, 10, n, s, 'results', 'rosenbrock.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', '4DRosenbrock-e2-logtransformt-0.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2

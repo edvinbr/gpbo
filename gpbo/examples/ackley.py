@@ -22,7 +22,7 @@ gpbo.core.debugoutput['pathsuffix'] = suffix
 # dimensionality
 D = 2
 # noise variance
-s = 0.
+s = 1e-6
 # number of step to take
 n = 250*(D+1)
 
@@ -58,7 +58,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results',str(D)+'Dackley'+timestamp+'.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results','2DAckley-regr2-noise6-mat52-0.csv')
 #C = gpbo.core.config.switchetest(f, D, 10, n, s, 'results', 'ackley.csv')
 
 # set the target global regret
