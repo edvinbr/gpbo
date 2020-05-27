@@ -54,7 +54,7 @@ def plot_energy_lanscapes(  H,
     plt.ylabel(r'$\gamma$', fontsize=fontsize)
     plt.xlabel(r'$\beta$', fontsize=fontsize)
 
-    filename = 'test_3d'
+    filename = 'test_3d_1'
     savefig(filename + '.eps')
     savefig(filename + '.png')
 
@@ -72,7 +72,7 @@ def plot_energy_lanscapes(  H,
     ax.ticklabel_format(style='sci',scilimits=(-3,4),axis='both')
     ax.xaxis.major.formatter._useMathText = True
 
-    filename = 'test_contour'
+    filename = 'test_contour_1'
     savefig(filename+ '.eps')
     savefig(filename + '.png')
 

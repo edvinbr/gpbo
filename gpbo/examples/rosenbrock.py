@@ -20,11 +20,11 @@ gpbo.core.debugoutput['pathsuffix'] = suffix
 #gpbo.core.debugoutput['tmp'] = True
 
 # dimensionality
-D = 4
+D = 8
 # noise variance
 s = 0.
 # number of step to take
-n = 250*(D+1)
+n = 250
 
 
 #define a simple 2d objective in x which also varies with respect to the environmental variable
@@ -50,7 +50,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', '4DRosenbrock-e2-logtransformt-0.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', '8DRosenbrock-e2-logtransformt-new-1-250steps.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2
