@@ -14,11 +14,22 @@ def f(x, y):
 	return np.log(((4 - 2.1*pow(x*3,2) + pow(x*3,4)/3)*pow(x*3,2) + x*3*y*2 + (-4 + 4*pow(y*2,2))*pow(y*2,2)) - (-1.0316) + 1)
 	#return 2*pow(x,2) - 1.05*pow(x,4) + pow(x,6)/6 + x*y + pow(y,2)
 
-def camel3(x,**ev):
+def camel3(x1,x2):
     #3hump camel funciton
-    z = [5*xi for xi in x]
-    f = 2*z[0]**2-1.05*z[0]**4+(z[0]**6)/6. +z[0]*z[1] + z[1]**2
-    return f
+    z = [x1*1, x2*1]
+    y = 2*z[0]**2-1.05*z[0]**4+(z[0]**6)/6. +z[0]*z[1] + z[1]**2
+    #noise
+    #final = sp.log(y -(0) + 1) * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2))))
+    final = sp.log(y -(0) + 1) + 0.5*sp.random.normal(size=(len(x1),len(x2)))
+    return final
+
+def camel6(x1, x2):
+    # Scale axes, [-3,3] and [-2,2]
+    z = [x1*3, x2*2]
+    y = (4 - 2.1*z[0]**2 + z[0]**4/3)*z[0]**2 + z[0]*z[1] + (-4 + 4*z[1]**2)*z[1]**2
+    #y = (4 - 2.1*pow(x[0],2) + pow(x[0],4)/3)*pow(x[0],2) + x[0]*x[1] + (-4 + 4*pow(x[1],2))*pow(x[1],2)
+    y = sp.log(y - (-1.03162845348987744408920985) + 1)
+    return y
 
 def michalewicz(x1, x2):
     # Scale axes, 
@@ -96,6 +107,52 @@ def ackley(x1,x2):
     y = -20*sp.exp(-(1/2)*sp.sqrt(1/2*sum1)) - sp.exp((1/2)*sum2) + 20 + sp.exp(1)
     return y
 
+def rastrigin(x1,x2):
+    # Scale axes, 
+    z = [x1*1.28, x2*1.28]#[x1*5.12, x2*5.12]#
+    sum1 = 0
+    for i in range(0,2):
+        sum1 += z[i]**2 - 10*sp.cos(2*sp.pi*z[i])
+    y = 10*2 + sum1
+    # noise
+    #s = (80-0)*0.4#1e-2 #variance
+    #n = np.abs(sp.random.normal(size=(len(x1),len(x2)))) * sp.sqrt(s)
+    #print('y {} + n {}'.format(y,n))
+    #final = y + n
+    #final = sp.log(final -(0) + 1)
+    #print('transformed y {}'.format(final))
+    #final = sp.log(y * sp.exp(0.05*sp.random.normal(size=(len(x1),len(x2)))) - (0) + 1)
+    final = sp.log(y -(0) + 1)  + 0.05*sp.random.normal(size=(len(x1),len(x2)))
+    return -final#y + n
+
+def sphere(x1,x2):
+    # Scale axes, 
+    z = [x1*5.12, x2*5.12]
+    sum1 = 0
+    for i in range(0,2):
+        sum1 += z[i]**2
+    y = sum1
+    #y = sp.log(sum1 -(0) + 1)
+    # noise
+    s = (45-0)*0.1#1e-2 #variance
+    n = np.abs(sp.random.normal(size=(len(x1),len(x2))) * sp.sqrt(s))
+    print('y {} + n {}'.format(y,n))
+    final = y + n
+    final = sp.log(final -(0) + 1)
+    print('transformed y {}'.format(final))
+    return final#y + n
+
+def rosenbrock(x1,x2):
+    # Scale axes, 
+    z = [x1*2.048, x2*2.048]#[x1*5, x2*5]
+    sum1 = 0
+    for i in range(0,2-1):
+        sum1 += 100*(z[i+1] - z[i]**2)**2 + (1-z[i])**2
+    y = sum1
+    y = sp.log(y -(0) + 1)
+    # noise
+    #final = sp.log(y * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2)))) - (0) + 1)
+    return y
 
 
 def visual3d(f): #TODO
@@ -106,9 +163,12 @@ def visual3d(f): #TODO
 	y = df['y'].values
 	#y = np.exp(y) - 2
 
+	# only when not plotting queried points
+	x1Bound = [-5,5]
+	x2Bound = [-5,5]
 	# TODO: user defined space
-	xRange = np.linspace(x1Bound[0], x1Bound[1],100)
-	yRange = np.linspace(x2Bound[0], x2Bound[1],100)
+	xRange = np.linspace(x1Bound[0], x1Bound[1],300)
+	yRange = np.linspace(x2Bound[0], x2Bound[1],300)
 
 	X, Y = np.meshgrid(xRange, yRange)
 	Z = f(X, Y)
@@ -116,13 +176,16 @@ def visual3d(f): #TODO
 
 	fig = plt.figure()
 	ax = fig.add_subplot(111, projection='3d')
-	ax.scatter(x1, x2, y, c='red')
-	ax.plot_surface(X, Y, Z, cmap='jet', rcount=100, ccount=100)
+	#ax.scatter(x1, x2, y, c='red')
+	ax.plot_surface(X, Y, Z, cmap='jet', rcount=500, ccount=500)
 	#ax.plot_wireframe(X, Y, Z, rcount=100, ccount=100)
 	ax.set_xlabel('x0')
 	ax.set_ylabel('x1')
 	ax.set_zlabel('y')
-	plt.savefig('results/test3d', dpi=600)
+	print(ax.get_zlim())
+	print(ax.get_zlim()[::-1])
+	ax.set_zlim(ax.get_zlim()[::-1])
+	plt.savefig('results/test3d', dpi=300)
 	return
 
 def visualize(f, path):
@@ -147,10 +210,11 @@ def visualize(f, path):
 	ax.set_xlabel('x0')
 	ax.set_ylabel('x1')
 	ax.set_zlabel('y')
-	plt.savefig(path, dpi=600)
+	plt.savefig(path, dpi=300)
 
 	return 
 
+# Calculate the performance measure tsp: number of function evalutations required to converge
 def tspCalc(y, ymin, r):
 	tsp = np.full(len(y), -1)
 
@@ -162,11 +226,12 @@ def tspCalc(y, ymin, r):
 				break
 	return tsp
 
+# Calculate how many of the runs converge within alpha function evaluations
 def dataProfile(tsps, alpha, d):
 	numDone = 0
 	for tsp in tsps:
 		for tr in tsp:
-			if (tr/(d+1) <= alpha and tr > 0):
+			if (tr <= alpha and tr > 0):
 				numDone += 1
 
 	ds = (1/(tsps.shape[0]*tsps.shape[1]))*numDone
@@ -174,20 +239,23 @@ def dataProfile(tsps, alpha, d):
 
 def plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin):
 	dataProfiles = []
+	d = 2
+	numIterations = 84
 	for trueys in manyTrueys:
 		tsps = np.full((numProblems, numRuns),-1)
 		for i in range(0,numProblems):
-			tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], globalymin[i], r)
+			tsp = tspCalc(trueys[i*numRuns:(i+1)*numRuns], 0, r)#globalymin[i], r)
 			tsps[i] = tsp
 		dps = [0]
 		for alpha in range(0,numIterations):
-			dps.append(dataProfile(tsps, alpha+1,2))
+			dps.append(dataProfile(tsps, (alpha+1)*(d+1),0))
 		dataProfiles.append(dps)
+		d += 2
 
 	fig, ax1 = plt.subplots()
 	ax1.set_xlabel('\u03B1')
 	ax1.set_ylabel('Dataprofile d(\u03B1)')
-	labels = ['Matern 5/2, 1e-2', 'Matern 5/2, 1e-4']
+	labels = ['BLOSSOM 1e-2', '4D']
 	for idx, dp in enumerate(dataProfiles):
 		ax1.plot(dp, label=labels[idx])
 	ax1.set_xbound(0,numIterations)
@@ -196,11 +264,68 @@ def plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymi
 	ax1.tick_params(axis='y')
 	ax1.legend()
 
-	ax1.annotate('\u03C4 = {}'.format(r), xy=(0.01, 0.96), xycoords='axes fraction', fontsize = 10)
+	ax1.annotate('\u03C4 = {}'.format(r), xy=(0.01, 0.96), xycoords='axes fraction', fontsize = 12)
 	
 	fig.tight_layout()
 	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-	plt.savefig('results/dataprofile' + timestamp, dpi=600)
+	plt.savefig('results/dataprofile' + timestamp, dpi=300)
+	return
+
+def plotRegret(manyRegrets, manyLengths):
+	# only does it for first batch of runs
+	manyYs = []
+	manyFracleft = []
+	for idx, regrets in enumerate(manyRegrets):
+		lengths = manyLengths[idx]
+		maxlength = max(lengths)
+
+		n = len(regrets)
+		
+		ys = []
+		fracleft = []
+		for i in range(0,maxlength):
+			sum = 0
+			num = 0
+			for l in regrets:
+				if i < len(l):
+					sum += l[i]
+					num += 1
+			ys.append(sum/num)
+			fracleft.append(num/n)	
+		
+		regretsum = 0
+		stepsum = 0
+		for l in regrets:
+			regretsum += l[-1]
+			stepsum += len(l)
+		avgregret = regretsum/n
+		avgstep = stepsum/n
+
+		print('Avg regret: '+str(avgregret))
+		print('Avg steps: '+str(avgstep))
+		manyYs.append(ys)
+		manyFracleft.append(fracleft)
+
+	fig, ax1 = plt.subplots()
+	ax1.set_xlabel('Step')
+	ax1.set_ylabel('Regret')
+	labels = ['Modified \u03C3 0.05', 'Unmodified \u03C3 0.005', 'Modified \u03C3 0.005', 'Unmodified \u03C3 0.05']
+	for idx, ys in enumerate(manyYs):
+		ax1.plot(ys, label=labels[idx])#, color='blue')
+	ax1.set_yscale('log')
+	ax1.tick_params(axis='y')
+
+	
+	ax2 = ax1.twinx()
+	ax2.set_ylabel('Fraction still running')
+	for fracleft in manyFracleft:
+		ax2.plot(fracleft, linestyle='dashed')#color='blue',
+	ax2.tick_params(axis='y')
+
+	ax1.legend()
+	fig.tight_layout()
+	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+	plt.savefig('results/multiregret' + timestamp, dpi=300)
 	return
 
 path = sys.argv[1]
@@ -231,13 +356,13 @@ if not multi:
 	regret = sp.exp(ymins) - 1
 	truey = regret + minyvalue
 
-	visual3d(ackley)
+	visual3d(camel3)
 
 	fig = plt.figure()
 	print(regret)
 	plt.plot(regret)
 	plt.yscale('log')
-	plt.savefig('results/test', dpi=600)
+	plt.savefig('results/test', dpi=300)
 else: #Multi file
 	
 	#minyvalue = -1.03162845348987744408920985 #6humpcamel
@@ -245,11 +370,12 @@ else: #Multi file
 	manyLengths = []
 	manyTrueys = []
 	globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
-	numRuns = 6
-	numProblems = 6
+	numRuns = 4
+	numProblems = 1
 
 	for entry in os.listdir(path):
 		fullpath = os.path.join(path,entry)
+		print('path {}, entry {}, fullpath {}'.format(path,entry,fullpath))
 		if os.path.isdir(fullpath):
 			regrets = []
 			lengths = []
@@ -257,13 +383,13 @@ else: #Multi file
 
 			count = 0
 			for f in sorted(glob.glob(fullpath+'/*.csv')):
-				df = pd.read_csv(f, sep=', ', usecols=range(0,16))
+				df = pd.read_csv(f, sep=', ')#, usecols=range(0,16))
 				lengths.append(len(df.index))
 				sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
 				ymins = sepValues['truey at xrecc'].values.astype(float)
-				#regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
-				regret = ymins
-				truey = regret + globalymin[count//numRuns]
+				regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
+				#regret = ymins
+				truey = regret #+ globalymin[count//numRuns]
 				regrets.append(regret)
 				trueys.append(truey)
 				count += 1
@@ -272,48 +398,7 @@ else: #Multi file
 			manyTrueys.append(trueys)
 
 	### Regret plotting
-	# only does it for first batch of runs
-	maxlength = max(lengths)
-
-	n = len(regrets)
-	
-	ys = []
-	fracleft = []
-	for i in range(0,maxlength):
-		sum = 0
-		num = 0
-		for l in regrets:
-			if i < len(l):
-				sum += l[i]
-				num += 1
-		ys.append(sum/num)
-		fracleft.append(num/n)	
-	
-	regretsum = 0
-	stepsum = 0
-	for l in regrets:
-		regretsum += l[-1]
-		stepsum += len(l)
-	avgregret = regretsum/n
-	avgstep = stepsum/n
-
-	print('Avg regret: '+str(avgregret))
-	print('Avg steps: '+str(avgstep))
-
-	fig, ax1 = plt.subplots()
-	ax1.set_xlabel('Step')
-	ax1.set_ylabel('Regret')
-	ax1.plot(ys, color='blue')
-	ax1.set_yscale('log')
-	ax1.tick_params(axis='y')
-	
-	ax2 = ax1.twinx()
-	ax2.set_ylabel('Fraction still running')
-	ax2.plot(fracleft, color='blue', linestyle='dashed')
-	ax2.tick_params(axis='y')
-
-	fig.tight_layout()
-	plt.savefig('results/multiregret', dpi=600)
+	plotRegret(manyRegrets, manyLengths)
 
 	### Dataprofile plotting
 
