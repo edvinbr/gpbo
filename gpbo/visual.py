@@ -8,6 +8,7 @@ import scipy as sp
 import glob
 import os
 from datetime import datetime
+from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 
 
 def f(x, y):
@@ -16,7 +17,7 @@ def f(x, y):
 
 def camel3(x1,x2):
     #3hump camel funciton
-    z = [x1*1, x2*1]
+    z = [x1*5, x2*5]
     y = 2*z[0]**2-1.05*z[0]**4+(z[0]**6)/6. +z[0]*z[1] + z[1]**2
     #noise
     #final = sp.log(y -(0) + 1) * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2))))
@@ -109,21 +110,14 @@ def ackley(x1,x2):
 
 def rastrigin(x1,x2):
     # Scale axes, 
-    z = [x1*1.28, x2*1.28]#[x1*5.12, x2*5.12]#
+    z = [x1*5.12, x2*5.12]#[x1*1.28, x2*1.28]#
     sum1 = 0
     for i in range(0,2):
         sum1 += z[i]**2 - 10*sp.cos(2*sp.pi*z[i])
     y = 10*2 + sum1
     # noise
-    #s = (80-0)*0.4#1e-2 #variance
-    #n = np.abs(sp.random.normal(size=(len(x1),len(x2)))) * sp.sqrt(s)
-    #print('y {} + n {}'.format(y,n))
-    #final = y + n
-    #final = sp.log(final -(0) + 1)
-    #print('transformed y {}'.format(final))
-    #final = sp.log(y * sp.exp(0.05*sp.random.normal(size=(len(x1),len(x2)))) - (0) + 1)
-    final = sp.log(y -(0) + 1)  + 0.05*sp.random.normal(size=(len(x1),len(x2)))
-    return -final#y + n
+    final = sp.log(y -(0) + 1)  + 0.005*sp.random.normal(size=(len(x1),len(x2)))
+    return final
 
 def sphere(x1,x2):
     # Scale axes, 
@@ -164,8 +158,8 @@ def visual3d(f): #TODO
 	#y = np.exp(y) - 2
 
 	# only when not plotting queried points
-	x1Bound = [-5,5]
-	x2Bound = [-5,5]
+	x1Bound = [-1, 1]
+	x2Bound = [-1, 1]
 	# TODO: user defined space
 	xRange = np.linspace(x1Bound[0], x1Bound[1],300)
 	yRange = np.linspace(x2Bound[0], x2Bound[1],300)
@@ -174,18 +168,36 @@ def visual3d(f): #TODO
 	Z = f(X, Y)
 	#Z, _, _ = camel3([X, Y])
 
-	fig = plt.figure()
-	ax = fig.add_subplot(111, projection='3d')
+	fig = plt.figure(figsize=(12.8, 4.8)) #default (6.4, 4.8)
+	# First subplot
+	ax = fig.add_subplot(121, projection='3d')
 	#ax.scatter(x1, x2, y, c='red')
 	ax.plot_surface(X, Y, Z, cmap='jet', rcount=500, ccount=500)
 	#ax.plot_wireframe(X, Y, Z, rcount=100, ccount=100)
 	ax.set_xlabel('x0')
 	ax.set_ylabel('x1')
 	ax.set_zlabel('y')
-	print(ax.get_zlim())
-	print(ax.get_zlim()[::-1])
+	#print(ax.get_zlim())
+	#print(ax.get_zlim()[::-1])
 	ax.set_zlim(ax.get_zlim()[::-1])
-	plt.savefig('results/test3d', dpi=300)
+
+	# Second subplot
+	x1Bound = [-0.2,0.2]
+	x2Bound = [-0.2,0.2]
+	xRange = np.linspace(x1Bound[0], x1Bound[1],300)
+	yRange = np.linspace(x2Bound[0], x2Bound[1],300)
+	X, Y = np.meshgrid(xRange, yRange)
+	Z = f(X, Y)
+
+	ax = fig.add_subplot(122, projection='3d')
+	ax.plot_surface(X, Y, Z, cmap='jet', rcount=500, ccount=500)
+	ax.set_xlabel('x0')
+	ax.set_ylabel('x1')
+	ax.set_zlabel('y')
+	ax.set_zlim(ax.get_zlim()[::-1])
+
+	plt.tight_layout()
+	plt.savefig('results/test3d', dpi=200)
 	return
 
 def visualize(f, path):
@@ -271,7 +283,7 @@ def plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymi
 	plt.savefig('results/dataprofile' + timestamp, dpi=300)
 	return
 
-def plotRegret(manyRegrets, manyLengths):
+def plotRegret(manyRegrets, manyLengths, plotOrder):
 	# only does it for first batch of runs
 	manyYs = []
 	manyFracleft = []
@@ -283,7 +295,7 @@ def plotRegret(manyRegrets, manyLengths):
 		
 		ys = []
 		fracleft = []
-		for i in range(0,maxlength):
+		for i in range(0,min(maxlength,250)):
 			sum = 0
 			num = 0
 			for l in regrets:
@@ -309,9 +321,23 @@ def plotRegret(manyRegrets, manyLengths):
 	fig, ax1 = plt.subplots()
 	ax1.set_xlabel('Step')
 	ax1.set_ylabel('Regret')
-	labels = ['Modified \u03C3 0.05', 'Unmodified \u03C3 0.005', 'Modified \u03C3 0.005', 'Unmodified \u03C3 0.05']
+	labels = ['BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'PES \u03C3=0', 'BLOSSOM \u03C3=0.5', 'PES \u03C3=0.005']
+	#labels = ['PES \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'BLOSSOM \u03C3=0.5', 'BLOSSOM \u03C3=0.005', 'PES \u03C3=0']
+	#labels = ['BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0']#, 'BLOSSOM \u03C3=0.5'
+	#labels = ['BLOSSOM 2D', 'BLOSSOM 8D', 'BLOSSOM 4D']
+	#labels = ['unmodified \u03C3=0.005', 'modified \u03C3=0.005', 'unmodified \u03C3=0.05', 'modified \u03C3=0.05', 'unmodified \u03C3=0',]
 	for idx, ys in enumerate(manyYs):
-		ax1.plot(ys, label=labels[idx])#, color='blue')
+		linestyle = 'solid'
+		if(plotOrder[idx].find('pes') >=0):
+			linestyle = 'dashed'
+		color = 'green'
+		if(plotOrder[idx].find('low') >= 0):
+			color='blue'
+		elif(plotOrder[idx].find('med') >= 0):
+			color='purple'
+		elif(plotOrder[idx].find('high') >= 0):
+			color='red'
+		ax1.plot(ys, label=labels[idx], linestyle=linestyle, color=color)
 	ax1.set_yscale('log')
 	ax1.tick_params(axis='y')
 
@@ -319,7 +345,8 @@ def plotRegret(manyRegrets, manyLengths):
 	ax2 = ax1.twinx()
 	ax2.set_ylabel('Fraction still running')
 	for fracleft in manyFracleft:
-		ax2.plot(fracleft, linestyle='dashed')#color='blue',
+		ax2.plot(fracleft, linestyle='dotted')#color='blue',
+	ax2.set_ylim(-0.05, 1.05)
 	ax2.tick_params(axis='y')
 
 	ax1.legend()
@@ -372,11 +399,26 @@ else: #Multi file
 	globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
 	numRuns = 4
 	numProblems = 1
+	plotOrder = []
 
 	for entry in os.listdir(path):
 		fullpath = os.path.join(path,entry)
 		print('path {}, entry {}, fullpath {}'.format(path,entry,fullpath))
 		if os.path.isdir(fullpath):
+			if(entry.find('pes') >= 0): #match find to namingscheme
+				plotEntry = 'pes'
+			else:
+				plotEntry = 'blossom'
+			if(entry.find('e0005') >= 0):
+				plotEntry += 'low'
+			elif(entry.find('e005') >= 0):
+				plotEntry += 'med'
+			elif(entry.find('e05') >= 0):
+				plotEntry += 'high'
+			else:
+				plotEntry += 'none'
+			plotOrder.append(plotEntry)
+
 			regrets = []
 			lengths = []
 			trueys = []
@@ -396,9 +438,9 @@ else: #Multi file
 			manyRegrets.append(regrets)
 			manyLengths.append(lengths)
 			manyTrueys.append(trueys)
-
+	print(plotOrder)
 	### Regret plotting
-	plotRegret(manyRegrets, manyLengths)
+	plotRegret(manyRegrets, manyLengths, plotOrder)
 
 	### Dataprofile plotting
 
