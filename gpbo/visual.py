@@ -503,7 +503,7 @@ else: #Multi file
 
 	r = 1e-1
 	numIterations = 250
-	plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
+	#plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
 	r = 1e-2
-	plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
+	#plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
 	
