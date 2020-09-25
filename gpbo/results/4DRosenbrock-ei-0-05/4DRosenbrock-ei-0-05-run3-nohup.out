@@ -1,0 +1,500 @@
+INFO:GP:initializing Y
+INFO:GP:initializing inference method
+INFO:GP:adding kernel and likelihood as parameters
+removed robo import in opts.py l17 due to theano errors
+f inputs x:[[-0.73120343  0.17416391 -0.84278298  0.71222845]] ev:{} outputs y:6.834238080161076 (n:-0.017330700005566687) c:1.0
+f inputs x:[[ 0.25838685 -0.44811761 -0.39839436  0.67268322]] ev:{} outputs y:6.197715632018055 (n:0.02956821518077485) c:1.0
+f inputs x:[[-0.81416555  0.06872504  0.03862928  0.53149394]] ev:{} outputs y:6.708937111057333 (n:-0.0050869265222335085) c:1.0
+f inputs x:[[ 0.02491485  0.44441734  0.64510032 -0.03235894]] ev:{} outputs y:6.202105160283537 (n:0.12239204216359777) c:1.0
+f inputs x:[[ 0.92000988  0.22360129 -0.40740672  0.00591557]] ev:{} outputs y:7.058893059229649 (n:0.040121779211375906) c:1.0
+f inputs x:[[ 0.23984309 -0.55034612 -0.38572436  0.73752086]] ev:{} outputs y:6.514029355700047 (n:-0.036057573618371246) c:1.0
+num acquisition: 1, time elapsed: 0.33s
+f inputs x:[[ 0.0249161   0.44441923  0.64510535 -0.03236121]] ev:{} outputs y:6.152119149955202 (n:0.07237740035396957) c:1.0
+num acquisition: 2, time elapsed: 0.46s
+f inputs x:[[ 0.03883653  0.46557074  0.70109016 -0.05768299]] ev:{} outputs y:6.371627996273051 (n:-0.016298849374937894) c:1.0
+num acquisition: 3, time elapsed: 0.76s
+f inputs x:[[ 0.00849542  0.41946843  0.57906462 -0.00249112]] ev:{} outputs y:5.668215025292685 (n:-0.01899758225654155) c:1.0
+num acquisition: 4, time elapsed: 0.95s
+f inputs x:[[-0.00159303  0.40413925  0.5384908   0.01586035]] ev:{} outputs y:5.467692677112212 (n:0.037775213964420934) c:1.0
+num acquisition: 5, time elapsed: 1.13s
+f inputs x:[[0.02824803 0.38569241 0.46295374 0.02962153]] ev:{} outputs y:4.94342105146415 (n:-0.030430817411494344) c:1.0
+num acquisition: 6, time elapsed: 1.77s
+f inputs x:[[0.07734116 0.36546568 0.36971167 0.04146437]] ev:{} outputs y:4.375004599553936 (n:-0.030377592979740554) c:1.0
+num acquisition: 7, time elapsed: 1.94s
+f inputs x:[[0.12025513 0.33368764 0.24558705 0.06674736]] ev:{} outputs y:3.728241459879535 (n:-0.013624553202696966) c:1.0
+num acquisition: 8, time elapsed: 2.09s
+f inputs x:[[0.10061102 0.2830672  0.09455263 0.12418037]] ev:{} outputs y:3.5677910217565643 (n:-0.07117519542735981) c:1.0
+num acquisition: 9, time elapsed: 2.29s
+f inputs x:[[0.19250325 0.41789571 0.13252259 0.26572716]] ev:{} outputs y:4.504085325587209 (n:-0.0432205494676824) c:1.0
+num acquisition: 10, time elapsed: 2.55s
+f inputs x:[[ 0.0827116   0.18852547  0.1065145  -0.04785091]] ev:{} outputs y:2.8386770506685997 (n:-0.054386610250269155) c:1.0
+num acquisition: 11, time elapsed: 2.71s
+f inputs x:[[ 0.01533623  0.08760754  0.02621859 -0.27292404]] ev:{} outputs y:3.6168320069501467 (n:-0.02868566917054436) c:1.0
+num acquisition: 12, time elapsed: 2.85s
+f inputs x:[[ 0.15452249  0.01930913  0.16982115 -0.02457229]] ev:{} outputs y:2.8401027590829595 (n:-0.05601341321353917) c:1.0
+num acquisition: 13, time elapsed: 3.03s
+f inputs x:[[ 0.20225668  0.12558232  0.1176658  -0.07969949]] ev:{} outputs y:2.448047123596644 (n:0.03591238424409522) c:1.0
+num acquisition: 14, time elapsed: 3.37s
+f inputs x:[[ 0.33435265  0.12865805  0.1545814  -0.17374676]] ev:{} outputs y:3.522151183790026 (n:0.01854458860295889) c:1.0
+num acquisition: 15, time elapsed: 3.59s
+f inputs x:[[-1. -1. -1. -1.]] ev:{} outputs y:9.330396541597512 (n:-0.03855130795709862) c:1.0
+num acquisition: 16, time elapsed: 3.70s
+f inputs x:[[ 1. -1.  1.  1.]] ev:{} outputs y:8.561473812947733 (n:0.0787795225658621) c:1.0
+num acquisition: 17, time elapsed: 3.79s
+f inputs x:[[-1. -1.  1. -1.]] ev:{} outputs y:9.02904280121204 (n:0.008095388318109636) c:1.0
+num acquisition: 18, time elapsed: 3.90s
+f inputs x:[[ 0.21465929  0.08033316 -0.01785407 -0.03485861]] ev:{} outputs y:1.458845778281607 (n:0.047131302734395995) c:1.0
+num acquisition: 19, time elapsed: 4.03s
+f inputs x:[[ 0.23079689 -0.01125027 -0.17388401 -0.03204198]] ev:{} outputs y:3.3617702734858406 (n:0.07857445449349305) c:1.0
+num acquisition: 20, time elapsed: 4.20s
+f inputs x:[[0.28346958 0.10709544 0.00086896 0.04185594]] ev:{} outputs y:1.649477389917969 (n:0.01699269081542199) c:1.0
+num acquisition: 21, time elapsed: 4.44s
+f inputs x:[[ 0.24072914  0.18080561 -0.05618485 -0.04658821]] ev:{} outputs y:2.4866534941110383 (n:-0.002885537937045121) c:1.0
+num acquisition: 22, time elapsed: 4.61s
+f inputs x:[[-1.  1. -1. -1.]] ev:{} outputs y:9.020308416357867 (n:-0.0006389965360633794) c:1.0
+num acquisition: 23, time elapsed: 4.74s
+f inputs x:[[1. 1. 1. 1.]] ev:{} outputs y:7.220436419369198 (n:-0.013943604254348325) c:1.0
+num acquisition: 24, time elapsed: 4.84s
+f inputs x:[[0.21937649 0.04307666 0.01055953 0.01678324]] ev:{} outputs y:1.5377395663517897 (n:0.029839732753683307) c:1.0
+num acquisition: 25, time elapsed: 5.02s
+f inputs x:[[ 1. -1.  1. -1.]] ev:{} outputs y:9.082854968913487 (n:0.06289806251686031) c:1.0
+num acquisition: 26, time elapsed: 5.12s
+f inputs x:[[-1.  1.  1. -1.]] ev:{} outputs y:8.57772986364559 (n:0.09503557326371888) c:1.0
+num acquisition: 27, time elapsed: 5.22s
+f inputs x:[[ 0.60845275 -0.009408    0.23284008  0.31481975]] ev:{} outputs y:5.653408523726323 (n:-0.01520719110722333) c:1.0
+num acquisition: 28, time elapsed: 5.33s
+f inputs x:[[ 1. -1. -1. -1.]] ev:{} outputs y:9.317534667517938 (n:-0.050713888632212135) c:1.0
+num acquisition: 29, time elapsed: 5.47s
+f inputs x:[[-1. -1.  1.  1.]] ev:{} outputs y:8.496680863415776 (n:0.0122921001647293) c:1.0
+num acquisition: 30, time elapsed: 5.57s
+f inputs x:[[ 1.  1.  1. -1.]] ev:{} outputs y:8.465651617159132 (n:-0.015345324241074002) c:1.0
+num acquisition: 31, time elapsed: 5.67s
+f inputs x:[[-1.  1.  1.  1.]] ev:{} outputs y:7.279598314568378 (n:0.039326347467348234) c:1.0
+num acquisition: 32, time elapsed: 5.78s
+f inputs x:[[ 1.  1. -1.  1.]] ev:{} outputs y:8.464919402686148 (n:-0.01777488769572355) c:1.0
+num acquisition: 33, time elapsed: 5.88s
+f inputs x:[[ 1.  1. -1. -1.]] ev:{} outputs y:9.030931693575724 (n:0.010974787179096519) c:1.0
+num acquisition: 34, time elapsed: 5.99s
+f inputs x:[[-1. -1. -1.  1.]] ev:{} outputs y:9.012112870893546 (n:-0.00982406836531494) c:1.0
+num acquisition: 35, time elapsed: 6.11s
+f inputs x:[[ 0.26091929  0.05107906  0.00726981 -0.02846189]] ev:{} outputs y:1.9024202979654208 (n:0.014351144057477583) c:1.0
+num acquisition: 36, time elapsed: 6.24s
+f inputs x:[[-1.  1. -1.  1.]] ev:{} outputs y:8.571287191391935 (n:0.0868984281408883) c:1.0
+num acquisition: 37, time elapsed: 6.39s
+f inputs x:[[ 1. -1. -1.  1.]] ev:{} outputs y:9.002848837030006 (n:-0.01809857586392346) c:1.0
+num acquisition: 38, time elapsed: 6.50s
+f inputs x:[[ 0.19059555  0.07517585 -0.00408926  0.04145619]] ev:{} outputs y:1.2278724640476717 (n:-0.14002767920283518) c:1.0
+num acquisition: 39, time elapsed: 6.77s
+f inputs x:[[ 0.12481622  0.06894019 -0.03332706  0.01841133]] ev:{} outputs y:1.5689753228199548 (n:-0.019241766110194496) c:1.0
+num acquisition: 40, time elapsed: 7.07s
+f inputs x:[[ 0.04720379 -0.07262089  0.21387615 -1.        ]] ev:{} outputs y:6.328282490665025 (n:0.06498978056833146) c:1.0
+num acquisition: 41, time elapsed: 7.23s
+f inputs x:[[0.01194277 0.12907189 1.         1.        ]] ev:{} outputs y:6.757552806578227 (n:-0.0022904126473841844) c:1.0
+num acquisition: 42, time elapsed: 7.37s
+f inputs x:[[ 0.19677414  0.08954785 -0.00945535  0.06479276]] ev:{} outputs y:1.6117582965353394 (n:-0.02494008537364226) c:1.0
+num acquisition: 43, time elapsed: 7.52s
+f inputs x:[[-0.38327535 -1.          0.03039229 -0.03852974]] ev:{} outputs y:7.8420531130461075 (n:0.045501874224549044) c:1.0
+num acquisition: 44, time elapsed: 7.65s
+f inputs x:[[1.         1.         0.29782111 0.09355969]] ev:{} outputs y:7.404370292989231 (n:-0.06416237250746899) c:1.0
+num acquisition: 45, time elapsed: 7.78s
+f inputs x:[[-0.07276254  1.          0.17035203  1.        ]] ev:{} outputs y:7.720250956884965 (n:-0.0046421760346195854) c:1.0
+num acquisition: 46, time elapsed: 7.91s
+f inputs x:[[-1.          0.12408862 -0.02804242 -0.53856709]] ev:{} outputs y:7.438863398054384 (n:0.007365715002815555) c:1.0
+num acquisition: 47, time elapsed: 8.08s
+f inputs x:[[-0.00135295  1.          0.03481867 -1.        ]] ev:{} outputs y:7.745938489005956 (n:-0.0958760904507622) c:1.0
+num acquisition: 48, time elapsed: 8.21s
+f inputs x:[[-0.05920763 -0.00935518 -1.         -1.        ]] ev:{} outputs y:8.317620863758714 (n:-0.055451942029189266) c:1.0
+num acquisition: 49, time elapsed: 8.36s
+f inputs x:[[0.18707882 0.06312432 0.00041442 0.03991453]] ev:{} outputs y:1.3767536047823745 (n:0.025817589718218056) c:1.0
+num acquisition: 50, time elapsed: 8.57s
+f inputs x:[[0.18615367 0.06338586 0.00060699 0.03815527]] ev:{} outputs y:1.360944849940927 (n:0.026818222059393538) c:1.0
+num acquisition: 51, time elapsed: 8.75s
+f inputs x:[[0.18520663 0.06380214 0.0009105  0.03614625]] ev:{} outputs y:1.3793907634521096 (n:0.06410887121932604) c:1.0
+num acquisition: 52, time elapsed: 8.95s
+f inputs x:[[-1.          0.07784409  1.          0.13315896]] ev:{} outputs y:8.18057066025243 (n:-0.004527326532228151) c:1.0
+num acquisition: 53, time elapsed: 9.11s
+f inputs x:[[0.18483733 0.06451378 0.00099912 0.03442429]] ev:{} outputs y:1.2802471616625917 (n:-0.01954576514232359) c:1.0
+num acquisition: 54, time elapsed: 9.29s
+f inputs x:[[ 0.17241649  0.11121641 -1.          1.        ]] ev:{} outputs y:6.90936960582486 (n:0.09156164145216976) c:1.0
+num acquisition: 55, time elapsed: 9.44s
+f inputs x:[[ 1.          0.02302502  0.16446077 -1.        ]] ev:{} outputs y:7.704538636510338 (n:0.007549093039446274) c:1.0
+num acquisition: 56, time elapsed: 9.64s
+f inputs x:[[-1.          1.          0.02692084  0.11708622]] ev:{} outputs y:7.711848877123166 (n:0.01936062678791404) c:1.0
+num acquisition: 57, time elapsed: 9.82s
+f inputs x:[[0.18353256 0.06281566 0.0017894  0.03580622]] ev:{} outputs y:1.255735767128614 (n:-0.055724602751328046) c:1.0
+num acquisition: 58, time elapsed: 10.04s
+f inputs x:[[ 0.13408288 -1.          1.          0.08571929]] ev:{} outputs y:7.835737476808246 (n:-0.0035904155714106497) c:1.0
+num acquisition: 59, time elapsed: 10.22s
+f inputs x:[[0.1817336  0.05989429 0.00283548 0.03839054]] ev:{} outputs y:1.3398080100504175 (n:0.0038543354377973634) c:1.0
+num acquisition: 60, time elapsed: 10.42s
+f inputs x:[[0.18111526 0.0606098  0.00316807 0.03633868]] ev:{} outputs y:1.316559254252795 (n:0.00035320481056471726) c:1.0
+num acquisition: 61, time elapsed: 10.62s
+f inputs x:[[ 1.          0.14496361 -0.08815871  1.        ]] ev:{} outputs y:7.483634905995836 (n:-0.08493931181252315) c:1.0
+num acquisition: 62, time elapsed: 10.80s
+f inputs x:[[1.         0.1935597  1.         0.02580546]] ev:{} outputs y:8.14416851474276 (n:-0.021666949205383604) c:1.0
+num acquisition: 63, time elapsed: 10.97s
+f inputs x:[[0.18036512 0.05921914 0.00367563 0.03743606]] ev:{} outputs y:1.3104270017040047 (n:-0.016628284506760144) c:1.0
+num acquisition: 64, time elapsed: 11.24s
+f inputs x:[[0.17925767 0.05920116 0.00428231 0.03599433]] ev:{} outputs y:1.2940117117405165 (n:-0.019548981846693403) c:1.0
+num acquisition: 65, time elapsed: 11.54s
+f inputs x:[[0.1778163  0.05900635 0.00511125 0.03449868]] ev:{} outputs y:1.222162735742349 (n:-0.07791520304037582) c:1.0
+num acquisition: 66, time elapsed: 11.81s
+f inputs x:[[0.1746582  0.05509332 0.0063977  0.03679945]] ev:{} outputs y:1.3267988114377163 (n:0.0018847738207454286) c:1.0
+num acquisition: 67, time elapsed: 12.04s
+f inputs x:[[0.17451018 0.05675763 0.00676636 0.03410868]] ev:{} outputs y:1.2949998806898362 (n:-0.003816439725092362) c:1.0
+num acquisition: 68, time elapsed: 12.30s
+f inputs x:[[-0.01236936 -1.         -1.          0.07356149]] ev:{} outputs y:8.668114999562567 (n:-0.02673416818076605) c:1.0
+num acquisition: 69, time elapsed: 12.48s
+f inputs x:[[0.17330456 0.05578526 0.00704992 0.03402652]] ev:{} outputs y:1.2276165849397829 (n:-0.07221102249109144) c:1.0
+num acquisition: 70, time elapsed: 12.75s
+f inputs x:[[-0.14731647 -0.20431916  0.11955311  1.        ]] ev:{} outputs y:5.974961346243717 (n:-0.08171475980073001) c:1.0
+num acquisition: 71, time elapsed: 12.93s
+f inputs x:[[-0.14375283  0.08358465  1.         -1.        ]] ev:{} outputs y:8.276640677559731 (n:-0.09189577026572221) c:1.0
+num acquisition: 72, time elapsed: 13.12s
+f inputs x:[[0.16955422 0.05004238 0.00788114 0.03862644]] ev:{} outputs y:1.3387373912505411 (n:-0.01120090356978841) c:1.0
+num acquisition: 73, time elapsed: 13.34s
+f inputs x:[[0.17122442 0.05415603 0.00805936 0.0344955 ]] ev:{} outputs y:1.353565459076917 (n:0.04768702599461691) c:1.0
+num acquisition: 74, time elapsed: 13.56s
+f inputs x:[[-1.         -1.          0.01860471  1.        ]] ev:{} outputs y:8.670764622147214 (n:-0.03925787101845831) c:1.0
+num acquisition: 75, time elapsed: 13.78s
+f inputs x:[[0.04240933 1.         1.         0.47180378]] ev:{} outputs y:7.499062971082341 (n:-0.0626148228851263) c:1.0
+num acquisition: 76, time elapsed: 13.97s
+f inputs x:[[0.17282325 0.05479213 0.00725618 0.03532334]] ev:{} outputs y:1.2690143317657492 (n:-0.043034731275575264) c:1.0
+num acquisition: 77, time elapsed: 14.22s
+f inputs x:[[0.17126147 0.0544908  0.00803951 0.03398216]] ev:{} outputs y:1.3710601724478946 (n:0.0699477219469371) c:1.0
+num acquisition: 78, time elapsed: 14.49s
+f inputs x:[[-1.         -0.03794308 -1.         -0.08694894]] ev:{} outputs y:8.378999884202154 (n:0.04107109022650794) c:1.0
+num acquisition: 79, time elapsed: 14.69s
+f inputs x:[[ 0.00769963  1.         -1.          0.12576579]] ev:{} outputs y:8.569094005324747 (n:-0.10989665109542113) c:1.0
+num acquisition: 80, time elapsed: 14.89s
+f inputs x:[[0.17295328 0.05416557 0.00691146 0.03659161]] ev:{} outputs y:1.4011028147394122 (n:0.07683322971084436) c:1.0
+num acquisition: 81, time elapsed: 15.15s
+f inputs x:[[0.17487448 0.05605485 0.00624931 0.03607944]] ev:{} outputs y:1.3301319960883047 (n:0.013230855701272852) c:1.0
+num acquisition: 82, time elapsed: 15.39s
+f inputs x:[[0.17482798 0.0573994  0.00651766 0.03396023]] ev:{} outputs y:1.292496609154268 (n:-0.004119271885451279) c:1.0
+num acquisition: 83, time elapsed: 15.63s
+f inputs x:[[ 0.01537656 -1.          0.02022576 -1.        ]] ev:{} outputs y:7.827619739296477 (n:-0.02666832435493979) c:1.0
+num acquisition: 84, time elapsed: 15.83s
+f inputs x:[[ 1.         -1.         -0.01267395  0.13353601]] ev:{} outputs y:8.619224335589424 (n:-0.02857232561709761) c:1.0
+num acquisition: 85, time elapsed: 16.08s
+f inputs x:[[0.1744393  0.05706258 0.0067466  0.0342538 ]] ev:{} outputs y:1.3229024593796253 (n:0.023622999243558984) c:1.0
+num acquisition: 86, time elapsed: 16.33s
+f inputs x:[[0.17433117 0.05831283 0.00706234 0.032225  ]] ev:{} outputs y:1.2430926323269684 (n:-0.03766993874406507) c:1.0
+num acquisition: 87, time elapsed: 16.58s
+f inputs x:[[-1.          0.05573582  1.          1.        ]] ev:{} outputs y:7.8385934384912925 (n:-0.005927151305418247) c:1.0
+num acquisition: 88, time elapsed: 16.81s
+f inputs x:[[0.17342392 0.05855067 0.00781614 0.03122534]] ev:{} outputs y:1.2553425366974535 (n:-0.016784903272737472) c:1.0
+num acquisition: 89, time elapsed: 17.19s
+f inputs x:[[-0.0183442  -0.14071113  0.00673298  0.24520444]] ev:{} outputs y:3.6859551627961844 (n:0.028216431138756288) c:1.0
+num acquisition: 90, time elapsed: 17.44s
+f inputs x:[[-0.01224652 -1.          1.          1.        ]] ev:{} outputs y:7.194897156439653 (n:-0.015516244092212937) c:1.0
+num acquisition: 91, time elapsed: 17.67s
+f inputs x:[[1.         0.05936441 1.         1.        ]] ev:{} outputs y:7.920754462436967 (n:0.08212033272178314) c:1.0
+num acquisition: 92, time elapsed: 17.88s
+f inputs x:[[-1.         -0.64542697  0.02266229 -1.        ]] ev:{} outputs y:8.311783410979261 (n:0.07722753047421074) c:1.0
+num acquisition: 93, time elapsed: 18.12s
+f inputs x:[[1.         1.         0.06036828 1.        ]] ev:{} outputs y:7.871585163395524 (n:0.03369353179975789) c:1.0
+num acquisition: 94, time elapsed: 18.34s
+f inputs x:[[-1.          0.68623986  0.01596843  1.        ]] ev:{} outputs y:7.413882019661297 (n:0.04522617876643555) c:1.0
+num acquisition: 95, time elapsed: 18.55s
+f inputs x:[[-1.         -1.          1.          0.01537005]] ev:{} outputs y:8.733632718972036 (n:0.015805168776862097) c:1.0
+num acquisition: 96, time elapsed: 18.80s
+f inputs x:[[-1.          1.          1.          0.03259599]] ev:{} outputs y:7.894763563925936 (n:0.01718594436070768) c:1.0
+num acquisition: 97, time elapsed: 19.06s
+f inputs x:[[-1.          1.          0.02200629 -1.        ]] ev:{} outputs y:7.7918108428972115 (n:-0.07714756942813927) c:1.0
+num acquisition: 98, time elapsed: 19.30s
+f inputs x:[[ 1.          1.          0.01395397 -1.        ]] ev:{} outputs y:7.897489627330723 (n:0.0266001588630409) c:1.0
+num acquisition: 99, time elapsed: 19.55s
+f inputs x:[[ 1.         -0.01391785 -1.          1.        ]] ev:{} outputs y:7.905995636918406 (n:0.013886464128096541) c:1.0
+num acquisition: 100, time elapsed: 19.79s
+f inputs x:[[ 0.03467633  1.          1.         -1.        ]] ev:{} outputs y:8.435410576347287 (n:-0.036518431152696866) c:1.0
+num acquisition: 101, time elapsed: 20.05s
+f inputs x:[[ 1.          0.01311625 -1.         -1.        ]] ev:{} outputs y:8.713363933013085 (n:0.0029991344040836195) c:1.0
+num acquisition: 102, time elapsed: 20.32s
+f inputs x:[[ 0.31773422 -1.          0.21777154  1.        ]] ev:{} outputs y:7.75809062141084 (n:-0.011884557610360117) c:1.0
+num acquisition: 103, time elapsed: 20.58s
+f inputs x:[[ 1.          1.         -1.          0.02081467]] ev:{} outputs y:8.771099943457589 (n:0.056134192404434936) c:1.0
+num acquisition: 104, time elapsed: 20.84s
+f inputs x:[[-0.03714968 -1.         -1.          1.        ]] ev:{} outputs y:8.48804113311849 (n:0.011702996634014341) c:1.0
+num acquisition: 105, time elapsed: 21.04s
+f inputs x:[[-0.18048374  0.21946716 -0.36035379  1.        ]] ev:{} outputs y:5.7483604819254275 (n:-0.05181511633126865) c:1.0
+num acquisition: 106, time elapsed: 21.28s
+f inputs x:[[ 1.          0.02845891  1.         -1.        ]] ev:{} outputs y:8.68862201899932 (n:-0.015785038237133904) c:1.0
+num acquisition: 107, time elapsed: 21.52s
+f inputs x:[[ 0.15528881  1.          0.2812036  -0.12620027]] ev:{} outputs y:7.478307844512545 (n:0.024819019165394002) c:1.0
+num acquisition: 108, time elapsed: 21.78s
+f inputs x:[[0.17589654 0.05670615 0.0066471  0.03774076]] ev:{} outputs y:1.3041517613082017 (n:-0.02468061962262645) c:1.0
+num acquisition: 109, time elapsed: 22.04s
+f inputs x:[[-0.02577819  1.         -1.          1.        ]] ev:{} outputs y:8.474345923314157 (n:0.00046020005619005404) c:1.0
+num acquisition: 110, time elapsed: 22.31s
+f inputs x:[[-0.54543231 -0.28182802 -0.4608023   1.        ]] ev:{} outputs y:6.507932878848929 (n:0.04366684529243497) c:1.0
+num acquisition: 111, time elapsed: 22.51s
+f inputs x:[[ 0.00462765 -1.          1.         -1.        ]] ev:{} outputs y:8.440590206357196 (n:-0.033514871414114286) c:1.0
+num acquisition: 112, time elapsed: 22.73s
+f inputs x:[[-1.          1.         -1.          0.01353674]] ev:{} outputs y:8.720148002857322 (n:0.0018088118488495276) c:1.0
+num acquisition: 113, time elapsed: 22.97s
+f inputs x:[[0.30066568 0.24334666 0.28318219 1.        ]] ev:{} outputs y:5.789718725513934 (n:0.06298225576895385) c:1.0
+num acquisition: 114, time elapsed: 23.17s
+f inputs x:[[-1.         -1.         -0.5043776   0.01458698]] ev:{} outputs y:8.774574707475384 (n:-0.04425531411719498) c:1.0
+num acquisition: 115, time elapsed: 23.43s
+f inputs x:[[ 0.93325166 -0.82961695  0.04104138 -0.96027603]] ev:{} outputs y:8.298368618655713 (n:-0.007995072219494331) c:1.0
+num acquisition: 116, time elapsed: 23.61s
+f inputs x:[[-0.39624554  0.17846437 -0.21650823 -1.        ]] ev:{} outputs y:6.293233388939396 (n:-0.021176830060047887) c:1.0
+num acquisition: 117, time elapsed: 23.79s
+f inputs x:[[0.82932823 1.         1.         0.00639876]] ev:{} outputs y:7.7200070789834285 (n:-0.013067522140832283) c:1.0
+num acquisition: 118, time elapsed: 24.00s
+f inputs x:[[0.17689217 0.05557124 0.00644266 0.04133475]] ev:{} outputs y:1.3041713260749503 (n:-0.05933718064654056) c:1.0
+num acquisition: 119, time elapsed: 24.26s
+f inputs x:[[-0.38574421 -0.09050432 -0.24804848 -0.1134463 ]] ev:{} outputs y:4.903364809389462 (n:0.060195824245981334) c:1.0
+num acquisition: 120, time elapsed: 24.42s
+f inputs x:[[-0.18257109 -0.05288179 -0.86072441  0.2237435 ]] ev:{} outputs y:6.979312311994958 (n:0.03757618471886805) c:1.0
+num acquisition: 121, time elapsed: 24.61s
+f inputs x:[[-0.04698546  0.9561763  -0.94513697 -0.73052407]] ev:{} outputs y:8.775929819773275 (n:0.000992874962284039) c:1.0
+num acquisition: 122, time elapsed: 24.78s
+f inputs x:[[-0.57771242 -0.23695887  0.31532298 -0.19449357]] ev:{} outputs y:6.0949765144370325 (n:-0.007109787417553578) c:1.0
+num acquisition: 123, time elapsed: 24.97s
+f inputs x:[[-0.89143322  0.01567841  0.64204846 -0.91883153]] ev:{} outputs y:7.830039156394803 (n:-0.023959360885021624) c:1.0
+num acquisition: 124, time elapsed: 25.17s
+f inputs x:[[0.17648524 0.05628654 0.0064665  0.04031134]] ev:{} outputs y:1.318581338295757 (n:-0.033762311401802816) c:1.0
+num acquisition: 125, time elapsed: 25.42s
+f inputs x:[[-0.22672596  0.38954373  0.33651287  0.6709533 ]] ev:{} outputs y:4.817946029188234 (n:0.04472931437252835) c:1.0
+num acquisition: 126, time elapsed: 25.61s
+f inputs x:[[0.29778056 0.38426864 0.7507939  0.57919949]] ev:{} outputs y:5.482857994781031 (n:-0.005373201480605388) c:1.0
+num acquisition: 127, time elapsed: 25.79s
+f inputs x:[[ 0.1469989  -0.27516696  0.99227916  0.43557992]] ev:{} outputs y:7.246557506782055 (n:0.009452523731466782) c:1.0
+num acquisition: 128, time elapsed: 26.00s
+f inputs x:[[ 0.17833733  0.06498578 -0.0310671   0.57925126]] ev:{} outputs y:4.988431032168446 (n:0.020558150756120903) c:1.0
+num acquisition: 129, time elapsed: 26.18s
+f inputs x:[[ 0.90087185 -0.91633197 -0.96152776 -0.01160036]] ev:{} outputs y:8.945614006749663 (n:0.04388961663886349) c:1.0
+num acquisition: 130, time elapsed: 26.36s
+f inputs x:[[0.17590775 0.0570388  0.00721433 0.03873471]] ev:{} outputs y:1.33499715081213 (n:-0.0007272813713405808) c:1.0
+num acquisition: 131, time elapsed: 26.63s
+f inputs x:[[ 0.04385213 -0.99494669 -0.89830296 -0.85601556]] ev:{} outputs y:8.855186355473634 (n:0.05021326238995493) c:1.0
+num acquisition: 132, time elapsed: 26.83s
+f inputs x:[[-0.22352066 -0.41951974 -0.14489217 -0.41648317]] ev:{} outputs y:5.761464980215665 (n:-0.0010217683483619217) c:1.0
+num acquisition: 133, time elapsed: 27.07s
+f inputs x:[[0.1758407  0.0570415  0.00713783 0.03840477]] ev:{} outputs y:1.4184965474087154 (n:0.0855112346933338) c:1.0
+num acquisition: 134, time elapsed: 27.29s
+f inputs x:[[-0.57141101  0.39229073  0.53658578  0.9586671 ]] ev:{} outputs y:4.792465667696243 (n:0.04341884308722871) c:1.0
+num acquisition: 135, time elapsed: 27.50s
+f inputs x:[[ 0.8922895  -0.81027058  0.99135013  0.19699129]] ev:{} outputs y:8.238552995427604 (n:-0.041353411251127216) c:1.0
+num acquisition: 136, time elapsed: 27.70s
+f inputs x:[[-0.98783791 -0.08854914 -0.57883914 -0.98606109]] ev:{} outputs y:8.038145754270442 (n:-0.021629231126218427) c:1.0
+num acquisition: 137, time elapsed: 27.89s
+f inputs x:[[-0.33949128  0.55130658  0.90264045  0.85258489]] ev:{} outputs y:5.976363975836203 (n:0.09434364388893962) c:1.0
+num acquisition: 138, time elapsed: 28.19s
+f inputs x:[[-0.54930422 -0.21276814  0.61218166  0.54002818]] ev:{} outputs y:6.0366083615158885 (n:-0.03176758260054392) c:1.0
+num acquisition: 139, time elapsed: 28.41s
+f inputs x:[[ 0.87764784  0.46347975  0.14739236 -0.35478255]] ev:{} outputs y:6.412805249400108 (n:-0.025621135827205262) c:1.0
+num acquisition: 140, time elapsed: 28.65s
+f inputs x:[[ 0.91329679 -0.59322326 -0.04056286  0.99802668]] ev:{} outputs y:7.912325212784974 (n:-0.055830324379999324) c:1.0
+num acquisition: 141, time elapsed: 28.86s
+f inputs x:[[ 0.34500477  0.29579396 -0.17918734 -0.98479415]] ev:{} outputs y:6.200388060938392 (n:-0.0554039745067558) c:1.0
+num acquisition: 142, time elapsed: 29.08s
+f inputs x:[[0.17682845 0.05656146 0.00669243 0.04045266]] ev:{} outputs y:1.3066416003872652 (n:-0.04611735061004951) c:1.0
+num acquisition: 143, time elapsed: 29.30s
+f inputs x:[[-0.61000563  0.72393005  0.53814657  0.43400858]] ev:{} outputs y:4.9226872685512815 (n:-0.002040952801599768) c:1.0
+num acquisition: 144, time elapsed: 29.54s
+f inputs x:[[-0.62260105  0.5852437   0.24286029 -0.1896727 ]] ev:{} outputs y:5.042413656753512 (n:0.009595064380369809) c:1.0
+num acquisition: 145, time elapsed: 29.78s
+f inputs x:[[-0.80627152  0.30057015  0.37751965  0.14181759]] ev:{} outputs y:6.089123926614487 (n:-0.08229425236024424) c:1.0
+num acquisition: 146, time elapsed: 30.04s
+f inputs x:[[-0.45752663  0.98661621  0.68721702 -0.19673243]] ev:{} outputs y:7.211025191205638 (n:-0.047732284320824665) c:1.0
+num acquisition: 147, time elapsed: 30.24s
+f inputs x:[[-0.38730937  0.49687698 -0.35336747 -0.29938276]] ev:{} outputs y:6.195239089290705 (n:0.061828498900343754) c:1.0
+num acquisition: 148, time elapsed: 30.48s
+f inputs x:[[-0.41302761  0.25156149  0.30926833 -0.58616689]] ev:{} outputs y:5.661575377504985 (n:0.03088711526585773) c:1.0
+num acquisition: 149, time elapsed: 30.75s
+f inputs x:[[0.17773584 0.05527239 0.00638221 0.04148325]] ev:{} outputs y:1.3023542619109414 (n:-0.06401221301156797) c:1.0
+num acquisition: 150, time elapsed: 31.06s
+f inputs x:[[0.20495607 0.07383407 0.1439029  0.24007865]] ev:{} outputs y:3.249421542564335 (n:-0.023769428659312447) c:1.0
+num acquisition: 151, time elapsed: 31.32s
+f inputs x:[[0.72805434 0.48977206 0.17263062 0.35404045]] ev:{} outputs y:5.416185776262876 (n:-0.01814767854115071) c:1.0
+num acquisition: 152, time elapsed: 31.55s
+f inputs x:[[-0.50126514  0.52080591 -0.1636167   0.47673898]] ev:{} outputs y:5.65160929727718 (n:-0.04706357331584421) c:1.0
+num acquisition: 153, time elapsed: 31.76s
+f inputs x:[[-0.41438042  0.98485024  0.16007798  0.23642086]] ev:{} outputs y:7.218060973252499 (n:-0.1517098648866303) c:1.0
+num acquisition: 154, time elapsed: 32.01s
+f inputs x:[[ 0.52774818  0.5578033  -0.48228477  0.75149332]] ev:{} outputs y:6.347440861306767 (n:0.015109761686974199) c:1.0
+num acquisition: 155, time elapsed: 32.28s
+f inputs x:[[-0.2823852  -0.31389904  0.9990312  -0.09870584]] ev:{} outputs y:7.839453124049267 (n:0.1009086649550469) c:1.0
+num acquisition: 156, time elapsed: 32.60s
+f inputs x:[[ 0.11731763 -0.13740287  0.01928641  0.02631146]] ev:{} outputs y:2.8001576068539236 (n:0.022960100249086818) c:1.0
+num acquisition: 157, time elapsed: 32.83s
+f inputs x:[[ 0.49258067  0.16273373 -0.9983022   0.32926984]] ev:{} outputs y:7.445510914064102 (n:-0.022562298659295942) c:1.0
+num acquisition: 158, time elapsed: 33.08s
+f inputs x:[[ 0.37204328  0.49391026  0.45218394 -0.88112764]] ev:{} outputs y:6.553541493243686 (n:-0.03852783128187893) c:1.0
+num acquisition: 159, time elapsed: 33.33s
+f inputs x:[[-0.38844748 -0.6399844   0.57498397  0.93845821]] ev:{} outputs y:6.097195405060603 (n:-0.001312336630029224) c:1.0
+num acquisition: 160, time elapsed: 33.58s
+f inputs x:[[0.45162341 0.9785206  0.81377253 0.92437715]] ev:{} outputs y:6.594471229085615 (n:-0.04486352716404687) c:1.0
+num acquisition: 161, time elapsed: 33.84s
+f inputs x:[[-0.97055515  0.05382279  0.35033857  0.96131795]] ev:{} outputs y:7.395769441886536 (n:-0.06992053908118917) c:1.0
+num acquisition: 162, time elapsed: 34.08s
+f inputs x:[[-0.44682702 -0.24186866 -0.28359243  0.43182824]] ev:{} outputs y:5.636445208088507 (n:-0.016778378924582196) c:1.0
+num acquisition: 163, time elapsed: 34.37s
+f inputs x:[[ 0.02471549  0.07504894 -0.06638956 -0.01219915]] ev:{} outputs y:2.2192634778964293 (n:0.030060451978102806) c:1.0
+num acquisition: 164, time elapsed: 34.65s
+f inputs x:[[-0.36442332 -0.97459262 -0.15112299  0.88979823]] ev:{} outputs y:7.896412613329804 (n:-0.043783462786816364) c:1.0
+num acquisition: 165, time elapsed: 34.93s
+f inputs x:[[0.17677951 0.05833456 0.001746   0.03577813]] ev:{} outputs y:1.2764032683591853 (n:-0.041829757026279474) c:1.0
+num acquisition: 166, time elapsed: 35.23s
+f inputs x:[[-0.88891745  0.3596321  -0.34115738  0.09514996]] ev:{} outputs y:6.80387651280058 (n:0.07164556848657087) c:1.0
+num acquisition: 167, time elapsed: 35.54s
+f inputs x:[[-0.35392231  0.44315562  0.94079513  0.27781845]] ev:{} outputs y:7.017883538833786 (n:-0.011388861298708338) c:1.0
+num acquisition: 168, time elapsed: 35.80s
+f inputs x:[[-0.6009513   0.99286566  0.46319017  0.88633216]] ev:{} outputs y:7.068426020245978 (n:0.03595446847106373) c:1.0
+num acquisition: 169, time elapsed: 36.08s
+f inputs x:[[ 0.36958869 -0.98221785  0.31076272 -0.29645811]] ev:{} outputs y:7.655807009584335 (n:0.08355704388237589) c:1.0
+num acquisition: 170, time elapsed: 36.35s
+f inputs x:[[ 0.35859555 -0.05920082 -0.2340683   0.99521578]] ev:{} outputs y:5.9776497039695435 (n:-0.0128089364672312) c:1.0
+num acquisition: 171, time elapsed: 36.68s
+f inputs x:[[-0.40677583 -0.95279342  0.5763614   0.41814464]] ev:{} outputs y:7.245161719412064 (n:-0.021643817301620134) c:1.0
+num acquisition: 172, time elapsed: 36.99s
+f inputs x:[[ 0.20619235  0.00698641 -0.05421387  0.20485591]] ev:{} outputs y:3.1384073904514507 (n:-0.04171484449850048) c:1.0
+num acquisition: 173, time elapsed: 37.31s
+f inputs x:[[ 0.18046295 -0.38283107  0.63180736  0.89763875]] ev:{} outputs y:4.904087746583262 (n:-0.024977250745736992) c:1.0
+num acquisition: 174, time elapsed: 37.65s
+f inputs x:[[-0.98245836 -0.34074857 -0.95240136  0.72468055]] ev:{} outputs y:8.144731662630875 (n:0.011156639048760384) c:1.0
+num acquisition: 175, time elapsed: 37.94s
+f inputs x:[[-0.07775674 -0.14918029  0.47242526  0.55640399]] ev:{} outputs y:4.524111412104508 (n:-0.035586782239033034) c:1.0
+num acquisition: 176, time elapsed: 38.29s
+f inputs x:[[ 0.09160636 -0.65825834  0.26430197  0.62229499]] ev:{} outputs y:6.1121763921531205 (n:-0.014504948843710326) c:1.0
+num acquisition: 177, time elapsed: 38.70s
+f inputs x:[[ 0.93980139  0.86718049 -0.36078076  0.2061552 ]] ev:{} outputs y:7.539404031687973 (n:-0.007298259700795323) c:1.0
+num acquisition: 178, time elapsed: 39.08s
+f inputs x:[[ 0.99669154 -0.22895215  0.26504549 -0.21595025]] ev:{} outputs y:7.748347362271719 (n:0.04400340430789949) c:1.0
+num acquisition: 179, time elapsed: 39.40s
+f inputs x:[[-0.37755702  0.67470942  0.49275418 -0.97062882]] ev:{} outputs y:6.933179577842161 (n:-0.02387779643454406) c:1.0
+num acquisition: 180, time elapsed: 39.70s
+f inputs x:[[ 0.39349038 -0.33027935 -0.50844174 -0.77354466]] ev:{} outputs y:6.994603605347046 (n:-0.026958614824559735) c:1.0
+num acquisition: 181, time elapsed: 40.07s
+f inputs x:[[-0.24224286  0.09489355  0.24353627  0.05539601]] ev:{} outputs y:3.3806626550687526 (n:0.06686524848752719) c:1.0
+num acquisition: 182, time elapsed: 40.44s
+f inputs x:[[-0.27618145 -0.18490671  0.17889299  0.11029584]] ev:{} outputs y:4.122787097089042 (n:0.022274897324854617) c:1.0
+num acquisition: 183, time elapsed: 40.83s
+f inputs x:[[ 0.98517489 -0.19544514 -0.93530506  0.20463183]] ev:{} outputs y:8.152649972303433 (n:-0.007514239853887105) c:1.0
+num acquisition: 184, time elapsed: 41.23s
+f inputs x:[[-0.4264553   0.25199237  0.20969745  0.35000514]] ev:{} outputs y:3.725271073990254 (n:-0.01617908991754397) c:1.0
+num acquisition: 185, time elapsed: 41.63s
+f inputs x:[[0.60590628 0.40828893 0.60545429 0.14508126]] ev:{} outputs y:5.576571188284301 (n:0.12228469203986288) c:1.0
+num acquisition: 186, time elapsed: 41.95s
+f inputs x:[[-0.47018445 -0.09710518 -0.96836575  0.97483954]] ev:{} outputs y:6.853058109157364 (n:0.02193778814450752) c:1.0
+num acquisition: 187, time elapsed: 42.28s
+f inputs x:[[0.47556986 0.2919837  0.06877557 0.0147954 ]] ev:{} outputs y:2.861278598822452 (n:-0.07802542845673958) c:1.0
+num acquisition: 188, time elapsed: 42.68s
+f inputs x:[[-0.14277957  0.02619731  0.57953941  0.96502118]] ev:{} outputs y:5.239168857473787 (n:0.06803923580939003) c:1.0
+num acquisition: 189, time elapsed: 43.03s
+f inputs x:[[-0.46791364  0.19890428 -0.02477295 -0.07555806]] ev:{} outputs y:3.5800598187747887 (n:-0.09795118324120775) c:1.0
+num acquisition: 190, time elapsed: 43.38s
+f inputs x:[[-0.31683487 -0.32176464 -0.47280119 -0.98427194]] ev:{} outputs y:7.0198814397958245 (n:-0.06681592100888027) c:1.0
+num acquisition: 191, time elapsed: 43.73s
+f inputs x:[[-0.67836513  0.99953258 -0.02168661 -0.49815677]] ev:{} outputs y:7.535095763061766 (n:-0.018769046986355193) c:1.0
+num acquisition: 192, time elapsed: 44.12s
+f inputs x:[[ 0.50815699 -0.1996599   0.97354577 -0.39007561]] ev:{} outputs y:8.022983658344033 (n:0.07159169703686898) c:1.0
+num acquisition: 193, time elapsed: 44.61s
+f inputs x:[[-0.10175671  0.28376306 -0.49750653  0.57245416]] ev:{} outputs y:5.413350879480397 (n:0.01306019227110837) c:1.0
+num acquisition: 194, time elapsed: 45.00s
+f inputs x:[[0.33247334 0.92204513 0.40428952 0.52805248]] ev:{} outputs y:6.811407325028344 (n:-0.0660651857835969) c:1.0
+num acquisition: 195, time elapsed: 45.40s
+f inputs x:[[ 0.23552132 -0.91837421 -0.33493772 -0.30180294]] ev:{} outputs y:7.739802257320016 (n:-0.027198327943407714) c:1.0
+num acquisition: 196, time elapsed: 45.81s
+f inputs x:[[ 0.52981267  0.84003248 -0.30283684 -0.36474564]] ev:{} outputs y:7.276328276551282 (n:0.001639100130985438) c:1.0
+num acquisition: 197, time elapsed: 46.16s
+f inputs x:[[-0.38487503  0.1150057  -0.1397451   0.34024431]] ev:{} outputs y:4.243592188379231 (n:-0.01631740119688088) c:1.0
+num acquisition: 198, time elapsed: 46.61s
+f inputs x:[[ 0.1371743  -0.01344753 -0.03452995 -0.05804351]] ev:{} outputs y:2.0830878213761865 (n:0.15183520832174488) c:1.0
+num acquisition: 199, time elapsed: 47.05s
+f inputs x:[[-0.15955543 -0.43800625  0.95790583  0.87524024]] ev:{} outputs y:6.43442405067333 (n:-0.0649244335297851) c:1.0
+num acquisition: 200, time elapsed: 47.67s
+f inputs x:[[0.16147921 0.06216964 0.0178989  0.02675215]] ev:{} outputs y:1.2322862293161534 (n:-0.01968131463702146) c:1.0
+num acquisition: 201, time elapsed: 48.14s
+f inputs x:[[-0.88130556  0.55917921  0.84951798  0.6917378 ]] ev:{} outputs y:6.654730877790187 (n:0.0571057712255377) c:1.0
+num acquisition: 202, time elapsed: 48.59s
+f inputs x:[[-0.97659284 -0.67793223  0.15069781  0.17441752]] ev:{} outputs y:8.116147034148552 (n:0.04870542468513172) c:1.0
+num acquisition: 203, time elapsed: 49.01s
+f inputs x:[[0.99222959 0.53173189 0.62087942 0.68135264]] ev:{} outputs y:6.77510156954174 (n:-0.062425060093842605) c:1.0
+num acquisition: 204, time elapsed: 49.48s
+f inputs x:[[ 0.41328244 -0.48791703 -0.99921776  0.58841712]] ev:{} outputs y:7.566926945087964 (n:-0.09479899750093812) c:1.0
+num acquisition: 205, time elapsed: 49.97s
+f inputs x:[[ 0.63147915 -0.19253811  0.4419253   0.95477831]] ev:{} outputs y:6.484685994948567 (n:0.06221239918090196) c:1.0
+num acquisition: 206, time elapsed: 50.42s
+f inputs x:[[-0.77599434  0.48703897  0.96893775 -0.57571973]] ev:{} outputs y:8.01593916632617 (n:0.023554387096000426) c:1.0
+num acquisition: 207, time elapsed: 50.87s
+f inputs x:[[-0.0314959   0.48005119  0.12438829 -0.57271991]] ev:{} outputs y:5.725236089886177 (n:0.01341598690744657) c:1.0
+num acquisition: 208, time elapsed: 51.35s
+f inputs x:[[-0.55517983 -0.45549805 -0.99286226 -0.56308495]] ev:{} outputs y:8.347722836707046 (n:0.01611851823872007) c:1.0
+num acquisition: 209, time elapsed: 51.72s
+f inputs x:[[-0.51708577 -0.85170476  0.39306354 -0.66643041]] ev:{} outputs y:7.446010657895827 (n:-0.015568142210813915) c:1.0
+num acquisition: 210, time elapsed: 52.19s
+f inputs x:[[ 0.40505915  0.29486625 -0.92667182 -0.34109924]] ev:{} outputs y:7.686666218665659 (n:-0.08459032063715975) c:1.0
+num acquisition: 211, time elapsed: 52.64s
+f inputs x:[[ 0.96113492  0.45146347 -0.5016021  -0.73607034]] ev:{} outputs y:7.528286354779645 (n:-0.014642964982184087) c:1.0
+num acquisition: 212, time elapsed: 53.04s
+f inputs x:[[-0.38209736  0.48196732  0.22851644  0.10779449]] ev:{} outputs y:3.8035870504567955 (n:0.01631513591467616) c:1.0
+num acquisition: 213, time elapsed: 53.46s
+f inputs x:[[-0.63004044  0.41253659 -0.95433992 -0.46306079]] ev:{} outputs y:8.043839601975929 (n:0.015068486080273866) c:1.0
+num acquisition: 214, time elapsed: 53.89s
+f inputs x:[[0.26228865 0.1194869  0.0280627  0.1123328 ]] ev:{} outputs y:2.055956852575756 (n:-0.02443009100831376) c:1.0
+num acquisition: 215, time elapsed: 54.32s
+f inputs x:[[-0.0909291  -0.00848084 -0.26674771 -0.65149688]] ev:{} outputs y:5.749858848178363 (n:0.03759547426026183) c:1.0
+num acquisition: 216, time elapsed: 54.80s
+f inputs x:[[0.02209516 0.05285853 0.07033237 0.00802307]] ev:{} outputs y:1.7805731273841705 (n:-0.06317357465666464) c:1.0
+num acquisition: 217, time elapsed: 55.48s
+f inputs x:[[ 0.47833846  0.53826916  0.99866825 -0.34468104]] ev:{} outputs y:7.831735993728526 (n:0.02247308446136354) c:1.0
+num acquisition: 218, time elapsed: 55.92s
+f inputs x:[[ 0.36224633  0.9702927  -0.32635481  0.35804914]] ev:{} outputs y:7.811280262108386 (n:0.048556397378427874) c:1.0
+num acquisition: 219, time elapsed: 56.47s
+f inputs x:[[-0.37776014 -0.34741734  0.20828037 -0.9819637 ]] ev:{} outputs y:6.428172121219718 (n:-0.06496541903156616) c:1.0
+num acquisition: 220, time elapsed: 56.99s
+f inputs x:[[ 0.38744476 -0.39205511  0.68959652 -0.97971337]] ev:{} outputs y:7.561440690012259 (n:0.028054369480781927) c:1.0
+num acquisition: 221, time elapsed: 57.44s
+f inputs x:[[ 0.51171543 -0.16884777  0.02556942 -0.54234868]] ev:{} outputs y:5.8548839440012515 (n:0.035736526572392506) c:1.0
+num acquisition: 222, time elapsed: 57.93s
+f inputs x:[[-0.89700257  0.34564569 -0.46068287  0.91303199]] ev:{} outputs y:6.858690713810696 (n:-0.07747879643232747) c:1.0
+num acquisition: 223, time elapsed: 58.50s
+f inputs x:[[-0.43096549  0.99884575 -0.42957142  0.85607472]] ev:{} outputs y:7.912248924063752 (n:-0.03589019983666484) c:1.0
+num acquisition: 224, time elapsed: 59.02s
+f inputs x:[[ 0.99545335 -0.49210824 -0.5508449  -0.59419205]] ev:{} outputs y:8.195511512541204 (n:-0.03582174904655295) c:1.0
+num acquisition: 225, time elapsed: 59.66s
+f inputs x:[[ 0.43571059  0.64487945  0.25766656 -0.15324881]] ev:{} outputs y:5.361378721799329 (n:0.005103328220548823) c:1.0
+num acquisition: 226, time elapsed: 60.13s
+f inputs x:[[-0.54515499 -0.42146246  0.99764663 -0.72002776]] ev:{} outputs y:8.262457438183995 (n:0.015766901351009888) c:1.0
+num acquisition: 227, time elapsed: 60.72s
+f inputs x:[[ 0.05732063 -0.03179328 -0.00203103  0.06419418]] ev:{} outputs y:1.7811434697351631 (n:-0.05610636223432121) c:1.0
+num acquisition: 228, time elapsed: 61.27s
+f inputs x:[[-0.04417642 -0.20859914 -0.56748974  0.73437861]] ev:{} outputs y:5.314287954113289 (n:-0.037742513762668156) c:1.0
+num acquisition: 229, time elapsed: 61.76s
+f inputs x:[[0.55504729 0.33263736 0.9876259  0.97855031]] ev:{} outputs y:6.542770755594166 (n:-0.03368590030995557) c:1.0
+num acquisition: 230, time elapsed: 62.26s
+f inputs x:[[-0.32410848  0.48234577 -0.99937534  0.2869334 ]] ev:{} outputs y:7.683377889368797 (n:-0.03691106556028125) c:1.0
+num acquisition: 231, time elapsed: 62.79s
+f inputs x:[[ 0.51522206 -0.68203071  0.99675249  0.98880757]] ev:{} outputs y:7.005964299394031 (n:0.005098731794543288) c:1.0
+num acquisition: 232, time elapsed: 63.47s
+f inputs x:[[-0.63993391  0.71746361 -0.52702412 -0.95345654]] ev:{} outputs y:7.638573173897977 (n:0.01897609519698859) c:1.0
+num acquisition: 233, time elapsed: 64.22s
+f inputs x:[[-0.08389054 -0.44763835  0.27338191 -0.57207746]] ev:{} outputs y:5.744939035100275 (n:-0.036439804484532295) c:1.0
+num acquisition: 234, time elapsed: 64.81s
+f inputs x:[[ 0.45642284 -0.99402695  0.53710584  0.37914583]] ev:{} outputs y:7.486532124836901 (n:-0.01032531926557282) c:1.0
+num acquisition: 235, time elapsed: 65.36s
+f inputs x:[[-0.50881382  0.17911031  0.11985416  0.94164082]] ev:{} outputs y:5.987606202006262 (n:-0.023910405410218508) c:1.0
+num acquisition: 236, time elapsed: 66.09s
+f inputs x:[[-0.97447324  0.9180666   0.50149339 -0.49530069]] ev:{} outputs y:7.324853657553517 (n:0.004916568046248917) c:1.0
+num acquisition: 237, time elapsed: 66.76s
+f inputs x:[[0.52598607 0.678572   0.04117508 0.94581477]] ev:{} outputs y:6.464111002569606 (n:-0.11631651018262759) c:1.0
+num acquisition: 238, time elapsed: 67.30s
+f inputs x:[[-0.85477767  0.48576324  0.07907521 -0.98178668]] ev:{} outputs y:6.740173546446902 (n:-0.0853535502812913) c:1.0
+num acquisition: 239, time elapsed: 67.88s
+f inputs x:[[ 0.41393718 -0.51345366 -0.00661738 -0.9838409 ]] ev:{} outputs y:6.8507380688873125 (n:0.10435708433948794) c:1.0
+num acquisition: 240, time elapsed: 68.78s
+f inputs x:[[ 0.33152521  0.56902258 -0.65056453 -0.98116072]] ev:{} outputs y:7.829090998581509 (n:0.127289657136844) c:1.0
+num acquisition: 241, time elapsed: 69.60s
+f inputs x:[[-0.38566387 -0.99959271 -0.35404318 -0.97724286]] ev:{} outputs y:8.281971532623068 (n:0.04311456311527706) c:1.0
+num acquisition: 242, time elapsed: 70.37s
+f inputs x:[[ 0.29005067 -0.38078378 -0.96300669 -0.37543908]] ev:{} outputs y:7.978588529221001 (n:-0.02028070921113021) c:1.0
+num acquisition: 243, time elapsed: 70.96s
+f inputs x:[[-0.56214857  0.29007624  0.50204587  0.56068868]] ev:{} outputs y:4.711445172130137 (n:0.050725926599238205) c:1.0
+num acquisition: 244, time elapsed: 71.68s
+f inputs x:[[ 0.99052963 -0.9368569   0.64321622 -0.48391284]] ev:{} outputs y:8.496543259833842 (n:-0.01133921127042789) c:1.0
+num acquisition: 245, time elapsed: 72.35s
+[0.1778163  0.05900635 0.00511125 0.03449868]
