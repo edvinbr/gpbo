@@ -67,13 +67,19 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 # the dimension of the expectation value function is 2*p
 p = 2
 
+#noise
+s = 0
+
 def f(beta_gamma_angles,**ev):
     gamma = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]
     beta = [(b+1)/2*np.pi for b in beta_gamma_angles[p:2*p]]
     c = 1.
 
     E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
-    return E, c, dict()
+
+    n = sp.random.normal() * s
+
+    return E+n, c, dict()
 
     
 #beta = np.pi/2
@@ -81,11 +87,8 @@ def f(beta_gamma_angles,**ev):
 #beta_gamma_angles = np.array([gamma, beta])
 #print(beta_gamma_angles)
 
-#noise
-s = 0
 
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results', 'qaoa-instance_8_0_sigma5_1' + timestamp + '.csv') #500*(p+1)
+C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results', 'qaoa-instance_8_0_n_test_p_4_4.csv')
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
