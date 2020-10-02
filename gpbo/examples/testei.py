@@ -8,6 +8,7 @@ import sys
 #from PES.main import *
 import GPyOpt
 from GPyOpt.methods import BayesianOptimization
+import GPy
 
 
 """
@@ -69,7 +70,11 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
 # compute the state for a variational angle for a certain level of p
 # the dimension of the expectation value function is 2*p
-p = 1
+p = 2
+
+D = p * 2
+s = 0.05
+n = 250
 
 def fblossom(beta_gamma_angles,**ev):
     beta_gamma_angles[:p] = [b*2*np.pi for b in beta_gamma_angles[:p]]
@@ -87,7 +92,6 @@ def f(beta_gamma_angles,**ev):
     E = expectation_value(beta_gamma_angles, H, p, nbr_of_qubits, initial_state,sigmax)
     return E
 
-p = 1
 def fei(beta_gamma_angles,**ev):
     angles = np.zeros(len(beta_gamma_angles[0]))
     angles[0:p] = beta_gamma_angles[0][0:p]*2*np.pi
@@ -97,7 +101,10 @@ def fei(beta_gamma_angles,**ev):
     #c = 1.
 
     E = expectation_value(angles, H, p, nbr_of_qubits, initial_state,sigmax)
-    return E
+    # noise
+    n = sp.random.normal() * s
+    print('f inputs x:{} outputs y:{} (n:{})'.format(beta_gamma_angles, E + n, n))
+    return E + n
 #beta = np.pi/2
 #gamma = np.pi/3
 #beta_gamma_angles = np.array([gamma, beta])
@@ -124,22 +131,29 @@ def fei(beta_gamma_angles,**ev):
 #x_minimum = np.asarray([0.0,0.0])
 #x_maximum = np.asarray([1.0,1.0])
 #dimension = 2
-#bounds2d = [{'name': 'var_1', 'type': 'continuous', 'domain': (0,1)},
+#bounds4d = [{'name': 'var_1', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_2', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_3', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)}]
 
 bounds2d = [{'name': 'var_1', 'type': 'continuous', 'domain': (0,1)},
-            {'name': 'var_2', 'type': 'continuous', 'domain': (0,1)}]
-#            {'name': 'var_3', 'type': 'continuous', 'domain': (0,1)},
-#            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)},
+            {'name': 'var_2', 'type': 'continuous', 'domain': (0,1)},
+            {'name': 'var_3', 'type': 'continuous', 'domain': (0,1)},
+            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)}]
 #            {'name': 'var_5', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_6', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_7', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_8', 'type': 'continuous', 'domain': (0,1)}]
-optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d)
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+path = "results/qaoa/"
 
-optimizer.run_optimization(max_iter=250,verbosity = True, report_file = '20report.txt',evaluations_file='20evals.txt',models_file='20models.txt')
+model = GPyOpt.models.gpmodel.GPModel(kernel=GPy.kern.Matern52(input_dim=D), noise_var=s, optimizer="lbfgs")
+
+#optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, initial_design_numdata=10)
+optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, model=model, num_cores=2, initial_design_numdata=10)#exact_feval=True, 
+
+#optimizer.run_optimization(max_iter=n-10,verbosity = True, report_file = '20report.txt',evaluations_file='20evals.txt',models_file='20models.txt')
+optimizer.run_optimization(max_iter=n-10, verbosity=True, report_file = path+str(D)+'Dqaoa8.0-noise'+str(s)+'-report' + timestamp + '.txt',evaluations_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-evals' + timestamp + '.txt',models_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-models' + timestamp + '.txt')
 
 beta_gamma_angles = optimizer.x_opt
 #The function to run PES to minimize the target function.
@@ -196,13 +210,13 @@ prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
 
 from plot_energy_landscape import plot_energy_lanscapes
 
-optimizer.plot_convergence(filename='convergenceplot')
+optimizer.plot_convergence(filename=path+'convergenceplot'+timestamp)
 
-plot_energy_lanscapes(  H,
-                            p, 
-                            nbr_of_qubits, 
-                            initial_state,
-                            sigmax, 
-                            show_plot=True)
+#plot_energy_lanscapes(  H,
+#                            p, 
+#                            nbr_of_qubits, 
+#                            initial_state,
+#                            sigmax, 
+#                            show_plot=True)
 
-optimizer.plot_acquisition(filename='acq_plot')
+optimizer.plot_acquisition(filename=path+'acq_plot'+timestamp)

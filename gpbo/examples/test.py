@@ -129,9 +129,9 @@ prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
 
 from plot_energy_landscape import plot_energy_lanscapes
 
-plot_energy_lanscapes(  H,
-                            p, 
-                            nbr_of_qubits, 
-                            initial_state,
-                            sigmax, 
-                            show_plot=True)
+#plot_energy_lanscapes(  H,
+#                            p, 
+#                            nbr_of_qubits, 
+#                            initial_state,
+#                            sigmax, 
+#                            show_plot=True)
