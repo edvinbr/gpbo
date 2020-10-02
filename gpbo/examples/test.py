@@ -65,7 +65,7 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
 # compute the state for a variational angle for a certain level of p
 # the dimension of the expectation value function is 2*p
-p = 1
+p = 2
 
 def f(beta_gamma_angles,**ev):
     gamma = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]
@@ -84,7 +84,8 @@ def f(beta_gamma_angles,**ev):
 #noise
 s = 0
 
-C = gpbo.core.config.switchdefault(f, p*2, 10, 500*(p+1), s, 'results', 'qaoa-instance_8_0_sigma5_1.csv')
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results', 'qaoa-instance_8_0_sigma5_1' + timestamp + '.csv') #500*(p+1)
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
@@ -125,9 +126,9 @@ prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
 
 from plot_energy_landscape import plot_energy_lanscapes
 
-plot_energy_lanscapes(  H,
-                            p, 
-                            nbr_of_qubits, 
-                            initial_state,
-                            sigmax, 
-                            show_plot=True)
+#plot_energy_lanscapes(  H,
+#                            p, 
+#                            nbr_of_qubits, 
+#                            initial_state,
+#                            sigmax, 
+#                            show_plot=True)
