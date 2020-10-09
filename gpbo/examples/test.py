@@ -76,10 +76,14 @@ def f(beta_gamma_angles,**ev):
     c = 1.
 
     E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
-
+    # noise
     n = sp.random.normal() * s
-
-    return E+n, c, dict()
+    # we want to check the noiseless value when evaluating performance
+    if 'cheattrue' in ev.keys():
+      if ev['cheattrue']:
+        n = 0
+    print('f inputs x:{} outputs y:{} (n:{})'.format(beta_gamma_angles, E + n, n))
+    return E + n, c, dict()
 
     
 #beta = np.pi/2
@@ -87,8 +91,8 @@ def f(beta_gamma_angles,**ev):
 #beta_gamma_angles = np.array([gamma, beta])
 #print(beta_gamma_angles)
 
-
-C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results', 'qaoa-instance_8_0_n_test_p_4_4.csv')
+timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results/qaoa', str(p*2) + 'Dqaoa-instance_8_0_sigma5_1_noise' + str(s) + timestamp + '.csv') #500*(p+1)
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
