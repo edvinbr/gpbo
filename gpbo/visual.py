@@ -11,7 +11,7 @@ import glob
 import os
 from datetime import datetime
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
-from util import *
+from examples.util import *
 import gpbo
 
 
@@ -341,99 +341,99 @@ def plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymi
         return
 
 def plotRegret(manyRegrets, manyLengths, plotOrder):
-        # only does it for first batch of runs
-        manyYs = []
-        manyFracleft = []
-        for idx, regrets in enumerate(manyRegrets):
-                lengths = manyLengths[idx]
-                maxlength = max(lengths)
+	# only does it for first batch of runs
+	manyYs = []
+	manyFracleft = []
+	for idx, regrets in enumerate(manyRegrets):
+		lengths = manyLengths[idx]
+		maxlength = max(lengths)
 
-                n = len(regrets)
-                
-                ys = []
-                fracleft = []
-                for i in range(0,min(maxlength,250)):
-                        sum = 0
-                        num = 0
-                        for l in regrets:
-                                if i < len(l):
-                                        sum += l[i]
-                                        num += 1
-                        ys.append(sum/num)
-                        fracleft.append(num/n)  
-                
-                regretsum = 0
-                stepsum = 0
-                for l in regrets:
-                        regretsum += l[-1]
-                        stepsum += len(l)
-                avgregret = regretsum/n
-                avgstep = stepsum/n
+		n = len(regrets)
+		
+		ys = []
+		fracleft = []
+		for i in range(0,min(maxlength,250)):
+			sum = 0
+			num = 0
+			for l in regrets:
+				if i < len(l):
+					sum += l[i]
+					num += 1
+			ys.append(sum/num)
+			fracleft.append(num/n)	
+		
+		regretsum = 0
+		stepsum = 0
+		for l in regrets:
+			regretsum += l[-1]
+			stepsum += len(l)
+		avgregret = regretsum/n
+		avgstep = stepsum/n
 
-                print('Avg regret: '+str(avgregret))
-                print('Avg steps: '+str(avgstep))
-                manyYs.append(ys)
-                manyFracleft.append(fracleft)
+		print('Avg regret: '+str(avgregret))
+		print('Avg steps: '+str(avgstep))
+		manyYs.append(ys)
+		manyFracleft.append(fracleft)
 
-        fig, ax1 = plt.subplots()
-        ax1.set_xlabel('Step')
-        ax1.set_ylabel('Regret')
-        #labels = ['BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'PES \u03C3=0', 'BLOSSOM \u03C3=0.5', 'PES \u03C3=0.005']
-        #labels = ['PES \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'BLOSSOM \u03C3=0.5', 'BLOSSOM \u03C3=0.005', 'PES \u03C3=0']
-        labels = ['BLOSSOM \u03C3=0', 'BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0.5']
-        #labels = ['BLOSSOM 2D', 'BLOSSOM 8D', 'BLOSSOM 4D']
-        #labels = ['unmodified \u03C3=0.005', 'modified \u03C3=0.005', 'unmodified \u03C3=0.05', 'modified \u03C3=0.05', 'unmodified \u03C3=0',]
-        for idx, ys in enumerate(manyYs):
-                linestyle = 'solid'
-                if(plotOrder[idx].find('pes') >=0):
-                        linestyle = 'dashed'
-                elif(plotOrder[idx].find('ei') >=0):
-                        linestyle = 'dotted'
-                color = 'green'
-                if(plotOrder[idx].find('low') >= 0):
-                        color='blue'
-                elif(plotOrder[idx].find('med') >= 0):
-                        color='purple'
-                elif(plotOrder[idx].find('high') >= 0):
-                        color='red'
-                ax1.plot(ys, linestyle=linestyle, color=color)#, label=labels[idx])
-        #ax1.set_ylim(0.8*10e-1, 3.2*10e2)
-        ax1.set_yscale('log')
-        ax1.tick_params(axis='y')
+	fig, ax1 = plt.subplots()
+	ax1.set_xlabel('Step')
+	ax1.set_ylabel('Regret')
+	#labels = ['BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'PES \u03C3=0', 'BLOSSOM \u03C3=0.5', 'PES \u03C3=0.005']
+	#labels = ['PES \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'BLOSSOM \u03C3=0.5', 'BLOSSOM \u03C3=0.005', 'PES \u03C3=0']
+	labels = ['BLOSSOM \u03C3=0', 'BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0.5']
+	#labels = ['BLOSSOM 2D', 'BLOSSOM 8D', 'BLOSSOM 4D']
+	#labels = ['unmodified \u03C3=0.005', 'modified \u03C3=0.005', 'unmodified \u03C3=0.05', 'modified \u03C3=0.05', 'unmodified \u03C3=0',]
+	for idx, ys in enumerate(manyYs):
+		linestyle = 'solid'
+		if(plotOrder[idx].find('pes') >=0):
+			linestyle = 'dashed'
+		elif(plotOrder[idx].find('ei') >=0):
+			linestyle = 'dotted'
+		color = 'green'
+		if(plotOrder[idx].find('low') >= 0):
+			color='blue'
+		elif(plotOrder[idx].find('med') >= 0):
+			color='purple'
+		elif(plotOrder[idx].find('high') >= 0):
+			color='red'
+		ax1.plot(ys, linestyle=linestyle, color=color)#, label=labels[idx])
+	#ax1.set_ylim(0.6*10e-1, 3.2*10e2)
+	ax1.set_yscale('log')
+	ax1.tick_params(axis='y')
 
-        
-        # ax2 = ax1.twinx()
-        # ax2.set_ylabel('Fraction still running')
-        # for idx, fracleft in enumerate(manyFracleft):
-        #       linestyle = 'solid'
-        #       if(plotOrder[idx].find('pes') >=0):
-        #               linestyle = 'dashed'
-        #       elif(plotOrder[idx].find('ei') >=0):
-        #               linestyle = 'dotted'
-        #       color = 'green'
-        #       if(plotOrder[idx].find('low') >= 0):
-        #               color='blue'
-        #       elif(plotOrder[idx].find('med') >= 0):
-        #               color='purple'
-        #       elif(plotOrder[idx].find('high') >= 0):
-        #               color='red'
-        #       ax2.plot(fracleft, linestyle='dotted', color=color)#color='blue',
-        # ax2.set_ylim(-0.05, 1.05)
-        # ax2.tick_params(axis='y')
+	
+	# ax2 = ax1.twinx()
+	# ax2.set_ylabel('Fraction still running')
+	# for idx, fracleft in enumerate(manyFracleft):
+	# 	linestyle = 'solid'
+	# 	if(plotOrder[idx].find('pes') >=0):
+	# 		linestyle = 'dashed'
+	# 	elif(plotOrder[idx].find('ei') >=0):
+	# 		linestyle = 'dotted'
+	# 	color = 'green'
+	# 	if(plotOrder[idx].find('low') >= 0):
+	# 		color='blue'
+	# 	elif(plotOrder[idx].find('med') >= 0):
+	# 		color='purple'
+	# 	elif(plotOrder[idx].find('high') >= 0):
+	# 		color='red'
+	# 	ax2.plot(fracleft, linestyle='dotted', color=color)#color='blue',
+	# ax2.set_ylim(-0.05, 1.05)
+	# ax2.tick_params(axis='y')
 
-        red_patch = mpatches.Patch(color='red', label='High noise')
-        purple_patch = mpatches.Patch(color='purple', label='Medium noise')
-        blue_patch = mpatches.Patch(color='blue', label='Low noise')
-        green_patch = mpatches.Patch(color='green', label='No noise')
-        blossom_line = mlines.Line2D([], [], color='black', label='Blossom')
-        pes_line = mlines.Line2D([], [], color='black', linestyle='dashed', label='PES')
-        ei_line = mlines.Line2D([], [], color='black', linestyle='dotted', label='EI')
-        ax1.legend(handles=[red_patch, purple_patch, blue_patch, green_patch, blossom_line, pes_line, ei_line])
-        #ax1.legend()
-        fig.tight_layout()
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        plt.savefig('results/multiregret' + timestamp, dpi=200)
-        return
+	red_patch = mpatches.Patch(color='red', label='High noise')
+	purple_patch = mpatches.Patch(color='purple', label='Medium noise')
+	blue_patch = mpatches.Patch(color='blue', label='Low noise')
+	green_patch = mpatches.Patch(color='green', label='No noise')
+	blossom_line = mlines.Line2D([], [], color='black', label='Blossom')
+	pes_line = mlines.Line2D([], [], color='black', linestyle='dashed', label='PES')
+	ei_line = mlines.Line2D([], [], color='black', linestyle='dotted', label='EI')
+	ax1.legend(handles=[red_patch, purple_patch, blue_patch, green_patch, blossom_line, pes_line, ei_line])
+	#ax1.legend()
+	fig.tight_layout()
+	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+	plt.savefig('results/multiregret' + timestamp, dpi=200)
+	return
 
 path = sys.argv[1]
 try:
@@ -471,93 +471,97 @@ if not multi:
         plt.yscale('log')
         plt.savefig('results/test', dpi=200)
 else: #Multi file
-        
-        #minyvalue = -1.03162845348987744408920985 #6humpcamel
-        manyRegrets = []
-        manyLengths = []
-        manyTrueys = []
-        globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
-        numRuns = 4
-        numProblems = 1
-        plotOrder = []
+	
+	#minyvalue = -1.03162845348987744408920985 #6humpcamel
+	manyRegrets = []
+	manyLengths = []
+	manyTrueys = []
+	globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
+	numRuns = 4
+	numProblems = 1
+	plotOrder = []
 
-        for entry in sorted(os.listdir(path)):
-                fullpath = os.path.join(path,entry)
-                print('path {}, entry {}, fullpath {}'.format(path,entry,fullpath))
-                if os.path.isdir(fullpath):
-                        if(entry.find('pes') >= 0): #match find to namingscheme
-                                plotEntry = 'pes'
-                        elif(entry.find('ei') >= 0):
-                                plotEntry = 'ei'
-                        else:
-                                plotEntry = 'blossom'
-                        if(entry.find('e0005') >= 0):
-                                plotEntry += 'low'
-                        elif(entry.find('e005') >= 0):
-                                plotEntry += 'med'
-                        elif(entry.find('e05') >= 0):
-                                plotEntry += 'high'
-                        else:
-                                plotEntry += 'none'
-                        plotOrder.append(plotEntry)
+	for entry in sorted(os.listdir(path)):
+		fullpath = os.path.join(path,entry)
+		print('path {}, entry {}, fullpath {}'.format(path,entry,fullpath))
+		if os.path.isdir(fullpath):
+			if(entry.find('pes') >= 0): #match find to namingscheme
+				plotEntry = 'pes'
+			elif(entry.find('ei') >= 0):
+				plotEntry = 'ei'
+			else:
+				plotEntry = 'blossom'
+			if(entry.find('e0005') >= 0):
+				plotEntry += 'low'
+				print("low")
+			elif(entry.find('e005') >= 0):
+				plotEntry += 'med'
+				print("med")
+			elif(entry.find('e05') >= 0):
+				plotEntry += 'high'
+				print("high")
+			else:
+				plotEntry += 'none'
+				print("none")
+			plotOrder.append(plotEntry)
 
-                        regrets = []
-                        lengths = []
-                        trueys = []
+			regrets = []
+			lengths = []
+			trueys = []
 
-                        count = 0
-                        func = qaoaValue #rosenbrockValue
-                        if(entry.find('ei') >= 0):
-                                for f in sorted(glob.glob(fullpath+'/*evals*.txt')):
-                                        df = pd.read_csv(f, sep='\t')
-                                        bestys = []
-                                        besty = func(df.iloc[0, 2:].values)
-                                        for var in df.iloc[:, 2:].values:
-                                                y = func(var)
-                                                #print(y)
-                                                if(y < besty):
-                                                        besty = y
-                                                bestys.append(besty)
-                                        lengths.append(len(df.index))
-                                        regret = bestys #sp.exp(bestys) - 1 # check against functionfiles if transform is used
-                                        truey = regret
-                                        regrets.append(regret)
-                                        trueys.append(truey)
-                                        count += 1
-                        else:
-                                for f in sorted(glob.glob(fullpath+'/*.csv')):
-                                        df = pd.read_csv(f, sep=', ')#, usecols=range(0,16))
-                                        lengths.append(len(df.index))
-                                        xzero = df['rx0'].values
-                                        xone = df['rx1'].values
-                                        #print(len(xzero))
-                                        #print(len(xone))
-                                        ymins = []
-                                        for i in range(0,250):
-                                                if (i >= len(xzero)):
-                                                    ymins.append(func(((xzero[-1]+1)/2,(xone[-1]+1)/2)))
-                                                else:
-                                                    ymins.append(func(((xzero[i]+1)/2,(xone[i]+1)/2)))
-                                        #sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
-                                        #ymins = sepValues['truey at xrecc'].values.astype(float)
-                                        #regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used
-                                        regret = ymins
-                                        truey = regret #+ globalymin[count//numRuns]
-                                        regrets.append(regret)
-                                        trueys.append(truey)
-                                        count += 1
-                        
-                        manyRegrets.append(regrets)
-                        manyLengths.append(lengths)
-                        manyTrueys.append(trueys)
-        print(plotOrder)
-        ### Regret plotting
-        plotRegret(manyRegrets, manyLengths, plotOrder)
+			count = 0
+			func = rosenbrockValue#qaoaValue#
+			if(entry.find('ei') >= 0):
+				for f in sorted(glob.glob(fullpath+'/*evals*.txt')):
+					df = pd.read_csv(f, sep='\t')
+					bestys = []
+					besty = func(df.iloc[0, 2:].values)
+					for var in df.iloc[:, 2:].values:
+						y = func(var)
+						if(y < besty):
+							besty = y
+						bestys.append(besty)
+					lengths.append(len(df.index))
+					regret = sp.exp(bestys) - 1 # check against functionfiles if transform is used. (for QAOA probably)
+					truey = regret #+ globalymin[count//numRuns]
+					regrets.append(regret)
+					trueys.append(truey)
+					count += 1
+			else:
+				for f in sorted(glob.glob(fullpath+'/*.csv')):
+					df = pd.read_csv(f, sep=', ')#, usecols=range(0,16))
+					lengths.append(len(df.index))
 
-        ### Dataprofile plotting
+					xreccs = df.loc[:, 'rx0':'truey at xrecc'].iloc[:, 0:-1].values
+					
+					ymins = []
+					for i in range(0,250):
+						if (i >= len(xreccs)):
+							#ymins.append(func([(x+1)/2 for x in xreccs[-1]])) #for qaoa
+							ymins.append(func(xreccs[-1]))
+						else:
+							#ymins.append(func([(x+1)/2 for x in xreccs[i]])) #for qaoa
+							ymins.append(func(xreccs[i]))
+					#sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
+					#ymins = sepValues['truey at xrecc'].values.astype(float)
+					regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used. (for QAOA probably)
+					#regret = ymins
+					truey = regret #+ globalymin[count//numRuns]
+					regrets.append(regret)
+					trueys.append(truey)
+					count += 1
+			
+			manyRegrets.append(regrets)
+			manyLengths.append(lengths)
+			manyTrueys.append(trueys)
+	print(plotOrder)
+	### Regret plotting
+	plotRegret(manyRegrets, manyLengths, plotOrder)
 
-        # r = 1e-1
-        # numIterations = 250
-        # plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
-        # r = 1e-2
-        # plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
+	### Dataprofile plotting
+
+	# r = 1e-1
+	# numIterations = 250
+	# plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
+	# r = 1e-2
+	# plotDataprofie(numProblems, numRuns, r, numIterations, manyTrueys, globalymin)
