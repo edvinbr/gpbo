@@ -68,7 +68,7 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 p = 2
 
 #noise
-s = 0
+s = 0.5
 
 def f(beta_gamma_angles,**ev):
     gamma = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]
@@ -92,7 +92,7 @@ def f(beta_gamma_angles,**ev):
 #print(beta_gamma_angles)
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results/qaoa', str(p*2) + 'Dqaoa-instance_8_0_sigma5_1_noise' + str(s) + timestamp + '.csv') #500*(p+1)
+C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results/qaoa', str(p*2) + 'Dqaoa-instance_8_0_sigma5_1_noise' + str(s) + '-' + timestamp + '.csv') #500*(p+1)
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
