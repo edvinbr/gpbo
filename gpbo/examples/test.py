@@ -65,10 +65,14 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
 # compute the state for a variational angle for a certain level of p
 # the dimension of the expectation value function is 2*p
-p = 2
+p = 1
 
 #noise
+<<<<<<< HEAD
+s = 2.5
+=======
 s = 0.5
+>>>>>>> 8a5090bfa3a3e3c1c2451e75e136acadc4d94448
 
 def f(beta_gamma_angles,**ev):
     gamma = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]
