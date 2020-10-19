@@ -50,7 +50,7 @@ def f(x,**ev):
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 #arguments to generate default config are objective function, dimensionality,number of initialization points, number of steps, noise variance, result directory and result filename
-C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', '4DRosenbrock-e2-logtransformt-250steps-noise-0-005-run2.csv')
+C=gpbo.core.config.switchdefault(f,D,10,n,s,'results', '4DRosenbrock-testram.csv')
 
 # set the target global regret
 C.choosepara['regretswitch'] = 1e-2
