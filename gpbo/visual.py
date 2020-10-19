@@ -10,9 +10,9 @@ import scipy as sp
 import glob
 import os
 from datetime import datetime
-from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
-from examples.util import *
-import gpbo
+#from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
+#from examples.util import *
+#import gpbo
 
 
 def f(x, y):
@@ -26,6 +26,16 @@ def camel3(x1,x2):
     #noise
     #final = sp.log(y -(0) + 1) * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2))))
     final = sp.log(y -(0) + 1) + 0.5*sp.random.normal(size=(len(x1),len(x2)))
+    return final
+
+def camel3Value(x):
+    #3hump camel funciton
+    z = [xi*5 for xi in x]
+    y = 2*z[0]**2-1.05*z[0]**4+(z[0]**6)/6. +z[0]*z[1] + z[1]**2
+    final = sp.log(y + 1)
+    #noise
+    #final = sp.log(y -(0) + 1) * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2))))
+    #final = sp.log(y -(0) + 1) + 0.5*sp.random.normal(size=(len(x1),len(x2)))
     return final
 
 def camel6(x1, x2):
@@ -123,6 +133,18 @@ def rastrigin(x1,x2):
     final = sp.log(y -(0) + 1)  + 0.005*sp.random.normal(size=(len(x1),len(x2)))
     return final
 
+def rastriginValue(x):
+    # Scale axes, 
+    z = [xi*5.12 for xi in x]#[x1*1.28, x2*1.28]#
+    sum1 = 0
+    for i in range(0,2):
+        sum1 += z[i]**2 - 10*sp.cos(2*sp.pi*z[i])
+    y = 10*2 + sum1
+    final = sp.log(y + 1)
+    # noise
+    #final = sp.log(y -(0) + 1)  + 0.005*sp.random.normal(size=(len(x1),len(x2)))
+    return final
+
 def sphere(x1,x2):
     # Scale axes, 
     z = [x1*5.12, x2*5.12]
@@ -164,47 +186,47 @@ def rosenbrockValue(x):
     #final = sp.log(y * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2)))) - (0) + 1)
     return y
 
-def qaoaValue(beta_gamma_angles):
+# def qaoaValue(beta_gamma_angles):
     
-    # read data
-    # constraint matrix
-    file_location = 'data_instances/'
-    file_name = 'instance_8_0.mps'
+#     # read data
+#     # constraint matrix
+#     file_location = 'data_instances/'
+#     file_name = 'instance_8_0.mps'
 
 
-    [c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
+#     [c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
 
-    nbr_of_qubits = nbr_of_routes
-    nbr_states = 2**nbr_of_qubits
+#     nbr_of_qubits = nbr_of_routes
+#     nbr_states = 2**nbr_of_qubits
 
 
 
-    # compute the ising spin glass hamiltonian
-    [linear_cost_hamiltonian,
-    quadratic_cost_hamiltonian,
-    cost_hamiltonian] =  create_ising_hamiltonian(c,
-                             A,
-                             nbr_of_qubits,
-                             nbr_of_flights)
+#     # compute the ising spin glass hamiltonian
+#     [linear_cost_hamiltonian,
+#     quadratic_cost_hamiltonian,
+#     cost_hamiltonian] =  create_ising_hamiltonian(c,
+#                              A,
+#                              nbr_of_qubits,
+#                              nbr_of_flights)
 
-    # Exact_cover:
-    H = quadratic_cost_hamiltonian
+#     # Exact_cover:
+#     H = quadratic_cost_hamiltonian
 
-    # mixer operator
-    sigmax = np.array([[0, 1],
-                   [1, 0]])
+#     # mixer operator
+#     sigmax = np.array([[0, 1],
+#                    [1, 0]])
 
-    initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
+#     initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
-    # compute the state for a variational angle for a certain level of p
-    # the dimension of the expectation value function is 2*p
-    p = 1
+#     # compute the state for a variational angle for a certain level of p
+#     # the dimension of the expectation value function is 2*p
+#     p = 1
 
-    gamma = [b*2*np.pi for b in beta_gamma_angles[:p]]
-    beta = [b*np.pi for b in beta_gamma_angles[p:2*p]]
+#     gamma = [b*2*np.pi for b in beta_gamma_angles[:p]]
+#     beta = [b*np.pi for b in beta_gamma_angles[p:2*p]]
 
-    E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
-    return E
+#     E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
+#     return E
 
 def visual3d(f): #TODO
         #temporary
@@ -347,6 +369,7 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 	for idx, regrets in enumerate(manyRegrets):
 		lengths = manyLengths[idx]
 		maxlength = max(lengths)
+		print(lengths)
 
 		n = len(regrets)
 		
@@ -510,7 +533,7 @@ else: #Multi file
 			trueys = []
 
 			count = 0
-			func = rosenbrockValue#qaoaValue#
+			func = rastriginValue#camel3Value#rosenbrockValue#qaoaValue#
 			if(entry.find('ei') >= 0):
 				for f in sorted(glob.glob(fullpath+'/*evals*.txt')):
 					df = pd.read_csv(f, sep='\t')
