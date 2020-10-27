@@ -1,0 +1,2296 @@
+removed robo import in opts.py l17 due to theano errors
+INFO:GP:initializing Y
+INFO:GP:initializing inference method
+INFO:GP:adding kernel and likelihood as parameters
+f inputs x:[[0.37849219 0.61960829 0.47805673 0.45122285]] outputs y:43.67867321317549 (n:-3.592758009696614)
+f inputs x:[[0.39432086 0.24306655 0.67628674 0.0753962 ]] outputs y:46.111957125195225 (n:-1.310886882045099)
+f inputs x:[[0.25211029 0.07731776 0.54902204 0.48063234]] outputs y:48.93560736126042 (n:2.0818240315243908)
+f inputs x:[[0.55020363 0.1605173  0.42997935 0.00303353]] outputs y:49.923511016043406 (n:3.195232512189162)
+f inputs x:[[0.81364133 0.91649162 0.36961551 0.01729107]] outputs y:44.812243366437976 (n:-1.0320893691686823)
+f inputs x:[[0.45000905 0.91693155 0.71334943 0.76491777]] outputs y:46.68773790332844 (n:-0.22163792491754764)
+f inputs x:[[0.11394494 0.60987956 0.0120732  0.39599358]] outputs y:48.109419898767435 (n:0.02889730980315869)
+f inputs x:[[0.23510107 0.9629634  0.45639417 0.94793662]] outputs y:47.893840526021165 (n:0.8052631164905222)
+f inputs x:[[0.40689419 0.5625471  0.41985151 0.19645295]] outputs y:47.560733123526774 (n:0.7969983332846876)
+f inputs x:[[0.6007092  0.6487823  0.86457704 0.38129579]] outputs y:49.9192589348832 (n:0.9496233496497408)
+Using a model defined by the used.
+Optimization restart 1/5, f = 14.189385368482812
+Optimization restart 2/5, f = 14.189385528022806
+Optimization restart 3/5, f = 14.189385986174441
+Optimization restart 4/5, f = 14.18938990700855
+Optimization restart 5/5, f = 14.189391392088908
+f inputs x:[[0.96691906 0.99821143 0.93502021 0.75580547]] outputs y:50.623663082361766 (n:3.1214584591503685)
+num acquisition: 1, time elapsed: 0.17s
+Optimization restart 1/5, f = 15.608323903170739
+Optimization restart 2/5, f = 15.608326763963802
+Optimization restart 3/5, f = 15.608329660159852
+Optimization restart 4/5, f = 15.608330859537721
+Optimization restart 5/5, f = 15.608333714515378
+f inputs x:[[0.02119747 0.99232493 0.75850397 0.41768853]] outputs y:47.93368618769209 (n:1.3363203748164882)
+num acquisition: 2, time elapsed: 0.27s
+Optimization restart 1/5, f = 17.027262439819154
+Optimization restart 2/5, f = 17.02727143125685
+Optimization restart 3/5, f = 17.027268074089104
+Optimization restart 4/5, f = 17.027269389568687
+Optimization restart 5/5, f = 17.027268136261124
+f inputs x:[[0.00327901 0.95644961 0.55576233 0.39065167]] outputs y:44.129357440443606 (n:0.6695263341811564)
+num acquisition: 3, time elapsed: 0.38s
+Optimization restart 1/5, f = 18.4462009762807
+Optimization restart 2/5, f = 18.44620664509742
+Optimization restart 3/5, f = 18.446205753223047
+Optimization restart 4/5, f = 18.44620574637243
+Optimization restart 5/5, f = 18.44620635822215
+f inputs x:[[0.05828255 0.99847453 0.22822786 0.2450709 ]] outputs y:46.48999247266925 (n:-0.9914518713732534)
+num acquisition: 4, time elapsed: 0.49s
+Optimization restart 1/5, f = 19.865139512845616
+Optimization restart 2/5, f = 19.865146518362117
+Optimization restart 3/5, f = 19.86513954002833
+Optimization restart 4/5, f = 19.865141352739226
+Optimization restart 5/5, f = 19.865140220502592
+f inputs x:[[0.00221988 0.99137152 0.45684837 0.60549895]] outputs y:41.2626531603675 (n:-5.649353284882784)
+num acquisition: 5, time elapsed: 0.61s
+Optimization restart 1/5, f = 21.284078049094447
+Optimization restart 2/5, f = 21.28407803715192
+Optimization restart 3/5, f = 21.284078134848087
+Optimization restart 4/5, f = 21.284078613000098
+Optimization restart 5/5, f = 21.284087553945994
+f inputs x:[[0.02080493 0.99566073 0.9041163  0.84425857]] outputs y:48.181272430920636 (n:1.2230881555267208)
+num acquisition: 6, time elapsed: 0.73s
+Optimization restart 1/5, f = 22.703016575089926
+Optimization restart 2/5, f = 22.703022904101807
+Optimization restart 3/5, f = 22.70301951855165
+Optimization restart 4/5, f = 22.703016564006223
+Optimization restart 5/5, f = 22.70301671237604
+f inputs x:[[0.00692796 0.95375609 0.9092106  0.85672343]] outputs y:41.60027319564186 (n:1.800199256793378)
+num acquisition: 7, time elapsed: 0.84s
+Optimization restart 1/5, f = 24.12195504603893
+Optimization restart 2/5, f = 22.821158857164768
+Optimization restart 3/5, f = 22.82115898772977
+Optimization restart 4/5, f = 24.12195560783595
+Optimization restart 5/5, f = 24.121955196497744
+f inputs x:[[0.         0.98918262 0.17170882 0.51485879]] outputs y:47.003615828463026 (n:-0.4963841715369776)
+num acquisition: 8, time elapsed: 1.09s
+Optimization restart 1/5, f = 25.494620828592772
+Optimization restart 2/5, f = 25.306867049080942
+Optimization restart 3/5, f = 25.306867049080836
+Optimization restart 4/5, f = 25.540893820687938
+Optimization restart 5/5, f = 25.540897413837506
+f inputs x:[[0.00643972 0.95411758 0.82564309 0.85200559]] outputs y:43.47193924237752 (n:3.267017691443306)
+num acquisition: 9, time elapsed: 1.45s
+Optimization restart 1/5, f = 25.913228622520563
+Optimization restart 2/5, f = 25.913228622518297
+Optimization restart 3/5, f = 25.91322862251812
+Optimization restart 4/5, f = 25.91322862262125
+Optimization restart 5/5, f = 25.91322862251812
+f inputs x:[[0.00247733 0.99162539 0.93513782 0.01009563]] outputs y:39.13154132037512 (n:-7.734341860842532)
+num acquisition: 10, time elapsed: 1.70s
+Optimization restart 1/5, f = 25.773208267941285
+Optimization restart 2/5, f = 25.773208263842704
+Optimization restart 3/5, f = 25.773208263843376
+Optimization restart 4/5, f = 25.77320826384853
+Optimization restart 5/5, f = 25.77320826385845
+f inputs x:[[0.00270945 0.99185426 0.5425026  0.7606165 ]] outputs y:45.865578948579476 (n:-0.9627327160259069)
+num acquisition: 11, time elapsed: 1.90s
+Optimization restart 1/5, f = 28.73137315316483
+Optimization restart 2/5, f = 28.731372523809526
+Optimization restart 3/5, f = 28.731372523422973
+Optimization restart 4/5, f = 28.73137252342485
+Optimization restart 5/5, f = 28.731372523422884
+f inputs x:[[0.81077992 0.92286193 0.40903295 0.30843156]] outputs y:42.86940329958668 (n:-2.887641044109901)
+num acquisition: 12, time elapsed: 2.05s
+Optimization restart 1/5, f = 30.28757877535675
+Optimization restart 2/5, f = 30.287578775650903
+Optimization restart 3/5, f = 30.28757877536981
+Optimization restart 4/5, f = 30.287578775356977
+Optimization restart 5/5, f = 31.216647811318225
+f inputs x:[[0.79858879 0.91791648 0.75409324 0.34264771]] outputs y:44.094875679236004 (n:-2.551884687600526)
+num acquisition: 13, time elapsed: 2.24s
+Optimization restart 1/5, f = 31.75828957876493
+Optimization restart 2/5, f = 31.75828957881383
+Optimization restart 3/5, f = 31.758289578764796
+Optimization restart 4/5, f = 32.635586312477464
+Optimization restart 5/5, f = 31.758289578799612
+f inputs x:[[0.37849217 0.6196083  0.36622893 0.80407244]] outputs y:44.147263179919825 (n:-3.1241671403548894)
+num acquisition: 14, time elapsed: 2.45s
+Optimization restart 1/5, f = 31.784706897298953
+Optimization restart 2/5, f = 31.784706897462875
+Optimization restart 3/5, f = 31.784706897332697
+Optimization restart 4/5, f = 31.784706897300463
+Optimization restart 5/5, f = 32.49467907203898
+f inputs x:[[0.5482027  0.48582273 0.37542207 0.4055767 ]] outputs y:41.59053846580931 (n:-5.964013991786921)
+num acquisition: 15, time elapsed: 2.65s
+Optimization restart 1/5, f = 33.36204370571025
+Optimization restart 2/5, f = 33.36204370567273
+Optimization restart 3/5, f = 33.36204370560571
+Optimization restart 4/5, f = 35.47346499968059
+Optimization restart 5/5, f = 33.36204370547312
+f inputs x:[[0.60112006 0.7384166  0.70797229 0.77377868]] outputs y:47.090064362909835 (n:-0.9423740841083988)
+num acquisition: 16, time elapsed: 2.83s
+Optimization restart 1/5, f = 34.731105259956514
+Optimization restart 2/5, f = 36.892407753153584
+Optimization restart 3/5, f = 36.673062139137535
+Optimization restart 4/5, f = 36.8924109380374
+Optimization restart 5/5, f = 34.73110526000457
+f inputs x:[[0.59897274 0.82914202 0.5909467  0.66902619]] outputs y:45.03529177449426 (n:-2.193683245494889)
+num acquisition: 17, time elapsed: 2.97s
+Optimization restart 1/5, f = 36.16760114767996
+Optimization restart 2/5, f = 38.311340917478404
+Optimization restart 3/5, f = 38.31134050719544
+Optimization restart 4/5, f = 36.16760114772005
+Optimization restart 5/5, f = 36.16760114766923
+f inputs x:[[0.8348957  0.43406289 0.64871365 0.8250902 ]] outputs y:48.013984265349954 (n:0.37133641725119404)
+num acquisition: 18, time elapsed: 3.12s
+Optimization restart 1/5, f = 37.50805596704498
+Optimization restart 2/5, f = 37.50805596704713
+Optimization restart 3/5, f = 39.73028481047095
+Optimization restart 4/5, f = 39.730279039831885
+Optimization restart 5/5, f = 39.73028772462853
+f inputs x:[[0.83963225 0.15939315 0.95963344 0.50776232]] outputs y:45.707224302089536 (n:1.4815746886652792)
+num acquisition: 19, time elapsed: 3.26s
+Optimization restart 1/5, f = 38.92107811219992
+Optimization restart 2/5, f = 41.14922722337462
+Optimization restart 3/5, f = 38.921078112196724
+Optimization restart 4/5, f = 38.92107811219856
+Optimization restart 5/5, f = 41.1492174930339
+f inputs x:[[0.12336758 0.17777746 0.9050164  0.96878788]] outputs y:48.68168365659557 (n:0.8097127056534826)
+num acquisition: 20, time elapsed: 3.46s
+Optimization restart 1/5, f = 40.243642747878724
+Optimization restart 2/5, f = 42.568161236693015
+Optimization restart 3/5, f = 42.56815608476482
+Optimization restart 4/5, f = 40.24364273451918
+Optimization restart 5/5, f = 42.568156126615335
+f inputs x:[[0.80827958 0.92195945 0.22578405 0.34836705]] outputs y:47.45206988886069 (n:1.7053583389489788)
+num acquisition: 21, time elapsed: 3.64s
+Optimization restart 1/5, f = 41.60058038105569
+Optimization restart 2/5, f = 43.98709726860193
+Optimization restart 3/5, f = 43.98709469937512
+Optimization restart 4/5, f = 43.98709467324403
+Optimization restart 5/5, f = 41.60058038084174
+f inputs x:[[0.54460426 0.34718141 0.73387472 0.03396729]] outputs y:45.59881604850725 (n:-1.2343365708830216)
+num acquisition: 22, time elapsed: 3.80s
+Optimization restart 1/5, f = 43.017523953219964
+Optimization restart 2/5, f = 45.40603960442343
+Optimization restart 3/5, f = 43.01752395152495
+Optimization restart 4/5, f = 45.40603443124834
+Optimization restart 5/5, f = 45.4060331424466
+f inputs x:[[0.43962578 0.17355976 0.25720164 0.58609818]] outputs y:51.45195512247537 (n:2.8523513553711317)
+num acquisition: 23, time elapsed: 3.95s
+Optimization restart 1/5, f = 44.29323794461908
+Optimization restart 2/5, f = 44.2932379446371
+Optimization restart 3/5, f = 44.293237944634534
+Optimization restart 4/5, f = 46.82497502176051
+Optimization restart 5/5, f = 44.29323794471041
+f inputs x:[[0.59894075 0.74330858 0.51147054 0.26096032]] outputs y:47.81885875121996 (n:-0.36188389012210437)
+num acquisition: 24, time elapsed: 4.16s
+Optimization restart 1/5, f = 45.64418826435883
+Optimization restart 2/5, f = 45.64418826413652
+Optimization restart 3/5, f = 45.64418826419532
+Optimization restart 4/5, f = 45.644188264137846
+Optimization restart 5/5, f = 45.64418826417835
+f inputs x:[[0.86335196 0.16940518 0.18730305 0.45603686]] outputs y:50.20665199829003 (n:0.3867614140474821)
+num acquisition: 25, time elapsed: 4.37s
+Optimization restart 1/5, f = 46.94586860252792
+Optimization restart 2/5, f = 46.94586860255221
+Optimization restart 3/5, f = 46.94586860256868
+Optimization restart 4/5, f = 46.94586860254248
+Optimization restart 5/5, f = 46.94586860290937
+f inputs x:[[0.39124082 0.24106847 0.87688472 0.94460833]] outputs y:45.8489615419945 (n:-1.615572044214816)
+num acquisition: 26, time elapsed: 4.59s
+Optimization restart 1/5, f = 48.35936752892364
+Optimization restart 2/5, f = 48.35936753454026
+Optimization restart 3/5, f = 48.35936752890986
+Optimization restart 4/5, f = 48.35936752886056
+Optimization restart 5/5, f = 48.3593675288889
+f inputs x:[[0.38668801 0.24196236 0.31562444 0.55185941]] outputs y:47.82059452011981 (n:0.028129246241036285)
+num acquisition: 27, time elapsed: 4.81s
+Optimization restart 1/5, f = 49.71183233627672
+Optimization restart 2/5, f = 49.71183233721668
+Optimization restart 3/5, f = 49.711832336159745
+Optimization restart 4/5, f = 49.71183233616051
+Optimization restart 5/5, f = 49.71183233616744
+f inputs x:[[0.0036009  0.95678325 0.64680511 0.88077785]] outputs y:42.256724085360844 (n:-0.8816317369246216)
+num acquisition: 28, time elapsed: 5.02s
+Optimization restart 1/5, f = 51.02853254850666
+Optimization restart 2/5, f = 52.04353456205317
+Optimization restart 3/5, f = 52.04353456205392
+Optimization restart 4/5, f = 52.04353456203317
+Optimization restart 5/5, f = 52.043534562303705
+f inputs x:[[0.00531166 0.94996862 0.90183698 0.46721071]] outputs y:43.406128506575115 (n:2.7432494039541435)
+num acquisition: 29, time elapsed: 5.18s
+Optimization restart 1/5, f = 52.545902084907695
+Optimization restart 2/5, f = 53.05944150159579
+Optimization restart 3/5, f = 53.05944150159716
+Optimization restart 4/5, f = 53.05944150246292
+Optimization restart 5/5, f = 53.05944150159627
+f inputs x:[[0.70164804 0.21635055 0.06666207 0.36841554]] outputs y:43.146302038910086 (n:0.1446601882340746)
+num acquisition: 30, time elapsed: 5.32s
+Optimization restart 1/5, f = 54.065867994672246
+Optimization restart 2/5, f = 54.63734484707332
+Optimization restart 3/5, f = 54.637344847078104
+Optimization restart 4/5, f = 54.637344847119586
+Optimization restart 5/5, f = 54.63734484707764
+f inputs x:[[0.85999564 0.33409554 0.87306194 0.68423882]] outputs y:43.891003441201214 (n:-4.139361265842292)
+num acquisition: 31, time elapsed: 5.47s
+Optimization restart 1/5, f = 55.54697063389463
+Optimization restart 2/5, f = 56.155044958295065
+Optimization restart 3/5, f = 56.15504495834128
+Optimization restart 4/5, f = 56.1550449582828
+Optimization restart 5/5, f = 56.155044958991866
+f inputs x:[[0.3792219  0.62518191 0.48195725 0.06776454]] outputs y:50.59964245338212 (n:3.3282661050282183)
+num acquisition: 32, time elapsed: 5.62s
+Optimization restart 1/5, f = 56.84544440624857
+Optimization restart 2/5, f = 57.87532009856325
+Optimization restart 3/5, f = 57.87532009832172
+Optimization restart 4/5, f = 57.87532009833549
+Optimization restart 5/5, f = 57.875320101363926
+f inputs x:[[0.54307338 0.34286913 0.36581712 0.33685162]] outputs y:46.36668266073264 (n:-0.2991623791114288)
+num acquisition: 33, time elapsed: 5.78s
+Optimization restart 1/5, f = 58.24062681410828
+Optimization restart 2/5, f = 59.25398132225188
+Optimization restart 3/5, f = 59.25398132054509
+Optimization restart 4/5, f = 59.25398132071817
+Optimization restart 5/5, f = 59.253981320540476
+f inputs x:[[0.55390503 0.48530437 0.70253304 0.77220767]] outputs y:49.1573203228809 (n:1.4811726219075352)
+num acquisition: 34, time elapsed: 5.95s
+Optimization restart 1/5, f = 59.56662474643163
+Optimization restart 2/5, f = 59.56662474151314
+Optimization restart 3/5, f = 59.566624741544594
+Optimization restart 4/5, f = 61.50848385610988
+Optimization restart 5/5, f = 61.50848385523513
+f inputs x:[[0.54845953 0.48593679 0.4068117  0.76890481]] outputs y:50.74295229161502 (n:3.1841305735315406)
+num acquisition: 35, time elapsed: 6.18s
+Optimization restart 1/5, f = 62.19056176200631
+Optimization restart 2/5, f = 62.92313128026919
+Optimization restart 3/5, f = 62.9231312801367
+Optimization restart 4/5, f = 62.92313128072065
+Optimization restart 5/5, f = 62.92313128014466
+f inputs x:[[0.05576336 0.40466319 0.04984999 0.84964021]] outputs y:46.87326466606375 (n:0.03488128897076692)
+num acquisition: 36, time elapsed: 6.31s
+Optimization restart 1/5, f = 63.60918436313875
+Optimization restart 2/5, f = 64.33931740209184
+Optimization restart 3/5, f = 64.31000921440615
+Optimization restart 4/5, f = 64.31000921592786
+Optimization restart 5/5, f = 64.31000921508337
+f inputs x:[[0.22894081 0.66217934 0.49723026 0.33776794]] outputs y:44.946536555779446 (n:-3.703773930365137)
+num acquisition: 37, time elapsed: 6.45s
+Optimization restart 1/5, f = 65.03890156624279
+Optimization restart 2/5, f = 65.76910807666339
+Optimization restart 3/5, f = 65.76910807666331
+Optimization restart 4/5, f = 65.76910807668307
+Optimization restart 5/5, f = 65.76910807912188
+f inputs x:[[0.33241746 0.94668796 0.44869559 0.62633817]] outputs y:45.66085147813711 (n:-3.793553568357474)
+num acquisition: 38, time elapsed: 6.58s
+Optimization restart 1/5, f = 66.46454918552631
+Optimization restart 2/5, f = 67.20013009096836
+Optimization restart 3/5, f = 67.20013009066713
+Optimization restart 4/5, f = 67.2001300906892
+Optimization restart 5/5, f = 67.20013009079297
+f inputs x:[[0.58775224 0.49231091 0.41281928 0.36367594]] outputs y:44.83491510863696 (n:-2.5841934780381273)
+num acquisition: 39, time elapsed: 6.70s
+Optimization restart 1/5, f = 67.89427957031002
+Optimization restart 2/5, f = 68.69588156931269
+Optimization restart 3/5, f = 68.69588156930325
+Optimization restart 4/5, f = 68.69588156930958
+Optimization restart 5/5, f = 68.69588156932369
+f inputs x:[[0.13319292 0.9377785  0.4023577  0.98242396]] outputs y:47.23203566795511 (n:-1.2498222783317017)
+num acquisition: 40, time elapsed: 6.85s
+Optimization restart 1/5, f = 69.30983854418983
+Optimization restart 2/5, f = 70.081257383639
+Optimization restart 3/5, f = 70.08125738363766
+Optimization restart 4/5, f = 70.0812573837892
+Optimization restart 5/5, f = 70.0812573836418
+f inputs x:[[0.83711296 0.90144314 0.83510273 0.34651934]] outputs y:54.48009339475675 (n:5.252948927539619)
+num acquisition: 41, time elapsed: 6.98s
+Optimization restart 1/5, f = 70.66167410159015
+Optimization restart 2/5, f = 71.31946870889787
+Optimization restart 3/5, f = 71.91956893809427
+Optimization restart 4/5, f = 71.31946870880074
+Optimization restart 5/5, f = 71.3194687408521
+f inputs x:[[0.74662618 0.92468717 0.10744777 0.15671516]] outputs y:43.07554841477393 (n:-3.8740193466664516)
+num acquisition: 42, time elapsed: 7.14s
+Optimization restart 1/5, f = 72.09749300114163
+Optimization restart 2/5, f = 72.83139507255413
+Optimization restart 3/5, f = 72.8313950724371
+Optimization restart 4/5, f = 72.83139507241066
+Optimization restart 5/5, f = 72.83139507241746
+f inputs x:[[0.99401554 0.09643337 0.45749451 0.13097192]] outputs y:37.40293116119581 (n:1.6497241225206525)
+num acquisition: 43, time elapsed: 7.33s
+Optimization restart 1/5, f = 73.52883440567544
+Optimization restart 2/5, f = 74.5098841703242
+Optimization restart 3/5, f = 75.20374235600306
+Optimization restart 4/5, f = 74.50988417086427
+Optimization restart 5/5, f = 74.50988417031668
+f inputs x:[[0.28075869 0.95974761 0.62243404 0.51431703]] outputs y:44.77992907463455 (n:-4.027716953093385)
+num acquisition: 44, time elapsed: 7.52s
+Optimization restart 1/5, f = 74.95718466515672
+Optimization restart 2/5, f = 76.41785068098753
+Optimization restart 3/5, f = 76.41785068198664
+Optimization restart 4/5, f = 75.95124698159816
+Optimization restart 5/5, f = 76.41785068115763
+f inputs x:[[0.87145912 0.45676386 0.03570219 0.95626653]] outputs y:50.6853420407785 (n:2.5782054319870946)
+num acquisition: 45, time elapsed: 7.65s
+Optimization restart 1/5, f = 76.35335387514047
+Optimization restart 2/5, f = 77.80348590795109
+Optimization restart 3/5, f = 77.8034859082954
+Optimization restart 4/5, f = 77.80348590862896
+Optimization restart 5/5, f = 77.80348590784764
+f inputs x:[[0.25914067 0.56502611 0.58139414 0.08156861]] outputs y:46.08926118789686 (n:-2.4168474305302925)
+num acquisition: 46, time elapsed: 7.77s
+Optimization restart 1/5, f = 77.77703864929195
+Optimization restart 2/5, f = 78.70292605249657
+Optimization restart 3/5, f = 79.21894731825401
+Optimization restart 4/5, f = 79.21894731836335
+Optimization restart 5/5, f = 79.21894731821644
+f inputs x:[[0.77557159 0.59357784 0.40055107 0.96283644]] outputs y:49.253239184893374 (n:2.436520017702704)
+num acquisition: 47, time elapsed: 7.91s
+Optimization restart 1/5, f = 79.18411808805624
+Optimization restart 2/5, f = 80.53338959751116
+Optimization restart 3/5, f = 80.53338959733762
+Optimization restart 4/5, f = 80.8795009565799
+Optimization restart 5/5, f = 80.87949243043836
+f inputs x:[[0.3850854  0.61732667 0.75243348 0.3934056 ]] outputs y:47.97447901680912 (n:0.7416985071363574)
+num acquisition: 48, time elapsed: 8.02s
+Optimization restart 1/5, f = 80.59878244493045
+Optimization restart 2/5, f = 82.29843561209532
+Optimization restart 3/5, f = 81.91308893588628
+Optimization restart 4/5, f = 81.91308892988086
+Optimization restart 5/5, f = 81.91308892985927
+f inputs x:[[0.20760539 0.89593979 0.03979178 0.04329524]] outputs y:51.36064280879717 (n:3.551588306853514)
+num acquisition: 49, time elapsed: 8.16s
+Optimization restart 1/5, f = 81.99191667971816
+Optimization restart 2/5, f = 82.79758007490514
+Optimization restart 3/5, f = 82.79758007490416
+Optimization restart 4/5, f = 83.71737358867571
+Optimization restart 5/5, f = 82.79758007508653
+f inputs x:[[0.25909515 0.50097003 0.21442023 0.44520213]] outputs y:49.82389768460803 (n:2.306422453073045)
+num acquisition: 50, time elapsed: 8.32s
+Optimization restart 1/5, f = 83.39642924802897
+Optimization restart 2/5, f = 84.14174700876399
+Optimization restart 3/5, f = 84.14174700242444
+Optimization restart 4/5, f = 85.13631215510316
+Optimization restart 5/5, f = 84.14174700242813
+f inputs x:[[0.61848553 0.67620365 0.78750602 0.03492345]] outputs y:51.012562520711185 (n:3.3670291310088114)
+num acquisition: 51, time elapsed: 8.48s
+Optimization restart 1/5, f = 84.79388410656505
+Optimization restart 2/5, f = 85.46195901676282
+Optimization restart 3/5, f = 85.4619590167666
+Optimization restart 4/5, f = 85.46195901681027
+Optimization restart 5/5, f = 86.55515224637385
+f inputs x:[[0.48635106 0.51433147 0.31016757 0.24956784]] outputs y:43.794794894032954 (n:-4.264266900534598)
+num acquisition: 52, time elapsed: 8.64s
+Optimization restart 1/5, f = 86.22457128576502
+Optimization restart 2/5, f = 86.94140920925392
+Optimization restart 3/5, f = 87.97419220269757
+Optimization restart 4/5, f = 86.94140920933798
+Optimization restart 5/5, f = 86.94140920931028
+f inputs x:[[0.29128613 0.13409917 0.50033693 0.06376327]] outputs y:47.690322225827636 (n:-0.90233883485758)
+num acquisition: 53, time elapsed: 8.81s
+Optimization restart 1/5, f = 87.64107812017241
+Optimization restart 2/5, f = 88.3268446884583
+Optimization restart 3/5, f = 88.32684468863687
+Optimization restart 4/5, f = 88.32684468839139
+Optimization restart 5/5, f = 88.32684468903932
+f inputs x:[[0.03770012 0.5950925  0.81343404 0.95603953]] outputs y:43.620482046315225 (n:-3.9693547071847544)
+num acquisition: 54, time elapsed: 9.01s
+Optimization restart 1/5, f = 89.07181192149991
+Optimization restart 2/5, f = 89.80747084035777
+Optimization restart 3/5, f = 90.8120673645139
+Optimization restart 4/5, f = 89.80747084040291
+Optimization restart 5/5, f = 89.80747084071245
+f inputs x:[[0.28890153 0.98575947 0.41983047 0.76497667]] outputs y:44.27364992567764 (n:-3.34263887732168)
+num acquisition: 55, time elapsed: 9.20s
+Optimization restart 1/5, f = 90.50057043194309
+Optimization restart 2/5, f = 91.26739694791456
+Optimization restart 3/5, f = 91.26739694791581
+Optimization restart 4/5, f = 91.26739694791479
+Optimization restart 5/5, f = 91.26739694793095
+f inputs x:[[0.47027622 0.23280561 0.33767106 0.7914024 ]] outputs y:46.64752608112484 (n:1.481773634596979)
+num acquisition: 56, time elapsed: 9.38s
+Optimization restart 1/5, f = 91.9213957982034
+Optimization restart 2/5, f = 92.75026054715815
+Optimization restart 3/5, f = 92.75026021675438
+Optimization restart 4/5, f = 93.6499444789788
+Optimization restart 5/5, f = 92.67500917222769
+f inputs x:[[0.10131743 0.81074754 0.29684158 0.90656483]] outputs y:46.47023410040068 (n:0.051115000051565274)
+num acquisition: 57, time elapsed: 9.56s
+Optimization restart 1/5, f = 93.34279438937904
+Optimization restart 2/5, f = 94.08605896072166
+Optimization restart 3/5, f = 94.08605896069777
+Optimization restart 4/5, f = 94.08605896724492
+Optimization restart 5/5, f = 94.16309545967415
+f inputs x:[[0.29654133 0.56168577 0.94496709 0.41151831]] outputs y:43.63939009630245 (n:-2.205724251950042)
+num acquisition: 58, time elapsed: 9.74s
+Optimization restart 1/5, f = 94.772687012335
+Optimization restart 2/5, f = 95.5584397792149
+Optimization restart 3/5, f = 95.55843977614705
+Optimization restart 4/5, f = 96.48782097357338
+Optimization restart 5/5, f = 95.5584397759547
+f inputs x:[[0.7582696  0.27770544 0.36395711 0.97951238]] outputs y:42.89423126015323 (n:-5.65216430813225)
+num acquisition: 59, time elapsed: 9.91s
+Optimization restart 1/5, f = 96.20357125511168
+Optimization restart 2/5, f = 97.04351424540607
+Optimization restart 3/5, f = 97.04351424549046
+Optimization restart 4/5, f = 97.90675979466022
+Optimization restart 5/5, f = 97.11290622599422
+f inputs x:[[0.09112655 0.43714906 0.59812736 0.16688062]] outputs y:48.92436755912723 (n:0.7137267462604667)
+num acquisition: 60, time elapsed: 10.11s
+Optimization restart 1/5, f = 97.61417748415961
+Optimization restart 2/5, f = 99.32569783491243
+Optimization restart 3/5, f = 98.4760924637409
+Optimization restart 4/5, f = 99.32571978204642
+Optimization restart 5/5, f = 98.4760924637304
+f inputs x:[[0.96111666 0.82844813 0.40845334 0.70416986]] outputs y:50.32922132032715 (n:1.0991952775536937)
+num acquisition: 61, time elapsed: 10.26s
+Optimization restart 1/5, f = 99.01750967354745
+Optimization restart 2/5, f = 99.82059393484602
+Optimization restart 3/5, f = 99.82059393490727
+Optimization restart 4/5, f = 99.82059393481828
+Optimization restart 5/5, f = 99.820593935238
+f inputs x:[[0.62877546 0.51934159 0.41225343 0.73662317]] outputs y:49.75341505706662 (n:2.180923371223569)
+num acquisition: 62, time elapsed: 10.42s
+Optimization restart 1/5, f = 100.42429696948861
+Optimization restart 2/5, f = 101.1172845054298
+Optimization restart 3/5, f = 101.19711703806198
+Optimization restart 4/5, f = 101.19711703798875
+Optimization restart 5/5, f = 101.54903983270216
+f inputs x:[[0.49298147 0.70352762 0.81990779 0.00386453]] outputs y:47.62737731092405 (n:-1.0162740099774523)
+num acquisition: 63, time elapsed: 10.57s
+Optimization restart 1/5, f = 101.84098138372354
+Optimization restart 2/5, f = 102.57769719107895
+Optimization restart 3/5, f = 102.57769719228459
+Optimization restart 4/5, f = 102.57769723714128
+Optimization restart 5/5, f = 102.57769719106875
+f inputs x:[[0.24161112 0.96581792 0.05585507 0.92070501]] outputs y:42.455787574295385 (n:-4.969415391396439)
+num acquisition: 64, time elapsed: 10.72s
+Optimization restart 1/5, f = 103.27263092018268
+Optimization restart 2/5, f = 104.12224162083078
+Optimization restart 3/5, f = 104.12224161538943
+Optimization restart 4/5, f = 104.1222416142522
+Optimization restart 5/5, f = 104.12224161367547
+f inputs x:[[0.54459817 0.34710631 0.56162684 0.7579081 ]] outputs y:49.18015299899416 (n:2.348216161533392)
+num acquisition: 65, time elapsed: 10.90s
+Optimization restart 1/5, f = 104.68263425354209
+Optimization restart 2/5, f = 105.52152322830855
+Optimization restart 3/5, f = 105.62749450165461
+Optimization restart 4/5, f = 105.52152318455633
+Optimization restart 5/5, f = 105.62749450169582
+f inputs x:[[0.74843572 0.31418174 0.94508092 0.82233976]] outputs y:48.18760822995925 (n:-0.6834345734506319)
+num acquisition: 66, time elapsed: 11.07s
+Optimization restart 1/5, f = 106.09707367558119
+Optimization restart 2/5, f = 107.02089162493283
+Optimization restart 3/5, f = 107.02089162495068
+Optimization restart 4/5, f = 106.97675494460213
+Optimization restart 5/5, f = 107.0208916249592
+f inputs x:[[0.48033339 0.30198457 0.00434292 0.45810727]] outputs y:37.80533855940005 (n:-2.2624970940328666)
+num acquisition: 67, time elapsed: 11.20s
+Optimization restart 1/5, f = 107.52901500137986
+Optimization restart 2/5, f = 108.48116532410322
+Optimization restart 3/5, f = 108.48116532412354
+Optimization restart 4/5, f = 108.48116532420966
+Optimization restart 5/5, f = 108.48116532410302
+f inputs x:[[0.81091887 0.92294752 0.62990881 0.3055606 ]] outputs y:43.12987428929339 (n:-2.633888589679275)
+num acquisition: 68, time elapsed: 11.44s
+Optimization restart 1/5, f = 108.95759579936363
+Optimization restart 2/5, f = 109.74712668686709
+Optimization restart 3/5, f = 110.67720466560621
+Optimization restart 4/5, f = 109.74712668658509
+Optimization restart 5/5, f = 109.74712668637626
+f inputs x:[[0.04664285 0.24059759 0.67139514 0.37732545]] outputs y:52.39506994077292 (n:3.75360818042899)
+num acquisition: 69, time elapsed: 11.63s
+Optimization restart 1/5, f = 110.35246477018316
+Optimization restart 2/5, f = 111.0726074505696
+Optimization restart 3/5, f = 111.07260745082439
+Optimization restart 4/5, f = 111.07260746007921
+Optimization restart 5/5, f = 111.0726074505697
+f inputs x:[[0.69659955 0.05805767 0.81129673 0.35227791]] outputs y:50.133349848029255 (n:4.3453733341117)
+num acquisition: 70, time elapsed: 11.82s
+Optimization restart 1/5, f = 111.7599933076686
+Optimization restart 2/5, f = 112.42624374172381
+Optimization restart 3/5, f = 112.42624374120774
+Optimization restart 4/5, f = 112.42624374102115
+Optimization restart 5/5, f = 112.42624374104577
+f inputs x:[[0.91147981 0.73958477 0.695439   0.87733016]] outputs y:50.093342280836644 (n:1.4420229877377955)
+num acquisition: 71, time elapsed: 12.00s
+Optimization restart 1/5, f = 113.16792274583517
+Optimization restart 2/5, f = 113.77915764930896
+Optimization restart 3/5, f = 113.77915764916652
+Optimization restart 4/5, f = 113.77915764982174
+Optimization restart 5/5, f = 113.77915765848334
+f inputs x:[[0.95548514 0.8372021  0.77318747 0.78495227]] outputs y:48.747266837965384 (n:0.24893590168721777)
+num acquisition: 72, time elapsed: 12.20s
+Optimization restart 1/5, f = 114.58155915894264
+Optimization restart 2/5, f = 115.07066821911707
+Optimization restart 3/5, f = 115.07066821911258
+Optimization restart 4/5, f = 115.07066821925841
+Optimization restart 5/5, f = 115.07066821915922
+f inputs x:[[0.44493338 0.07981606 0.73809704 0.78236073]] outputs y:51.27482540977922 (n:2.748846452229237)
+num acquisition: 73, time elapsed: 12.39s
+Optimization restart 1/5, f = 115.98447767657365
+Optimization restart 2/5, f = 116.39936399699872
+Optimization restart 3/5, f = 116.39936399700319
+Optimization restart 4/5, f = 116.39936399710608
+Optimization restart 5/5, f = 116.39936400203524
+f inputs x:[[0.73351498 0.03928649 0.22481738 0.62818218]] outputs y:44.125193329357124 (n:-3.1530603580117207)
+num acquisition: 74, time elapsed: 12.59s
+Optimization restart 1/5, f = 117.41144664223253
+Optimization restart 2/5, f = 117.86659976058557
+Optimization restart 3/5, f = 117.86659976057726
+Optimization restart 4/5, f = 117.86659976066322
+Optimization restart 5/5, f = 117.86659976057814
+f inputs x:[[0.27305618 0.97612169 0.83063839 0.1038971 ]] outputs y:51.729852967800156 (n:3.870568311359395)
+num acquisition: 75, time elapsed: 12.76s
+Optimization restart 1/5, f = 118.81281735666697
+Optimization restart 2/5, f = 119.81561263574139
+Optimization restart 3/5, f = 119.81561263177107
+Optimization restart 4/5, f = 119.81561263685015
+Optimization restart 5/5, f = 119.81561263380125
+f inputs x:[[0.5437199  0.94910476 0.4392069  0.50846146]] outputs y:49.3822806612181 (n:1.8974904873729965)
+num acquisition: 76, time elapsed: 12.93s
+Optimization restart 1/5, f = 120.22449231546463
+Optimization restart 2/5, f = 120.610205313
+Optimization restart 3/5, f = 120.61020531300002
+Optimization restart 4/5, f = 122.02871403372569
+Optimization restart 5/5, f = 120.61020531300747
+f inputs x:[[0.61801597 0.96659437 0.92109692 0.04812763]] outputs y:47.15692476176473 (n:-0.5463030593213402)
+num acquisition: 77, time elapsed: 13.14s
+Optimization restart 1/5, f = 121.64372409154963
+Optimization restart 2/5, f = 122.60948632977562
+Optimization restart 3/5, f = 122.60948631070838
+Optimization restart 4/5, f = 122.01360005043391
+Optimization restart 5/5, f = 122.01360005056068
+f inputs x:[[0.35896863 0.47569651 0.84098506 0.54481879]] outputs y:46.684946130714174 (n:-0.8068795567271612)
+num acquisition: 78, time elapsed: 13.38s
+Optimization restart 1/5, f = 123.06428931042768
+Optimization restart 2/5, f = 124.02323457123225
+Optimization restart 3/5, f = 123.42598053507885
+Optimization restart 4/5, f = 124.02323453834184
+Optimization restart 5/5, f = 123.42598053425911
+f inputs x:[[0.4014839  0.4765628  0.02704409 0.72209931]] outputs y:46.73849191142546 (n:-1.134641354404528)
+num acquisition: 79, time elapsed: 13.58s
+Optimization restart 1/5, f = 124.48463479285157
+Optimization restart 2/5, f = 125.43312926972386
+Optimization restart 3/5, f = 124.83712638465234
+Optimization restart 4/5, f = 125.43312931806562
+Optimization restart 5/5, f = 125.4331292681772
+f inputs x:[[0.53002993 0.33090858 0.0262778  0.38299719]] outputs y:43.87142867720432 (n:-3.9338359428325265)
+num acquisition: 80, time elapsed: 13.75s
+Optimization restart 1/5, f = 125.91192543936364
+Optimization restart 2/5, f = 126.78531996680127
+Optimization restart 3/5, f = 126.78531987126357
+Optimization restart 4/5, f = 126.78531987127917
+Optimization restart 5/5, f = 126.78531987198923
+f inputs x:[[0.63917347 0.32403954 0.7620324  0.6576087 ]] outputs y:42.975390091541804 (n:-3.5320990795528755)
+num acquisition: 81, time elapsed: 13.92s
+Optimization restart 1/5, f = 127.34055615500921
+Optimization restart 2/5, f = 129.12340678312538
+Optimization restart 3/5, f = 128.19258304935465
+Optimization restart 4/5, f = 128.19258305290805
+Optimization restart 5/5, f = 128.19258305081718
+f inputs x:[[0.30144412 0.16209624 0.16428825 0.24520206]] outputs y:52.119079609215234 (n:0.4849178978910934)
+num acquisition: 82, time elapsed: 14.11s
+Optimization restart 1/5, f = 128.74137661495
+Optimization restart 2/5, f = 129.24803306087097
+Optimization restart 3/5, f = 129.24803306086497
+Optimization restart 4/5, f = 129.2480330608771
+Optimization restart 5/5, f = 130.54234480376226
+f inputs x:[[0.96154746 0.70985235 0.63056098 0.44678143]] outputs y:52.50698261221792 (n:2.1724609162996105)
+num acquisition: 83, time elapsed: 14.29s
+Optimization restart 1/5, f = 130.14120187548306
+Optimization restart 2/5, f = 130.05443843561582
+Optimization restart 3/5, f = 130.05443843561565
+Optimization restart 4/5, f = 130.05443843623644
+Optimization restart 5/5, f = 130.05443843573136
+f inputs x:[[0.         0.95226261 0.93156711 0.9590553 ]] outputs y:51.56716620250715 (n:4.067166202507092)
+num acquisition: 84, time elapsed: 14.47s
+Optimization restart 1/5, f = 132.5171374120053
+Optimization restart 2/5, f = 132.51713741195593
+Optimization restart 3/5, f = 132.51713741194428
+Optimization restart 4/5, f = 132.51713741225322
+Optimization restart 5/5, f = 132.51713741194877
+f inputs x:[[0.         0.97163993 0.38539509 0.80000116]] outputs y:45.59557220749698 (n:-1.904427792503004)
+num acquisition: 85, time elapsed: 14.67s
+Optimization restart 1/5, f = 133.8456541334448
+Optimization restart 2/5, f = 133.84565413338987
+Optimization restart 3/5, f = 133.8456541806972
+Optimization restart 4/5, f = 133.84565413339502
+Optimization restart 5/5, f = 133.8456541347152
+f inputs x:[[0.         0.97176979 0.01512396 0.51006666]] outputs y:48.86168033995416 (n:1.361680339954113)
+num acquisition: 86, time elapsed: 14.89s
+Optimization restart 1/5, f = 135.55940644541286
+Optimization restart 2/5, f = 135.01631109937637
+Optimization restart 3/5, f = 135.55940643993068
+Optimization restart 4/5, f = 135.0163110987431
+Optimization restart 5/5, f = 136.21809981202847
+f inputs x:[[0.03770012 0.5950925  0.45847635 0.7992344 ]] outputs y:50.04363724426202 (n:2.453800548769401)
+num acquisition: 87, time elapsed: 15.23s
+Optimization restart 1/5, f = 136.75731019651772
+Optimization restart 2/5, f = 137.00634118150992
+Optimization restart 3/5, f = 137.63705341430563
+Optimization restart 4/5, f = 137.00634118153545
+Optimization restart 5/5, f = 137.00634118140823
+f inputs x:[[0.48033339 0.30198457 0.6248163  0.6746714 ]] outputs y:37.224493715294365 (n:-2.8433408890938967)
+num acquisition: 88, time elapsed: 15.51s
+Optimization restart 1/5, f = 136.3282731428764
+Optimization restart 2/5, f = 138.10553196341306
+Optimization restart 3/5, f = 138.10553196367633
+Optimization restart 4/5, f = 138.10553196241042
+Optimization restart 5/5, f = 136.3282732287084
+f inputs x:[[0.48033339 0.30198457 0.9301482  0.59929293]] outputs y:37.863749077876825 (n:-2.204086015390499)
+num acquisition: 89, time elapsed: 15.80s
+Optimization restart 1/5, f = 134.6722148408431
+Optimization restart 2/5, f = 134.6722148406699
+Optimization restart 3/5, f = 138.19512754909545
+Optimization restart 4/5, f = 138.19512754956693
+Optimization restart 5/5, f = 138.19512754924517
+f inputs x:[[0.00678168 0.95386439 0.01050834 0.2744804 ]] outputs y:41.11203984872514 (n:1.1938646805296476)
+num acquisition: 90, time elapsed: 16.04s
+Optimization restart 1/5, f = 135.18359311552297
+Optimization restart 2/5, f = 139.27344944993501
+Optimization restart 3/5, f = 139.27344966831666
+Optimization restart 4/5, f = 139.2734495388363
+Optimization restart 5/5, f = 135.18359312952677
+f inputs x:[[0.48033339 0.30198457 0.12219273 0.66828493]] outputs y:39.207348116073575 (n:-0.8604869102835093)
+num acquisition: 91, time elapsed: 16.30s
+Optimization restart 1/5, f = 134.2594570039841
+Optimization restart 2/5, f = 135.47363773585698
+Optimization restart 3/5, f = 134.25945700374282
+Optimization restart 4/5, f = 143.31279196583714
+Optimization restart 5/5, f = 134.25945700372603
+f inputs x:[[0.4803334  0.30198456 0.36962995 0.95369489]] outputs y:37.949249078127124 (n:-2.118584286992698)
+num acquisition: 92, time elapsed: 16.63s
+Optimization restart 1/5, f = 132.7842825259132
+Optimization restart 2/5, f = 132.7842825259447
+Optimization restart 3/5, f = 132.78428252587827
+Optimization restart 4/5, f = 132.78428252628206
+Optimization restart 5/5, f = 132.78428252628385
+f inputs x:[[0.58769805 0.49277933 0.72261253 0.75182552]] outputs y:51.42077673487262 (n:3.99674926796365)
+num acquisition: 93, time elapsed: 16.86s
+Optimization restart 1/5, f = 134.22181917901764
+Optimization restart 2/5, f = 139.56014518496883
+Optimization restart 3/5, f = 134.2218191790181
+Optimization restart 4/5, f = 134.2218191801225
+Optimization restart 5/5, f = 146.1506769858029
+f inputs x:[[0.74637622 0.92458359 0.8120702  0.28815742]] outputs y:46.22931294588475 (n:-0.73901259114263)
+num acquisition: 94, time elapsed: 17.14s
+Optimization restart 1/5, f = 135.5462616571676
+Optimization restart 2/5, f = 135.54626165724997
+Optimization restart 3/5, f = 140.96700731254901
+Optimization restart 4/5, f = 135.54626165723533
+Optimization restart 5/5, f = 135.5462616571663
+f inputs x:[[0.54314118 0.34196143 0.93643663 0.14678297]] outputs y:47.9033054708429 (n:1.24007460166889)
+num acquisition: 95, time elapsed: 17.38s
+Optimization restart 1/5, f = 136.84597443507533
+Optimization restart 2/5, f = 148.98854626024968
+Optimization restart 3/5, f = 136.84597443513775
+Optimization restart 4/5, f = 136.84597443641712
+Optimization restart 5/5, f = 136.84597443522006
+f inputs x:[[0.74624297 0.92719776 0.66921186 0.21310436]] outputs y:48.62413560689471 (n:1.6261241505333506)
+num acquisition: 96, time elapsed: 17.68s
+Optimization restart 1/5, f = 138.1351576807505
+Optimization restart 2/5, f = 138.13515767402868
+Optimization restart 3/5, f = 138.1351576741384
+Optimization restart 4/5, f = 138.13515767399426
+Optimization restart 5/5, f = 138.13515767404868
+f inputs x:[[0.838698   0.15564349 0.57218757 0.21190874]] outputs y:46.44323768028471 (n:2.312831380158893)
+num acquisition: 97, time elapsed: 17.90s
+Optimization restart 1/5, f = 139.47576785993294
+Optimization restart 2/5, f = 139.47576777501138
+Optimization restart 3/5, f = 140.54209538459622
+Optimization restart 4/5, f = 139.47576777560977
+Optimization restart 5/5, f = 139.4757677767471
+f inputs x:[[0.85815042 0.33222462 0.99703835 0.9331836 ]] outputs y:52.33617103239003 (n:4.322210824935043)
+num acquisition: 98, time elapsed: 18.16s
+Optimization restart 1/5, f = 140.81778369588423
+Optimization restart 2/5, f = 140.81778369442142
+Optimization restart 3/5, f = 140.81778369442884
+Optimization restart 4/5, f = 140.81778369629657
+Optimization restart 5/5, f = 140.81778369442054
+f inputs x:[[0.59000554 0.49164694 0.01468173 0.24589947]] outputs y:49.29666134356794 (n:1.8846841515052)
+num acquisition: 99, time elapsed: 18.44s
+Optimization restart 1/5, f = 142.10382791611067
+Optimization restart 2/5, f = 142.10382791088503
+Optimization restart 3/5, f = 143.25211812821914
+Optimization restart 4/5, f = 143.2521187914804
+Optimization restart 5/5, f = 142.10382791085715
+f inputs x:[[0.39140397 0.24050239 0.67993741 0.58627316]] outputs y:47.79525751723307 (n:0.34936133312905027)
+num acquisition: 100, time elapsed: 18.74s
+Optimization restart 1/5, f = 143.41060654001797
+Optimization restart 2/5, f = 144.56834161114358
+Optimization restart 3/5, f = 143.410606539931
+Optimization restart 4/5, f = 143.41060657679893
+Optimization restart 5/5, f = 156.0832448332755
+f inputs x:[[0.22652867 0.66320035 0.00610079 0.75366002]] outputs y:46.38079099170487 (n:-2.0302386542915745)
+num acquisition: 101, time elapsed: 19.04s
+Optimization restart 1/5, f = 144.75664629716252
+Optimization restart 2/5, f = 144.756646186615
+Optimization restart 3/5, f = 144.75664618649384
+Optimization restart 4/5, f = 144.7566461865014
+Optimization restart 5/5, f = 145.9134874245815
+f inputs x:[[0.24154638 0.96560154 0.60802955 0.42039565]] outputs y:48.30774308386224 (n:0.8874524603422084)
+num acquisition: 102, time elapsed: 19.38s
+Optimization restart 1/5, f = 146.46730831444364
+Optimization restart 2/5, f = 147.8553704041706
+Optimization restart 3/5, f = 147.85537040417975
+Optimization restart 4/5, f = 158.92111591093692
+Optimization restart 5/5, f = 146.46730831443696
+f inputs x:[[0.6338182  0.76225513 0.72425636 0.33786491]] outputs y:46.755075667321094 (n:-2.3773431725072114)
+num acquisition: 103, time elapsed: 19.62s
+Optimization restart 1/5, f = 147.80164915321356
+Optimization restart 2/5, f = 149.19101489357033
+Optimization restart 3/5, f = 147.80164906180653
+Optimization restart 4/5, f = 147.80164906133555
+Optimization restart 5/5, f = 148.56045622164405
+f inputs x:[[0.22942955 0.65929754 0.07373736 0.18134209]] outputs y:50.28103296033453 (n:1.575255769974004)
+num acquisition: 104, time elapsed: 19.96s
+Optimization restart 1/5, f = 149.09893761364538
+Optimization restart 2/5, f = 161.759010475136
+Optimization restart 3/5, f = 149.8895095850963
+Optimization restart 4/5, f = 149.09893761344307
+Optimization restart 5/5, f = 149.8895097229238
+f inputs x:[[0.37862447 0.61985268 0.30372737 0.05512855]] outputs y:46.81985272496925 (n:-0.4563123161461943)
+num acquisition: 105, time elapsed: 20.27s
+Optimization restart 1/5, f = 150.44037626985866
+Optimization restart 2/5, f = 150.44037626986253
+Optimization restart 3/5, f = 163.17793618442082
+Optimization restart 4/5, f = 163.17793665744063
+Optimization restart 5/5, f = 150.4403762698702
+f inputs x:[[0.7926752  0.88178235 0.15740381 0.62063932]] outputs y:50.52737807094431 (n:3.31216696373943)
+num acquisition: 106, time elapsed: 20.53s
+Optimization restart 1/5, f = 151.73937246482575
+Optimization restart 2/5, f = 164.5968785245849
+Optimization restart 3/5, f = 152.55872481446738
+Optimization restart 4/5, f = 151.73937246488435
+Optimization restart 5/5, f = 151.73937246474478
+f inputs x:[[0.47705564 0.30023903 0.71278609 0.93821461]] outputs y:41.569133855296705 (n:-0.036252209794289045)
+num acquisition: 107, time elapsed: 20.83s
+Optimization restart 1/5, f = 153.4273303182909
+Optimization restart 2/5, f = 154.91262528833408
+Optimization restart 3/5, f = 154.91262528841128
+Optimization restart 4/5, f = 154.91262528866923
+Optimization restart 5/5, f = 153.42733031815146
+f inputs x:[[0.48033339 0.30198457 0.06158492 0.5336446 ]] outputs y:39.548626121721945 (n:-0.5192084069511317)
+num acquisition: 108, time elapsed: 21.09s
+Optimization restart 1/5, f = 152.7076623047007
+Optimization restart 2/5, f = 152.7076623032687
+Optimization restart 3/5, f = 154.4296059096095
+Optimization restart 4/5, f = 153.41396924566772
+Optimization restart 5/5, f = 154.0505945544965
+f inputs x:[[0.99736342 0.09899034 0.94995097 0.79996878]] outputs y:38.90806968955247 (n:-2.4220214273406984)
+num acquisition: 109, time elapsed: 21.40s
+Optimization restart 1/5, f = 154.72952190914245
+Optimization restart 2/5, f = 155.39593006710342
+Optimization restart 3/5, f = 155.39593007296878
+Optimization restart 4/5, f = 155.3835296647012
+Optimization restart 5/5, f = 158.02032220607774
+f inputs x:[[0.76205563 0.27800351 0.63648352 0.74453342]] outputs y:47.142433257139984 (n:-1.2137025633491574)
+num acquisition: 110, time elapsed: 21.66s
+Optimization restart 1/5, f = 156.0452294403335
+Optimization restart 2/5, f = 159.4133988402779
+Optimization restart 3/5, f = 159.41339933942845
+Optimization restart 4/5, f = 159.41339884027408
+Optimization restart 5/5, f = 159.4133988518322
+f inputs x:[[0.00120145 0.95854608 0.37508719 0.29617438]] outputs y:46.410386268271445 (n:0.39752989124459465)
+num acquisition: 111, time elapsed: 21.86s
+Optimization restart 1/5, f = 157.38515778391485
+Optimization restart 2/5, f = 158.09596948531123
+Optimization restart 3/5, f = 160.7676176820791
+Optimization restart 4/5, f = 160.76761768200902
+Optimization restart 5/5, f = 158.09596948528903
+f inputs x:[[0.39110678 0.24152681 0.76822036 0.57770868]] outputs y:42.752302020558 (n:-4.727554248408049)
+num acquisition: 112, time elapsed: 22.13s
+Optimization restart 1/5, f = 158.93481750316263
+Optimization restart 2/5, f = 162.461034124056
+Optimization restart 3/5, f = 159.906896897438
+Optimization restart 4/5, f = 162.46103412400316
+Optimization restart 5/5, f = 162.46103412393126
+f inputs x:[[0.22364255 0.66461739 0.34179668 0.91250478]] outputs y:42.01350341084711 (n:-6.0784360698295945)
+num acquisition: 113, time elapsed: 22.35s
+Optimization restart 1/5, f = 160.5592557119939
+Optimization restart 2/5, f = 164.33740485919992
+Optimization restart 3/5, f = 161.17162075535657
+Optimization restart 4/5, f = 161.567548564996
+Optimization restart 5/5, f = 164.3374048681865
+f inputs x:[[0.86248467 0.10584236 0.3121447  0.06814587]] outputs y:55.27056574744848 (n:5.739432240861807)
+num acquisition: 114, time elapsed: 22.58s
+Optimization restart 1/5, f = 162.0569263516463
+Optimization restart 2/5, f = 162.9127140763079
+Optimization restart 3/5, f = 162.91271407783432
+Optimization restart 4/5, f = 162.91271407637248
+Optimization restart 5/5, f = 162.91271407742065
+f inputs x:[[0.48083691 0.30529556 0.63029553 0.86533946]] outputs y:40.11306637132808 (n:0.23526962278392852)
+num acquisition: 115, time elapsed: 22.82s
+Optimization restart 1/5, f = 163.84553326998073
+Optimization restart 2/5, f = 163.11205041047145
+Optimization restart 3/5, f = 163.11205036896544
+Optimization restart 4/5, f = 163.11205036896015
+Optimization restart 5/5, f = 163.1120503689255
+f inputs x:[[0.48038592 0.30221627 0.62361583 0.80343242]] outputs y:41.807382576306715 (n:1.7610499729941396)
+num acquisition: 116, time elapsed: 23.17s
+Optimization restart 1/5, f = 164.06311330051267
+Optimization restart 2/5, f = 164.06311331457619
+Optimization restart 3/5, f = 164.06311330064258
+Optimization restart 4/5, f = 164.063113300515
+Optimization restart 5/5, f = 164.0631133005474
+f inputs x:[[0.48035737 0.30218431 0.63785198 0.09736399]] outputs y:47.08663657327291 (n:7.028067106606759)
+num acquisition: 117, time elapsed: 23.57s
+Optimization restart 1/5, f = 168.42139197843153
+Optimization restart 2/5, f = 168.42139197854937
+Optimization restart 3/5, f = 180.20520078084314
+Optimization restart 4/5, f = 169.85265706717684
+Optimization restart 5/5, f = 168.4213919784403
+f inputs x:[[0.48028085 0.30215334 0.1644063  0.28958965]] outputs y:41.28501567641843 (n:1.1931710395634842)
+num acquisition: 118, time elapsed: 23.91s
+Optimization restart 1/5, f = 168.9177584620279
+Optimization restart 2/5, f = 181.6241353630962
+Optimization restart 3/5, f = 181.62413250749512
+Optimization restart 4/5, f = 168.91775844708917
+Optimization restart 5/5, f = 168.9177584471396
+f inputs x:[[0.4802788  0.30215159 0.12436211 0.34225026]] outputs y:40.35894796476431 (n:0.2662142997050728)
+num acquisition: 119, time elapsed: 24.30s
+Optimization restart 1/5, f = 169.11455800227242
+Optimization restart 2/5, f = 169.11455800083067
+Optimization restart 3/5, f = 169.11455800138975
+Optimization restart 4/5, f = 170.53561725450356
+Optimization restart 5/5, f = 169.11455800032348
+f inputs x:[[0.48028114 0.3021493  0.75245148 0.92293733]] outputs y:35.568363738622644 (n:-4.523331067871931)
+num acquisition: 120, time elapsed: 24.62s
+Optimization restart 1/5, f = 168.51474816366124
+Optimization restart 2/5, f = 169.8313441781729
+Optimization restart 3/5, f = 169.83134417814162
+Optimization restart 4/5, f = 169.61320127555734
+Optimization restart 5/5, f = 169.8313441782413
+f inputs x:[[0.48030302 0.30214866 0.43062815 0.6824908 ]] outputs y:40.77056212071496 (n:0.6884646074461404)
+num acquisition: 121, time elapsed: 25.00s
+Optimization restart 1/5, f = 168.96014486619416
+Optimization restart 2/5, f = 168.9601447408987
+Optimization restart 3/5, f = 168.96014474089162
+Optimization restart 4/5, f = 170.2293673958253
+Optimization restart 5/5, f = 170.22936739641148
+f inputs x:[[0.48030225 0.30214727 0.7024142  0.04880854]] outputs y:34.01269974882667 (n:-6.069729679279929)
+num acquisition: 122, time elapsed: 25.36s
+Optimization restart 1/5, f = 168.46179465317013
+Optimization restart 2/5, f = 169.50501878773542
+Optimization restart 3/5, f = 169.50501878777453
+Optimization restart 4/5, f = 169.5050187877374
+Optimization restart 5/5, f = 169.50501878904927
+f inputs x:[[0.48033568 0.30214589 0.98437466 0.32223034]] outputs y:42.06434502759025 (n:1.9965444239936259)
+num acquisition: 123, time elapsed: 25.68s
+Optimization restart 1/5, f = 169.55579030017526
+Optimization restart 2/5, f = 169.55579030011103
+Optimization restart 3/5, f = 170.46799728997166
+Optimization restart 4/5, f = 170.46799729013827
+Optimization restart 5/5, f = 170.46799729002066
+f inputs x:[[0.4803235  0.30214703 0.09727036 0.4696606 ]] outputs y:32.77777205198438 (n:-7.295355272067474)
+num acquisition: 124, time elapsed: 26.04s
+Optimization restart 1/5, f = 169.24845619637253
+Optimization restart 2/5, f = 169.24845619634252
+Optimization restart 3/5, f = 169.86239672568564
+Optimization restart 4/5, f = 169.86239672568573
+Optimization restart 5/5, f = 169.86239672772342
+f inputs x:[[0.99521954 0.09735294 0.07105815 0.32080191]] outputs y:34.02082454775786 (n:-3.414208457913319)
+num acquisition: 125, time elapsed: 26.36s
+Optimization restart 1/5, f = 169.63171333435574
+Optimization restart 2/5, f = 169.95123004616022
+Optimization restart 3/5, f = 169.95123005502015
+Optimization restart 4/5, f = 169.9512300463125
+Optimization restart 5/5, f = 169.9512300461594
+f inputs x:[[0.99515206 0.0973014  0.63732835 0.23446998]] outputs y:37.19795093859466 (n:-0.13302173609753024)
+num acquisition: 126, time elapsed: 26.74s
+Optimization restart 1/5, f = 169.48625509261836
+Optimization restart 2/5, f = 169.4862550925812
+Optimization restart 3/5, f = 169.64670490760585
+Optimization restart 4/5, f = 169.64670490775404
+Optimization restart 5/5, f = 169.64670490800245
+f inputs x:[[0.99512764 0.09728274 0.24840485 0.28127627]] outputs y:36.545671942874264 (n:-0.7479252452502037)
+num acquisition: 127, time elapsed: 27.19s
+Optimization restart 1/5, f = 169.1498879125031
+Optimization restart 2/5, f = 169.10816877657584
+Optimization restart 3/5, f = 169.10816875033592
+Optimization restart 4/5, f = 169.10816875031932
+Optimization restart 5/5, f = 169.10816875068355
+f inputs x:[[1.         0.09599436 0.09355172 0.35189525]] outputs y:48.11029521666033 (n:0.610295216660411)
+num acquisition: 128, time elapsed: 27.46s
+Optimization restart 1/5, f = 173.94515950727643
+Optimization restart 2/5, f = 173.94515950727464
+Optimization restart 3/5, f = 173.94515950767925
+Optimization restart 4/5, f = 171.43631616765907
+Optimization restart 5/5, f = 173.94515955952755
+f inputs x:[[0.48015591 0.30213316 0.00104077 0.95043767]] outputs y:38.58868452449735 (n:-1.558115410602394)
+num acquisition: 129, time elapsed: 27.88s
+Optimization restart 1/5, f = 171.63208158729847
+Optimization restart 2/5, f = 174.04795092386914
+Optimization restart 3/5, f = 174.04795092386985
+Optimization restart 4/5, f = 174.04795092392783
+Optimization restart 5/5, f = 174.04795092421944
+f inputs x:[[0.4801336  0.30213366 0.37469763 0.56520704]] outputs y:43.33847751276006 (n:3.181783928713417)
+num acquisition: 130, time elapsed: 28.33s
+Optimization restart 1/5, f = 173.55366672082508
+Optimization restart 2/5, f = 175.63771727107286
+Optimization restart 3/5, f = 173.55366672100848
+Optimization restart 4/5, f = 175.63771727105723
+Optimization restart 5/5, f = 173.5536667208559
+f inputs x:[[0.99489836 0.09748675 0.88158583 0.88998819]] outputs y:31.489652166089627 (n:-5.441054481737693)
+num acquisition: 131, time elapsed: 28.69s
+Optimization restart 1/5, f = 172.83883127160993
+Optimization restart 2/5, f = 175.4196234696223
+Optimization restart 3/5, f = 175.41962346982487
+Optimization restart 4/5, f = 175.41962347232425
+Optimization restart 5/5, f = 175.41962347778002
+f inputs x:[[0.00762846 0.95599789 0.99283384 0.84239347]] outputs y:38.50505244635062 (n:-1.1841805443237365)
+num acquisition: 132, time elapsed: 29.07s
+Optimization restart 1/5, f = 174.20700851106574
+Optimization restart 2/5, f = 174.20700851107625
+Optimization restart 3/5, f = 177.27458573997268
+Optimization restart 4/5, f = 177.2745857399244
+Optimization restart 5/5, f = 177.27458574008352
+f inputs x:[[0.48027478 0.30208769 0.16766805 0.07714534]] outputs y:40.605854176829126 (n:0.511733105716699)
+num acquisition: 133, time elapsed: 29.45s
+Optimization restart 1/5, f = 174.99975863459304
+Optimization restart 2/5, f = 174.99975863098697
+Optimization restart 3/5, f = 174.99975863182948
+Optimization restart 4/5, f = 177.93116608086035
+Optimization restart 5/5, f = 174.99975863098774
+f inputs x:[[0.99479085 0.09762443 0.6330013  0.54513244]] outputs y:31.167062641832054 (n:-5.59566158153182)
+num acquisition: 134, time elapsed: 29.80s
+Optimization restart 1/5, f = 173.9177235226398
+Optimization restart 2/5, f = 177.25941299640985
+Optimization restart 3/5, f = 177.2594129963946
+Optimization restart 4/5, f = 177.25941299679153
+Optimization restart 5/5, f = 177.25941299644725
+f inputs x:[[0.00803256 0.95652054 0.81832618 0.43507875]] outputs y:40.538050023079684 (n:0.98419683735876)
+num acquisition: 135, time elapsed: 30.16s
+Optimization restart 1/5, f = 174.88364466557067
+Optimization restart 2/5, f = 178.56492569060487
+Optimization restart 3/5, f = 178.56492569059685
+Optimization restart 4/5, f = 174.88364466615621
+Optimization restart 5/5, f = 174.883644665572
+f inputs x:[[0.99470234 0.09777931 0.25785026 0.42688573]] outputs y:36.31877076209589 (n:-0.3055856727061985)
+num acquisition: 136, time elapsed: 30.62s
+Optimization restart 1/5, f = 174.691815095852
+Optimization restart 2/5, f = 178.189465524176
+Optimization restart 3/5, f = 178.1894655239654
+Optimization restart 4/5, f = 178.18946552394976
+Optimization restart 5/5, f = 178.18946552394857
+f inputs x:[[0.00601498 0.9911374  0.2038239  0.64897986]] outputs y:49.07813036534486 (n:3.0390064016465095)
+num acquisition: 137, time elapsed: 31.09s
+Optimization restart 1/5, f = 176.12904167755107
+Optimization restart 2/5, f = 179.6630696570059
+Optimization restart 3/5, f = 176.12904167754445
+Optimization restart 4/5, f = 179.6630696575885
+Optimization restart 5/5, f = 179.6630696579006
+f inputs x:[[0.81461123 0.92406164 0.05888229 0.81727887]] outputs y:49.070949379627365 (n:2.947474543171959)
+num acquisition: 138, time elapsed: 31.45s
+Optimization restart 1/5, f = 177.43460577108152
+Optimization restart 2/5, f = 180.71180929616503
+Optimization restart 3/5, f = 180.71180929633013
+Optimization restart 4/5, f = 180.7118092961665
+Optimization restart 5/5, f = 180.71180929761277
+f inputs x:[[0.48017828 0.30182714 0.91045684 0.83979648]] outputs y:40.90384831413755 (n:0.7686811385829352)
+num acquisition: 139, time elapsed: 31.83s
+Optimization restart 1/5, f = 178.35051583556333
+Optimization restart 2/5, f = 181.46191444211803
+Optimization restart 3/5, f = 181.4619144423386
+Optimization restart 4/5, f = 181.46191444211414
+Optimization restart 5/5, f = 181.46191444224672
+f inputs x:[[0.48030415 0.30240128 0.63234786 0.21810363]] outputs y:44.018497247381774 (n:3.9353687007599394)
+num acquisition: 140, time elapsed: 32.18s
+Optimization restart 1/5, f = 180.4369716632696
+Optimization restart 2/5, f = 183.17897807911152
+Optimization restart 3/5, f = 183.17897807967074
+Optimization restart 4/5, f = 183.17897807901267
+Optimization restart 5/5, f = 183.17897807900593
+f inputs x:[[0.22119658 0.66625032 0.80201431 0.03875635]] outputs y:48.14622213272965 (n:0.29978124803380446)
+num acquisition: 141, time elapsed: 32.69s
+Optimization restart 1/5, f = 181.74924559137105
+Optimization restart 2/5, f = 184.2822497911166
+Optimization restart 3/5, f = 184.28224979102626
+Optimization restart 4/5, f = 184.28224979170105
+Optimization restart 5/5, f = 184.28224979098547
+f inputs x:[[0.99483319 0.09769551 0.18583717 0.85913073]] outputs y:42.68976546215633 (n:5.867622965391231)
+num acquisition: 142, time elapsed: 33.08s
+Optimization restart 1/5, f = 184.9906715934813
+Optimization restart 2/5, f = 186.2097148170655
+Optimization restart 3/5, f = 186.20971481707562
+Optimization restart 4/5, f = 186.20971481710998
+Optimization restart 5/5, f = 186.20971481710257
+f inputs x:[[0.48028468 0.30172952 0.20773031 0.09502247]] outputs y:40.17107778833572 (n:0.08338304576281369)
+num acquisition: 143, time elapsed: 33.49s
+Optimization restart 1/5, f = 185.7653895090273
+Optimization restart 2/5, f = 186.79877510420778
+Optimization restart 3/5, f = 186.79877508929607
+Optimization restart 4/5, f = 186.79877508710194
+Optimization restart 5/5, f = 186.79877508837615
+f inputs x:[[0.99484947 0.09753801 0.80552927 0.61525218]] outputs y:34.18015679425546 (n:-2.674400722478707)
+num acquisition: 144, time elapsed: 33.87s
+Optimization restart 1/5, f = 185.21830277221898
+Optimization restart 2/5, f = 186.14339881607253
+Optimization restart 3/5, f = 186.1433988153904
+Optimization restart 4/5, f = 186.14339881582012
+Optimization restart 5/5, f = 186.14339881529304
+f inputs x:[[0.48030027 0.30165213 0.76556233 0.99427628]] outputs y:42.21385674648276 (n:2.1334484906020363)
+num acquisition: 145, time elapsed: 34.36s
+Optimization restart 1/5, f = 186.50177735229045
+Optimization restart 2/5, f = 187.21301602896267
+Optimization restart 3/5, f = 187.21301602844744
+Optimization restart 4/5, f = 187.21301603000524
+Optimization restart 5/5, f = 187.21301602844855
+f inputs x:[[0.99483795 0.09755526 0.6818895  0.72051774]] outputs y:29.415664926663396 (n:-7.420764115156928)
+num acquisition: 146, time elapsed: 34.77s
+Optimization restart 1/5, f = 185.90514980386388
+Optimization restart 2/5, f = 186.43943608421367
+Optimization restart 3/5, f = 186.43943608428555
+Optimization restart 4/5, f = 186.43943608417476
+Optimization restart 5/5, f = 186.43943608592565
+f inputs x:[[0.99480873 0.09760046 0.78100871 0.56880135]] outputs y:35.74176368877736 (n:-1.0487542368195695)
+num acquisition: 147, time elapsed: 35.18s
+Optimization restart 1/5, f = 185.78895621963792
+Optimization restart 2/5, f = 185.98199949875826
+Optimization restart 3/5, f = 185.98199949919487
+Optimization restart 4/5, f = 185.98199949874981
+Optimization restart 5/5, f = 185.98199949879026
+f inputs x:[[0.9948034  0.09760415 0.70593358 0.01845884]] outputs y:38.655228258322275 (n:1.8728204361011882)
+num acquisition: 148, time elapsed: 35.55s
+Optimization restart 1/5, f = 186.79821281247848
+Optimization restart 2/5, f = 186.7982128144306
+Optimization restart 3/5, f = 186.39766321655722
+Optimization restart 4/5, f = 186.39766321626695
+Optimization restart 5/5, f = 186.3976632174385
+f inputs x:[[1.         0.09437455 0.49988083 0.68385454]] outputs y:49.729867651669935 (n:2.2298676516700238)
+num acquisition: 149, time elapsed: 35.91s
+Optimization restart 1/5, f = 193.19128522679102
+Optimization restart 2/5, f = 193.19128521225926
+Optimization restart 3/5, f = 193.1912852122734
+Optimization restart 4/5, f = 193.1912852125892
+Optimization restart 5/5, f = 193.19128526962433
+f inputs x:[[1.         0.09878911 0.45511108 0.14952089]] outputs y:46.21240560977432 (n:-1.2875943902255205)
+num acquisition: 150, time elapsed: 36.24s
+Optimization restart 1/5, f = 196.69024468753136
+Optimization restart 2/5, f = 196.69024468754083
+Optimization restart 3/5, f = 196.69024468777687
+Optimization restart 4/5, f = 196.69024468753656
+Optimization restart 5/5, f = 196.69024468753076
+f inputs x:[[1.         0.09684671 0.54072859 0.97302972]] outputs y:48.442333115070156 (n:0.9423331150702441)
+num acquisition: 151, time elapsed: 36.55s
+Optimization restart 1/5, f = 200.9533502867602
+Optimization restart 2/5, f = 200.95335028675981
+Optimization restart 3/5, f = 200.95335028676473
+Optimization restart 4/5, f = 200.9533502876081
+Optimization restart 5/5, f = 200.95335028677746
+f inputs x:[[1.         0.0971298  0.99782107 0.02749577]] outputs y:48.46441056955618 (n:0.9644105695562575)
+num acquisition: 152, time elapsed: 36.88s
+Optimization restart 1/5, f = 204.70846940718616
+Optimization restart 2/5, f = 190.49640174173066
+Optimization restart 3/5, f = 204.7084694073659
+Optimization restart 4/5, f = 204.7084694071663
+Optimization restart 5/5, f = 204.70846940716385
+f inputs x:[[0.99481563 0.0975779  0.09448514 0.36356823]] outputs y:39.92926352177311 (n:3.1273054504407964)
+num acquisition: 153, time elapsed: 37.40s
+Optimization restart 1/5, f = 192.07802864574666
+Optimization restart 2/5, f = 205.4260751523584
+Optimization restart 3/5, f = 205.4260751522036
+Optimization restart 4/5, f = 205.42607515221158
+Optimization restart 5/5, f = 205.42607515223384
+f inputs x:[[0.48020035 0.30201705 0.27828498 0.02724827]] outputs y:38.34854300951627 (n:-1.777941116532866)
+num acquisition: 154, time elapsed: 37.87s
+Optimization restart 1/5, f = 192.74537487042963
+Optimization restart 2/5, f = 205.98146536999386
+Optimization restart 3/5, f = 205.98146536983688
+Optimization restart 4/5, f = 192.74537487049315
+Optimization restart 5/5, f = 205.98146536983683
+f inputs x:[[0.48004447 0.30196374 0.45398749 0.08064808]] outputs y:44.25209342165138 (n:4.0566673789752015)
+num acquisition: 155, time elapsed: 38.29s
+Optimization restart 1/5, f = 194.7236810550116
+Optimization restart 2/5, f = 207.58965081919004
+Optimization restart 3/5, f = 207.5896508192286
+Optimization restart 4/5, f = 207.58965081918748
+Optimization restart 5/5, f = 207.58965081918564
+f inputs x:[[0.48108085 0.30238482 0.01816654 0.81958983]] outputs y:39.74755665499236 (n:-0.007495772397945193)
+num acquisition: 156, time elapsed: 38.67s
+Optimization restart 1/5, f = 195.55838824236196
+Optimization restart 2/5, f = 208.30516387369687
+Optimization restart 3/5, f = 208.30516387454057
+Optimization restart 4/5, f = 208.30516387375837
+Optimization restart 5/5, f = 208.30516387707462
+f inputs x:[[0.99480759 0.09756325 0.27378588 0.8787127 ]] outputs y:37.31267681875084 (n:0.5219410216679807)
+num acquisition: 157, time elapsed: 39.13s
+Optimization restart 1/5, f = 195.9531493447297
+Optimization restart 2/5, f = 208.614185947564
+Optimization restart 3/5, f = 208.61418594786372
+Optimization restart 4/5, f = 208.6141859494766
+Optimization restart 5/5, f = 195.95314934478827
+f inputs x:[[0.48112166 0.3023884  0.66588122 0.00238266]] outputs y:40.127663550635376 (n:0.38908860446296994)
+num acquisition: 158, time elapsed: 39.54s
+Optimization restart 1/5, f = 196.83145482763666
+Optimization restart 2/5, f = 196.8314548276444
+Optimization restart 3/5, f = 209.38123610047415
+Optimization restart 4/5, f = 209.38123610049917
+Optimization restart 5/5, f = 209.38123610047415
+f inputs x:[[0.99479443 0.09756864 0.16865658 0.41254901]] outputs y:35.03878125596653 (n:-1.7321211256559976)
+num acquisition: 159, time elapsed: 40.06s
+Optimization restart 1/5, f = 196.66837465776226
+Optimization restart 2/5, f = 209.4915822454492
+Optimization restart 3/5, f = 209.49158224927794
+Optimization restart 4/5, f = 196.66837465778252
+Optimization restart 5/5, f = 209.49158224544618
+f inputs x:[[0.48112805 0.30232506 0.46006735 0.18716344]] outputs y:39.975552974881154 (n:0.24002868780775333)
+num acquisition: 160, time elapsed: 40.57s
+Optimization restart 1/5, f = 197.52943852973038
+Optimization restart 2/5, f = 210.24627296980444
+Optimization restart 3/5, f = 197.5294385297515
+Optimization restart 4/5, f = 210.24627298336688
+Optimization restart 5/5, f = 210.24627296950854
+f inputs x:[[0.99476578 0.09758982 0.67889314 0.51578209]] outputs y:32.37174029343832 (n:-4.355632146397696)
+num acquisition: 161, time elapsed: 41.02s
+Optimization restart 1/5, f = 197.17049099175964
+Optimization restart 2/5, f = 210.30455525148597
+Optimization restart 3/5, f = 210.30455525384318
+Optimization restart 4/5, f = 210.30455525180724
+Optimization restart 5/5, f = 197.1704909811201
+f inputs x:[[0.99471696 0.09763109 0.98109506 0.03428874]] outputs y:34.98275461303154 (n:-1.6706471740572715)
+num acquisition: 162, time elapsed: 41.49s
+Optimization restart 1/5, f = 197.06717214792587
+Optimization restart 2/5, f = 197.0671721478509
+Optimization restart 3/5, f = 210.35566553752324
+Optimization restart 4/5, f = 210.3556655375226
+Optimization restart 5/5, f = 210.35566554047185
+f inputs x:[[0.99468843 0.09765436 0.01649932 0.23174478]] outputs y:35.286192731712134 (n:-1.3242963514135309)
+num acquisition: 163, time elapsed: 41.96s
+Optimization restart 1/5, f = 197.0512916411296
+Optimization restart 2/5, f = 210.41407141219491
+Optimization restart 3/5, f = 210.41407141349652
+Optimization restart 4/5, f = 210.41407141219048
+Optimization restart 5/5, f = 210.41407141220338
+f inputs x:[[0.99466142 0.09767561 0.25325023 0.91794088]] outputs y:31.514735429078332 (n:-5.055354585943751)
+num acquisition: 164, time elapsed: 42.56s
+Optimization restart 1/5, f = 196.7916960132643
+Optimization restart 2/5, f = 210.38842108135293
+Optimization restart 3/5, f = 210.38842108134705
+Optimization restart 4/5, f = 210.38842108168765
+Optimization restart 5/5, f = 210.38842108139136
+f inputs x:[[0.99455004 0.09777196 0.09674175 0.51896159]] outputs y:36.498991022273245 (n:0.09411336840608743)
+num acquisition: 165, time elapsed: 43.13s
+Optimization restart 1/5, f = 197.1716855318805
+Optimization restart 2/5, f = 197.1716855302468
+Optimization restart 3/5, f = 210.5636862907924
+Optimization restart 4/5, f = 197.17168553053045
+Optimization restart 5/5, f = 210.5636862905738
+f inputs x:[[0.99456227 0.09775433 0.7918675  0.53229026]] outputs y:38.90992803103029 (n:2.486677272602174)
+num acquisition: 166, time elapsed: 43.68s
+Optimization restart 1/5, f = 198.49574939590076
+Optimization restart 2/5, f = 198.49574939719292
+Optimization restart 3/5, f = 211.1686968723696
+Optimization restart 4/5, f = 211.168696872576
+Optimization restart 5/5, f = 198.49574941115714
+f inputs x:[[0.48182383 0.30121303 0.12936314 0.43730858]] outputs y:41.54840572741013 (n:2.089899091714497)
+num acquisition: 167, time elapsed: 44.17s
+Optimization restart 1/5, f = 199.61166623417463
+Optimization restart 2/5, f = 212.15873311280856
+Optimization restart 3/5, f = 212.15873311333735
+Optimization restart 4/5, f = 212.1587331128026
+Optimization restart 5/5, f = 212.1587331128187
+f inputs x:[[0.48045185 0.30357678 0.24926619 0.99823298]] outputs y:40.844038797263494 (n:0.8173330279784646)
+num acquisition: 168, time elapsed: 44.69s
+Optimization restart 1/5, f = 200.61591884167024
+Optimization restart 2/5, f = 213.05206914320524
+Optimization restart 3/5, f = 213.05206914310082
+Optimization restart 4/5, f = 200.61591884165912
+Optimization restart 5/5, f = 213.05206914307905
+f inputs x:[[0.48101059 0.30290093 0.25913791 0.20226634]] outputs y:38.70070831710264 (n:-1.0867591171839361)
+num acquisition: 169, time elapsed: 45.26s
+Optimization restart 1/5, f = 201.47803059560815
+Optimization restart 2/5, f = 213.76013108723782
+Optimization restart 3/5, f = 213.76013108723964
+Optimization restart 4/5, f = 213.7601310873486
+Optimization restart 5/5, f = 213.76013108723882
+f inputs x:[[0.99457676 0.09770721 0.80037096 0.25659812]] outputs y:35.97422960719402 (n:-0.47217982070278885)
+num acquisition: 170, time elapsed: 45.89s
+Optimization restart 1/5, f = 201.7149509054022
+Optimization restart 2/5, f = 213.88465540363387
+Optimization restart 3/5, f = 213.88465540369089
+Optimization restart 4/5, f = 213.884655403814
+Optimization restart 5/5, f = 201.71495090623665
+f inputs x:[[0.48183663 0.30338486 0.41301758 0.60839165]] outputs y:41.17816805213927 (n:1.7057138034077752)
+num acquisition: 171, time elapsed: 46.43s
+Optimization restart 1/5, f = 202.75772042408897
+Optimization restart 2/5, f = 214.82099674131433
+Optimization restart 3/5, f = 214.82099674083
+Optimization restart 4/5, f = 214.82099675357117
+Optimization restart 5/5, f = 214.8209967408037
+f inputs x:[[0.47879526 0.30371108 0.78018988 0.11238713]] outputs y:40.609614379915385 (n:-0.1697995800514323)
+num acquisition: 172, time elapsed: 46.89s
+Optimization restart 1/5, f = 203.80489542116098
+Optimization restart 2/5, f = 203.8048954211727
+Optimization restart 3/5, f = 215.68492718378928
+Optimization restart 4/5, f = 215.68492701791615
+Optimization restart 5/5, f = 215.68492702041596
+f inputs x:[[0.99446399 0.09776649 0.99044723 0.3233241 ]] outputs y:36.29548887381069 (n:0.01197478279379395)
+num acquisition: 173, time elapsed: 47.35s
+Optimization restart 1/5, f = 204.12955841598279
+Optimization restart 2/5, f = 215.84808678235333
+Optimization restart 3/5, f = 215.8480867823239
+Optimization restart 4/5, f = 215.84808678237022
+Optimization restart 5/5, f = 204.12955841387424
+f inputs x:[[0.99445839 0.09776392 0.18843161 0.5946375 ]] outputs y:43.81417414643619 (n:7.5383814744432565)
+num acquisition: 174, time elapsed: 47.90s
+Optimization restart 1/5, f = 208.50928309990698
+Optimization restart 2/5, f = 218.01439356841576
+Optimization restart 3/5, f = 208.50928309974518
+Optimization restart 4/5, f = 218.01439356841286
+Optimization restart 5/5, f = 218.01439356925476
+f inputs x:[[0.99481222 0.09750289 0.54732109 0.57753477]] outputs y:34.95341608281779 (n:-1.8473064931713121)
+num acquisition: 175, time elapsed: 48.42s
+Optimization restart 1/5, f = 208.62184164992817
+Optimization restart 2/5, f = 218.08464403895667
+Optimization restart 3/5, f = 218.08464403916838
+Optimization restart 4/5, f = 218.08464403895704
+Optimization restart 5/5, f = 218.084644038972
+f inputs x:[[0.48044193 0.30280123 0.82501944 0.14234467]] outputs y:39.04071919801699 (n:-0.9850446424122211)
+num acquisition: 176, time elapsed: 48.92s
+Optimization restart 1/5, f = 209.4671128814596
+Optimization restart 2/5, f = 218.82983826328712
+Optimization restart 3/5, f = 218.82983826181618
+Optimization restart 4/5, f = 218.8298382617719
+Optimization restart 5/5, f = 218.8298382672738
+f inputs x:[[0.48041072 0.30294071 0.19366593 0.39459296]] outputs y:37.95572273883563 (n:-2.08444566633139)
+num acquisition: 177, time elapsed: 49.50s
+Optimization restart 1/5, f = 210.3430998105827
+Optimization restart 2/5, f = 219.53588531047671
+Optimization restart 3/5, f = 219.53588531043158
+Optimization restart 4/5, f = 219.53588531041675
+Optimization restart 5/5, f = 219.5358853104465
+f inputs x:[[0.99476965 0.09750515 0.31505563 0.92220548]] outputs y:37.383245104905484 (n:0.6457833648805831)
+num acquisition: 178, time elapsed: 50.09s
+Optimization restart 1/5, f = 210.98859132123084
+Optimization restart 2/5, f = 219.8881801454146
+Optimization restart 3/5, f = 219.88818014543187
+Optimization restart 4/5, f = 219.888180149123
+Optimization restart 5/5, f = 219.88818015285483
+f inputs x:[[0.64590131 0.3230411  0.30232988 0.05627202]] outputs y:43.610681264685994 (n:-3.535201713233451)
+num acquisition: 179, time elapsed: 50.58s
+Optimization restart 1/5, f = 212.29929218722518
+Optimization restart 2/5, f = 221.17150200183715
+Optimization restart 3/5, f = 221.17150200199762
+Optimization restart 4/5, f = 221.17150200195402
+Optimization restart 5/5, f = 221.17150200176417
+f inputs x:[[0.99473635 0.09753191 0.41474712 0.82454917]] outputs y:35.13046360662258 (n:-1.5565275654941169)
+num acquisition: 180, time elapsed: 51.13s
+Optimization restart 1/5, f = 212.45415779309798
+Optimization restart 2/5, f = 221.26721262177566
+Optimization restart 3/5, f = 221.26721261608853
+Optimization restart 4/5, f = 221.26721266352916
+Optimization restart 5/5, f = 221.26721261616868
+f inputs x:[[0.99470581 0.09753506 0.15151335 0.49280572]] outputs y:36.762623112446654 (n:0.12057098717039139)
+num acquisition: 181, time elapsed: 51.67s
+Optimization restart 1/5, f = 212.9287485840759
+Optimization restart 2/5, f = 212.92874858491737
+Optimization restart 3/5, f = 212.92874858404156
+Optimization restart 4/5, f = 221.53113077453824
+Optimization restart 5/5, f = 221.53113077478338
+f inputs x:[[0.99467864 0.09755151 0.41304204 0.13687098]] outputs y:29.10737055217605 (n:-7.494180577018162)
+num acquisition: 182, time elapsed: 52.24s
+Optimization restart 1/5, f = 213.75073275637604
+Optimization restart 2/5, f = 221.91452588143312
+Optimization restart 3/5, f = 221.91452584617724
+Optimization restart 4/5, f = 221.91452584613967
+Optimization restart 5/5, f = 221.91452584628843
+f inputs x:[[0.01064387 0.95638168 0.72367769 0.2163796 ]] outputs y:38.96833247351906 (n:0.26727718598134004)
+num acquisition: 183, time elapsed: 52.80s
+Optimization restart 1/5, f = 215.02003228016105
+Optimization restart 2/5, f = 223.6598033667005
+Optimization restart 3/5, f = 223.65980336518965
+Optimization restart 4/5, f = 223.65980336435632
+Optimization restart 5/5, f = 215.0200322802189
+f inputs x:[[0.99436606 0.09762278 0.86760987 0.22601245]] outputs y:34.01849557104991 (n:-2.136438236151605)
+num acquisition: 184, time elapsed: 53.37s
+Optimization restart 1/5, f = 215.09368706052953
+Optimization restart 2/5, f = 223.698072434763
+Optimization restart 3/5, f = 223.6980724347021
+Optimization restart 4/5, f = 223.69807243469558
+Optimization restart 5/5, f = 223.69807243471593
+f inputs x:[[0.99416538 0.09768488 0.39249495 0.71396249]] outputs y:29.02446345643142 (n:-6.855643932018955)
+num acquisition: 185, time elapsed: 53.97s
+Optimization restart 1/5, f = 215.66492124734538
+Optimization restart 2/5, f = 224.00385778298204
+Optimization restart 3/5, f = 224.00385778299332
+Optimization restart 4/5, f = 224.00385778296913
+Optimization restart 5/5, f = 224.003857783353
+f inputs x:[[0.99341263 0.09793093 0.78879724 0.22135373]] outputs y:32.29398487965951 (n:-2.6438490956908174)
+num acquisition: 186, time elapsed: 54.54s
+Optimization restart 1/5, f = 215.5640259683953
+Optimization restart 2/5, f = 224.01022144864868
+Optimization restart 3/5, f = 224.01022144864265
+Optimization restart 4/5, f = 224.01022144868753
+Optimization restart 5/5, f = 224.01022144877197
+f inputs x:[[0.99279533 0.09815575 0.54802875 0.47479631]] outputs y:34.529576317340826 (n:0.260459421627778)
+num acquisition: 187, time elapsed: 55.15s
+Optimization restart 1/5, f = 215.72430022079155
+Optimization restart 2/5, f = 224.08263861757393
+Optimization restart 3/5, f = 215.7243002256747
+Optimization restart 4/5, f = 224.08263861736134
+Optimization restart 5/5, f = 224.0826386173989
+f inputs x:[[0.99272693 0.09817466 0.4555337  0.28932841]] outputs y:37.57287553120347 (n:3.3716901867254974)
+num acquisition: 188, time elapsed: 55.72s
+Optimization restart 1/5, f = 216.8205768000605
+Optimization restart 2/5, f = 224.5650975068707
+Optimization restart 3/5, f = 224.56509750690935
+Optimization restart 4/5, f = 224.5650975069144
+Optimization restart 5/5, f = 224.56509750686132
+f inputs x:[[0.47631019 0.30901872 0.00780713 0.33789601]] outputs y:41.58394860662886 (n:-0.3878447307528365)
+num acquisition: 189, time elapsed: 56.26s
+Optimization restart 1/5, f = 218.1327559593733
+Optimization restart 2/5, f = 225.57442540787903
+Optimization restart 3/5, f = 225.57442540796953
+Optimization restart 4/5, f = 225.57442540789953
+Optimization restart 5/5, f = 225.57442540787898
+f inputs x:[[0.99323306 0.0979653  0.92576342 0.7418872 ]] outputs y:34.88002261855901 (n:0.144745386180818)
+num acquisition: 190, time elapsed: 56.93s
+Optimization restart 1/5, f = 218.33126325700368
+Optimization restart 2/5, f = 225.6797480971624
+Optimization restart 3/5, f = 225.6797480973146
+Optimization restart 4/5, f = 225.67974809740247
+Optimization restart 5/5, f = 225.67974809704975
+f inputs x:[[0.01402382 0.95509827 0.83099009 0.24447936]] outputs y:43.363148978818366 (n:4.581993425104763)
+num acquisition: 191, time elapsed: 57.53s
+Optimization restart 1/5, f = 219.64909347958448
+Optimization restart 2/5, f = 226.73735915896413
+Optimization restart 3/5, f = 226.7373591586505
+Optimization restart 4/5, f = 226.73735915871134
+Optimization restart 5/5, f = 226.73735915865214
+f inputs x:[[0.99322706 0.09796731 0.97843525 0.94141557]] outputs y:33.87421299766549 (n:-0.8543890834299545)
+num acquisition: 192, time elapsed: 58.16s
+Optimization restart 1/5, f = 219.68041120514334
+Optimization restart 2/5, f = 226.77338320472592
+Optimization restart 3/5, f = 226.7733832047035
+Optimization restart 4/5, f = 226.77338320471273
+Optimization restart 5/5, f = 226.7733832048213
+f inputs x:[[0.99308127 0.09801248 0.4213769  0.92107092]] outputs y:29.211399329679125 (n:-5.3579123136773665)
+num acquisition: 193, time elapsed: 58.78s
+Optimization restart 1/5, f = 219.81911994531447
+Optimization restart 2/5, f = 227.02552683884264
+Optimization restart 3/5, f = 219.81911994554025
+Optimization restart 4/5, f = 227.02552684447485
+Optimization restart 5/5, f = 227.02552683933774
+f inputs x:[[0.99242304 0.09821683 0.55000317 0.32387936]] outputs y:32.701978750486646 (n:-1.2137301719316238)
+num acquisition: 194, time elapsed: 59.47s
+Optimization restart 1/5, f = 219.6723162303182
+Optimization restart 2/5, f = 219.67231622578666
+Optimization restart 3/5, f = 227.03502722555933
+Optimization restart 4/5, f = 227.03502722558943
+Optimization restart 5/5, f = 227.0350272255905
+f inputs x:[[0.99212241 0.09831117 0.48554093 0.59761164]] outputs y:32.123393898284455 (n:-1.5292753493538713)
+num acquisition: 195, time elapsed: 60.09s
+Optimization restart 1/5, f = 219.436626442951
+Optimization restart 2/5, f = 219.43662642842656
+Optimization restart 3/5, f = 227.04898839366263
+Optimization restart 4/5, f = 227.04898839198052
+Optimization restart 5/5, f = 227.04898839200882
+f inputs x:[[0.48995906 0.3080614  0.29574557 0.5748644 ]] outputs y:38.985086972295036 (n:-0.9519858527118663)
+num acquisition: 196, time elapsed: 60.66s
+Optimization restart 1/5, f = 220.94031882025374
+Optimization restart 2/5, f = 227.91007098635475
+Optimization restart 3/5, f = 220.9403188202486
+Optimization restart 4/5, f = 227.91007098624198
+Optimization restart 5/5, f = 227.91007098624215
+f inputs x:[[0.99163187 0.09845545 0.83177569 0.65680072]] outputs y:30.70913615782102 (n:-2.5621983544183546)
+num acquisition: 197, time elapsed: 61.35s
+Optimization restart 1/5, f = 220.52546375230423
+Optimization restart 2/5, f = 227.99228003194
+Optimization restart 3/5, f = 227.9922800209579
+Optimization restart 4/5, f = 227.9922800219657
+Optimization restart 5/5, f = 227.99228002085476
+f inputs x:[[0.99098852 0.09865243 0.89207571 0.54431227]] outputs y:29.59747252270289 (n:-3.261029919010357)
+num acquisition: 198, time elapsed: 62.06s
+Optimization restart 1/5, f = 219.93157056354607
+Optimization restart 2/5, f = 228.17114781753432
+Optimization restart 3/5, f = 228.17114781758374
+Optimization restart 4/5, f = 228.17114782232574
+Optimization restart 5/5, f = 228.17114781748035
+f inputs x:[[0.99017599 0.0988994  0.70720782 0.92505084]] outputs y:31.309057796691278 (n:-1.1672902267212217)
+num acquisition: 199, time elapsed: 62.72s
+Optimization restart 1/5, f = 219.45127551621172
+Optimization restart 2/5, f = 228.2154030786365
+Optimization restart 3/5, f = 228.21540307863694
+Optimization restart 4/5, f = 228.21540307863677
+Optimization restart 5/5, f = 228.21540307864385
+f inputs x:[[0.9899473  0.09896091 0.88165549 0.73846889]] outputs y:33.42773137397627 (n:1.0310963410655365)
+num acquisition: 200, time elapsed: 63.40s
+Optimization restart 1/5, f = 219.57640031500313
+Optimization restart 2/5, f = 228.27026692476167
+Optimization restart 3/5, f = 228.2702668180517
+Optimization restart 4/5, f = 228.27026681805324
+Optimization restart 5/5, f = 228.2702668181472
+f inputs x:[[0.99031741 0.09884186 0.39840075 0.06566959]] outputs y:35.78616811441658 (n:3.2534537804157235)
+num acquisition: 201, time elapsed: 64.04s
+Optimization restart 1/5, f = 220.64829231997092
+Optimization restart 2/5, f = 220.6482923213221
+Optimization restart 3/5, f = 220.64829231998885
+Optimization restart 4/5, f = 228.55871598845226
+Optimization restart 5/5, f = 228.5587159884289
+f inputs x:[[0.99088073 0.09867078 0.579984   0.35161285]] outputs y:39.012718056509456 (n:6.212936628786762)
+num acquisition: 202, time elapsed: 64.70s
+Optimization restart 1/5, f = 223.46760408854573
+Optimization restart 2/5, f = 229.54234971666548
+Optimization restart 3/5, f = 229.54234971665713
+Optimization restart 4/5, f = 229.5423497169051
+Optimization restart 5/5, f = 229.54234972775225
+f inputs x:[[0.99144976 0.09848925 0.38728338 0.31155394]] outputs y:30.957840657428257 (n:-2.187865245092796)
+num acquisition: 203, time elapsed: 65.30s
+Optimization restart 1/5, f = 223.12610914920535
+Optimization restart 2/5, f = 229.6195488905277
+Optimization restart 3/5, f = 229.61954888147557
+Optimization restart 4/5, f = 229.61954889004517
+Optimization restart 5/5, f = 229.61954888118368
+f inputs x:[[0.99131407 0.09851938 0.71324912 0.17892716]] outputs y:31.92399642007938 (n:-1.1329870813840335)
+num acquisition: 204, time elapsed: 65.98s
+Optimization restart 1/5, f = 222.86169246843963
+Optimization restart 2/5, f = 229.66321593899602
+Optimization restart 3/5, f = 229.6632159390082
+Optimization restart 4/5, f = 229.66321593917897
+Optimization restart 5/5, f = 229.6632159422221
+f inputs x:[[0.99123128 0.0985337  0.71686601 0.35314043]] outputs y:32.37983390838865 (n:-0.6254050852395825)
+num acquisition: 205, time elapsed: 66.70s
+Optimization restart 1/5, f = 222.671156488228
+Optimization restart 2/5, f = 229.70801173060437
+Optimization restart 3/5, f = 222.67115647251615
+Optimization restart 4/5, f = 229.70801173042108
+Optimization restart 5/5, f = 229.70801172942322
+f inputs x:[[0.99117693 0.09854088 0.23726827 0.82952803]] outputs y:36.83513178999183 (n:3.862845423647115)
+num acquisition: 206, time elapsed: 67.30s
+Optimization restart 1/5, f = 224.04811623946023
+Optimization restart 2/5, f = 230.2130692568514
+Optimization restart 3/5, f = 230.21306925565807
+Optimization restart 4/5, f = 230.2130692557889
+Optimization restart 5/5, f = 230.21306925554464
+f inputs x:[[0.99138848 0.09851631 0.79778677 0.27156527]] outputs y:33.392219478608204 (n:0.2879004819066198)
+num acquisition: 207, time elapsed: 68.02s
+Optimization restart 1/5, f = 224.07447631455406
+Optimization restart 2/5, f = 230.29737503529597
+Optimization restart 3/5, f = 224.07447631454383
+Optimization restart 4/5, f = 224.07447631584796
+Optimization restart 5/5, f = 230.29737503529668
+f inputs x:[[0.99138078 0.09851434 0.05017154 0.41709803]] outputs y:33.01135582176255 (n:-0.08813204601887284)
+num acquisition: 208, time elapsed: 68.80s
+Optimization restart 1/5, f = 224.02472170831192
+Optimization restart 2/5, f = 230.3698873062426
+Optimization restart 3/5, f = 224.02472170915564
+Optimization restart 4/5, f = 230.3698873062409
+Optimization restart 5/5, f = 230.36988730754553
+f inputs x:[[0.99135684 0.09851774 0.40889619 0.54506159]] outputs y:34.06650925175531 (n:0.9824851942892042)
+num acquisition: 209, time elapsed: 69.44s
+Optimization restart 1/5, f = 224.22878760316655
+Optimization restart 2/5, f = 230.505849800279
+Optimization restart 3/5, f = 224.2287876031681
+Optimization restart 4/5, f = 230.50584980015583
+Optimization restart 5/5, f = 230.5058498002171
+f inputs x:[[0.99137823 0.09850807 0.78595284 0.23890481]] outputs y:33.10976463112938 (n:0.01154572952978456)
+num acquisition: 210, time elapsed: 70.15s
+Optimization restart 1/5, f = 224.20597095376792
+Optimization restart 2/5, f = 230.58989989521103
+Optimization restart 3/5, f = 224.2059709601977
+Optimization restart 4/5, f = 230.58989989417336
+Optimization restart 5/5, f = 230.58989989417336
+f inputs x:[[0.9913584  0.09850994 0.4542802  0.92681923]] outputs y:27.98491301158429 (n:-5.1005501649365765)
+num acquisition: 211, time elapsed: 70.82s
+Optimization restart 1/5, f = 224.3238377103999
+Optimization restart 2/5, f = 224.32383771026144
+Optimization restart 3/5, f = 231.04942325937947
+Optimization restart 4/5, f = 231.04942325913305
+Optimization restart 5/5, f = 224.323837710477
+f inputs x:[[0.99111619 0.09854469 0.38617771 0.09621497]] outputs y:35.473366898142594 (n:2.5368355489657213)
+num acquisition: 212, time elapsed: 71.54s
+Optimization restart 1/5, f = 225.07605592012962
+Optimization restart 2/5, f = 225.07605592013016
+Optimization restart 3/5, f = 231.36853221500354
+Optimization restart 4/5, f = 225.07605592013033
+Optimization restart 5/5, f = 231.3685327181989
+f inputs x:[[0.99124225 0.09855221 0.20297919 0.0096824 ]] outputs y:34.75389442352126 (n:1.7430640116733334)
+num acquisition: 213, time elapsed: 72.24s
+Optimization restart 1/5, f = 225.531384045266
+Optimization restart 2/5, f = 231.5971598684277
+Optimization restart 3/5, f = 231.5971598687597
+Optimization restart 4/5, f = 231.59715986842383
+Optimization restart 5/5, f = 231.59715986865692
+f inputs x:[[0.99129706 0.09853042 0.94574052 0.09130878]] outputs y:31.315801763309302 (n:-1.7299507513788162)
+num acquisition: 214, time elapsed: 72.95s
+Optimization restart 1/5, f = 225.34011518301972
+Optimization restart 2/5, f = 231.6990080783466
+Optimization restart 3/5, f = 231.69900807831092
+Optimization restart 4/5, f = 231.6990080790739
+Optimization restart 5/5, f = 231.69900807832695
+f inputs x:[[0.99120744 0.0985466  0.15776116 0.28319781]] outputs y:30.812151014147624 (n:-2.177987845032151)
+num acquisition: 215, time elapsed: 73.67s
+Optimization restart 1/5, f = 225.1381320516723
+Optimization restart 2/5, f = 231.82617205205838
+Optimization restart 3/5, f = 231.8261720520644
+Optimization restart 4/5, f = 231.82617205211946
+Optimization restart 5/5, f = 231.8261720520585
+f inputs x:[[0.99108418 0.09855818 0.4369786  0.28960117]] outputs y:32.59398997504787 (n:-0.3233912065516963)
+num acquisition: 216, time elapsed: 74.40s
+Optimization restart 1/5, f = 225.0748562847133
+Optimization restart 2/5, f = 231.92336107702073
+Optimization restart 3/5, f = 231.92336107659264
+Optimization restart 4/5, f = 231.92336107659705
+Optimization restart 5/5, f = 231.92336107679142
+f inputs x:[[0.99104629 0.09855747 0.65318913 0.56295577]] outputs y:37.87697479985285 (n:4.980992029148635)
+num acquisition: 217, time elapsed: 75.20s
+Optimization restart 1/5, f = 227.08124667322016
+Optimization restart 2/5, f = 232.76197728310098
+Optimization restart 3/5, f = 232.76197728374893
+Optimization restart 4/5, f = 232.7619772833724
+Optimization restart 5/5, f = 232.76197728445442
+f inputs x:[[0.99129732 0.09859245 0.90722552 0.57544132]] outputs y:32.35859145664199 (n:-0.6837695140321158)
+num acquisition: 218, time elapsed: 75.96s
+Optimization restart 1/5, f = 227.00689975244723
+Optimization restart 2/5, f = 232.8674771019015
+Optimization restart 3/5, f = 232.86747710190116
+Optimization restart 4/5, f = 232.86747710197545
+Optimization restart 5/5, f = 227.00689975244023
+f inputs x:[[0.99126196 0.09862165 0.04528314 0.35715434]] outputs y:30.5885802393106 (n:-2.4303001309348566)
+num acquisition: 219, time elapsed: 76.78s
+Optimization restart 1/5, f = 226.86701622293054
+Optimization restart 2/5, f = 233.02871259480588
+Optimization restart 3/5, f = 233.02871259677744
+Optimization restart 4/5, f = 233.02871259496536
+Optimization restart 5/5, f = 233.0287125948551
+f inputs x:[[0.99117566 0.09873864 0.71107814 0.47538253]] outputs y:34.43854228273345 (n:1.47831910226753)
+num acquisition: 220, time elapsed: 77.57s
+Optimization restart 1/5, f = 227.25238300391754
+Optimization restart 2/5, f = 233.26245754253856
+Optimization restart 3/5, f = 227.25238300399397
+Optimization restart 4/5, f = 233.26245754243965
+Optimization restart 5/5, f = 233.2624575424478
+f inputs x:[[0.99118745 0.09859889 0.9238582  0.24724791]] outputs y:32.56371895841576 (n:-0.4114855017834803)
+num acquisition: 221, time elapsed: 78.37s
+Optimization restart 1/5, f = 227.2158133057663
+Optimization restart 2/5, f = 233.3823544235902
+Optimization restart 3/5, f = 233.38235442354767
+Optimization restart 4/5, f = 233.38235443089346
+Optimization restart 5/5, f = 227.2158133057809
+f inputs x:[[0.99115526 0.09860964 0.60739836 0.69794414]] outputs y:34.96663999049641 (n:2.011075653973728)
+num acquisition: 222, time elapsed: 79.27s
+Optimization restart 1/5, f = 227.77183415548035
+Optimization restart 2/5, f = 233.68559662813678
+Optimization restart 3/5, f = 233.68559662842574
+Optimization restart 4/5, f = 233.68559663279933
+Optimization restart 5/5, f = 233.685596642408
+f inputs x:[[0.99120827 0.09856068 0.66643237 0.1015455 ]] outputs y:31.66527073609741 (n:-1.3245583950685602)
+num acquisition: 223, time elapsed: 80.09s
+Optimization restart 1/5, f = 227.6645521569621
+Optimization restart 2/5, f = 233.81481010243857
+Optimization restart 3/5, f = 233.8148101024291
+Optimization restart 4/5, f = 233.81481010359775
+Optimization restart 5/5, f = 233.81481010601613
+f inputs x:[[0.99113996 0.09856462 0.97511607 0.26928138]] outputs y:30.95101688761396 (n:-1.9981763911697625)
+num acquisition: 224, time elapsed: 80.94s
+Optimization restart 1/5, f = 227.54766656767802
+Optimization restart 2/5, f = 233.97358461549777
+Optimization restart 3/5, f = 233.97358447411892
+Optimization restart 4/5, f = 227.5476665676607
+Optimization restart 5/5, f = 227.54766656766049
+f inputs x:[[0.99102759 0.09855018 0.32084024 0.16864523]] outputs y:33.12662986638164 (n:0.2406821463426599)
+num acquisition: 225, time elapsed: 81.88s
+Optimization restart 1/5, f = 227.61604934733646
+Optimization restart 2/5, f = 234.12772606847108
+Optimization restart 3/5, f = 234.12772606846983
+Optimization restart 4/5, f = 227.61604934732588
+Optimization restart 5/5, f = 234.12772606849427
+f inputs x:[[0.99102283 0.09855521 0.80737279 0.204642  ]] outputs y:35.383723394427854 (n:2.500715162348383)DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 250 normal>) = 10.1925
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/harald/env36/lib/python3.6/site-packages/matplotlib-3.3.2-py3.6-linux-x86_64.egg/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 250 normal>) = 10.1925
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/harald/env36/lib/python3.6/site-packages/matplotlib-3.3.2-py3.6-linux-x86_64.egg/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+
+num acquisition: 226, time elapsed: 82.72s
+Optimization restart 1/5, f = 228.3474370270606
+Optimization restart 2/5, f = 234.510210003089
+Optimization restart 3/5, f = 228.34743702701763
+Optimization restart 4/5, f = 228.34743702742188
+Optimization restart 5/5, f = 234.51021000306395
+f inputs x:[[0.99114347 0.09862705 0.22680661 0.5732113 ]] outputs y:30.859200042150203 (n:-2.0884617625579023)
+num acquisition: 227, time elapsed: 83.54s
+Optimization restart 1/5, f = 228.25603377893455
+Optimization restart 2/5, f = 234.68695160280197
+Optimization restart 3/5, f = 228.25603377895618
+Optimization restart 4/5, f = 228.25603377894362
+Optimization restart 5/5, f = 234.68695160282644
+f inputs x:[[0.99105806 0.09870513 0.40257101 0.80149679]] outputs y:30.801120556592767 (n:-2.093028647886979)
+num acquisition: 228, time elapsed: 84.43s
+Optimization restart 1/5, f = 228.16188713223883
+Optimization restart 2/5, f = 234.86850563819206
+Optimization restart 3/5, f = 234.868505639906
+Optimization restart 4/5, f = 234.86850564031062
+Optimization restart 5/5, f = 234.8685056383909
+f inputs x:[[0.99097393 0.09886886 0.8625444  0.51716026]] outputs y:32.809728214687226 (n:-0.02846975209925891)
+num acquisition: 229, time elapsed: 85.35s
+Optimization restart 1/5, f = 228.19031697881792
+Optimization restart 2/5, f = 235.02550219874058
+Optimization restart 3/5, f = 235.0255021987574
+Optimization restart 4/5, f = 235.0255022035929
+Optimization restart 5/5, f = 235.0255021987753
+f inputs x:[[0.99095749 0.09888206 0.43960609 0.2372825 ]] outputs y:29.568182112783685 (n:-3.260350756009675)
+num acquisition: 230, time elapsed: 86.20s
+Optimization restart 1/5, f = 228.21030824437767
+Optimization restart 2/5, f = 235.32182904487178
+Optimization restart 3/5, f = 235.32182904550348
+Optimization restart 4/5, f = 235.32182905167596
+Optimization restart 5/5, f = 235.321829043894
+f inputs x:[[0.99085531 0.09951082 0.59484913 0.82986323]] outputs y:33.616030791405514 (n:0.8767583820602771)
+num acquisition: 231, time elapsed: 87.10s
+Optimization restart 1/5, f = 228.42946836039192
+Optimization restart 2/5, f = 235.53215567234867
+Optimization restart 3/5, f = 235.5321556793462
+Optimization restart 4/5, f = 235.53215567223052
+Optimization restart 5/5, f = 235.53215567222776
+f inputs x:[[0.99078405 0.09893678 0.44401245 0.47569374]] outputs y:30.817251582725824 (n:-1.9179720466946504)
+num acquisition: 232, time elapsed: 87.91s
+Optimization restart 1/5, f = 228.33169333609067
+Optimization restart 2/5, f = 228.33169333608387
+Optimization restart 3/5, f = 228.33169333670546
+Optimization restart 4/5, f = 235.72306297586212
+Optimization restart 5/5, f = 235.72306297579524
+f inputs x:[[0.99068266 0.0992658  0.7921329  0.13560734]] outputs y:33.15404376783391 (n:0.4868136807166556)
+num acquisition: 233, time elapsed: 88.79s
+Optimization restart 1/5, f = 228.44685370053548
+Optimization restart 2/5, f = 235.9112610986508
+Optimization restart 3/5, f = 235.91126110576914
+Optimization restart 4/5, f = 235.91126109992967
+Optimization restart 5/5, f = 228.44685370073884
+f inputs x:[[0.99066134 0.0990696  0.09091738 0.1711978 ]] outputs y:34.441732021856886 (n:1.7735817363138175)
+num acquisition: 234, time elapsed: 89.73s
+Optimization restart 1/5, f = 228.9003265907186
+Optimization restart 2/5, f = 236.21033025081508
+Optimization restart 3/5, f = 236.21033025081528
+Optimization restart 4/5, f = 236.21033025136103
+Optimization restart 5/5, f = 236.21033025086354
+f inputs x:[[0.99068563 0.09866974 0.4116573  0.24921737]] outputs y:37.03316518663329 (n:4.330785533519678)
+num acquisition: 235, time elapsed: 90.64s
+Optimization restart 1/5, f = 230.50939790880386
+Optimization restart 2/5, f = 236.97095200141948
+Optimization restart 3/5, f = 236.970951999369
+Optimization restart 4/5, f = 236.97095199912079
+Optimization restart 5/5, f = 230.50939790891468
+f inputs x:[[0.99104543 0.09902344 0.77254429 0.94922842]] outputs y:36.550639094171494 (n:3.681664810608007)
+num acquisition: 236, time elapsed: 91.48s
+Optimization restart 1/5, f = 231.7995078323955
+Optimization restart 2/5, f = 237.6206296324626
+Optimization restart 3/5, f = 237.6206296321352
+Optimization restart 4/5, f = 231.79950783239758
+Optimization restart 5/5, f = 237.62062963210477
+f inputs x:[[0.99089206 0.09812307 0.06716192 0.08436807]] outputs y:35.53697221645848 (n:2.699590190679173)
+num acquisition: 237, time elapsed: 92.41s
+Optimization restart 1/5, f = 232.59353816914773
+Optimization restart 2/5, f = 232.59353816317585
+Optimization restart 3/5, f = 238.07719205907634
+Optimization restart 4/5, f = 232.59353816299847
+Optimization restart 5/5, f = 238.07719205920426
+f inputs x:[[0.99126047 0.09911499 0.54444323 0.9591017 ]] outputs y:32.44521384127017 (n:-0.5447817118789754)
+num acquisition: 238, time elapsed: 93.33s
+Optimization restart 1/5, f = 232.61044907593953
+Optimization restart 2/5, f = 238.25905885061115
+Optimization restart 3/5, f = 238.25905884925234
+Optimization restart 4/5, f = 232.61044907593072
+Optimization restart 5/5, f = 238.2590588841481
+f inputs x:[[0.99127618 0.09930495 0.83943078 0.37813764]] outputs y:28.377391848759405 (n:-4.611626999306846)
+num acquisition: 239, time elapsed: 94.24s
+Optimization restart 1/5, f = 233.0492979590372
+Optimization restart 2/5, f = 233.0492979597325
+Optimization restart 3/5, f = 238.79023844204522
+Optimization restart 4/5, f = 233.04929795907907
+Optimization restart 5/5, f = 238.7902384420459
+f inputs x:[[0.99133891 0.1010985  0.12730781 0.04916768]] outputs y:30.38317537375853 (n:-2.5484269261722576)
+num acquisition: 240, time elapsed: 95.15s
+Optimization restart 1/5, f = 233.10858104543877
+Optimization restart 2/5, f = 239.0516523691965
+Optimization restart 3/5, f = 233.10858105113624
+Optimization restart 4/5, f = 233.10858104791046
+Optimization restart 5/5, f = 233.10858104546804
+48.22857267609334
+Optimization restart 1/5, f = 233.1085810454335
+Optimization restart 2/5, f = 239.051652369286
+Optimization restart 3/5, f = 239.05165236919538
+Optimization restart 4/5, f = 239.05165236932714
+Optimization restart 5/5, f = 239.0516523691995
