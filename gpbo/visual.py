@@ -419,6 +419,8 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 			color='purple'
 		elif(plotOrder[idx].find('high') >= 0):
 			color='red'
+		elif(plotOrder[idx].find('biggest') >= 0):
+			color='brown'
 		ax1.plot(ys, linestyle=linestyle, color=color)#, label=labels[idx])
 	#ax1.set_ylim(0.6*10e-1, 3.2*10e2)
 	ax1.set_yscale('log')
@@ -444,6 +446,7 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 	# ax2.set_ylim(-0.05, 1.05)
 	# ax2.tick_params(axis='y')
 
+	brown_patch = mpatches.Patch(color='brown', label='Very high noise')
 	red_patch = mpatches.Patch(color='red', label='High noise')
 	purple_patch = mpatches.Patch(color='purple', label='Medium noise')
 	blue_patch = mpatches.Patch(color='blue', label='Low noise')
@@ -451,7 +454,7 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 	blossom_line = mlines.Line2D([], [], color='black', label='Blossom')
 	pes_line = mlines.Line2D([], [], color='black', linestyle='dashed', label='PES')
 	ei_line = mlines.Line2D([], [], color='black', linestyle='dotted', label='EI')
-	ax1.legend(handles=[red_patch, purple_patch, blue_patch, green_patch, blossom_line, pes_line, ei_line])
+	ax1.legend(handles=[brown_patch, red_patch, purple_patch,  green_patch, blossom_line, ei_line])
 	#ax1.legend()
 	fig.tight_layout()
 	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -523,6 +526,9 @@ else: #Multi file
 			elif(entry.find('e05') >= 0):
 				plotEntry += 'high'
 				print("high")
+			elif(entry.find('e25') >= 0):
+				plotEntry += 'biggest'
+				print("biggest")
 			else:
 				plotEntry += 'none'
 				print("none")
@@ -545,7 +551,8 @@ else: #Multi file
 							besty = y
 						bestys.append(besty)
 					lengths.append(len(df.index))
-					regret = sp.exp(bestys) - 1 # check against functionfiles if transform is used. (for QAOA probably)
+					#regret = sp.exp(bestys) - 1 # check against functionfiles if transform is used. (for QAOA probably)
+					regret = bestys
 					truey = regret #+ globalymin[count//numRuns]
 					regrets.append(regret)
 					trueys.append(truey)
@@ -560,15 +567,15 @@ else: #Multi file
 					ymins = []
 					for i in range(0,250):
 						if (i >= len(xreccs)):
-							#ymins.append(func([(x+1)/2 for x in xreccs[-1]])) #for qaoa
-							ymins.append(func(xreccs[-1]))
+							ymins.append(func([(x+1)/2 for x in xreccs[-1]])) #for qaoa
+							#ymins.append(func(xreccs[-1]))
 						else:
-							#ymins.append(func([(x+1)/2 for x in xreccs[i]])) #for qaoa
-							ymins.append(func(xreccs[i]))
+							ymins.append(func([(x+1)/2 for x in xreccs[i]])) #for qaoa
+							#ymins.append(func(xreccs[i]))
 					#sepValues = pd.DataFrame(df['truey at xrecc'].str.split(',').to_list(), columns=['truey at xrecc', 'taq'])
 					#ymins = sepValues['truey at xrecc'].values.astype(float)
-					regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used. (for QAOA probably)
-					#regret = ymins
+					#regret = sp.exp(ymins) - 1 # check against functionfiles if transform is used. (for QAOA probably)
+					regret = ymins
 					truey = regret #+ globalymin[count//numRuns]
 					regrets.append(regret)
 					trueys.append(truey)
