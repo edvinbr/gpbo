@@ -1,0 +1,1732 @@
+INFO:GP:initializing Y
+INFO:GP:initializing inference method
+INFO:GP:adding kernel and likelihood as parameters
+INFO:paramz.transformations:Warning: changing parameters to satisfy constraints
+removed robo import in opts.py l17 due to theano errors
+f inputs x:[[ 0.27541612  0.76544709 -0.66620465 -0.80592176]] ev:{} outputs y:7.957653862872247 (n:0.0) c:1.0
+f inputs x:[[ 0.44871035  0.22458651 -0.13891851 -0.14725734]] ev:{} outputs y:4.042613409354931 (n:0.0) c:1.0
+f inputs x:[[ 0.33474257  0.59868316 -0.56293343  0.46999318]] ev:{} outputs y:6.66178466025466 (n:-0.0) c:1.0
+f inputs x:[[-0.3489974   0.75648668  0.02024992  0.85041319]] ev:{} outputs y:6.879485707265299 (n:-0.0) c:1.0
+f inputs x:[[ 0.56226771  0.53386267  0.46351029 -0.99437913]] ev:{} outputs y:6.774744358413691 (n:0.0) c:1.0
+Using a model defined by the used.
+Optimization restart 1/5, f = 7.094692666024759
+Optimization restart 2/5, f = 7.094692791929505
+Optimization restart 3/5, f = 7.094692666023362
+Optimization restart 4/5, f = 7.094692901050996
+Optimization restart 5/5, f = 7.09469267693416
+f inputs x:[[-0.3887086  -0.40494346 -0.6425606  -0.119096  ]] ev:{} outputs y:6.926396648769587 (n:-0.0) c:1.0
+num acquisition: 1, time elapsed: 0.09s
+Optimization restart 1/5, f = 8.513631199228035
+Optimization restart 2/5, f = 8.513631736308628
+Optimization restart 3/5, f = 8.513631210810061
+Optimization restart 4/5, f = 8.513631215863928
+Optimization restart 5/5, f = 8.513631357961483
+f inputs x:[[ 0.23903217 -0.97443119 -0.50679036  0.01972931]] ev:{} outputs y:8.052630340578926 (n:-0.0) c:1.0
+num acquisition: 2, time elapsed: 0.17s
+Optimization restart 1/5, f = 9.93256973243271
+Optimization restart 2/5, f = 9.932569759543872
+Optimization restart 3/5, f = 9.932569652085716
+Optimization restart 4/5, f = 9.932562599969216
+Optimization restart 5/5, f = 9.93256185833847
+f inputs x:[[ 0.44389615  0.23998009 -0.16338163 -0.09563262]] ev:{} outputs y:4.042001236376855 (n:0.0) c:1.0
+num acquisition: 3, time elapsed: 0.30s
+Optimization restart 1/5, f = 8.320540833192624
+Optimization restart 2/5, f = 8.320540845267754
+Optimization restart 3/5, f = 8.320540951048915
+Optimization restart 4/5, f = 8.32054082927182
+Optimization restart 5/5, f = 8.320540852466625
+f inputs x:[[ 0.5284547   0.19483657 -0.02526761 -0.04378786]] ev:{} outputs y:4.210967299648762 (n:0.0) c:1.0
+num acquisition: 4, time elapsed: 0.49s
+Optimization restart 1/5, f = 8.318328145381432
+Optimization restart 2/5, f = 8.318328269059823
+Optimization restart 3/5, f = 8.318328156635298
+Optimization restart 4/5, f = 8.318328492597484
+Optimization restart 5/5, f = 8.3183282259379
+f inputs x:[[ 0.63770748  0.16175923 -0.24424898 -0.12827386]] ev:{} outputs y:5.5459966153649125 (n:-0.0) c:1.0
+num acquisition: 5, time elapsed: 0.68s
+Optimization restart 1/5, f = 10.195672178951167
+Optimization restart 2/5, f = 10.195672192978714
+Optimization restart 3/5, f = 10.195675725258216
+Optimization restart 4/5, f = 10.19567217576332
+Optimization restart 5/5, f = 10.195672559968482
+f inputs x:[[ 0.34145757  0.2605581  -0.03616956 -0.08685164]] ev:{} outputs y:2.9390723845146733 (n:0.0) c:1.0
+num acquisition: 6, time elapsed: 0.83s
+Optimization restart 1/5, f = 10.62902698396352
+Optimization restart 2/5, f = 10.62902794042071
+Optimization restart 3/5, f = 10.629027003478832
+Optimization restart 4/5, f = 10.629027113468057
+Optimization restart 5/5, f = 10.629027029554237
+f inputs x:[[ 0.18961899  0.29392323  0.06458456 -0.07605947]] ev:{} outputs y:3.4318773688381654 (n:-0.0) c:1.0
+num acquisition: 7, time elapsed: 1.01s
+Optimization restart 1/5, f = 11.133342522944256
+Optimization restart 2/5, f = 11.133342539831126
+Optimization restart 3/5, f = 11.133368053131655
+Optimization restart 4/5, f = 11.133342622742596
+Optimization restart 5/5, f = 11.133342582384511
+f inputs x:[[ 0.35102492  0.40301239  0.0135976  -0.0950974 ]] ev:{} outputs y:4.0619923916771645 (n:0.0) c:1.0
+num acquisition: 8, time elapsed: 1.22s
+Optimization restart 1/5, f = 12.345704899241795
+Optimization restart 2/5, f = 12.345706223139082
+Optimization restart 3/5, f = 12.345704927177419
+Optimization restart 4/5, f = 12.345707899582656
+Optimization restart 5/5, f = 12.345705165621508
+f inputs x:[[ 0.2616948   0.14888853 -0.03396672 -0.05949047]] ev:{} outputs y:1.9629597007277328 (n:-0.0) c:1.0
+num acquisition: 9, time elapsed: 1.40s
+Optimization restart 1/5, f = 12.485158443687553
+Optimization restart 2/5, f = 12.485159205815751
+Optimization restart 3/5, f = 12.485158452293714
+Optimization restart 4/5, f = 12.485158462532706
+Optimization restart 5/5, f = 12.485158510278065
+f inputs x:[[ 0.20649702  0.0047916  -0.03447973 -0.02507377]] ev:{} outputs y:1.9649336764434915 (n:0.0) c:1.0
+num acquisition: 10, time elapsed: 1.59s
+Optimization restart 1/5, f = 11.888623594262317
+Optimization restart 2/5, f = 11.888623604866225
+Optimization restart 3/5, f = 11.88862625330388
+Optimization restart 4/5, f = 11.888623700608658
+Optimization restart 5/5, f = 11.888624893824462
+f inputs x:[[ 0.18835993  0.08679353 -0.10628223 -0.06206731]] ev:{} outputs y:2.555502755787711 (n:-0.0) c:1.0
+num acquisition: 11, time elapsed: 1.87s
+Optimization restart 1/5, f = 12.557253870347747
+Optimization restart 2/5, f = 12.557254131155766
+Optimization restart 3/5, f = 12.557253888627738
+Optimization restart 4/5, f = 12.557254031493413
+Optimization restart 5/5, f = 12.557253867366331
+f inputs x:[[ 0.27141538  0.04128266  0.05484148 -0.01318671]] ev:{} outputs y:2.2108281333251534 (n:0.0) c:1.0
+num acquisition: 12, time elapsed: 2.09s
+Optimization restart 1/5, f = 13.386590584636167
+Optimization restart 2/5, f = 12.757187422418747
+Optimization restart 3/5, f = 12.757187422413393
+Optimization restart 4/5, f = 12.757187422413624
+Optimization restart 5/5, f = 12.757187422424634
+f inputs x:[[ 0.20650193 -0.05249622  0.07321941 -0.18466028]] ev:{} outputs y:3.3827598796085323 (n:0.0) c:1.0
+num acquisition: 13, time elapsed: 2.33s
+Optimization restart 1/5, f = 13.792824397682542
+Optimization restart 2/5, f = 13.79282439770636
+Optimization restart 3/5, f = 13.792824397685127
+Optimization restart 4/5, f = 13.792824397696105
+Optimization restart 5/5, f = 13.792824398335737
+f inputs x:[[ 0.22355644  0.0506499  -0.02074344  0.11885176]] ev:{} outputs y:2.344300378936393 (n:-0.0) c:1.0
+num acquisition: 14, time elapsed: 2.53s
+Optimization restart 1/5, f = 13.85628088941078
+Optimization restart 2/5, f = 13.856280889248483
+Optimization restart 3/5, f = 13.85628088924868
+Optimization restart 4/5, f = 13.85628088924845
+Optimization restart 5/5, f = 13.856280889278057
+f inputs x:[[-1. -1.  1.  1.]] ev:{} outputs y:8.484388763251047 (n:-0.0) c:1.0
+num acquisition: 15, time elapsed: 2.68s
+Optimization restart 1/5, f = 14.506635479498662
+Optimization restart 2/5, f = 14.506635479622295
+Optimization restart 3/5, f = 14.506635479503249
+Optimization restart 4/5, f = 14.50663547951596
+Optimization restart 5/5, f = 14.506635479608542
+f inputs x:[[ 1. -1.  1.  1.]] ev:{} outputs y:8.482694290381872 (n:-0.0) c:1.0
+num acquisition: 16, time elapsed: 2.81s
+Optimization restart 1/5, f = 15.220317049871598
+Optimization restart 2/5, f = 15.88260233696754
+Optimization restart 3/5, f = 15.220317049984992
+Optimization restart 4/5, f = 15.220317051302995
+Optimization restart 5/5, f = 15.22031704987291
+f inputs x:[[-1. -1.  1. -1.]] ev:{} outputs y:9.02094741289393 (n:0.0) c:1.0
+num acquisition: 17, time elapsed: 2.91s
+Optimization restart 1/5, f = 15.866706121082869
+Optimization restart 2/5, f = 15.866706121247452
+Optimization restart 3/5, f = 15.86670612108199
+Optimization restart 4/5, f = 15.866706121081771
+Optimization restart 5/5, f = 15.866706121167573
+f inputs x:[[-1.  1.  1. -1.]] ev:{} outputs y:8.482694290381872 (n:-0.0) c:1.0
+num acquisition: 18, time elapsed: 3.04s
+Optimization restart 1/5, f = 16.656909998838923
+Optimization restart 2/5, f = 16.656909998833875
+Optimization restart 3/5, f = 16.656909998857824
+Optimization restart 4/5, f = 16.656909999164345
+Optimization restart 5/5, f = 16.656909998840195
+f inputs x:[[1. 1. 1. 1.]] ev:{} outputs y:7.2343800236235465 (n:-0.0) c:1.0
+num acquisition: 19, time elapsed: 3.15s
+Optimization restart 1/5, f = 17.698632969379563
+Optimization restart 2/5, f = 17.698632971277267
+Optimization restart 3/5, f = 17.698632969386956
+Optimization restart 4/5, f = 17.698632969370934
+Optimization restart 5/5, f = 17.69863296939569
+f inputs x:[[ 1. -1.  1. -1.]] ev:{} outputs y:9.019956906396628 (n:0.0) c:1.0
+num acquisition: 20, time elapsed: 3.26s
+Optimization restart 1/5, f = 18.398056212318696
+Optimization restart 2/5, f = 18.398056212328882
+Optimization restart 3/5, f = 19.077438696996524
+Optimization restart 4/5, f = 18.39805621231401
+Optimization restart 5/5, f = 18.398056212313822
+f inputs x:[[-1. -1. -1.  1.]] ev:{} outputs y:9.021936939258861 (n:-0.0) c:1.0
+num acquisition: 21, time elapsed: 3.38s
+Optimization restart 1/5, f = 19.12492849576305
+Optimization restart 2/5, f = 19.1249284957607
+Optimization restart 3/5, f = 19.124928495756215
+Optimization restart 4/5, f = 19.124928495825223
+Optimization restart 5/5, f = 19.124928495789757
+f inputs x:[[-1.  1. -1.  1.]] ev:{} outputs y:8.484388763251047 (n:0.0) c:1.0
+num acquisition: 22, time elapsed: 3.50s
+Optimization restart 1/5, f = 19.932862039417373
+Optimization restart 2/5, f = 19.932862039707366
+Optimization restart 3/5, f = 19.93286203942384
+Optimization restart 4/5, f = 19.93286203987593
+Optimization restart 5/5, f = 19.93286204094071
+f inputs x:[[ 0.24469413  0.06561482 -0.02066752  0.00709511]] ev:{} outputs y:1.5745698736409968 (n:-0.0) c:1.0
+num acquisition: 23, time elapsed: 3.70s
+Optimization restart 1/5, f = 19.98408430785077
+Optimization restart 2/5, f = 19.984084307873903
+Optimization restart 3/5, f = 19.984084307830752
+Optimization restart 4/5, f = 19.984084308296225
+Optimization restart 5/5, f = 19.98408430782969
+f inputs x:[[-1.  1.  1.  1.]] ev:{} outputs y:7.240271967101029 (n:-0.0) c:1.0
+num acquisition: 24, time elapsed: 3.82s
+Optimization restart 1/5, f = 20.98484363847951
+Optimization restart 2/5, f = 20.984843638517166
+Optimization restart 3/5, f = 20.98484363847941
+Optimization restart 4/5, f = 20.984843638487586
+Optimization restart 5/5, f = 20.984843638565476
+f inputs x:[[-1.  1. -1. -1.]] ev:{} outputs y:9.02094741289393 (n:-0.0) c:1.0
+num acquisition: 25, time elapsed: 3.93s
+Optimization restart 1/5, f = 21.705738358142625
+Optimization restart 2/5, f = 21.705738358142323
+Optimization restart 3/5, f = 21.70573835815319
+Optimization restart 4/5, f = 21.70573835817369
+Optimization restart 5/5, f = 21.705738358143282
+f inputs x:[[-1. -1. -1. -1.]] ev:{} outputs y:9.36894784955461 (n:0.0) c:1.0
+num acquisition: 26, time elapsed: 4.04s
+Optimization restart 1/5, f = 22.408901649945356
+Optimization restart 2/5, f = 22.408901649916203
+Optimization restart 3/5, f = 22.40890164991182
+Optimization restart 4/5, f = 22.964446604964962
+Optimization restart 5/5, f = 22.40890164991029
+f inputs x:[[ 1.         -0.46826158 -1.          1.        ]] ev:{} outputs y:8.297108706240337 (n:0.0) c:1.0
+num acquisition: 27, time elapsed: 4.18s
+Optimization restart 1/5, f = 23.240834435282792
+Optimization restart 2/5, f = 23.2408344343021
+Optimization restart 3/5, f = 23.240834434326064
+Optimization restart 4/5, f = 23.240834434276625
+Optimization restart 5/5, f = 23.24083443427969
+f inputs x:[[ 0.24533646  0.0662848  -0.02384526  0.01822532]] ev:{} outputs y:1.6156262639507915 (n:-0.0) c:1.0
+num acquisition: 28, time elapsed: 4.46s
+Optimization restart 1/5, f = 21.119851546524092
+Optimization restart 2/5, f = 21.119851546585878
+Optimization restart 3/5, f = 21.11985154721542
+Optimization restart 4/5, f = 21.119851546520152
+Optimization restart 5/5, f = 21.119851546524824
+f inputs x:[[ 1. -1. -1. -1.]] ev:{} outputs y:9.36824855615015 (n:0.0) c:1.0
+num acquisition: 29, time elapsed: 4.57s
+Optimization restart 1/5, f = 21.866685912186178
+Optimization restart 2/5, f = 21.86668591212242
+Optimization restart 3/5, f = 21.866685912332667
+Optimization restart 4/5, f = 21.866685912113933
+Optimization restart 5/5, f = 21.86668591211379
+f inputs x:[[-0.46141969 -0.14636072  0.44955078 -0.04416138]] ev:{} outputs y:5.722845164243313 (n:-0.0) c:1.0
+num acquisition: 30, time elapsed: 4.74s
+Optimization restart 1/5, f = 23.114819932440188
+Optimization restart 2/5, f = 24.36701112200073
+Optimization restart 3/5, f = 23.7189817227747
+Optimization restart 4/5, f = 24.367011122001642
+Optimization restart 5/5, f = 23.114819932387118
+f inputs x:[[ 1.          1.          1.         -0.29699669]] ev:{} outputs y:8.0808783329506 (n:-0.0) c:1.0
+num acquisition: 31, time elapsed: 4.88s
+Optimization restart 1/5, f = 23.932765951353684
+Optimization restart 2/5, f = 23.93276566712675
+Optimization restart 3/5, f = 23.932765667137307
+Optimization restart 4/5, f = 23.9327656671254
+Optimization restart 5/5, f = 25.16675304629975
+f inputs x:[[-0.0167061   0.06364936  1.          1.        ]] ev:{} outputs y:6.778505449529347 (n:0.0) c:1.0
+num acquisition: 32, time elapsed: 5.05s
+Optimization restart 1/5, f = 24.937033702249398
+Optimization restart 2/5, f = 26.162894435153287
+Optimization restart 3/5, f = 26.16289443511972
+Optimization restart 4/5, f = 24.93703370244114
+Optimization restart 5/5, f = 26.16289443511947
+f inputs x:[[-0.06300621 -0.32258338  0.2360118  -0.91356525]] ev:{} outputs y:6.203206806658911 (n:0.0) c:1.0
+num acquisition: 33, time elapsed: 5.24s
+Optimization restart 1/5, f = 26.06075566357479
+Optimization restart 2/5, f = 26.060755663480965
+Optimization restart 3/5, f = 27.341583953779352
+Optimization restart 4/5, f = 26.060755663582533
+Optimization restart 5/5, f = 27.341583953779402
+f inputs x:[[ 0.29860123  0.04931776 -0.06147123  0.00075872]] ev:{} outputs y:2.529780776497506 (n:0.0) c:1.0
+num acquisition: 34, time elapsed: 5.47s
+Optimization restart 1/5, f = 27.524849495372628
+Optimization restart 2/5, f = 26.632775610228975
+Optimization restart 3/5, f = 26.632775610189153
+Optimization restart 4/5, f = 27.524850534858214
+Optimization restart 5/5, f = 27.52485005847151
+f inputs x:[[ 0.14628665  0.03872175 -0.007409    0.11783282]] ev:{} outputs y:2.2233609788792315 (n:0.0) c:1.0
+num acquisition: 35, time elapsed: 5.65s
+Optimization restart 1/5, f = 25.8885809484404
+Optimization restart 2/5, f = 25.888580948464494
+Optimization restart 3/5, f = 27.005071071511484
+Optimization restart 4/5, f = 27.005097468440482
+Optimization restart 5/5, f = 25.888580948439518
+f inputs x:[[ 0.16483638  0.04241007 -0.01070857  0.09064039]] ev:{} outputs y:1.9323040873137591 (n:-0.0) c:1.0
+num acquisition: 36, time elapsed: 5.83s
+Optimization restart 1/5, f = 24.804453878404125
+Optimization restart 2/5, f = 24.80445387839986
+Optimization restart 3/5, f = 24.78695502314141
+Optimization restart 4/5, f = 24.78695495409823
+Optimization restart 5/5, f = 24.804453878400178
+f inputs x:[[-0.0140061  -1.          1.          0.01648991]] ev:{} outputs y:7.872409255497731 (n:-0.0) c:1.0
+num acquisition: 37, time elapsed: 5.98s
+Optimization restart 1/5, f = 25.61056373319561
+Optimization restart 2/5, f = 25.610564732052644
+Optimization restart 3/5, f = 25.340739608231697
+Optimization restart 4/5, f = 25.610563640999978
+Optimization restart 5/5, f = 25.61056368678259
+f inputs x:[[ 0.16248719  0.04106815 -0.0108649   0.09505317]] ev:{} outputs y:1.9818715121535113 (n:-0.0) c:1.0
+num acquisition: 38, time elapsed: 6.14s
+Optimization restart 1/5, f = 24.20268324068046
+Optimization restart 2/5, f = 20.74693943147154
+Optimization restart 3/5, f = 24.202683240735638
+Optimization restart 4/5, f = 24.202683241561004
+Optimization restart 5/5, f = 20.74693932624861
+f inputs x:[[ 1.          1.         -0.24412558  0.09621686]] ev:{} outputs y:7.889837010616796 (n:0.0) c:1.0
+num acquisition: 39, time elapsed: 6.30s
+Optimization restart 1/5, f = 21.577505536130936
+Optimization restart 2/5, f = 24.600360707338442
+Optimization restart 3/5, f = 21.577485766206856
+Optimization restart 4/5, f = 21.577483050962474
+Optimization restart 5/5, f = 21.577488583585716
+f inputs x:[[-1.          0.43262107  0.04901466 -0.07129137]] ev:{} outputs y:7.051771272612728 (n:0.0) c:1.0
+num acquisition: 40, time elapsed: 6.45s
+Optimization restart 1/5, f = 22.52139697123062
+Optimization restart 2/5, f = 25.288466913912732
+Optimization restart 3/5, f = 22.52137692577805
+Optimization restart 4/5, f = 25.28846691391827
+Optimization restart 5/5, f = 25.288466913911563
+f inputs x:[[-1.         -0.15257556  0.03116663  1.        ]] ev:{} outputs y:7.808677465823659 (n:-0.0) c:1.0
+num acquisition: 41, time elapsed: 6.61s
+Optimization restart 1/5, f = 23.32496877819981
+Optimization restart 2/5, f = 25.793727136300156
+Optimization restart 3/5, f = 25.793727136252603
+Optimization restart 4/5, f = 23.32494765187702
+Optimization restart 5/5, f = 23.324946705877533
+f inputs x:[[-0.23673659  1.          1.          0.08151995]] ev:{} outputs y:7.790154922217905 (n:-0.0) c:1.0
+num acquisition: 42, time elapsed: 6.76s
+Optimization restart 1/5, f = 24.124859057560602
+Optimization restart 2/5, f = 24.124837247876098
+Optimization restart 3/5, f = 26.325468416474315
+Optimization restart 4/5, f = 24.124836981216937
+Optimization restart 5/5, f = 26.325468416474607
+f inputs x:[[ 1.  1. -1.  1.]] ev:{} outputs y:8.482694290381872 (n:-0.0) c:1.0
+num acquisition: 43, time elapsed: 6.90s
+Optimization restart 1/5, f = 24.882464060967692
+Optimization restart 2/5, f = 26.72766938882367
+Optimization restart 3/5, f = 26.727669388762916
+Optimization restart 4/5, f = 24.882442283201577
+Optimization restart 5/5, f = 26.727669388778065
+f inputs x:[[-1.         -0.06187218  0.03577492 -1.        ]] ev:{} outputs y:7.7413154154078585 (n:0.0) c:1.0
+num acquisition: 44, time elapsed: 7.03s
+Optimization restart 1/5, f = 25.675319129500068
+Optimization restart 2/5, f = 25.675296999873602
+Optimization restart 3/5, f = 25.675297013323675
+Optimization restart 4/5, f = 25.675297126712543
+Optimization restart 5/5, f = 25.675296936685065
+f inputs x:[[1.         0.09189789 0.24652492 1.        ]] ev:{} outputs y:7.576323630331734 (n:-0.0) c:1.0
+num acquisition: 45, time elapsed: 7.20s
+Optimization restart 1/5, f = 26.4873251736007
+Optimization restart 2/5, f = 27.842342812826484
+Optimization restart 3/5, f = 27.842342812755756
+Optimization restart 4/5, f = 26.48730302362489
+Optimization restart 5/5, f = 27.842342812791458
+f inputs x:[[0.19504061 0.09195572 0.00410103 0.00201953]] ev:{} outputs y:1.1507140424154336 (n:0.0) c:1.0
+num acquisition: 46, time elapsed: 7.37s
+Optimization restart 1/5, f = 24.890991040047044
+Optimization restart 2/5, f = 24.890979562657982
+Optimization restart 3/5, f = 24.890971997815676
+Optimization restart 4/5, f = 29.36430564459598
+Optimization restart 5/5, f = 24.890971490375605
+f inputs x:[[ 0.14906452  0.08396912  0.03035748 -0.02310741]] ev:{} outputs y:1.3953946127298735 (n:-0.0) c:1.0
+num acquisition: 47, time elapsed: 7.54s
+Optimization restart 1/5, f = 23.626695631470607
+Optimization restart 2/5, f = 23.62667689156708
+Optimization restart 3/5, f = 29.201589443384858
+Optimization restart 4/5, f = 23.62667657590604
+Optimization restart 5/5, f = 29.201589443387313
+f inputs x:[[ 1.         -0.12682924 -0.08373964 -1.        ]] ev:{} outputs y:7.79407681546317 (n:-0.0) c:1.0
+num acquisition: 48, time elapsed: 7.68s
+Optimization restart 1/5, f = 24.403467795269187
+Optimization restart 2/5, f = 24.403448566074573
+Optimization restart 3/5, f = 24.403448543077783
+Optimization restart 4/5, f = 24.403448547308262
+Optimization restart 5/5, f = 24.40344899463616
+f inputs x:[[-0.17019568 -0.00251692 -1.          1.        ]] ev:{} outputs y:6.796629988014016 (n:-0.0) c:1.0
+num acquisition: 49, time elapsed: 7.86s
+Optimization restart 1/5, f = 25.33664528072814
+Optimization restart 2/5, f = 25.336626226722586
+Optimization restart 3/5, f = 30.468215117500232
+Optimization restart 4/5, f = 25.33662619769013
+Optimization restart 5/5, f = 30.468215117500623
+f inputs x:[[-1.         -1.          0.09066624  0.00894949]] ev:{} outputs y:8.616822898235085 (n:-0.0) c:1.0
+num acquisition: 50, time elapsed: 8.01s
+Optimization restart 1/5, f = 26.025555381969554
+Optimization restart 2/5, f = 26.025536247768812
+Optimization restart 3/5, f = 26.025536237019544
+Optimization restart 4/5, f = 26.025536229346883
+Optimization restart 5/5, f = 30.5798001076438
+f inputs x:[[-0.09882033  0.04934983  1.         -1.        ]] ev:{} outputs y:8.370224766702433 (n:0.0) c:1.0
+num acquisition: 51, time elapsed: 8.19s
+Optimization restart 1/5, f = 26.740079517423247
+Optimization restart 2/5, f = 31.050869580017686
+Optimization restart 3/5, f = 26.7400610225434
+Optimization restart 4/5, f = 26.74006036973001
+Optimization restart 5/5, f = 26.740068460438096
+f inputs x:[[ 0.10458106 -1.          0.04552506  1.        ]] ev:{} outputs y:7.843030519788369 (n:0.0) c:1.0
+num acquisition: 52, time elapsed: 8.32s
+Optimization restart 1/5, f = 27.48672637416552
+Optimization restart 2/5, f = 31.534172457191044
+Optimization restart 3/5, f = 31.534172457294268
+Optimization restart 4/5, f = 27.48670737055667
+Optimization restart 5/5, f = 27.486709044818713
+f inputs x:[[-1.          0.02727208  1.          0.15904985]] ev:{} outputs y:8.199655005111588 (n:-0.0) c:1.0
+num acquisition: 53, time elapsed: 8.47s
+Optimization restart 1/5, f = 28.20965236563287
+Optimization restart 2/5, f = 31.75109306182294
+Optimization restart 3/5, f = 28.209633362850383
+Optimization restart 4/5, f = 31.751093061781436
+Optimization restart 5/5, f = 31.751093061781937
+f inputs x:[[-1.          0.22089849 -1.          0.05478842]] ev:{} outputs y:8.186984102744269 (n:-0.0) c:1.0
+num acquisition: 54, time elapsed: 8.61s
+Optimization restart 1/5, f = 28.9062965115268
+Optimization restart 2/5, f = 32.0016391807861
+Optimization restart 3/5, f = 28.906277509515732
+Optimization restart 4/5, f = 28.90627973404183
+Optimization restart 5/5, f = 28.906280510871436
+f inputs x:[[ 0.02855215 -1.         -0.07742216 -1.        ]] ev:{} outputs y:7.922219617723148 (n:-0.0) c:1.0
+num acquisition: 55, time elapsed: 8.75s
+Optimization restart 1/5, f = 29.63430064864706
+Optimization restart 2/5, f = 32.27475789033588
+Optimization restart 3/5, f = 32.274757890334385
+Optimization restart 4/5, f = 29.634281548862965
+Optimization restart 5/5, f = 32.27475789034543
+f inputs x:[[ 1.         -0.15831702  1.          0.0159341 ]] ev:{} outputs y:8.332330993475969 (n:0.0) c:1.0
+num acquisition: 56, time elapsed: 8.89s
+Optimization restart 1/5, f = 30.3131180751094
+Optimization restart 2/5, f = 30.31309926235855
+Optimization restart 3/5, f = 30.313116545773024
+Optimization restart 4/5, f = 32.710501550143796
+Optimization restart 5/5, f = 30.313099116627672
+f inputs x:[[0.19171683 0.126006   0.01124465 0.01888737]] ev:{} outputs y:1.455972134836898 (n:-0.0) c:1.0
+num acquisition: 57, time elapsed: 9.13s
+Optimization restart 1/5, f = 32.258803410595284
+Optimization restart 2/5, f = 32.25878216617617
+Optimization restart 3/5, f = 32.25878063408828
+Optimization restart 4/5, f = 32.25878076091972
+Optimization restart 5/5, f = 32.2587818620022
+f inputs x:[[-0.03971912 -0.25739811  0.16009999  0.15784977]] ev:{} outputs y:3.646745039817051 (n:-0.0) c:1.0
+num acquisition: 58, time elapsed: 9.36s
+Optimization restart 1/5, f = 33.789808301537406
+Optimization restart 2/5, f = 33.78978956398018
+Optimization restart 3/5, f = 32.13444321686446
+Optimization restart 4/5, f = 32.13444321735538
+Optimization restart 5/5, f = 32.13444321685732
+f inputs x:[[0.10963543 0.07872444 0.0035629  0.06875768]] ev:{} outputs y:1.8771194301997631 (n:-0.0) c:1.0
+num acquisition: 59, time elapsed: 9.57s
+Optimization restart 1/5, f = 30.886255519885722
+Optimization restart 2/5, f = 34.57721336289613
+Optimization restart 3/5, f = 34.57721336310652
+Optimization restart 4/5, f = 30.886255519883598
+Optimization restart 5/5, f = 30.886255519890675
+f inputs x:[[0.11043739 0.07860045 0.00330184 0.06877213]] ev:{} outputs y:1.8740183523778808 (n:0.0) c:1.0
+num acquisition: 60, time elapsed: 9.73s
+Optimization restart 1/5, f = 29.637844927633722
+Optimization restart 2/5, f = 27.700703910934614
+Optimization restart 3/5, f = 27.700703910949038
+Optimization restart 4/5, f = 27.700703912546352
+Optimization restart 5/5, f = 27.700703915260327
+f inputs x:[[-0.23809402 -0.04477399 -0.02985951  0.1499784 ]] ev:{} outputs y:3.2610041400734344 (n:0.0) c:1.0
+num acquisition: 61, time elapsed: 9.94s
+Optimization restart 1/5, f = 28.92599755509181
+Optimization restart 2/5, f = 28.93121096713608
+Optimization restart 3/5, f = 28.925997554426964
+Optimization restart 4/5, f = 28.92599755360743
+Optimization restart 5/5, f = 29.257781512971377
+f inputs x:[[-0.20636785 -0.00408582  0.20468683  0.40585802]] ev:{} outputs y:4.225455229422483 (n:0.0) c:1.0
+num acquisition: 62, time elapsed: 10.15s
+Optimization restart 1/5, f = 30.13367716222499
+Optimization restart 2/5, f = 30.140341552741326
+Optimization restart 3/5, f = 30.133677162080275
+Optimization restart 4/5, f = 29.29852396886791
+Optimization restart 5/5, f = 29.298523968870143
+f inputs x:[[ 0.11750801  0.07384327 -0.00223496  0.05646359]] ev:{} outputs y:1.7208042866716688 (n:-0.0) c:1.0
+num acquisition: 63, time elapsed: 10.31s
+Optimization restart 1/5, f = 28.026327114864458
+Optimization restart 2/5, f = 27.1933859385488
+Optimization restart 3/5, f = 27.193385938490536
+Optimization restart 4/5, f = 28.026327114924854
+Optimization restart 5/5, f = 27.193385938271014
+f inputs x:[[-0.10970549 -0.22202088 -0.15544769  0.45976218]] ev:{} outputs y:4.86791155503094 (n:-0.0) c:1.0
+num acquisition: 64, time elapsed: 10.48s
+Optimization restart 1/5, f = 28.35555809509369
+Optimization restart 2/5, f = 28.385443785566373
+Optimization restart 3/5, f = 28.355558094940697
+Optimization restart 4/5, f = 28.385443785565336
+Optimization restart 5/5, f = 28.35555809639545
+f inputs x:[[ 1.          0.06908837 -1.         -0.19755184]] ev:{} outputs y:8.34219750656029 (n:0.0) c:1.0
+num acquisition: 65, time elapsed: 10.63s
+Optimization restart 1/5, f = 29.074244952717244
+Optimization restart 2/5, f = 29.074244952374755
+Optimization restart 3/5, f = 28.465207838437706
+Optimization restart 4/5, f = 29.074244952251703
+Optimization restart 5/5, f = 28.465207838656845
+f inputs x:[[0.11358662 0.08091951 0.00863556 0.04712574]] ev:{} outputs y:1.692029494161748 (n:0.0) c:1.0
+num acquisition: 66, time elapsed: 10.80s
+Optimization restart 1/5, f = 27.167619997641495
+Optimization restart 2/5, f = 27.16761999764168
+Optimization restart 3/5, f = 27.167619997642078
+Optimization restart 4/5, f = 25.977444766762495
+Optimization restart 5/5, f = 25.977444767107173
+f inputs x:[[-0.3092556   1.          0.12992502 -1.        ]] ev:{} outputs y:7.7268923316831835 (n:-0.0) c:1.0
+num acquisition: 67, time elapsed: 11.01s
+Optimization restart 1/5, f = 26.739078811906083
+Optimization restart 2/5, f = 26.739069482421996
+Optimization restart 3/5, f = 27.446008810888543
+Optimization restart 4/5, f = 27.44600881088708
+Optimization restart 5/5, f = 26.739069482080723
+f inputs x:[[ 1.         -1.          0.15685673  0.07895345]] ev:{} outputs y:8.595798794977007 (n:0.0) c:1.0
+num acquisition: 68, time elapsed: 11.18s
+Optimization restart 1/5, f = 27.410841451103316
+Optimization restart 2/5, f = 27.46221121910493
+Optimization restart 3/5, f = 27.462211219175472
+Optimization restart 4/5, f = 27.462211219134822
+Optimization restart 5/5, f = 27.416038440439912
+f inputs x:[[-0.17173752 -0.15181382  0.04715686 -0.15335522]] ev:{} outputs y:3.547027453844705 (n:-0.0) c:1.0
+num acquisition: 69, time elapsed: 11.35s
+Optimization restart 1/5, f = 28.474287061363043
+Optimization restart 2/5, f = 27.056727523183596
+Optimization restart 3/5, f = 28.478234418413145
+Optimization restart 4/5, f = 27.056727523185188
+Optimization restart 5/5, f = 27.056727523180676
+f inputs x:[[0.11578898 0.08390603 0.01019636 0.05208467]] ev:{} outputs y:1.7402890614747124 (n:0.0) c:1.0
+num acquisition: 70, time elapsed: 11.51s
+Optimization restart 1/5, f = 25.6947857879713
+Optimization restart 2/5, f = 24.05874568096101
+Optimization restart 3/5, f = 24.05874533378558
+Optimization restart 4/5, f = 25.69478578798752
+Optimization restart 5/5, f = 24.058747530782753
+f inputs x:[[ 1.  1. -1. -1.]] ev:{} outputs y:9.019956906396628 (n:0.0) c:1.0
+num acquisition: 71, time elapsed: 11.70s
+Optimization restart 1/5, f = 24.738921768352213
+Optimization restart 2/5, f = 25.840757220375018
+Optimization restart 3/5, f = 24.738921662222985
+Optimization restart 4/5, f = 24.73892148423934
+Optimization restart 5/5, f = 24.738923347800956
+f inputs x:[[-0.11303859 -0.14468318 -1.         -1.        ]] ev:{} outputs y:8.384468531729752 (n:-0.0) c:1.0
+num acquisition: 72, time elapsed: 11.91s
+Optimization restart 1/5, f = 25.427960927387225
+Optimization restart 2/5, f = 25.427968286922614
+Optimization restart 3/5, f = 25.427970578043073
+Optimization restart 4/5, f = 25.912823090717453
+Optimization restart 5/5, f = 25.427963808003028
+f inputs x:[[-0.19567388  1.         -1.          0.10171415]] ev:{} outputs y:8.675056675836704 (n:0.0) c:1.0
+num acquisition: 73, time elapsed: 12.13s
+Optimization restart 1/5, f = 26.099106899384985
+Optimization restart 2/5, f = 25.934624167266776
+Optimization restart 3/5, f = 25.93462416726628
+Optimization restart 4/5, f = 26.099107547374736
+Optimization restart 5/5, f = 26.099106848662622
+f inputs x:[[0.11486498 0.08424165 0.01057357 0.05294448]] ev:{} outputs y:1.7530457967942896 (n:0.0) c:1.0
+num acquisition: 74, time elapsed: 12.33s
+Optimization restart 1/5, f = 24.5270289651517
+Optimization restart 2/5, f = 24.527028965150798
+Optimization restart 3/5, f = 24.52702896515879
+Optimization restart 4/5, f = 24.52702896517387
+Optimization restart 5/5, f = 24.527028965157456
+f inputs x:[[0.11435884 0.08495923 0.01027684 0.05311663]] ev:{} outputs y:1.7628212014292968 (n:-0.0) c:1.0
+num acquisition: 75, time elapsed: 12.54s
+Optimization restart 1/5, f = 23.11844485145437
+Optimization restart 2/5, f = 23.118444834169964
+Optimization restart 3/5, f = 14.526600282844669
+Optimization restart 4/5, f = 14.52660033160872
+Optimization restart 5/5, f = 23.11844483195592
+f inputs x:[[0.05878276 1.         1.         1.        ]] ev:{} outputs y:7.199536102045901 (n:0.0) c:1.0
+num acquisition: 76, time elapsed: 12.71s
+Optimization restart 1/5, f = 15.37393641364195
+Optimization restart 2/5, f = 15.373936213568044
+Optimization restart 3/5, f = 15.373939269506877
+Optimization restart 4/5, f = 15.373936188030534
+Optimization restart 5/5, f = 15.373936241744026
+f inputs x:[[-0.03767957 -0.0419389   0.10308445  0.03037419]] ev:{} outputs y:2.195827972237395 (n:0.0) c:1.0
+num acquisition: 77, time elapsed: 12.96s
+Optimization restart 1/5, f = 15.276885027083665
+Optimization restart 2/5, f = 15.27574245626164
+Optimization restart 3/5, f = 22.350261840667308
+Optimization restart 4/5, f = 22.350261840741787
+Optimization restart 5/5, f = 22.3502618412125
+f inputs x:[[ 0.12966968 -1.         -1.          1.        ]] ev:{} outputs y:8.481821400463836 (n:0.0) c:1.0
+num acquisition: 78, time elapsed: 13.14s
+Optimization restart 1/5, f = 15.933535188982631
+Optimization restart 2/5, f = 15.933535298309444
+Optimization restart 3/5, f = 15.933537480122837
+Optimization restart 4/5, f = 15.93353816057546
+Optimization restart 5/5, f = 22.322524868211616
+f inputs x:[[0.5370475  1.         0.05391933 1.        ]] ev:{} outputs y:7.675743958498461 (n:-0.0) c:1.0
+num acquisition: 79, time elapsed: 13.39s
+Optimization restart 1/5, f = 16.681128140670054
+Optimization restart 2/5, f = 16.680007031478993
+Optimization restart 3/5, f = 16.680006835020187
+Optimization restart 4/5, f = 16.680010220613617
+Optimization restart 5/5, f = 16.680006879150426
+f inputs x:[[ 0.0505012  -0.04413023  0.11672032  1.        ]] ev:{} outputs y:6.007031431813626 (n:-0.0) c:1.0
+num acquisition: 80, time elapsed: 13.61s
+Optimization restart 1/5, f = 17.76145808056647
+Optimization restart 2/5, f = 17.760357971691043
+Optimization restart 3/5, f = 17.760357939561963
+Optimization restart 4/5, f = 17.760357833799546
+Optimization restart 5/5, f = 22.62793690990013
+f inputs x:[[ 1.          1.          0.12269493 -1.        ]] ev:{} outputs y:7.809888446191337 (n:-0.0) c:1.0
+num acquisition: 81, time elapsed: 13.83s
+Optimization restart 1/5, f = 18.48495626012344
+Optimization restart 2/5, f = 22.737652403554826
+Optimization restart 3/5, f = 18.4838689111959
+Optimization restart 4/5, f = 18.483867667486678
+Optimization restart 5/5, f = 22.737652403474975
+f inputs x:[[-0.48179367 -0.37314442  0.0733105   0.30694415]] ev:{} outputs y:5.903546848171504 (n:-0.0) c:1.0
+num acquisition: 82, time elapsed: 14.09s
+Optimization restart 1/5, f = 19.49588575586329
+Optimization restart 2/5, f = 19.49588592897019
+Optimization restart 3/5, f = 19.495888197590688
+Optimization restart 4/5, f = 19.495885801738346
+Optimization restart 5/5, f = 19.495885797812555
+f inputs x:[[-1.          1.          0.12780098  0.52128695]] ev:{} outputs y:7.658663005162372 (n:0.0) c:1.0
+num acquisition: 83, time elapsed: 14.38s
+Optimization restart 1/5, f = 20.230310243048265
+Optimization restart 2/5, f = 20.229291976644333
+Optimization restart 3/5, f = 22.699434541814156
+Optimization restart 4/5, f = 22.699434541804195
+Optimization restart 5/5, f = 20.229292723645727
+f inputs x:[[-0.0107561 -1.         1.         1.       ]] ev:{} outputs y:7.2103652534208935 (n:-0.0) c:1.0
+num acquisition: 84, time elapsed: 14.60s
+Optimization restart 1/5, f = 21.027484532412977
+Optimization restart 2/5, f = 23.1286442496503
+Optimization restart 3/5, f = 21.026482563951284
+Optimization restart 4/5, f = 23.128644249624216
+Optimization restart 5/5, f = 21.026491478515602
+f inputs x:[[ 0.04613027 -0.04695435  0.67082285  0.25518041]] ev:{} outputs y:5.931601915469655 (n:-0.0) c:1.0
+num acquisition: 85, time elapsed: 14.81s
+Optimization restart 1/5, f = 22.075097810335166
+Optimization restart 2/5, f = 24.179100501704866
+Optimization restart 3/5, f = 24.179100501704283
+Optimization restart 4/5, f = 22.07412584859773
+Optimization restart 5/5, f = 22.074127047710064
+f inputs x:[[ 1.          0.15346713  1.         -1.        ]] ev:{} outputs y:8.663142774170574 (n:0.0) c:1.0
+num acquisition: 86, time elapsed: 15.08s
+Optimization restart 1/5, f = 22.702603743838758
+Optimization restart 2/5, f = 24.202467650186932
+Optimization restart 3/5, f = 24.202467650157146
+Optimization restart 4/5, f = 22.70163868267595
+Optimization restart 5/5, f = 24.202467650160955
+f inputs x:[[ 0.18430541  1.          1.         -1.        ]] ev:{} outputs y:8.46040801272133 (n:0.0) c:1.0
+num acquisition: 87, time elapsed: 15.35s
+Optimization restart 1/5, f = 23.325015576502814
+Optimization restart 2/5, f = 23.32501439841863
+Optimization restart 3/5, f = 24.23389010212206
+Optimization restart 4/5, f = 23.325014422427444
+Optimization restart 5/5, f = 23.325014466465063
+f inputs x:[[ 0.01420511 -0.44166282  0.35590345 -0.29278926]] ev:{} outputs y:5.3766974544892685 (n:-0.0) c:1.0
+num acquisition: 88, time elapsed: 15.64s
+Optimization restart 1/5, f = 24.436596247183367
+Optimization restart 2/5, f = 24.436596412687713
+Optimization restart 3/5, f = 24.436596272591892
+Optimization restart 4/5, f = 24.436601541899897
+Optimization restart 5/5, f = 24.139164751259436
+f inputs x:[[ 0.1040182   0.0827371  -0.00698334  0.04500167]] ev:{} outputs y:1.7762741342558783 (n:-0.0) c:1.0
+num acquisition: 89, time elapsed: 15.93s
+Optimization restart 1/5, f = 22.577022843099748
+Optimization restart 2/5, f = 22.577022838302156
+Optimization restart 3/5, f = 20.400670515879916
+Optimization restart 4/5, f = 20.40067038781372
+Optimization restart 5/5, f = 22.577022838330876
+f inputs x:[[1.        0.0753705 1.        1.       ]] ev:{} outputs y:7.82660965249586 (n:-0.0) c:1.0
+num acquisition: 90, time elapsed: 16.16s
+Optimization restart 1/5, f = 21.056935045314233
+Optimization restart 2/5, f = 22.568739092315987
+Optimization restart 3/5, f = 22.568739092316584
+Optimization restart 4/5, f = 21.056935046237527
+Optimization restart 5/5, f = 21.056935057696776
+f inputs x:[[ 0.01894499  1.         -1.          1.        ]] ev:{} outputs y:8.473956730929673 (n:-0.0) c:1.0
+num acquisition: 91, time elapsed: 16.45s
+Optimization restart 1/5, f = 21.64190568729812
+Optimization restart 2/5, f = 22.39210193801513
+Optimization restart 3/5, f = 21.641905551572577
+Optimization restart 4/5, f = 21.641905659118024
+Optimization restart 5/5, f = 22.39210193695918
+f inputs x:[[ 0.15538753  0.22468411  0.15883895 -0.59432552]] ev:{} outputs y:5.254436188085009 (n:0.0) c:1.0
+num acquisition: 92, time elapsed: 16.71s
+Optimization restart 1/5, f = 22.786928565061835
+Optimization restart 2/5, f = 22.787082375792266
+Optimization restart 3/5, f = 22.649205956231278
+Optimization restart 4/5, f = 22.649205956230126
+Optimization restart 5/5, f = 22.78692849199873
+f inputs x:[[ 0.10789658  0.08285211 -0.00906261  0.05262955]] ev:{} outputs y:1.8201659535465802 (n:-0.0) c:1.0
+num acquisition: 93, time elapsed: 16.98s
+Optimization restart 1/5, f = 21.063007365723337
+Optimization restart 2/5, f = 17.704426614263824
+Optimization restart 3/5, f = 21.063007365775725
+Optimization restart 4/5, f = 17.704424257960113
+Optimization restart 5/5, f = 17.70442400797087
+f inputs x:[[-1.         -1.         -1.          0.01422366]] ev:{} outputs y:9.165030211344133 (n:-0.0) c:1.0
+num acquisition: 94, time elapsed: 17.17s
+Optimization restart 1/5, f = 18.24657841520755
+Optimization restart 2/5, f = 20.603655597141113
+Optimization restart 3/5, f = 18.246578420876183
+Optimization restart 4/5, f = 20.60365559699978
+Optimization restart 5/5, f = 20.603655596997733
+f inputs x:[[ 0.00204118 -1.          1.         -1.        ]] ev:{} outputs y:8.474101087053137 (n:-0.0) c:1.0
+num acquisition: 95, time elapsed: 17.44s
+Optimization restart 1/5, f = 18.827713605649357
+Optimization restart 2/5, f = 18.8277158106237
+Optimization restart 3/5, f = 18.82771514440755
+Optimization restart 4/5, f = 18.82771366281535
+Optimization restart 5/5, f = 18.82771362314611
+f inputs x:[[-1.          0.09815686  1.          1.        ]] ev:{} outputs y:7.812118303447161 (n:-0.0) c:1.0
+num acquisition: 96, time elapsed: 17.74s
+Optimization restart 1/5, f = 19.500056460383803
+Optimization restart 2/5, f = 19.50005644236399
+Optimization restart 3/5, f = 19.50005660423546
+Optimization restart 4/5, f = 19.500056540877644
+Optimization restart 5/5, f = 20.437365598055408
+f inputs x:[[ 1.         -1.         -0.18866345  1.        ]] ev:{} outputs y:8.759154577880736 (n:0.0) c:1.0
+num acquisition: 97, time elapsed: 18.08s
+Optimization restart 1/5, f = 20.070268306487378
+Optimization restart 2/5, f = 20.220751045796803
+Optimization restart 3/5, f = 20.070268320510372
+Optimization restart 4/5, f = 20.07026843815858
+Optimization restart 5/5, f = 20.070268275545004
+f inputs x:[[ 1.         -1.         -1.          0.11040802]] ev:{} outputs y:9.147251749012595 (n:0.0) c:1.0
+num acquisition: 98, time elapsed: 18.41s
+Optimization restart 1/5, f = 20.621916942784004
+Optimization restart 2/5, f = 20.621917013083937
+Optimization restart 3/5, f = 19.844857567091204
+Optimization restart 4/5, f = 19.84485756708459
+Optimization restart 5/5, f = 19.844857567099048
+f inputs x:[[ 0.10807344  0.08238158 -0.00881124  0.05294453]] ev:{} outputs y:1.8168180717335687 (n:-0.0) c:1.0
+num acquisition: 99, time elapsed: 18.69s
+Optimization restart 1/5, f = 18.194174655392445
+Optimization restart 2/5, f = 18.19417465538355
+Optimization restart 3/5, f = 18.194174655368485
+Optimization restart 4/5, f = 18.194174655717354
+Optimization restart 5/5, f = 18.194174655368222
+f inputs x:[[ 0.10841131  0.08238044 -0.00864924  0.05284927]] ev:{} outputs y:1.814184372814447 (n:-0.0) c:1.0
+num acquisition: 100, time elapsed: 18.88s
+Optimization restart 1/5, f = 16.549790732741016
+Optimization restart 2/5, f = 5.854118715167914
+Optimization restart 3/5, f = 5.8541201826916165
+Optimization restart 4/5, f = 5.854119797441797
+Optimization restart 5/5, f = 5.854118704285611
+f inputs x:[[-1.          1.         -0.06267433 -0.56016964]] ev:{} outputs y:7.814918147538012 (n:-0.0) c:1.0
+num acquisition: 101, time elapsed: 19.20s
+Optimization restart 1/5, f = 6.5016271607760885
+Optimization restart 2/5, f = 6.501626595935591
+Optimization restart 3/5, f = 6.501626585860649
+Optimization restart 4/5, f = 16.53617165071138
+Optimization restart 5/5, f = 6.5016341302929135
+f inputs x:[[ 0.51402278 -0.01924247 -0.32874198  0.62147278]] ev:{} outputs y:5.518584122173803 (n:0.0) c:1.0
+num acquisition: 102, time elapsed: 19.49s
+Optimization restart 1/5, f = 7.683503175741684
+Optimization restart 2/5, f = 7.683503222516947
+Optimization restart 3/5, f = 7.683503530984744
+Optimization restart 4/5, f = 16.499938042752014
+Optimization restart 5/5, f = 7.683503160132744
+f inputs x:[[ 0.18454982 -0.06999029 -1.          0.319678  ]] ev:{} outputs y:7.438937934837731 (n:0.0) c:1.0
+num acquisition: 103, time elapsed: 19.84s
+Optimization restart 1/5, f = 8.390578132011662
+Optimization restart 2/5, f = 16.811254334135775
+Optimization restart 3/5, f = 8.39057813665108
+Optimization restart 4/5, f = 8.390578276900413
+Optimization restart 5/5, f = 8.39057818092153
+f inputs x:[[-1.          1.          1.         -0.00993877]] ev:{} outputs y:7.904757711736747 (n:-0.0) c:1.0
+num acquisition: 104, time elapsed: 20.19s
+Optimization restart 1/5, f = 9.008785453528013
+Optimization restart 2/5, f = 16.731919986033695
+Optimization restart 3/5, f = 16.731919986033276
+Optimization restart 4/5, f = 9.008785518425732
+Optimization restart 5/5, f = 9.008785404012038
+f inputs x:[[ 1.         -1.          0.02640625 -1.        ]] ev:{} outputs y:8.706770687996055 (n:0.0) c:1.0
+num acquisition: 105, time elapsed: 20.52s
+Optimization restart 1/5, f = 9.509993499385146
+Optimization restart 2/5, f = 16.403455275243736
+Optimization restart 3/5, f = 16.403455275242905
+Optimization restart 4/5, f = 16.403455275243225
+Optimization restart 5/5, f = 16.403455275243324
+f inputs x:[[-1.          0.01315682 -1.          1.        ]] ev:{} outputs y:7.877626710924553 (n:0.0) c:1.0
+num acquisition: 106, time elapsed: 20.79s
+Optimization restart 1/5, f = 10.161959738245436
+Optimization restart 2/5, f = 10.161959790869844
+Optimization restart 3/5, f = 10.161960349275681
+Optimization restart 4/5, f = 10.16196634740055
+Optimization restart 5/5, f = 10.16196031109235
+f inputs x:[[-0.40792957  0.17706639  0.01035489 -0.37762729]] ev:{} outputs y:4.357675353715531 (n:-0.0) c:1.0
+num acquisition: 107, time elapsed: 21.22s
+Optimization restart 1/5, f = 11.687832569270512
+Optimization restart 2/5, f = 16.37568822760266
+Optimization restart 3/5, f = 11.687832582645399
+Optimization restart 4/5, f = 11.687832555653756
+Optimization restart 5/5, f = 16.37568822751995
+f inputs x:[[-0.28101875  0.33149105  0.42497872 -0.32032625]] ev:{} outputs y:5.447886796381232 (n:-0.0) c:1.0
+num acquisition: 108, time elapsed: 21.54s
+Optimization restart 1/5, f = 12.755659580558351
+Optimization restart 2/5, f = 16.214342362136307
+Optimization restart 3/5, f = 12.755659616118649
+Optimization restart 4/5, f = 16.21434236096207
+Optimization restart 5/5, f = 12.7556595460714
+f inputs x:[[-1.          0.02010684  1.         -1.        ]] ev:{} outputs y:8.708230800995985 (n:-0.0) c:1.0
+num acquisition: 109, time elapsed: 21.84s
+Optimization restart 1/5, f = 13.301813214208956
+Optimization restart 2/5, f = 15.883982701304184
+Optimization restart 3/5, f = 13.301813215283893
+Optimization restart 4/5, f = 13.301813369942423
+Optimization restart 5/5, f = 13.301814000066003
+f inputs x:[[-0.40899759  0.22992206  0.11719639  0.05308839]] ev:{} outputs y:2.3844588397490396 (n:-0.0) c:1.0
+num acquisition: 110, time elapsed: 22.24s
+Optimization restart 1/5, f = 15.451615575108498
+Optimization restart 2/5, f = 21.977855003045335
+Optimization restart 3/5, f = 15.451615674454011
+Optimization restart 4/5, f = 21.977855003049257
+Optimization restart 5/5, f = 21.97785500304129
+f inputs x:[[-0.47032855  0.25933348 -0.13152785  0.04498283]] ev:{} outputs y:3.967854146499781 (n:-0.0) c:1.0
+num acquisition: 111, time elapsed: 22.64s
+Optimization restart 1/5, f = 16.291249178069897
+Optimization restart 2/5, f = 16.29124898601254
+Optimization restart 3/5, f = 21.768950743334457
+Optimization restart 4/5, f = 16.291249215572392
+Optimization restart 5/5, f = 16.291249038163535
+f inputs x:[[-0.42679225  0.38579756  0.2565181   0.24191107]] ev:{} outputs y:2.3649857033001256 (n:-0.0) c:1.0
+num acquisition: 112, time elapsed: 23.02s
+Optimization restart 1/5, f = 17.688084428796344
+Optimization restart 2/5, f = 17.688089390235795
+Optimization restart 3/5, f = 17.68808445423482
+Optimization restart 4/5, f = 17.688084364759973
+Optimization restart 5/5, f = 17.688087594556414
+f inputs x:[[-0.55208964  0.21617484  0.16596816  0.27719258]] ev:{} outputs y:4.591501267857073 (n:0.0) c:1.0
+num acquisition: 113, time elapsed: 23.34s
+Optimization restart 1/5, f = 19.280394995619737
+Optimization restart 2/5, f = 28.39208398972405
+Optimization restart 3/5, f = 28.392083989799957
+Optimization restart 4/5, f = 19.280395024767124
+Optimization restart 5/5, f = 19.280399422366237
+f inputs x:[[-0.35076245  0.49483595  0.17746659  0.06742297]] ev:{} outputs y:4.292291882079745 (n:-0.0) c:1.0
+num acquisition: 114, time elapsed: 23.75s
+Optimization restart 1/5, f = 21.144215520837527
+Optimization restart 2/5, f = 30.32223905431585
+Optimization restart 3/5, f = 21.14421671823348
+Optimization restart 4/5, f = 30.32223905433819
+Optimization restart 5/5, f = 30.32223905431617
+f inputs x:[[-0.30097982  0.26413912  0.35925133  0.17923157]] ev:{} outputs y:3.372688733095512 (n:0.0) c:1.0
+num acquisition: 115, time elapsed: 24.09s
+Optimization restart 1/5, f = 21.95045763868187
+Optimization restart 2/5, f = 21.95045715225116
+Optimization restart 3/5, f = 21.950456308302464
+Optimization restart 4/5, f = 21.950456423998688
+Optimization restart 5/5, f = 21.95045682073807
+f inputs x:[[-0.38309082  0.5032186   0.42389899  0.44571346]] ev:{} outputs y:3.3223085313206084 (n:0.0) c:1.0
+num acquisition: 116, time elapsed: 24.49s
+Optimization restart 1/5, f = 22.89146269060005
+Optimization restart 2/5, f = 22.891464517710325
+Optimization restart 3/5, f = 32.01110556019937
+Optimization restart 4/5, f = 32.01110556013016
+Optimization restart 5/5, f = 32.01110556031579
+f inputs x:[[-0.27800223  0.39348193  0.16821604  0.38536865]] ev:{} outputs y:4.399284084725252 (n:0.0) c:1.0
+num acquisition: 117, time elapsed: 24.83s
+Optimization restart 1/5, f = 23.996571113765583
+Optimization restart 2/5, f = 23.996571057743346
+Optimization restart 3/5, f = 23.996571041379617
+Optimization restart 4/5, f = 34.84305044854693
+Optimization restart 5/5, f = 23.996664779754788
+f inputs x:[[-0.55850205  0.46860859  0.45512124  0.19659008]] ev:{} outputs y:3.6762480742055743 (n:-0.0) c:1.0
+num acquisition: 118, time elapsed: 25.23s
+Optimization restart 1/5, f = 24.72132796492727
+Optimization restart 2/5, f = 35.76040295982294
+Optimization restart 3/5, f = 35.760402960021935
+Optimization restart 4/5, f = 35.76040295982354
+Optimization restart 5/5, f = 35.760402959869495
+f inputs x:[[-0.40646192  0.25997059  0.6646623   0.60179729]] ev:{} outputs y:5.087208894697742 (n:-0.0) c:1.0
+num acquisition: 119, time elapsed: 25.51s
+Optimization restart 1/5, f = 25.757262364673764
+Optimization restart 2/5, f = 35.67868327254706
+Optimization restart 3/5, f = 35.67868327242808
+Optimization restart 4/5, f = 35.678683272477
+Optimization restart 5/5, f = 25.757263894519802
+f inputs x:[[ 1.          0.26544087 -0.53421154  1.        ]] ev:{} outputs y:7.380853491829223 (n:-0.0) c:1.0
+num acquisition: 120, time elapsed: 25.81s
+Optimization restart 1/5, f = 26.508430643735707
+Optimization restart 2/5, f = 26.50843659711
+Optimization restart 3/5, f = 26.508430908128823
+Optimization restart 4/5, f = 26.508430486912374
+Optimization restart 5/5, f = 26.508438697734647
+f inputs x:[[-0.45986546  0.04674939  0.05849987 -0.09000999]] ev:{} outputs y:4.305998749660382 (n:-0.0) c:1.0
+num acquisition: 121, time elapsed: 26.21s
+Optimization restart 1/5, f = 27.649648877143775
+Optimization restart 2/5, f = 27.649648522478188
+Optimization restart 3/5, f = 27.649648466692675
+Optimization restart 4/5, f = 35.818466717110525
+Optimization restart 5/5, f = 27.649648898185063
+f inputs x:[[-1.          0.03393698 -1.         -1.        ]] ev:{} outputs y:8.706141428642782 (n:-0.0) c:1.0
+num acquisition: 122, time elapsed: 26.59s
+Optimization restart 1/5, f = 28.176747792704006
+Optimization restart 2/5, f = 35.57679585633981
+Optimization restart 3/5, f = 28.176747773684824
+Optimization restart 4/5, f = 28.17674831598321
+Optimization restart 5/5, f = 35.57679585637281
+f inputs x:[[-0.20376963  0.18937102 -0.1494406  -1.        ]] ev:{} outputs y:6.192702049072868 (n:-0.0) c:1.0
+num acquisition: 123, time elapsed: 26.94s
+Optimization restart 1/5, f = 29.197004164295095
+Optimization restart 2/5, f = 29.197004124738726
+Optimization restart 3/5, f = 29.197004029647616
+Optimization restart 4/5, f = 29.197004558326427
+Optimization restart 5/5, f = 29.197005267117902
+f inputs x:[[-1.         -1.          0.01725508  1.        ]] ev:{} outputs y:8.710416052101873 (n:0.0) c:1.0
+num acquisition: 124, time elapsed: 27.41s
+Optimization restart 1/5, f = 29.73959195821199
+Optimization restart 2/5, f = 29.739601379213596
+Optimization restart 3/5, f = 29.73959377384064
+Optimization restart 4/5, f = 29.739592088220675
+Optimization restart 5/5, f = 29.73959203827185
+f inputs x:[[0.38687013 0.5299902  1.         0.35341725]] ev:{} outputs y:7.172579223670294 (n:-0.0) c:1.0
+num acquisition: 125, time elapsed: 27.89s
+Optimization restart 1/5, f = 30.525659254425037
+Optimization restart 2/5, f = 30.52565926646217
+Optimization restart 3/5, f = 30.525659321202667
+Optimization restart 4/5, f = 35.545885313359705
+Optimization restart 5/5, f = 30.525663304032477
+f inputs x:[[-1.         -1.          0.00926463 -1.        ]] ev:{} outputs y:8.712775585662403 (n:-0.0) c:1.0
+num acquisition: 126, time elapsed: 28.24s
+Optimization restart 1/5, f = 31.06391708204663
+Optimization restart 2/5, f = 35.30347572899176
+Optimization restart 3/5, f = 35.303475728989525
+Optimization restart 4/5, f = 31.063917246952855
+Optimization restart 5/5, f = 35.30347572900794
+f inputs x:[[-0.06239578 -0.45248863  0.43294134  0.61512498]] ev:{} outputs y:4.7658812118487175 (n:0.0) c:1.0
+num acquisition: 127, time elapsed: 28.57s
+Optimization restart 1/5, f = 32.46912804563479
+Optimization restart 2/5, f = 38.37168705510726
+Optimization restart 3/5, f = 32.469160397218644
+Optimization restart 4/5, f = 32.46912755220737
+Optimization restart 5/5, f = 32.469127059858664
+f inputs x:[[ 0.34178702 -0.31465621  0.18419467  0.55931692]] ev:{} outputs y:5.453810717166293 (n:-0.0) c:1.0
+num acquisition: 128, time elapsed: 28.98s
+Optimization restart 1/5, f = 33.51372885522544
+Optimization restart 2/5, f = 33.51372883302899
+Optimization restart 3/5, f = 33.51372907825454
+Optimization restart 4/5, f = 33.513728821905474
+Optimization restart 5/5, f = 33.513729063172335
+f inputs x:[[-0.07814119 -0.85340272  0.24402085  0.23757661]] ev:{} outputs y:6.89062283131471 (n:-0.0) c:1.0
+num acquisition: 129, time elapsed: 29.38s
+Optimization restart 1/5, f = 34.37337436448473
+Optimization restart 2/5, f = 34.37337154386353
+Optimization restart 3/5, f = 39.008006270564266
+Optimization restart 4/5, f = 34.37372300641405
+Optimization restart 5/5, f = 39.008006270564636
+f inputs x:[[-1.         -1.          1.          0.01980996]] ev:{} outputs y:8.716589289574797 (n:-0.0) c:1.0
+num acquisition: 130, time elapsed: 29.71s
+Optimization restart 1/5, f = 34.90364816601533
+Optimization restart 2/5, f = 34.903715933743655
+Optimization restart 3/5, f = 34.903648155150194
+Optimization restart 4/5, f = 38.76242277940676
+Optimization restart 5/5, f = 38.7624227793884
+f inputs x:[[-0.50238221  0.77363656  0.63245494  0.6821434 ]] ev:{} outputs y:5.240231958287027 (n:-0.0) c:1.0
+num acquisition: 131, time elapsed: 30.05s
+Optimization restart 1/5, f = 36.014716333117676
+Optimization restart 2/5, f = 36.014714938661896
+Optimization restart 3/5, f = 36.014714956912755
+Optimization restart 4/5, f = 36.01471680555322
+Optimization restart 5/5, f = 38.98277561525383
+f inputs x:[[-0.35198219 -0.33769635  0.53372652  1.        ]] ev:{} outputs y:5.576436370051447 (n:-0.0) c:1.0
+num acquisition: 132, time elapsed: 30.45s
+Optimization restart 1/5, f = 37.15819571675145
+Optimization restart 2/5, f = 37.15819492683001
+Optimization restart 3/5, f = 37.15819486313019
+Optimization restart 4/5, f = 37.1581948440287
+Optimization restart 5/5, f = 39.82312323398874
+f inputs x:[[ 0.28270513 -0.41194839  0.61798471  1.        ]] ev:{} outputs y:5.268925293500062 (n:-0.0) c:1.0
+num acquisition: 133, time elapsed: 30.86s
+Optimization restart 1/5, f = 38.44465709237059
+Optimization restart 2/5, f = 41.66153366526714
+Optimization restart 3/5, f = 38.444668939800266
+Optimization restart 4/5, f = 41.661533665266674
+Optimization restart 5/5, f = 41.66153366526477
+f inputs x:[[ 1.          0.00729422 -1.         -1.        ]] ev:{} outputs y:8.711974508460662 (n:0.0) c:1.0
+num acquisition: 134, time elapsed: 31.19s
+Optimization restart 1/5, f = 38.91798605625125
+Optimization restart 2/5, f = 38.91797958364485
+Optimization restart 3/5, f = 38.917978511708824
+Optimization restart 4/5, f = 38.917978827938285
+Optimization restart 5/5, f = 38.91797847129921
+f inputs x:[[ 0.23457277 -0.4547904   1.          0.56965882]] ev:{} outputs y:7.087726909194817 (n:0.0) c:1.0
+num acquisition: 135, time elapsed: 31.63s
+Optimization restart 1/5, f = 39.73390595096453
+Optimization restart 2/5, f = 39.73390550708805
+Optimization restart 3/5, f = 41.42000895881476
+Optimization restart 4/5, f = 39.73390519638903
+Optimization restart 5/5, f = 39.73390514890619
+f inputs x:[[ 1.          1.         -1.          0.02880736]] ev:{} outputs y:8.712737101847642 (n:0.0) c:1.0
+num acquisition: 136, time elapsed: 32.13s
+Optimization restart 1/5, f = 40.25028991031408
+Optimization restart 2/5, f = 40.250290107996506
+Optimization restart 3/5, f = 40.25028862615963
+Optimization restart 4/5, f = 41.15918472823127
+Optimization restart 5/5, f = 40.25028869203649
+f inputs x:[[ 0.32765796  1.          0.22278441 -0.35704452]] ev:{} outputs y:7.463540925125982 (n:0.0) c:1.0
+num acquisition: 137, time elapsed: 32.54s
+Optimization restart 1/5, f = 40.96410038311362
+Optimization restart 2/5, f = 40.964094323524506
+Optimization restart 3/5, f = 41.27459229539812
+Optimization restart 4/5, f = 40.96409413701605
+Optimization restart 5/5, f = 40.964094114504405
+f inputs x:[[ 0.0126083 -1.        -1.        -1.       ]] ev:{} outputs y:9.015967087380846 (n:0.0) c:1.0
+num acquisition: 138, time elapsed: 32.99s
+Optimization restart 1/5, f = 41.442200225377945
+Optimization restart 2/5, f = 41.442202775956645
+Optimization restart 3/5, f = 40.90846355476319
+Optimization restart 4/5, f = 40.908463554136034
+Optimization restart 5/5, f = 40.90846355413335
+f inputs x:[[ 0.07931941  0.09804433 -0.00452672  0.03984905]] ev:{} outputs y:1.9893992224107508 (n:0.0) c:1.0
+num acquisition: 139, time elapsed: 33.36s
+Optimization restart 1/5, f = 39.55799191565082
+Optimization restart 2/5, f = 38.2306548389746
+Optimization restart 3/5, f = 38.23064903451149
+Optimization restart 4/5, f = 38.23064284031739
+Optimization restart 5/5, f = 39.5579919156589
+f inputs x:[[-0.23881632  0.44485927  0.49650043  1.        ]] ev:{} outputs y:5.041380610371152 (n:-0.0) c:1.0
+num acquisition: 140, time elapsed: 33.77s
+Optimization restart 1/5, f = 39.48804871370311
+Optimization restart 2/5, f = 39.48814715774529
+Optimization restart 3/5, f = 39.4880486681495
+Optimization restart 4/5, f = 39.48804860532351
+Optimization restart 5/5, f = 39.48804864640451
+f inputs x:[[-0.22313688  0.14991227  0.07118296 -0.02725704]] ev:{} outputs y:1.8174683079106635 (n:-0.0) c:1.0
+num acquisition: 141, time elapsed: 34.26s
+Optimization restart 1/5, f = 39.847350983594396
+Optimization restart 2/5, f = 39.847348404463474
+Optimization restart 3/5, f = 39.84734836055546
+Optimization restart 4/5, f = 39.847382443018745
+Optimization restart 5/5, f = 39.8473490292981
+f inputs x:[[1.         0.47131249 0.31424941 0.25313516]] ev:{} outputs y:6.960627014828843 (n:-0.0) c:1.0
+num acquisition: 142, time elapsed: 34.66s
+Optimization restart 1/5, f = 40.677794836676384
+Optimization restart 2/5, f = 40.67808527743344
+Optimization restart 3/5, f = 40.67808527743675
+Optimization restart 4/5, f = 40.67779478586937
+Optimization restart 5/5, f = 40.677799693778866
+f inputs x:[[-0.23272158  0.12956947  0.12598909  0.09455272]] ev:{} outputs y:2.2566342555478736 (n:0.0) c:1.0
+num acquisition: 143, time elapsed: 35.09s
+Optimization restart 1/5, f = 40.07783649560233
+Optimization restart 2/5, f = 40.07783677269006
+Optimization restart 3/5, f = 39.74938873975668
+Optimization restart 4/5, f = 40.07783645672703
+Optimization restart 5/5, f = 40.07803834724092
+f inputs x:[[0.0566167  0.10843431 0.0023449  0.0362532 ]] ev:{} outputs y:2.137568253431116 (n:-0.0) c:1.0
+num acquisition: 144, time elapsed: 35.55s
+Optimization restart 1/5, f = 38.77943230804348
+Optimization restart 2/5, f = 36.407507996417536
+Optimization restart 3/5, f = 38.77943230757637
+Optimization restart 4/5, f = 36.40750684270225
+Optimization restart 5/5, f = 36.40750685703941
+f inputs x:[[-0.7592183   0.49087289  0.38752735  1.        ]] ev:{} outputs y:6.0230910841761895 (n:-0.0) c:1.0
+num acquisition: 145, time elapsed: 36.03s
+Optimization restart 1/5, f = 37.39840637416049
+Optimization restart 2/5, f = 38.87419591899135
+Optimization restart 3/5, f = 37.398406753312315
+Optimization restart 4/5, f = 37.398406204727536
+Optimization restart 5/5, f = 37.39840895143985
+f inputs x:[[-0.24250887  0.40827857 -0.30415254 -0.341232  ]] ev:{} outputs y:5.809819208109563 (n:-0.0) c:1.0
+num acquisition: 146, time elapsed: 36.56s
+Optimization restart 1/5, f = 38.32859997903938
+Optimization restart 2/5, f = 38.32860246185848
+Optimization restart 3/5, f = 38.328600017834844
+Optimization restart 4/5, f = 40.471248510353504
+Optimization restart 5/5, f = 38.32860001579792
+f inputs x:[[-5.33372931e-04 -2.27390185e-01 -1.73473676e-01 -5.67165081e-01]] ev:{} outputs y:5.421621809116693 (n:0.0) c:1.0
+num acquisition: 147, time elapsed: 37.03s
+Optimization restart 1/5, f = 39.355089753595024
+Optimization restart 2/5, f = 40.70702930553914
+Optimization restart 3/5, f = 40.707029305527584
+Optimization restart 4/5, f = 39.35509020685714
+Optimization restart 5/5, f = 40.70702930570907
+f inputs x:[[ 0.15268844 -0.27298016 -0.45277778  1.        ]] ev:{} outputs y:5.845425336954884 (n:0.0) c:1.0
+num acquisition: 148, time elapsed: 37.41s
+Optimization restart 1/5, f = 40.462060130132954
+Optimization restart 2/5, f = 40.46205840667898
+Optimization restart 3/5, f = 41.93480076646732
+Optimization restart 4/5, f = 40.46205937466166
+Optimization restart 5/5, f = 41.93480076636331
+f inputs x:[[ 0.46055877  0.19588251 -1.          1.        ]] ev:{} outputs y:6.890728557094855 (n:0.0) c:1.0
+num acquisition: 149, time elapsed: 37.87s
+Optimization restart 1/5, f = 41.2851786500396
+Optimization restart 2/5, f = 42.12129241428937
+Optimization restart 3/5, f = 42.12129241462054
+Optimization restart 4/5, f = 41.28518045143517
+Optimization restart 5/5, f = 41.28518049391397
+f inputs x:[[ 1.       -1.        1.       -0.003484]] ev:{} outputs y:8.721764392372311 (n:-0.0) c:1.0
+num acquisition: 150, time elapsed: 38.31s
+Optimization restart 1/5, f = 41.729997494480045
+Optimization restart 2/5, f = 41.72999777146387
+Optimization restart 3/5, f = 41.730005387506054
+Optimization restart 4/5, f = 41.72999739789489
+Optimization restart 5/5, f = 41.73000072221018
+f inputs x:[[ 1.          0.35856385  0.18195786 -0.44648793]] ev:{} outputs y:7.180384299206685 (n:-0.0) c:1.0
+num acquisition: 151, time elapsed: 38.75s
+Optimization restart 1/5, f = 42.47103911805087
+Optimization restart 2/5, f = 42.47103881083109
+Optimization restart 3/5, f = 42.47103881720642
+Optimization restart 4/5, f = 41.80419096217392
+Optimization restart 5/5, f = 42.47103899741404
+f inputs x:[[0.06914837 0.10107333 0.0220523  0.04599959]] ev:{} outputs y:2.031062693244813 (n:0.0) c:1.0
+num acquisition: 152, time elapsed: 39.30s
+Optimization restart 1/5, f = 40.548778851006816
+Optimization restart 2/5, f = 38.744360490129225
+Optimization restart 3/5, f = 38.74435983756149
+Optimization restart 4/5, f = 40.54877885571838
+Optimization restart 5/5, f = 40.54877885091176
+f inputs x:[[ 1.         -0.15017932 -0.20181911  0.34007828]] ev:{} outputs y:7.642964605852182 (n:-0.0) c:1.0
+num acquisition: 153, time elapsed: 39.66s
+Optimization restart 1/5, f = 39.405880925600826
+Optimization restart 2/5, f = 39.405886636717895
+Optimization restart 3/5, f = 39.40588090641563
+Optimization restart 4/5, f = 40.77750345524758
+Optimization restart 5/5, f = 39.40588097502726
+f inputs x:[[-0.0350056   1.          0.42764483  0.5158461 ]] ev:{} outputs y:7.333154417293293 (n:-0.0) c:1.0
+num acquisition: 154, time elapsed: 40.16s
+Optimization restart 1/5, f = 40.12497139632325
+Optimization restart 2/5, f = 41.91519851608699
+Optimization restart 3/5, f = 40.12497587402643
+Optimization restart 4/5, f = 40.12497024110209
+Optimization restart 5/5, f = 41.91519851608092
+f inputs x:[[-0.38193854 -0.38129804 -0.30263373  1.        ]] ev:{} outputs y:6.448856730140911 (n:-0.0) c:1.0
+num acquisition: 155, time elapsed: 40.61s
+Optimization restart 1/5, f = 41.03553804071589
+Optimization restart 2/5, f = 41.0355377954599
+Optimization restart 3/5, f = 42.23023437974486
+Optimization restart 4/5, f = 41.035538193210186
+Optimization restart 5/5, f = 41.035537884196685
+f inputs x:[[ 0.07012997  0.30421561 -0.39791875  1.        ]] ev:{} outputs y:5.93414559329653 (n:0.0) c:1.0
+num acquisition: 156, time elapsed: 41.26s
+Optimization restart 1/5, f = 42.08873433503831
+Optimization restart 2/5, f = 42.088735901023625
+Optimization restart 3/5, f = 42.08873257886265
+Optimization restart 4/5, f = 42.08873253800621
+Optimization restart 5/5, f = 42.088732907109375
+f inputs x:[[-0.09873487 -0.15618466  1.         -0.23714278]] ev:{} outputs y:7.8582864510393735 (n:-0.0) c:1.0
+num acquisition: 157, time elapsed: 41.86s
+Optimization restart 1/5, f = 42.696512969093334
+Optimization restart 2/5, f = 42.69651513882593
+Optimization restart 3/5, f = 42.69653948714816
+Optimization restart 4/5, f = 42.21911445690182
+Optimization restart 5/5, f = 42.696513107537726
+f inputs x:[[0.0701638  0.09879043 0.01924423 0.04353538]] ev:{} outputs y:1.9961370221982602 (n:0.0) c:1.0
+num acquisition: 158, time elapsed: 42.41s
+Optimization restart 1/5, f = 40.86992178329636
+Optimization restart 2/5, f = 37.181769736769525
+Optimization restart 3/5, f = 40.869921783294444
+Optimization restart 4/5, f = 40.86992178329555
+Optimization restart 5/5, f = 37.181773068658316
+f inputs x:[[-1.          1.         -1.         -0.02358724]] ev:{} outputs y:8.72874201526882 (n:0.0) c:1.0
+num acquisition: 159, time elapsed: 42.83s
+Optimization restart 1/5, f = 37.59508759882442
+Optimization restart 2/5, f = 37.59509045809091
+Optimization restart 3/5, f = 40.54512492400363
+Optimization restart 4/5, f = 40.54512492442058
+Optimization restart 5/5, f = 37.595090206827024
+f inputs x:[[-0.5988207   0.56439695  0.2647365   0.40049004]] ev:{} outputs y:4.69162147087137 (n:-0.0) c:1.0
+num acquisition: 160, time elapsed: 43.25s
+Optimization restart 1/5, f = 38.40996135183025
+Optimization restart 2/5, f = 40.270894662039765
+Optimization restart 3/5, f = 40.270894662033584
+Optimization restart 4/5, f = 40.270894662033584
+Optimization restart 5/5, f = 38.40996135194095
+f inputs x:[[0.25440306 0.19203363 0.48586541 0.74281783]] ev:{} outputs y:4.624175697694763 (n:-0.0) c:1.0
+num acquisition: 161, time elapsed: 43.74s
+Optimization restart 1/5, f = 39.917037918979474
+Optimization restart 2/5, f = 39.91703803897502
+Optimization restart 3/5, f = 41.00094618012682
+Optimization restart 4/5, f = 41.000946180127556
+Optimization restart 5/5, f = 39.917056525628055
+f inputs x:[[0.36918029 0.50885343 0.57327941 1.        ]] ev:{} outputs y:4.231642133605448 (n:-0.0) c:1.0
+num acquisition: 162, time elapsed: 44.21s
+Optimization restart 1/5, f = 41.59447770658062
+Optimization restart 2/5, f = 41.594477299046645
+Optimization restart 3/5, f = 45.65072058346311
+Optimization restart 4/5, f = 45.65072058359959
+Optimization restart 5/5, f = 41.59448405949723
+f inputs x:[[0.37913637 0.38205994 0.17533042 1.        ]] ev:{} outputs y:5.9386485615846 (n:0.0) c:1.0
+num acquisition: 163, time elapsed: 44.74s
+Optimization restart 1/5, f = 42.51622710999922
+Optimization restart 2/5, f = 42.516226044785526
+Optimization restart 3/5, f = 42.5162260075121
+Optimization restart 4/5, f = 46.25049794362127
+Optimization restart 5/5, f = 46.25049794360005
+f inputs x:[[0.44863554 0.11845019 0.6739644  1.        ]] ev:{} outputs y:5.368670142410363 (n:-0.0) c:1.0
+num acquisition: 164, time elapsed: 45.20s
+Optimization restart 1/5, f = 43.38922190219765
+Optimization restart 2/5, f = 46.18700677252646
+Optimization restart 3/5, f = 43.38922188858811
+Optimization restart 4/5, f = 46.18700677219495
+Optimization restart 5/5, f = 46.18700677219904
+f inputs x:[[-0.18953041  0.10862652  0.19161306 -0.15087947]] ev:{} outputs y:3.627352573135038 (n:0.0) c:1.0
+num acquisition: 165, time elapsed: 45.70s
+Optimization restart 1/5, f = 44.181571042930614
+Optimization restart 2/5, f = 44.18157570591504
+Optimization restart 3/5, f = 44.18157101073777
+Optimization restart 4/5, f = 46.59283040558526
+Optimization restart 5/5, f = 44.181571034321735
+f inputs x:[[-0.18949743  1.         -1.         -1.        ]] ev:{} outputs y:9.007807265718109 (n:-0.0) c:1.0
+num acquisition: 166, time elapsed: 46.28s
+Optimization restart 1/5, f = 44.563777944635234
+Optimization restart 2/5, f = 44.563778129971666
+Optimization restart 3/5, f = 44.56377929738409
+Optimization restart 4/5, f = 44.56377796408225
+Optimization restart 5/5, f = 44.56377797577764
+f inputs x:[[ 0.37699718  0.13831162 -0.14017495 -1.        ]] ev:{} outputs y:6.174554318035944 (n:0.0) c:1.0
+num acquisition: 167, time elapsed: 46.81s
+Optimization restart 1/5, f = 45.528960518546796
+Optimization restart 2/5, f = 45.52896613799868
+Optimization restart 3/5, f = 45.52895918883203
+Optimization restart 4/5, f = 46.328574269226124
+Optimization restart 5/5, f = 45.52896467065162
+f inputs x:[[ 0.45650402 -0.25806007  0.2905326  -0.63037563]] ev:{} outputs y:6.175477465096035 (n:0.0) c:1.0
+num acquisition: 168, time elapsed: 47.35s
+Optimization restart 1/5, f = 46.465560262889795
+Optimization restart 2/5, f = 46.389040339323714
+Optimization restart 3/5, f = 46.465565357655606
+Optimization restart 4/5, f = 46.38904033931826
+Optimization restart 5/5, f = 46.465565832148314
+f inputs x:[[0.07839955 0.09910731 0.01411569 0.0557048 ]] ev:{} outputs y:2.0438424242183446 (n:0.0) c:1.0
+num acquisition: 169, time elapsed: 47.93s
+Optimization restart 1/5, f = 45.096754062676354
+Optimization restart 2/5, f = 41.45605607019809
+Optimization restart 3/5, f = 41.45605522227821
+Optimization restart 4/5, f = 45.096754062806326
+Optimization restart 5/5, f = 41.45606089132069
+f inputs x:[[0.00664745 0.50267484 0.67554118 0.6902726 ]] ev:{} outputs y:4.966920646099008 (n:-0.0) c:1.0
+num acquisition: 170, time elapsed: 48.40s
+Optimization restart 1/5, f = 42.312470913903525
+Optimization restart 2/5, f = 42.31248270251581
+Optimization restart 3/5, f = 42.31247105724354
+Optimization restart 4/5, f = 42.312472867842345
+Optimization restart 5/5, f = 44.91608931482452
+f inputs x:[[-0.30903101 -0.65487688 -0.01663903 -0.36709338]] ev:{} outputs y:6.559924733259702 (n:0.0) c:1.0
+num acquisition: 171, time elapsed: 48.97s
+Optimization restart 1/5, f = 43.14613030918392
+Optimization restart 2/5, f = 44.89748088421115
+Optimization restart 3/5, f = 43.14612943582307
+Optimization restart 4/5, f = 44.89748088379288
+Optimization restart 5/5, f = 44.89748088447891
+f inputs x:[[0.62483133 0.59140687 0.54941976 0.69303222]] ev:{} outputs y:3.5068572036175527 (n:0.0) c:1.0
+num acquisition: 172, time elapsed: 49.52s
+Optimization restart 1/5, f = 45.329874036779685
+Optimization restart 2/5, f = 52.86044354231447
+Optimization restart 3/5, f = 45.32987677900107
+Optimization restart 4/5, f = 52.86044354245949
+Optimization restart 5/5, f = 52.86044354231859
+f inputs x:[[0.79190502 1.         0.5617263  0.53361084]] ev:{} outputs y:6.875500467581607 (n:0.0) c:1.0
+num acquisition: 173, time elapsed: 50.04s
+Optimization restart 1/5, f = 46.26590353495898
+Optimization restart 2/5, f = 46.26590539576155
+Optimization restart 3/5, f = 46.265903495441606
+Optimization restart 4/5, f = 46.26590381837255
+Optimization restart 5/5, f = 46.26590345674366
+f inputs x:[[0.78865799 0.60513787 0.56209387 1.        ]] ev:{} outputs y:5.545368097100368 (n:0.0) c:1.0
+num acquisition: 174, time elapsed: 50.71s
+Optimization restart 1/5, f = 47.19269836332707
+Optimization restart 2/5, f = 47.192698177334805
+Optimization restart 3/5, f = 47.192943698372474
+Optimization restart 4/5, f = 53.12929984946571
+Optimization restart 5/5, f = 53.12929984956273
+f inputs x:[[0.48112722 0.44765572 0.33496513 0.51182281]] ev:{} outputs y:3.614929463130305 (n:-0.0) c:1.0
+num acquisition: 175, time elapsed: 51.36s
+Optimization restart 1/5, f = 48.25585137086995
+Optimization restart 2/5, f = 53.418374865115254
+Optimization restart 3/5, f = 48.25585379747287
+Optimization restart 4/5, f = 48.25585199572237
+Optimization restart 5/5, f = 53.418374865098656
+f inputs x:[[0.61867002 0.2803816  0.56834381 0.57853942]] ev:{} outputs y:5.193472070930433 (n:-0.0) c:1.0
+num acquisition: 176, time elapsed: 52.04s
+Optimization restart 1/5, f = 49.218991911320316
+Optimization restart 2/5, f = 53.601487282111236
+Optimization restart 3/5, f = 53.60148728211067
+Optimization restart 4/5, f = 53.601487282110355
+Optimization restart 5/5, f = 53.601487282111066
+f inputs x:[[-0.25821991  0.20490712 -0.02449476  0.02844254]] ev:{} outputs y:2.498729873883817 (n:0.0) c:1.0
+num acquisition: 177, time elapsed: 52.49s
+Optimization restart 1/5, f = 49.02615407205337
+Optimization restart 2/5, f = 52.702586508253944
+Optimization restart 3/5, f = 49.026257461726715
+Optimization restart 4/5, f = 49.026156038012346
+Optimization restart 5/5, f = 49.02615369194325
+f inputs x:[[ 0.59025994  0.41229277 -0.0487796   0.49078256]] ev:{} outputs y:5.325187677520347 (n:0.0) c:1.0
+num acquisition: 178, time elapsed: 53.25s
+Optimization restart 1/5, f = 49.90232510642272
+Optimization restart 2/5, f = 49.902324934969045
+Optimization restart 3/5, f = 49.90232739264334
+Optimization restart 4/5, f = 49.902324963085135
+Optimization restart 5/5, f = 49.902324985580094
+f inputs x:[[-1.          0.57538338 -0.29321206  1.        ]] ev:{} outputs y:7.379532774953088 (n:0.0) c:1.0
+num acquisition: 179, time elapsed: 53.97s
+Optimization restart 1/5, f = 50.581429564330534
+Optimization restart 2/5, f = 53.13448549277817
+Optimization restart 3/5, f = 50.58143339246533
+Optimization restart 4/5, f = 53.13448549277601
+Optimization restart 5/5, f = 50.58142997965305
+f inputs x:[[0.35280311 0.63514423 0.44351056 0.68992993]] ev:{} outputs y:5.0613474768336975 (n:0.0) c:1.0
+num acquisition: 180, time elapsed: 54.56s
+Optimization restart 1/5, f = 51.91843343662711
+Optimization restart 2/5, f = 51.918442597774
+Optimization restart 3/5, f = 51.918433514265416
+Optimization restart 4/5, f = 51.918433501150105
+Optimization restart 5/5, f = 53.40358509424415
+f inputs x:[[0.47974596 0.54184542 1.         1.        ]] ev:{} outputs y:6.275768576008868 (n:-0.0) c:1.0
+num acquisition: 181, time elapsed: 55.23s
+Optimization restart 1/5, f = 52.803075805358276
+Optimization restart 2/5, f = 52.80310230523705
+Optimization restart 3/5, f = 52.80307140267203
+Optimization restart 4/5, f = 52.803071299192396
+Optimization restart 5/5, f = 52.80308051665045
+f inputs x:[[-0.4269477  -0.43505477  0.75586276  0.47894212]] ev:{} outputs y:6.291007110032214 (n:-0.0) c:1.0
+num acquisition: 182, time elapsed: 55.88s
+Optimization restart 1/5, f = 53.70721911367269
+Optimization restart 2/5, f = 53.838163790641204
+Optimization restart 3/5, f = 53.83816379063238
+Optimization restart 4/5, f = 53.707372817981366
+Optimization restart 5/5, f = 53.70722014514877
+f inputs x:[[-0.45286121  0.34368647  0.36847233 -1.        ]] ev:{} outputs y:6.549849326443316 (n:-0.0) c:1.0
+num acquisition: 183, time elapsed: 56.46s
+Optimization restart 1/5, f = 54.610715082700324
+Optimization restart 2/5, f = 54.205299749954335
+Optimization restart 3/5, f = 54.205299749976334
+Optimization restart 4/5, f = 54.610722250429575
+Optimization restart 5/5, f = 54.610715048040674
+f inputs x:[[0.07975881 0.10648195 0.0189199  0.06283571]] ev:{} outputs y:2.142876865087688 (n:-0.0) c:1.0
+num acquisition: 184, time elapsed: 57.07s
+Optimization restart 1/5, f = 53.1068554613493
+Optimization restart 2/5, f = 52.4314570397957
+Optimization restart 3/5, f = 52.431457044807956
+Optimization restart 4/5, f = 52.43145752700059
+Optimization restart 5/5, f = 53.10685546141613
+f inputs x:[[-0.3911949   0.08873029 -0.57162862  0.5030129 ]] ev:{} outputs y:5.2325904721559615 (n:0.0) c:1.0
+num acquisition: 185, time elapsed: 57.68s
+Optimization restart 1/5, f = 53.899355247260445
+Optimization restart 2/5, f = 53.8993552243187
+Optimization restart 3/5, f = 53.819790762753144
+Optimization restart 4/5, f = 53.819790762730946
+Optimization restart 5/5, f = 53.89935519497908
+f inputs x:[[0.07878652 0.10651937 0.01456824 0.06444846]] ev:{} outputs y:2.1629721725130904 (n:0.0) c:1.0
+num acquisition: 186, time elapsed: 58.32s
+Optimization restart 1/5, f = 52.75679313269211
+Optimization restart 2/5, f = 47.828140252644246
+Optimization restart 3/5, f = 52.75679313268037
+Optimization restart 4/5, f = 47.82814021959287
+Optimization restart 5/5, f = 47.828144597474136
+f inputs x:[[-0.44916731 -0.39182316 -1.          0.48268645]] ev:{} outputs y:7.621378436804885 (n:0.0) c:1.0
+num acquisition: 187, time elapsed: 58.93s
+Optimization restart 1/5, f = 48.437258989302165
+Optimization restart 2/5, f = 48.43726289263793
+Optimization restart 3/5, f = 48.43726696762121
+Optimization restart 4/5, f = 52.64273566791189
+Optimization restart 5/5, f = 52.642735667920505
+f inputs x:[[-0.45065774  0.20181326 -0.41560032  1.        ]] ev:{} outputs y:5.727887274981685 (n:0.0) c:1.0
+num acquisition: 188, time elapsed: 59.59s
+Optimization restart 1/5, f = 49.48370624058276
+Optimization restart 2/5, f = 53.131587788420404
+Optimization restart 3/5, f = 49.483710579492424
+Optimization restart 4/5, f = 53.1315877883918
+Optimization restart 5/5, f = 49.483706224851545
+f inputs x:[[-0.43055022  0.57723122  1.          1.        ]] ev:{} outputs y:6.263438508116159 (n:-0.0) c:1.0
+num acquisition: 189, time elapsed: 60.14s
+Optimization restart 1/5, f = 50.38388220767803
+Optimization restart 2/5, f = 50.38388241839522
+Optimization restart 3/5, f = 53.23455284700779
+Optimization restart 4/5, f = 50.383882775676
+Optimization restart 5/5, f = 50.383882294756745
+f inputs x:[[-1.         -0.19150428 -0.42317722  0.29770596]] ev:{} outputs y:7.707716622091547 (n:-0.0) c:1.0
+num acquisition: 190, time elapsed: 60.73s
+Optimization restart 1/5, f = 50.93136258579082
+Optimization restart 2/5, f = 50.93136285885848
+Optimization restart 3/5, f = 53.11179355068933
+Optimization restart 4/5, f = 50.93136247768203
+Optimization restart 5/5, f = 50.93136249063056
+f inputs x:[[ 0.28805533 -1.          0.32850943 -0.41001212]] ev:{} outputs y:7.596785906364821 (n:-0.0) c:1.0
+num acquisition: 191, time elapsed: 61.37s
+Optimization restart 1/5, f = 51.506854864244474
+Optimization restart 2/5, f = 51.50685578964129
+Optimization restart 3/5, f = 53.00916866903748
+Optimization restart 4/5, f = 51.506857593152745
+Optimization restart 5/5, f = 51.50685550946139
+f inputs x:[[-0.61761617  0.04599894 -0.41737491 -0.49234854]] ev:{} outputs y:6.420164741290598 (n:0.0) c:1.0
+num acquisition: 192, time elapsed: 61.96s
+Optimization restart 1/5, f = 52.37806494028766
+Optimization restart 2/5, f = 52.37806479083841
+Optimization restart 3/5, f = 53.134116957304656
+Optimization restart 4/5, f = 53.134116957163116
+Optimization restart 5/5, f = 52.378067227992034
+f inputs x:[[0.45344498 0.53661756 0.43974591 0.17847234]] ev:{} outputs y:3.5810646441685834 (n:0.0) c:1.0
+num acquisition: 193, time elapsed: 62.55s
+Optimization restart 1/5, f = 54.1465840638094
+Optimization restart 2/5, f = 55.06792170044312
+Optimization restart 3/5, f = 54.14658429482188
+Optimization restart 4/5, f = 54.146585065841634
+Optimization restart 5/5, f = 54.14658395124667
+f inputs x:[[ 0.44099546  0.38924985  0.55364436 -0.21804569]] ev:{} outputs y:5.786873875564772 (n:0.0) c:1.0
+num acquisition: 194, time elapsed: 63.30s
+Optimization restart 1/5, f = 55.085663389979686
+Optimization restart 2/5, f = 55.29380237199142
+Optimization restart 3/5, f = 55.085783653853724
+Optimization restart 4/5, f = 55.29380237175232
+Optimization restart 5/5, f = 55.29380237184961
+f inputs x:[[0.2317265  0.3526875  0.40844287 0.30934555]] ev:{} outputs y:3.5955237839981384 (n:0.0) c:1.0
+num acquisition: 195, time elapsed: 63.79s
+Optimization restart 1/5, f = 55.787446373581446
+Optimization restart 2/5, f = 55.78744703178589
+Optimization restart 3/5, f = 55.787446539304796
+Optimization restart 4/5, f = 54.88530390194411
+Optimization restart 5/5, f = 55.787447176453696
+f inputs x:[[0.08255754 0.11155709 0.02352146 0.067964  ]] ev:{} outputs y:2.2040774480673235 (n:-0.0) c:1.0
+num acquisition: 196, time elapsed: 64.56s
+Optimization restart 1/5, f = 53.873394021148584
+Optimization restart 2/5, f = 50.61865848368964
+Optimization restart 3/5, f = 53.8733940211564
+Optimization restart 4/5, f = 53.87339402131781
+Optimization restart 5/5, f = 53.873394021137045
+f inputs x:[[-0.18908787  0.18846901 -1.         -0.23629779]] ev:{} outputs y:7.897084904956323 (n:-0.0) c:1.0
+num acquisition: 197, time elapsed: 65.04s
+Optimization restart 1/5, f = 51.09905934799025
+Optimization restart 2/5, f = 51.09906432354646
+Optimization restart 3/5, f = 53.771859487505935
+Optimization restart 4/5, f = 51.099067196764565
+Optimization restart 5/5, f = 51.099058656916554
+f inputs x:[[-1.          0.39530219  0.55321289 -0.45912633]] ev:{} outputs y:7.422598195397116 (n:-0.0) c:1.0
+num acquisition: 198, time elapsed: 65.71s
+Optimization restart 1/5, f = 51.71402052302935
+Optimization restart 2/5, f = 51.71401691186489
+Optimization restart 3/5, f = 51.71402124412148
+Optimization restart 4/5, f = 53.69842296011842
+Optimization restart 5/5, f = 53.69842296003404
+f inputs x:[[-0.20965881  0.51386991  0.66750014  0.26161392]] ev:{} outputs y:5.571983666070017 (n:-0.0) c:1.0
+num acquisition: 199, time elapsed: 66.43s
+Optimization restart 1/5, f = 52.56996199634881
+Optimization restart 2/5, f = 52.56996194067872
+Optimization restart 3/5, f = 54.794689278907285
+Optimization restart 4/5, f = 54.79468927898664
+Optimization restart 5/5, f = 52.56996363627533
+f inputs x:[[0.44047072 0.31400362 0.2333852  0.22621656]] ev:{} outputs y:2.3274941064092576 (n:0.0) c:1.0
+num acquisition: 200, time elapsed: 67.21s
+Optimization restart 1/5, f = 53.678272258203094
+Optimization restart 2/5, f = 53.67830206244952
+Optimization restart 3/5, f = 56.00180584737677
+Optimization restart 4/5, f = 56.001805847341444
+Optimization restart 5/5, f = 56.00180584734355
+f inputs x:[[-0.16749619 -1.         -1.         -0.07948524]] ev:{} outputs y:8.745993755717867 (n:0.0) c:1.0
+num acquisition: 201, time elapsed: 67.82s
+Optimization restart 1/5, f = 53.9324313868257
+Optimization restart 2/5, f = 53.93243188142699
+Optimization restart 3/5, f = 53.93243139583879
+Optimization restart 4/5, f = 55.53618070152649
+Optimization restart 5/5, f = 55.53618070155309
+f inputs x:[[0.35869125 0.47332008 0.167212   0.25764963]] ev:{} outputs y:4.283282706037474 (n:0.0) c:1.0
+num acquisition: 202, time elapsed: 68.53s
+Optimization restart 1/5, f = 55.16568733683121
+Optimization restart 2/5, f = 56.765169454067006
+Optimization restart 3/5, f = 55.16568739354503
+Optimization restart 4/5, f = 55.165687473356115
+Optimization restart 5/5, f = 56.765169454045136
+f inputs x:[[0.48992763 0.23981343 0.41801617 0.19947673]] ev:{} outputs y:4.333301395702057 (n:0.0) c:1.0
+num acquisition: 203, time elapsed: 69.29s
+Optimization restart 1/5, f = 56.83148993688502
+Optimization restart 2/5, f = 56.83151231690124
+Optimization restart 3/5, f = 56.911107859403785
+Optimization restart 4/5, f = 56.83149173674974
+Optimization restart 5/5, f = 56.8314946109561
+f inputs x:[[1.         0.63196843 1.         0.43567852]] ev:{} outputs y:7.574839671825562 (n:0.0) c:1.0
+num acquisition: 204, time elapsed: 70.02s
+Optimization restart 1/5, f = 57.425407451853886
+Optimization restart 2/5, f = 57.42540751271042
+Optimization restart 3/5, f = 56.8374419673586
+Optimization restart 4/5, f = 56.83744196734611
+Optimization restart 5/5, f = 56.83744196734949
+f inputs x:[[0.08710672 0.10871232 0.02815287 0.07186479]] ev:{} outputs y:2.18430238298277 (n:-0.0) c:1.0
+num acquisition: 205, time elapsed: 70.71s
+Optimization restart 1/5, f = 55.76850560070011
+Optimization restart 2/5, f = 55.768505600697296
+Optimization restart 3/5, f = 51.95010127239294
+Optimization restart 4/5, f = 55.76850560069664
+Optimization restart 5/5, f = 51.950101334258704
+f inputs x:[[0.39210606 0.17440784 0.17473363 0.40265123]] ev:{} outputs y:4.15831293224988 (n:-0.0) c:1.0
+num acquisition: 206, time elapsed: 71.39s
+Optimization restart 1/5, f = 52.91581869509986
+Optimization restart 2/5, f = 52.91582017227512
+Optimization restart 3/5, f = 56.78562859935792
+Optimization restart 4/5, f = 56.785628599352975
+Optimization restart 5/5, f = 52.9158186395581
+f inputs x:[[-0.04112245 -0.29619278 -0.15444796  0.02455883]] ev:{} outputs y:4.513302485708784 (n:0.0) c:1.0
+num acquisition: 207, time elapsed: 72.11s
+Optimization restart 1/5, f = 53.553364120262785
+Optimization restart 2/5, f = 57.66039829893644
+Optimization restart 3/5, f = 57.66039829844428
+Optimization restart 4/5, f = 57.660398298543896
+Optimization restart 5/5, f = 57.66039829852214
+f inputs x:[[ 0.53246424 -0.40080838  0.06720147  1.        ]] ev:{} outputs y:6.7446954569408115 (n:0.0) c:1.0
+num acquisition: 208, time elapsed: 72.64s
+Optimization restart 1/5, f = 54.32930579351739
+Optimization restart 2/5, f = 54.329305450965194
+Optimization restart 3/5, f = 54.32930493481058
+Optimization restart 4/5, f = 54.329305532408284
+Optimization restart 5/5, f = 54.32930640681951
+f inputs x:[[ 1.          0.22735855 -1.          0.51389856]] ev:{} outputs y:7.973164997695875 (n:0.0) c:1.0
+num acquisition: 209, time elapsed: 73.49s
+Optimization restart 1/5, f = 54.78321529946888
+Optimization restart 2/5, f = 54.783215287832945
+Optimization restart 3/5, f = 57.41364174033751
+Optimization restart 4/5, f = 54.78321661445881
+Optimization restart 5/5, f = 57.41364174034729
+f inputs x:[[-0.39927977  0.46156837 -0.88144679  0.66990785]] ev:{} outputs y:7.006845377082669 (n:0.0) c:1.0
+num acquisition: 210, time elapsed: 74.14s
+Optimization restart 1/5, f = 55.49748062114779
+Optimization restart 2/5, f = 55.49748057141775
+Optimization restart 3/5, f = 57.37067162352338
+Optimization restart 4/5, f = 57.37067162336484
+Optimization restart 5/5, f = 55.49748103856214
+f inputs x:[[ 0.05714422  0.06132521 -0.48174181  0.56777445]] ev:{} outputs y:4.716776574483862 (n:0.0) c:1.0
+num acquisition: 211, time elapsed: 74.74s
+Optimization restart 1/5, f = 56.53472376113123
+Optimization restart 2/5, f = 57.28291582016368
+Optimization restart 3/5, f = 56.53472332006385
+Optimization restart 4/5, f = 56.53474768188636
+Optimization restart 5/5, f = 57.282915820152624
+f inputs x:[[-1.          0.55553788 -0.22488352 -1.        ]] ev:{} outputs y:7.476201285497876 (n:-0.0) c:1.0
+num acquisition: 212, time elapsed: 75.49s
+Optimization restart 1/5, f = 57.140421100483906
+Optimization restart 2/5, f = 57.33607833230057
+Optimization restart 3/5, f = 57.14042101185899
+Optimization restart 4/5, f = 57.14042157030582
+Optimization restart 5/5, f = 57.336078332236056
+f inputs x:[[-0.09197509 -0.06620212  0.51876466  0.72681143]] ev:{} outputs y:4.8565327647277075 (n:0.0) c:1.0
+num acquisition: 213, time elapsed: 76.15s
+Optimization restart 1/5, f = 57.878642478321524
+Optimization restart 2/5, f = 57.170297904564805
+Optimization restart 3/5, f = 57.17029790457599
+Optimization restart 4/5, f = 57.87864387805476
+Optimization restart 5/5, f = 57.87864157544729
+f inputs x:[[0.08212361 0.11676358 0.02998454 0.06412728]] ev:{} outputs y:2.2220576418398887 (n:-0.0) c:1.0
+num acquisition: 214, time elapsed: 76.85s
+Optimization restart 1/5, f = 56.144438968455546
+Optimization restart 2/5, f = 52.686922275871495
+Optimization restart 3/5, f = 56.14443896847041
+Optimization restart 4/5, f = 56.144438968462566
+Optimization restart 5/5, f = 56.14443896918419
+f inputs x:[[ 1.  1.  1. -1.]] ev:{} outputs y:8.480996941400207 (n:-0.0) c:1.0
+num acquisition: 215, time elapsed: 77.41s
+Optimization restart 1/5, f = 53.13690990237612
+Optimization restart 2/5, f = 53.13690971103321
+Optimization restart 3/5, f = 53.13691116338626
+Optimization restart 4/5, f = 56.01679480529032
+Optimization restart 5/5, f = 56.01679480534831
+f inputs x:[[-0.38748556 -1.          0.48161886  1.        ]] ev:{} outputs y:7.536482381588436 (n:0.0) c:1.0
+num acquisition: 216, time elapsed: 78.04s
+Optimization restart 1/5, f = 53.70730127200605
+Optimization restart 2/5, f = 55.93993666294294
+Optimization restart 3/5, f = 55.93993666295046
+Optimization restart 4/5, f = 53.707310040571514
+Optimization restart 5/5, f = 53.707300544046205
+f inputs x:[[-0.43531773  0.09722438  0.19516595  1.        ]] ev:{} outputs y:6.01756038082375 (n:0.0) c:1.0
+num acquisition: 217, time elapsed: 78.76s
+Optimization restart 1/5, f = 54.53874624557011
+Optimization restart 2/5, f = 56.26174042091267
+Optimization restart 3/5, f = 56.261740420977674
+Optimization restart 4/5, f = 56.26174042111353
+Optimization restart 5/5, f = 56.26174042091523
+f inputs x:[[ 0.26011357 -0.42714961 -0.43746748  0.48635626]] ev:{} outputs y:6.045624397243694 (n:0.0) c:1.0
+num acquisition: 218, time elapsed: 79.34s
+Optimization restart 1/5, f = 55.43045381886745
+Optimization restart 2/5, f = 55.43045376840601
+Optimization restart 3/5, f = 55.43055500415912
+Optimization restart 4/5, f = 55.43045375571725
+Optimization restart 5/5, f = 55.430453738555656
+f inputs x:[[ 0.52122393 -0.39097348 -0.39939604 -0.55550877]] ev:{} outputs y:6.827976989058411 (n:-0.0) c:1.0
+num acquisition: 219, time elapsed: 80.20s
+Optimization restart 1/5, f = 56.25039894069704
+Optimization restart 2/5, f = 56.250399022647684
+Optimization restart 3/5, f = 56.25039930704622
+Optimization restart 4/5, f = 56.25040023369644
+Optimization restart 5/5, f = 56.3094310891497
+f inputs x:[[ 0.28865414  0.71448367 -0.03592645 -1.        ]] ev:{} outputs y:6.945757540069053 (n:-0.0) c:1.0
+num acquisition: 220, time elapsed: 81.18s
+Optimization restart 1/5, f = 56.97592911143656
+Optimization restart 2/5, f = 56.97592924248582
+Optimization restart 3/5, f = 56.97592124154113
+Optimization restart 4/5, f = 56.251579378212625
+Optimization restart 5/5, f = 56.97592854518524
+f inputs x:[[0.0829463  0.11540897 0.02928164 0.06369708]] ev:{} outputs y:2.2052447027991504 (n:-0.0) c:1.0
+num acquisition: 221, time elapsed: 82.05s
+Optimization restart 1/5, f = 55.14978391862667
+Optimization restart 2/5, f = 49.74979471505398
+Optimization restart 3/5, f = 55.14978391857397
+Optimization restart 4/5, f = 49.74979602846466
+Optimization restart 5/5, f = 49.749800270049576
+f inputs x:[[-1.         -0.36877854  0.4367298  -0.39275379]] ev:{} outputs y:7.912456701142906 (n:0.0) c:1.0
+num acquisition: 222, time elapsed: 82.81s
+Optimization restart 1/5, f = 50.16971688749638
+Optimization restart 2/5, f = 54.98287360650821
+Optimization restart 3/5, f = 50.16971640393612
+Optimization restart 4/5, f = 54.98287360674959
+Optimization restart 5/5, f = 50.169716323432596
+f inputs x:[[ 0.42705517 -1.          0.5502888   0.62685258]] ev:{} outputs y:7.463044655459915 (n:0.0) c:1.0
+num acquisition: 223, time elapsed: 83.60s
+Optimization restart 1/5, f = 50.75069867949256
+Optimization restart 2/5, f = 50.75069838632007
+Optimization restart 3/5, f = 50.750699802731646
+Optimization restart 4/5, f = 50.75069835549718
+Optimization restart 5/5, f = 54.869425479898155
+f inputs x:[[-0.13969021  0.02781227 -0.02762886 -0.04398473]] ev:{} outputs y:1.7833481520865135 (n:-0.0) c:1.0
+num acquisition: 224, time elapsed: 84.53s
+Optimization restart 1/5, f = 49.89685326149356
+Optimization restart 2/5, f = 49.896853415815514
+Optimization restart 3/5, f = 54.74635197287776
+Optimization restart 4/5, f = 54.74635197286443
+Optimization restart 5/5, f = 54.74635197325243
+f inputs x:[[-0.40478794 -0.39153648 -0.28147077 -1.        ]] ev:{} outputs y:6.853414771149297 (n:0.0) c:1.0
+num acquisition: 225, time elapsed: 85.38s
+Optimization restart 1/5, f = 50.670888049881995
+Optimization restart 2/5, f = 54.900463033842755
+Optimization restart 3/5, f = 54.900463033797536
+Optimization restart 4/5, f = 54.900463033795745
+Optimization restart 5/5, f = 54.90046303380291
+f inputs x:[[ 1.          1.         -0.24191109  1.        ]] ev:{} outputs y:8.00315445081364 (n:-0.0) c:1.0
+num acquisition: 226, time elapsed: 86.09s
+Optimization restart 1/5, f = 51.113853435195296
+Optimization restart 2/5, f = 51.11385169308406
+Optimization restart 3/5, f = 54.69225515800511
+Optimization restart 4/5, f = 54.69225515797905
+Optimization restart 5/5, f = 54.69225515812437
+f inputs x:[[-1.          0.5641371   0.6817864   0.52052971]] ev:{} outputs y:6.920125848476239 (n:0.0) c:1.0
+num acquisition: 227, time elapsed: 86.83s
+Optimization restart 1/5, f = 51.81914624597809
+Optimization restart 2/5, f = 51.81914575723735
+Optimization restart 3/5, f = 51.81914478913458
+Optimization restart 4/5, f = 51.81915195704934
+Optimization restart 5/5, f = 51.81932271661154
+f inputs x:[[-0.25301418  0.02059301 -0.23186714 -0.17285598]] ev:{} outputs y:4.216877352234902 (n:0.0) c:1.0
+num acquisition: 228, time elapsed: 87.74s
+Optimization restart 1/5, f = 52.26431589229702
+Optimization restart 2/5, f = 55.1645201804335
+Optimization restart 3/5, f = 52.26431145304355
+Optimization restart 4/5, f = 52.264313221359885
+Optimization restart 5/5, f = 52.2643199608373
+f inputs x:[[-0.49430766  1.          0.47617113 -0.36879903]] ev:{} outputs y:7.271181723890588 (n:-0.0) c:1.0
+num acquisition: 229, time elapsed: 88.67s
+Optimization restart 1/5, f = 52.90781341252239
+Optimization restart 2/5, f = 55.122882459919936
+Optimization restart 3/5, f = 55.122882460102275
+Optimization restart 4/5, f = 52.90781862021723
+Optimization restart 5/5, f = 52.90781586606312
+f inputs x:[[-0.372788   -1.         -0.35624699  0.49769844]] ev:{} outputs y:8.05729503493112 (n:0.0) c:1.0
+num acquisition: 230, time elapsed: 89.49s
+Optimization restart 1/5, f = 53.2746344699315
+Optimization restart 2/5, f = 53.2746354391702
+Optimization restart 3/5, f = 53.27463494376937
+Optimization restart 4/5, f = 53.274634834155165
+Optimization restart 5/5, f = 54.877863758614296
+f inputs x:[[0.35652885 0.30758601 0.25118334 0.05569239]] ev:{} outputs y:1.7971789502499975 (n:-0.0) c:1.0
+num acquisition: 231, time elapsed: 90.56s
+Optimization restart 1/5, f = 54.3448259285349
+Optimization restart 2/5, f = 54.344832701847054
+Optimization restart 3/5, f = 57.62748227673788
+Optimization restart 4/5, f = 54.34482588325224
+Optimization restart 5/5, f = 54.3448263483067
+f inputs x:[[ 1.          0.51408369 -0.40388589 -0.63344419]] ev:{} outputs y:7.472849997327335 (n:0.0) c:1.0
+num acquisition: 232, time elapsed: 91.56s
+Optimization restart 1/5, f = 54.911597688793904
+Optimization restart 2/5, f = 54.91160369285859
+Optimization restart 3/5, f = 54.9115976648238
+Optimization restart 4/5, f = 54.911597788737424
+Optimization restart 5/5, f = 54.9116075326599
+f inputs x:[[ 0.20572051  0.09908721  0.39383966 -1.        ]] ev:{} outputs y:6.670624661982621 (n:-0.0) c:1.0
+num acquisition: 233, time elapsed: 92.61s
+Optimization restart 1/5, f = 55.646271759472285
+Optimization restart 2/5, f = 57.76824932384967
+Optimization restart 3/5, f = 55.646270953062896
+Optimization restart 4/5, f = 55.6462802328889
+Optimization restart 5/5, f = 55.64627086128968
+f inputs x:[[0.35106859 0.23957664 0.15719119 0.10059103]] ev:{} outputs y:1.2738168309749935 (n:-0.0) c:1.0
+num acquisition: 234, time elapsed: 93.69s
+Optimization restart 1/5, f = 56.70294688483645
+Optimization restart 2/5, f = 56.70294693892831
+Optimization restart 3/5, f = 56.70294733743091
+Optimization restart 4/5, f = 60.10858865389075
+Optimization restart 5/5, f = 56.70296192966495
+f inputs x:[[-0.5486998   1.         -0.26984183  0.06129615]] ev:{} outputs y:7.752444679672191 (n:-0.0) c:1.0
+num acquisition: 235, time elapsed: 94.76s
+Optimization restart 1/5, f = 57.17166530914656
+Optimization restart 2/5, f = 57.1716653964676
+Optimization restart 3/5, f = 57.17167053122981
+Optimization restart 4/5, f = 57.171665380027804
+Optimization restart 5/5, f = 57.171665290502034
+f inputs x:[[-0.53688079  0.33001796  0.28476365 -0.0134686 ]] ev:{} outputs y:3.896370298142928 (n:-0.0) c:1.0
+num acquisition: 236, time elapsed: 95.85s
+Optimization restart 1/5, f = 57.4597027324003
+Optimization restart 2/5, f = 57.4597025760134
+Optimization restart 3/5, f = 59.77324327004678
+Optimization restart 4/5, f = 57.459702761360376
+Optimization restart 5/5, f = 59.77324327002614
+f inputs x:[[-0.36178753 -0.45903466  1.          1.        ]] ev:{} outputs y:6.7176035952933075 (n:0.0) c:1.0
+num acquisition: 237, time elapsed: 96.94s
+Optimization restart 1/5, f = 58.21139001844426
+Optimization restart 2/5, f = 59.807744115453204
+Optimization restart 3/5, f = 58.211389837059244
+Optimization restart 4/5, f = 58.21143599763113
+Optimization restart 5/5, f = 59.807744115450774
+f inputs x:[[-0.36568989  0.57249522  1.         -0.49778158]] ev:{} outputs y:7.939605684222697 (n:0.0) c:1.0
+num acquisition: 238, time elapsed: 97.76s
+Optimization restart 1/5, f = 58.6180617497061
+Optimization restart 2/5, f = 58.618060017581
+Optimization restart 3/5, f = 59.588121493759346
+Optimization restart 4/5, f = 58.61805993663046
+Optimization restart 5/5, f = 58.618065201774044
+f inputs x:[[-1.         -0.46512709 -0.45332012 -0.42970962]] ev:{} outputs y:8.103896231601842 (n:0.0) c:1.0
+num acquisition: 239, time elapsed: 98.81s
+Optimization restart 1/5, f = 58.94587242492355
+Optimization restart 2/5, f = 58.94587133909462
+Optimization restart 3/5, f = 58.94587128859553
+Optimization restart 4/5, f = 59.306854866142515
+Optimization restart 5/5, f = 59.306854866138536
+f inputs x:[[0.41869531 1.         0.74899267 0.00774837]] ev:{} outputs y:7.264507409284176 (n:0.0) c:1.0
+num acquisition: 240, time elapsed: 99.70s
+Optimization restart 1/5, f = 59.55233669437888
+Optimization restart 2/5, f = 59.552334632862966
+Optimization restart 3/5, f = 59.55233626091592
+Optimization restart 4/5, f = 59.55233587393724
+Optimization restart 5/5, f = 59.552334684025226
+f inputs x:[[-1.         1.         0.3750374  1.       ]] ev:{} outputs y:7.527579506459782 (n:-0.0) c:1.0
+num acquisition: 241, time elapsed: 100.70s
+Optimization restart 1/5, f = 60.17424424009374
+Optimization restart 2/5, f = 59.15281416532231
+Optimization restart 3/5, f = 59.152814165337944
+Optimization restart 4/5, f = 59.15281416532369
+Optimization restart 5/5, f = 59.152814165361576
+f inputs x:[[0.09686956 0.13203732 0.06136556 0.07208249]] ev:{} outputs y:2.3313709764671406 (n:0.0) c:1.0
+num acquisition: 242, time elapsed: 101.44s
+Optimization restart 1/5, f = 58.39927894083294
+Optimization restart 2/5, f = 56.45171646935333
+Optimization restart 3/5, f = 58.39927893858817
+Optimization restart 4/5, f = 56.45171497951816
+Optimization restart 5/5, f = 56.45171574592476
+f inputs x:[[-0.41583132 -1.          0.50191073 -0.47820184]] ev:{} outputs y:7.696182997278405 (n:-0.0) c:1.0
+num acquisition: 243, time elapsed: 102.14s
+Optimization restart 1/5, f = 56.92627576049546
+Optimization restart 2/5, f = 56.92627572449152
+Optimization restart 3/5, f = 56.926277313619664
+Optimization restart 4/5, f = 56.926280348990076
+Optimization restart 5/5, f = 56.926288930325995
+f inputs x:[[0.76860806 0.56722307 0.28705081 0.67866695]] ev:{} outputs y:5.834259950061 (n:-0.0) c:1.0
+num acquisition: 244, time elapsed: 103.12s
+Optimization restart 1/5, f = 57.97462874805544
+Optimization restart 2/5, f = 57.974630163915975
+Optimization restart 3/5, f = 58.4305872031554
+Optimization restart 4/5, f = 58.43058720319979
+Optimization restart 5/5, f = 58.43058720323825
+f inputs x:[[-0.45434657  0.53256554  0.05191866 -0.57156341]] ev:{} outputs y:5.589574129546341 (n:-0.0) c:1.0
+num acquisition: 245, time elapsed: 103.74s
+Optimization restart 1/5, f = 58.8688795155976
+Optimization restart 2/5, f = 58.868879610786166
+Optimization restart 3/5, f = 58.68313977050576
+Optimization restart 4/5, f = 58.86887954543022
+Optimization restart 5/5, f = 58.683139770506045
+[0.19504061 0.09195572 0.00410103 0.00201953]
