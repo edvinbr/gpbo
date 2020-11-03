@@ -70,10 +70,10 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
 # compute the state for a variational angle for a certain level of p
 # the dimension of the expectation value function is 2*p
-p = 2
+p = 1
 
 D = p * 2
-s = 0.05
+s = 2.5
 n = 250
 
 def fblossom(beta_gamma_angles,**ev):
@@ -137,9 +137,9 @@ def fei(beta_gamma_angles,**ev):
 #            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)}]
 
 bounds2d = [{'name': 'var_1', 'type': 'continuous', 'domain': (0,1)},
-            {'name': 'var_2', 'type': 'continuous', 'domain': (0,1)},
-            {'name': 'var_3', 'type': 'continuous', 'domain': (0,1)},
-            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)}]
+            {'name': 'var_2', 'type': 'continuous', 'domain': (0,1)}]
+#            {'name': 'var_3', 'type': 'continuous', 'domain': (0,1)},
+#            {'name': 'var_4', 'type': 'continuous', 'domain': (0,1)}]
 #            {'name': 'var_5', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_6', 'type': 'continuous', 'domain': (0,1)},
 #            {'name': 'var_7', 'type': 'continuous', 'domain': (0,1)},
@@ -153,7 +153,7 @@ model = GPyOpt.models.gpmodel.GPModel(kernel=GPy.kern.Matern52(input_dim=D), noi
 optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, model=model, num_cores=2, initial_design_numdata=10)#exact_feval=True, 
 
 #optimizer.run_optimization(max_iter=n-10,verbosity = True, report_file = '20report.txt',evaluations_file='20evals.txt',models_file='20models.txt')
-optimizer.run_optimization(max_iter=n-10, verbosity=True, report_file = path+str(D)+'Dqaoa8.0-noise'+str(s)+'-report' + timestamp + '.txt',evaluations_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-evals' + timestamp + '.txt',models_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-models' + timestamp + '.txt')
+optimizer.run_optimization(max_iter=n-10, verbosity=True, eps=0, report_file = path+str(D)+'Dqaoa8.0-noise'+str(s)+'-report' + timestamp + '.txt',evaluations_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-evals' + timestamp + '.txt',models_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-models' + timestamp + '.txt')
 
 beta_gamma_angles = optimizer.x_opt
 #The function to run PES to minimize the target function.
@@ -177,7 +177,6 @@ beta_gamma_angles = optimizer.x_opt
 #beta_gamma_angles = run_PES(target_function, x_minimum, x_maximum, dimension, number_of_hyperparameter_sets = 100, number_of_burnin = 50, \
 #        sampling_method = 'mcmc', number_of_initial_points = 10, number_of_experiments = 1, number_of_iterations = 200, \
 #        number_of_features = 1000, optimization_method = 'SLSQP', seed = 10)
-
 
 
 
@@ -208,9 +207,9 @@ opt_val_idx = 3 # this must be known for the classical optimization problem
 prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
 
 
-from plot_energy_landscape import plot_energy_lanscapes
+#from plot_energy_landscape import plot_energy_lanscapes
 
-optimizer.plot_convergence(filename=path+'convergenceplot'+timestamp)
+#optimizer.plot_convergence(filename=path+'convergenceplot'+timestamp)
 
 #plot_energy_lanscapes(  H,
 #                            p, 
@@ -219,4 +218,4 @@ optimizer.plot_convergence(filename=path+'convergenceplot'+timestamp)
 #                            sigmax, 
 #                            show_plot=True)
 
-optimizer.plot_acquisition(filename=path+'acq_plot'+timestamp)
+#optimizer.plot_acquisition(filename=path+'acq_plot'+timestamp)
