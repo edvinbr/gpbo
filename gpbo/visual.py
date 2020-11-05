@@ -11,7 +11,7 @@ import glob
 import os
 from datetime import datetime
 #from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
-#from examples.util import *
+from examples.util import *
 #import gpbo
 
 
@@ -186,47 +186,90 @@ def rosenbrockValue(x):
     #final = sp.log(y * sp.exp(0.01*sp.random.normal(size=(len(x1),len(x2)))) - (0) + 1)
     return y
 
-# def qaoaValue(beta_gamma_angles):
-    
-#     # read data
-#     # constraint matrix
-#     file_location = 'data_instances/'
-#     file_name = 'instance_8_0.mps'
+def qaoaValue(beta_gamma_angles):
+
+	# read data
+	# constraint matrix
+	file_location = 'data_instances/'
+	file_name = 'instance_8_0.mps'
 
 
-#     [c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
+	[c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
 
-#     nbr_of_qubits = nbr_of_routes
-#     nbr_states = 2**nbr_of_qubits
+	nbr_of_qubits = nbr_of_routes
+	nbr_states = 2**nbr_of_qubits
 
 
 
-#     # compute the ising spin glass hamiltonian
-#     [linear_cost_hamiltonian,
-#     quadratic_cost_hamiltonian,
-#     cost_hamiltonian] =  create_ising_hamiltonian(c,
-#                              A,
-#                              nbr_of_qubits,
-#                              nbr_of_flights)
+	# compute the ising spin glass hamiltonian
+	[linear_cost_hamiltonian,
+	quadratic_cost_hamiltonian,
+	cost_hamiltonian] =  create_ising_hamiltonian(c,
+	                         A,
+	                         nbr_of_qubits,
+	                         nbr_of_flights)
 
-#     # Exact_cover:
-#     H = quadratic_cost_hamiltonian
+	# Exact_cover:
+	H = quadratic_cost_hamiltonian
 
-#     # mixer operator
-#     sigmax = np.array([[0, 1],
-#                    [1, 0]])
+	# mixer operator
+	sigmax = np.array([[0, 1],
+	               [1, 0]])
 
-#     initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
+	initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 
-#     # compute the state for a variational angle for a certain level of p
-#     # the dimension of the expectation value function is 2*p
-#     p = 1
+	# compute the state for a variational angle for a certain level of p
+	# the dimension of the expectation value function is 2*p
+	p = 1
 
-#     gamma = [b*2*np.pi for b in beta_gamma_angles[:p]]
-#     beta = [b*np.pi for b in beta_gamma_angles[p:2*p]]
+	gamma = [b*2*np.pi for b in beta_gamma_angles[:p]]
+	beta = [b*np.pi for b in beta_gamma_angles[p:2*p]]
 
-#     E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
-#     return E
+	E = expectation_value((gamma+beta), H, p, nbr_of_qubits, initial_state,sigmax)
+	return E
+
+def qaoaSuccessProb(beta_gamma_angles):
+	# read data
+	# constraint matrix
+	file_location = 'data_instances/'
+	file_name = 'instance_8_0.mps'
+
+
+	[c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
+
+	nbr_of_qubits = nbr_of_routes
+	nbr_states = 2**nbr_of_qubits
+
+
+
+    # compute the ising spin glass hamiltonian
+	[linear_cost_hamiltonian,
+	quadratic_cost_hamiltonian,
+	cost_hamiltonian] =  create_ising_hamiltonian(c, A, nbr_of_qubits, nbr_of_flights)
+
+	# Exact_cover:
+	H = quadratic_cost_hamiltonian
+
+	# mixer operator
+	sigmax = np.array([[0, 1], [1, 0]])
+
+	initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
+
+	# compute the state for a variational angle for a certain level of p
+	# the dimension of the expectation value function is 2*p
+	p = int(len(beta_gamma_angles)/2)
+
+	# final state
+	#gamma_opt= beta_gamma_angles[:p]
+	#beta_opt = beta_gamma_angles[p:2*p]
+	gamma_opt = [b*2*np.pi for b in beta_gamma_angles[:p]]#(b+1)/2
+	beta_opt = [b*np.pi for b in beta_gamma_angles[p:2*p]]
+
+	qaoa_state = state_fast(H, p, nbr_of_qubits, initial_state, sigmax, gamma_opt, beta_opt)
+	# determine what the optimal value is
+	opt_val_idx = np.argmin(H)#3 # this must be known for the classical optimization problem
+	prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[opt_val_idx])**2
+	return prob_of_obtaining_correct_answer_1_shot
 
 def visual3d(f): #TODO
         #temporary
@@ -388,11 +431,13 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 		regretsum = 0
 		stepsum = 0
 		for l in regrets:
+			print("last regret {}".format(l[-1]))
 			regretsum += l[-1]
 			stepsum += len(l)
 		avgregret = regretsum/n
 		avgstep = stepsum/n
 
+		print('Plotorder: {}'.format(plotOrder[idx]))
 		print('Avg regret: '+str(avgregret))
 		print('Avg steps: '+str(avgstep))
 		manyYs.append(ys)
@@ -423,7 +468,7 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 			color='brown'
 		ax1.plot(ys, linestyle=linestyle, color=color)#, label=labels[idx])
 	#ax1.set_ylim(0.6*10e-1, 3.2*10e2)
-	ax1.set_yscale('log')
+	#ax1.set_yscale('log')
 	ax1.tick_params(axis='y')
 
 	
@@ -459,6 +504,90 @@ def plotRegret(manyRegrets, manyLengths, plotOrder):
 	fig.tight_layout()
 	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 	plt.savefig('results/multiregret' + timestamp, dpi=200)
+	return
+
+def plotSuccessProb(manyXreccs, manyLengths, plotOrder):
+
+	manySuccessProbs = []
+	manyFracleft = []
+	for idx, xreccss in enumerate(manyXreccs):
+		lengths = manyLengths[idx]
+		maxlength = max(lengths)
+		print(lengths)
+
+		n = len(xreccss)
+		
+		successProbs = []
+		fracleft = []
+		for i in range(0,min(maxlength,250)):
+			sum = 0
+			num = 0
+			for l in xreccss:
+				if i < len(l):
+					sum += qaoaSuccessProb([(x+1)/2 for x in l[i]]) #*2*np.pi etc
+					num += 1
+				else:
+					sum += qaoaSuccessProb([(x+1)/2 for x in l[-1]])
+					num += 1
+			successProbs.append(sum/num)
+			fracleft.append(num/n)	
+		
+		successprobsum = 0
+		stepsum = 0
+		for l in xreccss:
+			successprobsum += qaoaSuccessProb([(x+1)/2 for x in l[-1]])
+			stepsum += len(l)
+		avgsuccessprob = successprobsum/n
+		avgstep = stepsum/n
+
+		print('Plotorder: {}'.format(plotOrder[idx]))
+		print('Avg success prob: '+str(avgsuccessprob))
+		print('Avg steps: '+str(avgstep))
+		manySuccessProbs.append(successProbs)
+		manyFracleft.append(fracleft)
+
+	fig, ax1 = plt.subplots()
+	ax1.set_xlabel('Step')
+	ax1.set_ylabel('Success probability')
+	#labels = ['BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'PES \u03C3=0', 'BLOSSOM \u03C3=0.5', 'PES \u03C3=0.005']
+	#labels = ['PES \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0', 'PES \u03C3=0.5', 'PES \u03C3=0.05', 'BLOSSOM \u03C3=0.5', 'BLOSSOM \u03C3=0.005', 'PES \u03C3=0']
+	labels = ['BLOSSOM \u03C3=0', 'BLOSSOM \u03C3=0.005', 'BLOSSOM \u03C3=0.05', 'BLOSSOM \u03C3=0.5']
+	#labels = ['BLOSSOM 2D', 'BLOSSOM 8D', 'BLOSSOM 4D']
+	#labels = ['unmodified \u03C3=0.005', 'modified \u03C3=0.005', 'unmodified \u03C3=0.05', 'modified \u03C3=0.05', 'unmodified \u03C3=0',]
+	for idx, successprobs in enumerate(manySuccessProbs):
+		linestyle = 'solid'
+		if(plotOrder[idx].find('pes') >=0):
+			linestyle = 'dashed'
+		elif(plotOrder[idx].find('ei') >=0):
+			linestyle = 'dotted'
+		color = 'green'
+		if(plotOrder[idx].find('low') >= 0):
+			color='blue'
+		elif(plotOrder[idx].find('med') >= 0):
+			color='purple'
+		elif(plotOrder[idx].find('high') >= 0):
+			color='red'
+		elif(plotOrder[idx].find('biggest') >= 0):
+			color='brown'
+		ax1.plot(successprobs, linestyle=linestyle, color=color)#, label=labels[idx])
+	#ax1.set_ylim(0.6*10e-1, 3.2*10e2)
+	#ax1.set_yscale('log')
+	ax1.tick_params(axis='y')
+
+
+	brown_patch = mpatches.Patch(color='brown', label='Very high noise')
+	red_patch = mpatches.Patch(color='red', label='High noise')
+	purple_patch = mpatches.Patch(color='purple', label='Medium noise')
+	blue_patch = mpatches.Patch(color='blue', label='Low noise')
+	green_patch = mpatches.Patch(color='green', label='No noise')
+	blossom_line = mlines.Line2D([], [], color='black', label='Blossom')
+	pes_line = mlines.Line2D([], [], color='black', linestyle='dashed', label='PES')
+	ei_line = mlines.Line2D([], [], color='black', linestyle='dotted', label='EI')
+	ax1.legend(handles=[brown_patch, red_patch, purple_patch,  green_patch, blossom_line, ei_line])
+	#ax1.legend()
+	fig.tight_layout()
+	timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+	plt.savefig('results/successprobs' + timestamp, dpi=200)
 	return
 
 path = sys.argv[1]
@@ -502,6 +631,7 @@ else: #Multi file
 	manyRegrets = []
 	manyLengths = []
 	manyTrueys = []
+	manyXreccs = []
 	globalymin = [0, -1, 0, 0, 0, 0] #check order compared to file read order
 	numRuns = 4
 	numProblems = 1
@@ -537,19 +667,31 @@ else: #Multi file
 			regrets = []
 			lengths = []
 			trueys = []
+			xreccss = []
 
 			count = 0
-			func = rastriginValue#camel3Value#rosenbrockValue#qaoaValue#
+			func = qaoaValue#rastriginValue#camel3Value#rosenbrockValue#
 			if(entry.find('ei') >= 0):
 				for f in sorted(glob.glob(fullpath+'/*evals*.txt')):
 					df = pd.read_csv(f, sep='\t')
 					bestys = []
 					besty = func(df.iloc[0, 2:].values)
-					for var in df.iloc[:, 2:].values:
-						y = func(var)
+					bestx = np.copy(df.iloc[0, 2:].values)
+					xreccs = df.iloc[:, 2:].values
+					for idx, var in enumerate(df.iloc[:, 2:].values):
+						y = func(var) #is this correct for qaoa?
 						if(y < besty):
 							besty = y
+							bestx = np.copy(var)
+							#print("bestx {}".format(bestx))
+							#print("updating bestx {}".format(bestx*2-1))
+							#print(xreccs[idx])
 						bestys.append(besty)
+						#print("bestx 2nd {}".format(bestx))
+						xreccs[idx] = bestx*2-1
+						#print("putting in {}, after {}".format(bestx*2-1, xreccs[idx]))
+					print("last x {}".format(xreccs[-1]))
+					xreccss.append(xreccs)
 					lengths.append(len(df.index))
 					#regret = sp.exp(bestys) - 1 # check against functionfiles if transform is used. (for QAOA probably)
 					regret = bestys
@@ -579,14 +721,17 @@ else: #Multi file
 					truey = regret #+ globalymin[count//numRuns]
 					regrets.append(regret)
 					trueys.append(truey)
+					xreccss.append(xreccs)
 					count += 1
 			
 			manyRegrets.append(regrets)
 			manyLengths.append(lengths)
 			manyTrueys.append(trueys)
+			manyXreccs.append(xreccss)
 	print(plotOrder)
 	### Regret plotting
 	plotRegret(manyRegrets, manyLengths, plotOrder)
+	plotSuccessProb(manyXreccs, manyLengths, plotOrder) # for qaoa only
 
 	### Dataprofile plotting
 
