@@ -220,7 +220,7 @@ def qaoaValue(beta_gamma_angles):
 
 	# compute the state for a variational angle for a certain level of p
 	# the dimension of the expectation value function is 2*p
-	p = 1
+	p = int(len(beta_gamma_angles)/2)
 
 	gamma = [b*2*np.pi for b in beta_gamma_angles[:p]]
 	beta = [b*np.pi for b in beta_gamma_angles[p:2*p]]
