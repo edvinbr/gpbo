@@ -1,434 +1,22 @@
 removed robo import in opts.py l17 due to theano errors
+Traceback (most recent call last):
+  File "examples/test.py", line 95, in <module>
+    C.choosepara['regretswitch'] = 1e-2
+AttributeError: 'pesfsdefault' object has no attribute 'choosepara'
+removed robo import in opts.py l17 due to theano errors
+Traceback (most recent call last):
+  File "examples/test.py", line 97, in <module>
+    C.aqpara[1]['tol']=None
+KeyError: 1
+removed robo import in opts.py l17 due to theano errors
 INFO:gpbo.core.optimize:startopt:
-INFO:gpbo.core.optimize:---------------------
-step 1:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [-0.5251832349531722, 0.3822166846246231] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 47.848364965310424 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.5251832349531722, 0.3822166846246231]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 2:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [0.9817287776995667, -0.4791863592348635] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 46.63168020342196 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [0.9817287776995667, -0.4791863592348635]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 3:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [0.8102330571877037, 0.6341218876636414] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 45.07156921559023 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [0.8102330571877037, 0.6341218876636414]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 4:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [-0.032838589855888944, -0.7650693142273972] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 44.89911911570307 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.032838589855888944, -0.7650693142273972]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 5:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [0.9025515829182338, 0.8033595374555447] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 48.62143530423268 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.032838589855888944, -0.7650693142273972]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 6:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [0.19063709524065442, 0.8151845893084926] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 49.76917200615343 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.032838589855888944, -0.7650693142273972]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 7:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [-0.2597477207279457, 0.6545739022805135] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 43.12613455963051 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.2597477207279457, 0.6545739022805135]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 8:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [-0.37398699518545464, 0.4088020962684231] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 41.24834719869294 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.37398699518545464, 0.4088020962684231]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 9:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [-0.1483511358165459, 0.5230368055294234] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 50.361620841973505 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.37398699518545464, 0.4088020962684231]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 10:
-INFO:gpbo.core.acquisitions:randomaq
-INFO:gpbo.core.optimize:AQ returned [0.4751359570014291, -0.08988396547667699] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 53.585115489393424 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:argmin reccomender
-INFO:gpbo.core.optimize:RC returned [-0.37398699518545464, 0.4088020962684231]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 11:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[1. 0.]
- [0. 1.]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  2%|▏         | 9/545 [00:00<00:06, 77.04it/s]  3%|▎         | 14/545 [00:00<00:08, 63.94it/s]  5%|▍         | 25/545 [00:00<00:07, 72.25it/s]  7%|▋         | 36/545 [00:00<00:06, 80.40it/s]  9%|▉         | 48/545 [00:00<00:05, 88.08it/s] 11%|█         | 58/545 [00:00<00:05, 90.20it/s] 13%|█▎        | 70/545 [00:00<00:04, 97.15it/s] 15%|█▍        | 80/545 [00:00<00:05, 90.21it/s] 17%|█▋        | 91/545 [00:00<00:04, 94.44it/s] 19%|█▊        | 101/545 [00:01<00:04, 95.49it/s] 21%|██        | 113/545 [00:01<00:04, 100.40it/s] 23%|██▎       | 124/545 [00:01<00:04, 99.25it/s]  25%|██▍       | 134/545 [00:01<00:04, 90.21it/s] 26%|██▋       | 144/545 [00:01<00:04, 86.70it/s] 28%|██▊       | 155/545 [00:01<00:04, 91.26it/s] 31%|███       | 167/545 [00:01<00:03, 96.68it/s] 33%|███▎      | 178/545 [00:01<00:03, 96.70it/s] 34%|███▍      | 188/545 [00:02<00:03, 91.46it/s] 37%|███▋      | 199/545 [00:02<00:03, 94.89it/s] 38%|███▊      | 209/545 [00:02<00:03, 89.88it/s] 40%|████      | 219/545 [00:02<00:03, 89.80it/s] 42%|████▏     | 230/545 [00:02<00:03, 93.53it/s] 44%|████▍     | 240/545 [00:02<00:03, 93.35it/s] 46%|████▌     | 251/545 [00:02<00:03, 95.18it/s] 48%|████▊     | 263/545 [00:02<00:02, 99.24it/s] 50%|█████     | 274/545 [00:02<00:02, 97.64it/s] 52%|█████▏    | 284/545 [00:03<00:02, 97.88it/s] 54%|█████▍    | 294/545 [00:03<00:02, 96.70it/s] 56%|█████▌    | 304/545 [00:03<00:02, 96.76it/s] 58%|█████▊    | 316/545 [00:03<00:02, 102.41it/s] 60%|██████    | 327/545 [00:03<00:02, 101.42it/s] 62%|██████▏   | 338/545 [00:03<00:01, 103.82it/s] 64%|██████▍   | 349/545 [00:03<00:01, 105.14it/s] 66%|██████▌   | 360/545 [00:03<00:01, 102.90it/s] 68%|██████▊   | 373/545 [00:03<00:01, 108.11it/s] 70%|███████   | 384/545 [00:03<00:01, 100.26it/s] 72%|███████▏  | 395/545 [00:04<00:01, 102.33it/s] 74%|███████▍  | 406/545 [00:04<00:01, 104.17it/s] 77%|███████▋  | 419/545 [00:04<00:01, 109.27it/s] 79%|███████▉  | 431/545 [00:04<00:01, 107.15it/s] 81%|████████  | 442/545 [00:04<00:00, 104.18it/s] 83%|████████▎ | 453/545 [00:04<00:00, 104.57it/s] 85%|████████▌ | 464/545 [00:04<00:00, 104.32it/s] 87%|████████▋ | 475/545 [00:04<00:00, 99.93it/s]  89%|████████▉ | 486/545 [00:04<00:00, 99.81it/s] 91%|█████████ | 497/545 [00:05<00:00, 99.88it/s] 93%|█████████▎| 508/545 [00:05<00:00, 100.92it/s] 95%|█████████▌| 519/545 [00:05<00:00, 99.66it/s]  97%|█████████▋| 530/545 [00:05<00:00, 99.31it/s] 99%|█████████▉| 540/545 [00:05<00:00, 96.21it/s]100%|██████████| 545/545 [00:05<00:00, 97.65it/s]
-DEBUG:gpbo.core.ESutils:hyperparameters:
-mean   [2.62228236 0.16728404 0.43304376]
-median [2.53258691 0.13161904 0.43651733]
-std    [0.63118028 0.14983646 0.22439771]
-min    [1.77388854 0.040164   0.008656  ]
-max    [4.15280295 0.78263456 1.01402302]
-switch default init
-Suffix: test
-checking reccomendation:
-checking reccomendation:
-checking reccomendation:
-checking reccomendation:
-reusing check
-reusing check
-checking reccomendation:
-checking reccomendation:
-reusing check
-reusing check
-using 1 slice chains
-slice sample:
-used 77871 plk evals
-searching...
-DEBUG:gpbo.core.optutils:optresult 43.170396589026645 at [-0.36574328  0.40983507]
-INFO:gpbo.core.choosers:post min at [-0.36574328  0.40983507](true) [[-0.36574328  0.40983507]](rotated) is 43.170396589026645
-INFO:gpbo.core.choosers:post min in on edge in axes []
-INFO:gpbo.core.choosers:Var at xmin 2.1604948260442285
-INFO:gpbo.core.choosers:localregretest 1.2438328729362096
-DEBUG:gpbo.core.choosers:H,stH
-[[ 821.41950725   -7.25323251]
- [  -7.25323251 3147.47056374]]
-[[ 2477.16726657   523.90127747]
- [  523.90127747 32181.34134782]]
-DEBUG:gpbo.core.choosers:axisprobs [0.62990294 0.53895612]
-INFO:gpbo.core.choosers:checking for +ve definite ball
-INFO:gpbo.core.choosers:prob pvedef at xmin 0.3459621136590229
-DEBUG:gpbo.core.choosers:eigenvector probs [0.33599202 0.83250249]
-  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
-INFO:gpbo.core.choosers:no +ve def region, choosereturns 0
-INFO:gpbo.core.acquisitions:PESfsaq
-INFO:gpbo.core.acquisitions:rotation from choose by 
-[[-0.99999514 -0.00311821]
- [-0.00311821  0.99999514]]
-INFO:gpbo.core.PES:reusing preselected hyperparameters
-INFO:gpbo.core.ESutils:Found 4 unique local min:
-[0.36446576 0.41099999]
-[0.36036583 0.53953694]
-[ 0.03552879 -0.76522645]
-[-0.79820426  0.63110896]
-directtime 0
-PES init:
-Drawing support using lapaprot:
-using complex approx
-In drawmin with 1250 support drew 36 unique mins from 36. Most freqent min chosen 2.7777777777777777%
-drawing mins from support
-searching...
-DEBUG:gpbo.core.optutils:optresult [-0.15151021] at [-0.35775016  0.09321394]
-INFO:gpbo.core.acquisitions:DIRECT found max PES at [-0.35775016  0.09321394] b'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
-INFO:gpbo.core.optimize:AQ returned [-0.35775015725256176, 0.09321393775442335] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 44.28799806909997 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:gphin reccomender
-directtime 0
-searching...
-DEBUG:gpbo.core.optutils:optresult 43.12059027430736 at [-0.36591042  0.409721  ]
-INFO:gpbo.core.optimize:RC returned [-0.365910415088561, 0.4097209999567609]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 12:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[-0.99999514 -0.00311821]
- [-0.00311821  0.99999514]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  2%|▏         | 10/545 [00:00<00:05, 94.32it/s]  3%|▎         | 19/545 [00:00<00:05, 92.05it/s]  5%|▌         | 29/545 [00:00<00:05, 92.48it/s]  7%|▋         | 38/545 [00:00<00:05, 91.04it/s]  9%|▉         | 49/545 [00:00<00:05, 95.03it/s] 11%|█         | 59/545 [00:00<00:05, 93.05it/s] 12%|█▏        | 68/545 [00:00<00:05, 91.43it/s] 14%|█▍        | 79/545 [00:00<00:04, 96.12it/s] 17%|█▋        | 91/545 [00:00<00:04, 101.12it/s] 19%|█▊        | 101/545 [00:01<00:04, 94.42it/s] 21%|██        | 112/545 [00:01<00:04, 97.16it/s] 22%|██▏       | 122/545 [00:01<00:04, 94.17it/s] 24%|██▍       | 132/545 [00:01<00:04, 94.34it/s] 26%|██▌       | 142/545 [00:01<00:04, 94.17it/s] 28%|██▊       | 153/545 [00:01<00:04, 95.72it/s] 30%|██▉       | 163/545 [00:01<00:03, 95.96it/s] 32%|███▏      | 176/545 [00:01<00:03, 102.41it/s] 34%|███▍      | 187/545 [00:01<00:03, 91.21it/s]  36%|███▌      | 197/545 [00:02<00:04, 85.82it/s] 38%|███▊      | 206/545 [00:02<00:04, 83.86it/s] 39%|███▉      | 215/545 [00:02<00:04, 78.92it/s] 41%|████      | 224/545 [00:02<00:03, 81.73it/s] 43%|████▎     | 234/545 [00:02<00:03, 86.14it/s] 45%|████▍     | 245/545 [00:02<00:03, 85.15it/s] 47%|████▋     | 254/545 [00:02<00:03, 73.22it/s] 48%|████▊     | 262/545 [00:03<00:04, 60.61it/s] 49%|████▉     | 269/545 [00:03<00:05, 51.40it/s] 50%|█████     | 275/545 [00:03<00:05, 52.17it/s] 52%|█████▏    | 281/545 [00:03<00:04, 53.56it/s] 54%|█████▎    | 292/545 [00:03<00:04, 61.68it/s] 55%|█████▌    | 302/545 [00:03<00:03, 68.51it/s] 57%|█████▋    | 310/545 [00:03<00:03, 68.55it/s] 59%|█████▊    | 319/545 [00:03<00:03, 72.00it/s] 60%|██████    | 329/545 [00:03<00:02, 77.29it/s] 63%|██████▎   | 341/545 [00:04<00:02, 84.79it/s] 64%|██████▍   | 351/545 [00:04<00:02, 86.77it/s] 66%|██████▌   | 361/545 [00:04<00:02, 90.23it/s] 68%|██████▊   | 373/545 [00:04<00:01, 97.08it/s] 70%|███████   | 384/545 [00:04<00:01, 98.35it/s] 72%|███████▏  | 395/545 [00:04<00:01, 95.16it/s] 74%|███████▍  | 405/545 [00:04<00:01, 96.19it/s] 76%|███████▌  | 415/545 [00:04<00:01, 91.82it/s] 78%|███████▊  | 425/545 [00:04<00:01, 92.28it/s] 80%|████████  | 436/545 [00:05<00:01, 96.69it/s] 82%|████████▏ | 446/545 [00:05<00:01, 90.36it/s] 84%|████████▍ | 457/545 [00:05<00:00, 94.80it/s] 86%|████████▌ | 467/545 [00:05<00:00, 93.69it/s] 88%|████████▊ | 478/545 [00:05<00:00, 97.76it/s] 90%|████████▉ | 488/545 [00:05<00:00, 95.54it/s] 91%|█████████▏| 498/545 [00:05<00:00, 92.23it/s] 94%|█████████▎| 510/545 [00:05<00:00, 97.49it/s] 95%|█████████▌| 520/545 [00:05<00:00, 95.33it/s] 97%|█████████▋| 530/545 [00:06<00:00, 95.19it/s] 99%|█████████▉| 540/545 [00:06<00:00, 87.09it/s]100%|██████████| 545/545 [00:06<00:00, 87.26it/s]
-DEBUG:gpbo.core.ESutils:hyperparameters:
-mean   [2.36306932 0.16316911 0.45463302]
-median [2.32813328 0.14104115 0.42681387]
-std    [0.65803026 0.12715165 0.24611758]
-min    [1.35200842 0.02994916 0.11588871]
-max    [4.14068778 0.70130371 1.05588263]
-directtime 0
-checking reccomendation:
-using 1 slice chains
-slice sample:
-used 78673 plk evals
-searching...
-DEBUG:gpbo.core.optutils:optresult 43.486993175101865 at [-0.36774804  0.41733698]
-INFO:gpbo.core.choosers:post min at [-0.36774804  0.41733698](true) [[0.36644491 0.41848167]](rotated) is 43.486993175101865
-INFO:gpbo.core.choosers:post min in on edge in axes []
-INFO:gpbo.core.choosers:Var at xmin 1.8796160787313745
-INFO:gpbo.core.choosers:localregretest 0.6002341078651494
-DEBUG:gpbo.core.choosers:H,stH
-[[8.90454945e+02 7.61993310e-01]
- [7.61993310e-01 6.54953982e+01]]
-[[3565.78522985  265.49958139]
- [ 265.49958139  282.19044682]]
-DEBUG:gpbo.core.choosers:axisprobs [0.59859882 0.59176845]
-INFO:gpbo.core.choosers:checking for +ve definite ball
-INFO:gpbo.core.choosers:prob pvedef at xmin 0.33599202392821537
-DEBUG:gpbo.core.choosers:eigenvector probs [0.3449651  0.85942173]
-  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
-INFO:gpbo.core.choosers:no +ve def region, choosereturns 0
-INFO:gpbo.core.acquisitions:PESfsaq
-INFO:gpbo.core.acquisitions:rotation from choose by 
-[[ 0.00219455 -0.99999759]
- [ 0.99999759  0.00219455]]
-INFO:gpbo.core.PES:reusing preselected hyperparameters
-INFO:gpbo.core.ESutils:Found 5 unique local min:
-[-0.41277901 -0.35859417]
-[-0.65974093 -0.32815537]
-[-0.1021165  -0.36847692]
-[ 0.76549627 -0.04050523]
-[-0.62442449  0.80855226]
-directtime 0
-PES init:
-Drawing support using lapaprot:
-using complex approx
-In drawmin with 1250 support drew 36 unique mins from 36. Most freqent min chosen 2.7777777777777777%
-drawing mins from support
-searching...
-DEBUG:gpbo.core.optutils:optresult [-0.10206345] at [-0.35408959  0.27388983]
-INFO:gpbo.core.acquisitions:DIRECT found max PES at [-0.35408959  0.27388983] b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL'
-INFO:gpbo.core.optimize:AQ returned [-0.35408959042145643, 0.2738898280457619] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 48.32040318682748 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:gphin reccomender
-directtime 0
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.274599487877936 at [-0.37900957  0.48195709]
-INFO:gpbo.core.optimize:RC returned [-0.3790095711491042, 0.48195708816979155]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 13:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[ 0.00219455 -0.99999759]
- [ 0.99999759  0.00219455]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  1%|▏         | 8/545 [00:00<00:06, 78.85it/s]  3%|▎         | 19/545 [00:00<00:06, 84.41it/s]  5%|▌         | 29/545 [00:00<00:05, 86.79it/s]  7%|▋         | 40/545 [00:00<00:05, 91.23it/s]  9%|▉         | 49/545 [00:00<00:05, 89.99it/s] 11%|█         | 59/545 [00:00<00:05, 90.34it/s] 12%|█▏        | 68/545 [00:00<00:05, 87.33it/s] 14%|█▍        | 79/545 [00:00<00:05, 92.51it/s] 16%|█▋        | 89/545 [00:00<00:04, 93.57it/s] 18%|█▊        | 99/545 [00:01<00:04, 93.36it/s] 20%|██        | 109/545 [00:01<00:04, 92.94it/s] 22%|██▏       | 121/545 [00:01<00:04, 98.29it/s] 24%|██▍       | 132/545 [00:01<00:04, 99.67it/s] 26%|██▌       | 142/545 [00:01<00:04, 98.82it/s] 28%|██▊       | 152/545 [00:01<00:04, 97.84it/s] 30%|██▉       | 162/545 [00:01<00:04, 95.43it/s] 32%|███▏      | 172/545 [00:01<00:03, 94.92it/s] 34%|███▎      | 183/545 [00:01<00:03, 98.38it/s] 35%|███▌      | 193/545 [00:02<00:03, 98.12it/s] 37%|███▋      | 203/545 [00:02<00:03, 98.55it/s] 39%|███▉      | 214/545 [00:02<00:03, 100.22it/s] 41%|████▏     | 225/545 [00:02<00:03, 98.81it/s]  43%|████▎     | 235/545 [00:02<00:03, 98.48it/s] 45%|████▌     | 246/545 [00:02<00:03, 97.72it/s] 47%|████▋     | 256/545 [00:02<00:03, 93.81it/s] 49%|████▉     | 266/545 [00:02<00:02, 95.28it/s] 51%|█████     | 277/545 [00:02<00:02, 98.14it/s] 53%|█████▎    | 287/545 [00:02<00:02, 93.67it/s] 54%|█████▍    | 297/545 [00:03<00:02, 90.13it/s] 56%|█████▋    | 307/545 [00:03<00:02, 89.54it/s] 58%|█████▊    | 317/545 [00:03<00:02, 90.78it/s] 60%|██████    | 329/545 [00:03<00:02, 97.80it/s] 62%|██████▏   | 339/545 [00:03<00:02, 98.30it/s] 64%|██████▍   | 350/545 [00:03<00:01, 98.63it/s] 66%|██████▌   | 360/545 [00:03<00:01, 96.37it/s] 68%|██████▊   | 371/545 [00:03<00:01, 99.36it/s] 70%|███████   | 382/545 [00:03<00:01, 100.53it/s] 72%|███████▏  | 393/545 [00:04<00:01, 101.45it/s] 74%|███████▍  | 405/545 [00:04<00:01, 104.07it/s] 76%|███████▋  | 416/545 [00:04<00:01, 100.76it/s] 78%|███████▊  | 427/545 [00:04<00:01, 96.76it/s]  81%|████████  | 439/545 [00:04<00:01, 101.07it/s] 83%|████████▎ | 450/545 [00:04<00:00, 98.91it/s]  84%|████████▍ | 460/545 [00:04<00:00, 95.32it/s] 86%|████████▋ | 471/545 [00:04<00:00, 98.86it/s] 88%|████████▊ | 481/545 [00:04<00:00, 95.05it/s] 90%|█████████ | 491/545 [00:05<00:00, 92.81it/s] 92%|█████████▏| 502/545 [00:05<00:00, 96.04it/s] 94%|█████████▍| 514/545 [00:05<00:00, 101.78it/s] 96%|█████████▋| 525/545 [00:05<00:00, 99.04it/s]  98%|█████████▊| 536/545 [00:05<00:00, 98.78it/s]100%|██████████| 545/545 [00:05<00:00, 97.10it/s]
-DEBUG:gpbo.core.ESutils:hyperparameters:
-mean   [2.34391803 0.24217494 0.24149742]
-median [2.28152542 0.1300312  0.15108653]
-std    [0.70329266 0.2493433  0.20668496]
-min    [0.67196727 0.01304803 0.05606683]
-max    [4.18372697 1.19407337 0.84417848]
-directtime 0
-checking reccomendation:
-using 1 slice chains
-slice sample:
-used 78938 plk evals
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.085820280061675 at [-0.37322029  0.41244508]
-INFO:gpbo.core.choosers:post min at [-0.37322029  0.41244508](true) [[-0.41326314 -0.37231426]](rotated) is 44.085820280061675
-INFO:gpbo.core.choosers:post min in on edge in axes []
-INFO:gpbo.core.choosers:Var at xmin 2.11767569259485
-INFO:gpbo.core.choosers:localregretest 0.7712655616415145
-DEBUG:gpbo.core.choosers:H,stH
-[[ 2.75452759e+03 -1.51372534e+00]
- [-1.51372534e+00  4.33858499e+02]]
-[[16999.97672931   564.17241176]
- [  564.17241176  1066.39599092]]
-DEBUG:gpbo.core.choosers:axisprobs [0.56435938 0.6579393 ]
-INFO:gpbo.core.choosers:checking for +ve definite ball
-INFO:gpbo.core.choosers:prob pvedef at xmin 0.33300099700897307
-DEBUG:gpbo.core.choosers:eigenvector probs [0.34695912 0.84546361]
-  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
-INFO:gpbo.core.choosers:no +ve def region, choosereturns 0
-INFO:gpbo.core.acquisitions:PESfsaq
-INFO:gpbo.core.acquisitions:rotation from choose by 
-[[-0.99999881 -0.00154227]
- [-0.00154227  0.99999881]]
-INFO:gpbo.core.PES:reusing preselected hyperparameters
-INFO:gpbo.core.ESutils:Found 6 unique local min:
-[0.37419501 0.6504894 ]
-[0.26221228 0.66502964]
-[0.3755714  0.42166405]
-[ 0.03384102 -0.76561977]
-[-0.80933499  0.61938427]
-[ 0.35992999 -0.75796785]
-directtime 0
-PES init:
-Drawing support using lapaprot:
-using complex approx
-In drawmin with 1250 support drew 36 unique mins from 36. Most freqent min chosen 2.7777777777777777%
-drawing mins from support
-searching...
-DEBUG:gpbo.core.optutils:optresult [-0.09194944] at [-0.37927775  0.87438261]
-INFO:gpbo.core.acquisitions:DIRECT found max PES at [-0.37927775  0.87438261] b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL'
-INFO:gpbo.core.optimize:AQ returned [-0.3792777468319839, 0.8743826093294853] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 47.12341434818028 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:gphin reccomender
-directtime 0
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.31536993508025 at [-0.37563505  0.41986529]
-INFO:gpbo.core.optimize:RC returned [-0.3756350476244475, 0.4198652880419835]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 14:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[-0.99999881 -0.00154227]
- [-0.00154227  0.99999881]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  2%|▏         | 12/545 [00:00<00:04, 119.78it/s]  4%|▍         | 22/545 [00:00<00:04, 109.85it/s]  6%|▌         | 32/545 [00:00<00:04, 103.69it/s]  8%|▊         | 42/545 [00:00<00:05, 99.64it/s]   9%|▉         | 50/545 [00:00<00:05, 90.65it/s] 11%|█         | 59/545 [00:00<00:05, 90.12it/s] 12%|█▏        | 68/545 [00:00<00:05, 87.51it/s] 14%|█▍        | 78/545 [00:00<00:05, 90.48it/s] 16%|█▋        | 89/545 [00:00<00:04, 93.57it/s] 18%|█▊        | 99/545 [00:01<00:04, 94.17it/s] 20%|██        | 109/545 [00:01<00:04, 91.06it/s] 22%|██▏       | 118/545 [00:01<00:05, 84.97it/s] 23%|██▎       | 127/545 [00:01<00:05, 79.29it/s] 25%|██▌       | 137/545 [00:01<00:04, 83.48it/s] 27%|██▋       | 147/545 [00:01<00:04, 86.21it/s] 29%|██▉       | 160/545 [00:01<00:04, 95.14it/s] 31%|███       | 170/545 [00:01<00:04, 89.71it/s] 33%|███▎      | 181/545 [00:01<00:03, 93.25it/s] 35%|███▌      | 191/545 [00:02<00:03, 93.22it/s] 37%|███▋      | 201/545 [00:02<00:03, 90.58it/s] 39%|███▉      | 212/545 [00:02<00:03, 94.41it/s] 41%|████      | 223/545 [00:02<00:03, 97.55it/s] 43%|████▎     | 233/545 [00:02<00:03, 96.71it/s] 45%|████▍     | 243/545 [00:02<00:03, 91.14it/s] 46%|████▋     | 253/545 [00:02<00:03, 86.95it/s] 48%|████▊     | 262/545 [00:02<00:03, 85.99it/s] 50%|████▉     | 272/545 [00:02<00:03, 89.62it/s] 52%|█████▏    | 285/545 [00:03<00:02, 96.73it/s] 54%|█████▍    | 297/545 [00:03<00:02, 99.93it/s] 57%|█████▋    | 310/545 [00:03<00:02, 107.09it/s] 59%|█████▉    | 322/545 [00:03<00:02, 109.79it/s] 61%|██████▏   | 334/545 [00:03<00:02, 94.17it/s]  63%|██████▎   | 344/545 [00:03<00:02, 89.33it/s] 65%|██████▍   | 354/545 [00:03<00:02, 86.61it/s] 67%|██████▋   | 366/545 [00:03<00:01, 91.65it/s] 69%|██████▉   | 376/545 [00:04<00:01, 87.95it/s] 71%|███████   | 386/545 [00:04<00:02, 74.88it/s] 73%|███████▎  | 396/545 [00:04<00:01, 80.85it/s] 74%|███████▍  | 405/545 [00:04<00:01, 83.01it/s] 76%|███████▋  | 416/545 [00:04<00:01, 89.19it/s] 78%|███████▊  | 426/545 [00:04<00:01, 90.65it/s] 80%|████████  | 437/545 [00:04<00:01, 93.86it/s] 82%|████████▏ | 448/545 [00:04<00:01, 96.21it/s] 84%|████████▍ | 460/545 [00:04<00:00, 101.85it/s] 86%|████████▋ | 471/545 [00:05<00:00, 96.54it/s]  88%|████████▊ | 481/545 [00:05<00:00, 95.30it/s] 90%|█████████ | 491/545 [00:05<00:00, 94.40it/s] 92%|█████████▏| 504/545 [00:05<00:00, 99.80it/s] 94%|█████████▍| 515/545 [00:05<00:00, 100.06it/s] 97%|█████████▋| 526/545 [00:05<00:00, 101.28it/s] 99%|█████████▊| 537/545 [00:05<00:00, 97.86it/s] 100%|██████████| 545/545 [00:05<00:00, 92.96it/s]
-DEBUG:gpbo.core.ESutils:hyperparameters:
-mean   [2.35687275 0.33094278 0.1987691 ]
-median [2.32306728 0.21872226 0.10847712]
-std    [0.65991925 0.24759564 0.22989058]
-min    [1.18844278 0.0303939  0.0256946 ]
-max    [4.00108473 1.0324564  0.85807432]
-directtime 0
-checking reccomendation:
-using 1 slice chains
-slice sample:
-used 77282 plk evals
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.156053351054034 at [-0.37651674  0.4155224 ]
-INFO:gpbo.core.choosers:post min at [-0.37651674  0.4155224 ](true) [[0.37587545 0.41610259]](rotated) is 44.156053351054034
-INFO:gpbo.core.choosers:post min in on edge in axes []
-INFO:gpbo.core.choosers:Var at xmin 2.182438003183841
-INFO:gpbo.core.choosers:localregretest 1.1776496267634535
-DEBUG:gpbo.core.choosers:H,stH
-[[ 671.41010053  -30.66469928]
- [ -30.66469928 2261.09474011]]
-[[2694.22967091  439.62629575]
- [ 439.62629575 6840.56766744]]
-DEBUG:gpbo.core.choosers:axisprobs [0.59839812 0.62950476]
-INFO:gpbo.core.choosers:checking for +ve definite ball
-INFO:gpbo.core.choosers:prob pvedef at xmin 0.35992023928215355
-DEBUG:gpbo.core.choosers:eigenvector probs [0.33698903 0.84047856]
-  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
-INFO:gpbo.core.choosers:no +ve def region, choosereturns 0
-INFO:gpbo.core.acquisitions:PESfsaq
-INFO:gpbo.core.acquisitions:rotation from choose by 
-[[ 0.99984269 -0.01773704]
- [ 0.01773704  0.99984269]]
-INFO:gpbo.core.PES:reusing preselected hyperparameters
-INFO:gpbo.core.ESutils:Found 5 unique local min:
-[-0.28276048  0.65209798]
-[-0.38278677  0.408609  ]
-[-0.01929854 -0.76559572]
-[-0.36894595  0.65050992]
-[-0.38169496  0.08544348]
-directtime 0
-PES init:
-Drawing support using lapaprot:
-using complex approx
-In drawmin with 1250 support drew 34 unique mins from 36. Most freqent min chosen 5.555555555555555%
-drawing mins from support
-searching...
-DEBUG:gpbo.core.optutils:optresult [-0.09910051] at [-0.37545469  0.49639364]
-INFO:gpbo.core.acquisitions:DIRECT found max PES at [-0.37545469  0.49639364] b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL'
-INFO:gpbo.core.optimize:AQ returned [-0.37545469085189315, 0.49639364005325226] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 43.78243849980594 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:gphin reccomender
-directtime 0
-searching...
-DEBUG:gpbo.core.optutils:optresult 43.86991381215391 at [-0.37755644  0.42060926]
-INFO:gpbo.core.optimize:RC returned [-0.377556444347448, 0.42060926141491645]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 15:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[ 0.99984269 -0.01773704]
- [ 0.01773704  0.99984269]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  2%|▏         | 11/545 [00:00<00:04, 107.63it/s]  4%|▍         | 22/545 [00:00<00:04, 107.14it/s]  5%|▌         | 29/545 [00:00<00:05, 88.46it/s]   6%|▋         | 35/545 [00:00<00:07, 70.38it/s]  8%|▊         | 43/545 [00:00<00:06, 72.58it/s] 10%|▉         | 54/545 [00:00<00:06, 80.55it/s] 11%|█▏        | 62/545 [00:00<00:07, 67.58it/s] 13%|█▎        | 69/545 [00:00<00:07, 60.79it/s] 14%|█▍        | 79/545 [00:01<00:06, 68.19it/s] 17%|█▋        | 92/545 [00:01<00:05, 78.72it/s] 19%|█▉        | 105/545 [00:01<00:04, 88.64it/s] 21%|██▏       | 117/545 [00:01<00:04, 94.09it/s] 23%|██▎       | 128/545 [00:01<00:04, 90.20it/s] 26%|██▌       | 140/545 [00:01<00:04, 96.58it/s] 28%|██▊       | 151/545 [00:01<00:04, 94.65it/s] 30%|██▉       | 163/545 [00:01<00:03, 99.31it/s] 32%|███▏      | 175/545 [00:01<00:03, 102.52it/s] 34%|███▍      | 187/545 [00:02<00:03, 106.72it/s] 36%|███▋      | 198/545 [00:02<00:03, 100.70it/s] 39%|███▊      | 210/545 [00:02<00:03, 105.70it/s] 41%|████      | 221/545 [00:02<00:03, 103.30it/s] 43%|████▎     | 232/545 [00:02<00:03, 98.97it/s]  45%|████▍     | 244/545 [00:02<00:02, 102.66it/s] 47%|████▋     | 255/545 [00:02<00:02, 99.78it/s]  49%|████▉     | 266/545 [00:02<00:02, 99.93it/s] 51%|█████     | 277/545 [00:02<00:02, 95.28it/s] 53%|█████▎    | 287/545 [00:03<00:02, 91.19it/s] 54%|█████▍    | 297/545 [00:03<00:02, 91.25it/s] 57%|█████▋    | 308/545 [00:03<00:02, 94.98it/s] 58%|█████▊    | 318/545 [00:03<00:02, 90.97it/s] 61%|██████    | 330/545 [00:03<00:02, 95.09it/s] 62%|██████▏   | 340/545 [00:03<00:02, 85.41it/s] 64%|██████▍   | 349/545 [00:03<00:02, 82.18it/s] 66%|██████▌   | 358/545 [00:03<00:02, 82.13it/s] 68%|██████▊   | 368/545 [00:04<00:02, 85.00it/s] 69%|██████▉   | 377/545 [00:04<00:01, 85.48it/s] 71%|███████   | 388/545 [00:04<00:01, 90.41it/s] 73%|███████▎  | 399/545 [00:04<00:01, 95.02it/s] 75%|███████▌  | 409/545 [00:04<00:01, 92.72it/s] 77%|███████▋  | 419/545 [00:04<00:01, 64.11it/s] 78%|███████▊  | 427/545 [00:04<00:01, 62.39it/s] 80%|████████  | 436/545 [00:04<00:01, 67.88it/s] 82%|████████▏ | 445/545 [00:05<00:01, 72.76it/s] 83%|████████▎ | 453/545 [00:05<00:01, 74.46it/s] 85%|████████▍ | 463/545 [00:05<00:01, 78.54it/s] 87%|████████▋ | 472/545 [00:05<00:00, 78.41it/s] 88%|████████▊ | 481/545 [00:05<00:00, 79.15it/s] 90%|████████▉ | 490/545 [00:05<00:00, 79.54it/s] 92%|█████████▏| 499/545 [00:05<00:00, 81.67it/s] 93%|█████████▎| 508/545 [00:05<00:00, 76.35it/s] 95%|█████████▍| 516/545 [00:05<00:00, 75.36it/s] 96%|█████████▌| 524/545 [00:06<00:00, 76.01it/s] 98%|█████████▊| 532/545 [00:06<00:00, 67.86it/s] 99%|█████████▉| 540/545 [00:06<00:00, 58.67it/s]100%|██████████| 545/545 [00:06<00:00, 84.36it/s]
-DEBUG:gpbo.core.ESutils:hyperparameters:
-mean   [2.17766421 0.15632258 0.41857321]
-median [2.20162715 0.13490339 0.37899845]
-std    [0.64428147 0.09697648 0.30416936]
-min    [0.96761714 0.0223887  0.05070039]
-max    [3.35429248 0.45512081 1.32143237]
-directtime 0
-checking reccomendation:
-using 1 slice chains
-slice sample:
-used 74573 plk evals
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.36125017936213 at [-0.37379654  0.42813025]
-INFO:gpbo.core.choosers:post min at [-0.37379654  0.42813025](true) [[-0.3813315   0.42143285]](rotated) is 44.36125017936213
-INFO:gpbo.core.choosers:post min in on edge in axes []
-INFO:gpbo.core.choosers:Var at xmin 1.458367586680804
-INFO:gpbo.core.choosers:localregretest 0.28479374173168237
-DEBUG:gpbo.core.choosers:H,stH
-[[8.38143593e+02 7.82496317e-02]
- [7.82496317e-02 2.23874220e+02]]
-[[3753.85242418  904.60910544]
- [ 904.60910544 1316.84136158]]
-DEBUG:gpbo.core.choosers:axisprobs [0.58833949 0.56749827]
-INFO:gpbo.core.choosers:checking for +ve definite ball
-INFO:gpbo.core.choosers:prob pvedef at xmin 0.29411764705882354
-DEBUG:gpbo.core.choosers:eigenvector probs [0.29611167 0.84147557]
-  0%|          | 0/50 [00:00<?, ?it/s]  0%|          | 0/50 [00:00<?, ?it/s]
-INFO:gpbo.core.choosers:no +ve def region, choosereturns 0
-INFO:gpbo.core.acquisitions:PESfsaq
-INFO:gpbo.core.acquisitions:rotation from choose by 
-[[-0.01760967 -0.99984494]
- [-0.99984494  0.01760967]]
-INFO:gpbo.core.PES:reusing preselected hyperparameters
-INFO:gpbo.core.ESutils:Found 4 unique local min:
-[-0.65277777  0.29567212]
-[-0.41860578  0.38199343]
-[-0.08535717  0.36626844]
-[0.765751  0.0198115]
-directtime 0
-PES init:
-Drawing support using lapaprot:
-using complex approx
-In drawmin with 1250 support drew 36 unique mins from 36. Most freqent min chosen 2.7777777777777777%
-drawing mins from support
-searching...
-DEBUG:gpbo.core.optutils:optresult [-0.09276718] at [-0.74580719  0.66227718]
-INFO:gpbo.core.acquisitions:DIRECT found max PES at [-0.74580719  0.66227718] b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL'
-INFO:gpbo.core.optimize:AQ returned [-0.7458071930073219, 0.6622771829226598] : {'s': 2.5, 'd': [nan]}    aqtime: 0
-evaluate:
-INFO:gpbo.core.optimize:EV returned 50.891981069189534 : 1.0     evaltime: 0
-INFO:gpbo.core.reccomenders:gphin reccomender
-directtime 0
-searching...
-DEBUG:gpbo.core.optutils:optresult 44.413458427921206 at [-0.37383505  0.4267791 ]
-INFO:gpbo.core.optimize:RC returned [-0.37383505364443637, 0.42677909807901127]     recctime: 0
-
-INFO:gpbo.core.optimize:---------------------
-step 16:
-INFO:root:globallocalregretchooser with False inflated diagonal
-INFO:root:rotate
-[[-0.01760967 -0.99984494]
- [-0.99984494  0.01760967]]
-INFO:gpbo.core.choosers:building GP
-  0%|          | 0/545 [00:00<?, ?it/s]  1%|          | 6/545 [00:00<00:09, 58.83it/s]  2%|▏         | 13/545 [00:00<00:08, 59.89it/s]  4%|▍         | 23/545 [00:00<00:07, 67.82it/s]  6%|▌         | 33/545 [00:00<00:06, 74.18it/s]  8%|▊         | 46/545 [00:00<00:05, 84.93it/s] 10%|█         | 56/545 [00:00<00:05, 88.49it/s] 12%|█▏        | 67/545 [00:00<00:05, 91.75it/s] 14%|█▍        | 77/545 [00:00<00:05, 91.29it/s] 16%|█▌        | 87/545 [00:00<00:04, 93.18it/s] 18%|█▊        | 100/545 [00:01<00:04, 100.49it/s] 21%|██        | 112/545 [00:01<00:04, 103.57it/s] 23%|██▎       | 124/545 [00:01<00:03, 107.27it/s] 25%|██▍       | 136/545 [00:01<00:03, 109.88it/s] 27%|██▋       | 148/545 [00:01<00:03, 110.06it/s] 29%|██▉       | 160/545 [00:01<00:03, 110.92it/s] 32%|███▏      | 172/545 [00:01<00:03, 110.45it/s] 34%|███▍      | 184/545 [00:01<00:03, 106.82it/s] 36%|███▌      | 195/545 [00:01<00:03, 99.84it/s]  38%|███▊      | 206/545 [00:02<00:03, 98.22it/s] 40%|████      | 219/545 [00:02<00:03, 104.04it/s] 42%|████▏     | 230/545 [00:02<00:03, 103.38it/s] 44%|████▍     | 241/545 [00:02<00:02, 104.45it/s] 46%|████▌     | 252/545 [00:02<00:02, 101.32it/s] 48%|████▊     | 263/545 [00:02<00:02, 96.44it/s]  51%|█████     | 276/545 [00:02<00:02, 103.80it/s] 53%|█████▎    | 288/545 [00:02<00:02, 106.39it/s] 55%|█████▍    | 299/545 [00:02<00:02, 107.12it/s] 57%|█████▋    | 310/545 [00:03<00:02, 107.89it/s] 59%|█████▉    | 323/545 [00:03<00:01, 113.64it/s] 61%|██████▏   | 335/545 [00:03<00:01, 106.72it/s] 63%|██████▎   | 346/545 [00:03<00:01, 103.67it/s] 66%|██████▌   | 358/545 [00:03<00:01, 106.70it/s] 68%|██████▊   | 370/545 [00:03<00:01, 106.87it/s] 70%|███████   | 383/545 [00:03<00:01, 109.04it/s]
+Traceback (most recent call last):
+  File "examples/test.py", line 99, in <module>
+    out = gpbo.search(C, False)
+  File "/home/harald/env36/lib/python3.6/site-packages/gpbo-0.0.43-py3.6-linux-x86_64.egg/gpbo/core/optimize.py", line 335, in search
+    return O.run()
+  File "/home/harald/env36/lib/python3.6/site-packages/gpbo-0.0.43-py3.6-linux-x86_64.egg/gpbo/core/optimize.py", line 101, in run
+    lf = open(os.path.join(self.dirpath,self.name),'w')
+  File "/usr/lib/python3.6/posixpath.py", line 80, in join
+    a = os.fspath(a)
+TypeError: expected str, bytes or os.PathLike object, not float

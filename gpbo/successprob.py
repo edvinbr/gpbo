@@ -9,7 +9,6 @@ def qaoaSuccessProb(beta_gamma_angles):
 
 
 	[c, A, nbr_of_flights, nbr_of_routes] = read_data_from_mps(file_location, file_name)
-	print("flights {}, routes {}".format(nbr_of_flights, nbr_of_routes))
 
 	nbr_of_qubits = nbr_of_routes
 	nbr_states = 2**nbr_of_qubits
@@ -23,7 +22,6 @@ def qaoaSuccessProb(beta_gamma_angles):
 	# Exact_cover:
 	H = quadratic_cost_hamiltonian
 	#print(H)
-	print("min h {}, argmin h {}".format(np.min(H), np.argmin(H)))
 
 	# mixer operator
 	sigmax = np.array([[0, 1], [1, 0]])
@@ -36,25 +34,27 @@ def qaoaSuccessProb(beta_gamma_angles):
 
 	# final state
 	#beta_gamma_angles = [(b+1)/2*2*np.pi for b in beta_gamma_angles]
-	gamma_opt = [b*2*np.pi for b in beta_gamma_angles[:p]]#(b+1)/2
-	beta_opt = [b*np.pi for b in beta_gamma_angles[p:2*p]]
+	gamma_opt = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]#(b+1)/2
+	beta_opt = [(b+1)/2*np.pi for b in beta_gamma_angles[p:2*p]]
 	#gamma_opt= beta_gamma_angles[:p]
 	#beta_opt = beta_gamma_angles[p:2*p]
-	print(expectation_value((gamma_opt+beta_opt), H, p, nbr_of_qubits, initial_state,sigmax))
 
 	qaoa_state = state_fast(H, p, nbr_of_qubits, initial_state, sigmax, gamma_opt, beta_opt)
 	# determine what the optimal value is
 	opt_val_idx = np.argmin(H)#184#3 # this must be known for the classical optimization problem
 	prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[opt_val_idx])**2
+	E = expectation_value((gamma_opt+beta_opt), H, p, nbr_of_qubits, initial_state,sigmax)
+	print(E)
 	return prob_of_obtaining_correct_answer_1_shot
-
-print(qaoaSuccessProb([0.98851643, 0.09585667]))#[-0.9772818585426836, 0.7536042297443648]#[0.7536042297443648, -0.9772818585426836]
-print(qaoaSuccessProb([0.98851643, 0, 0.09585667, 0]))
-print(qaoaSuccessProb([0, 0]))
-print(qaoaSuccessProb([0, 0, 0, 0]))
-
 
 #angles = [0.98785665, 0.63002621, 0.62536196, 0.49947186]
 #beta_gamma_angles = [(b+1)/2 for b in angles]
 #print(qaoaSuccessProb(angles))
 
+print(qaoaSuccessProb([0.9767939819009309,-1,-0.7470681088246521,-1]))
+print(qaoaSuccessProb([0.9767939819009309,-0.7470681088246521]))
+
+
+#[-0.6932115556676391, -0.641477285664184, -0.0027615723835575294, 0.8284715862963159])) #[0.9767939819009309,-0.7470681088246521]))#0.98851643, 0.09585667]))#[-0.9772818585426836, 0.7536042297443648]#[0.7536042297443648, -0.9772818585426836]
+
+#0.9767939819009309, -0.7470681088246521

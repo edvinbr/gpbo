@@ -68,7 +68,7 @@ initial_state = 1.0/np.sqrt(nbr_states)*np.ones((nbr_states, 1))
 p = 1
 
 #noise
-s = 0.05
+s = 0.0
 
 def f(beta_gamma_angles,**ev):
     gamma = [(b+1)/2*2*np.pi for b in beta_gamma_angles[:p]]
@@ -91,8 +91,7 @@ def f(beta_gamma_angles,**ev):
 #beta_gamma_angles = np.array([gamma, beta])
 #print(beta_gamma_angles)
 
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results/qaoa', str(p*2) + 'Dqaoa-instance_8_0_sigma5_1_noise' + str(s) + '-' + timestamp + '.csv') #500*(p+1)
+C = gpbo.core.config.switchdefault(f, p*2, 10, 50, s, 'results/2Dqaoa/', 'qaoa-pes-0-0.csv')
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
@@ -129,6 +128,7 @@ qaoa_state = state_fast(H,
 # determine what the optimal value is 
 opt_val_idx = 3 # this must be known for the classical optimization problem
 prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
+print(prob_of_obtaining_correct_answer_1_shot)
 
 
 from plot_energy_landscape import plot_energy_lanscapes

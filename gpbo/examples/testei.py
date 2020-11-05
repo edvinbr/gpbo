@@ -150,10 +150,10 @@ path = "results/qaoa/"
 model = GPyOpt.models.gpmodel.GPModel(kernel=GPy.kern.Matern52(input_dim=D), noise_var=s, optimizer="lbfgs")
 
 #optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, initial_design_numdata=10)
-optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, model=model, num_cores=2, initial_design_numdata=10)#exact_feval=True, 
+optimizer = GPyOpt.methods.BayesianOptimization(fei, domain=bounds2d, model=model, num_cores=1, initial_design_numdata=10)#exact_feval=True, 
 
-#optimizer.run_optimization(max_iter=n-10,verbosity = True, report_file = '20report.txt',evaluations_file='20evals.txt',models_file='20models.txt')
-optimizer.run_optimization(max_iter=n-10, verbosity=True, eps=0, report_file = path+str(D)+'Dqaoa8.0-noise'+str(s)+'-report' + timestamp + '.txt',evaluations_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-evals' + timestamp + '.txt',models_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-models' + timestamp + '.txt')
+optimizer.run_optimization(max_iter=n-10,verbosity = True, report_file = '4Dqaoa-ei-25-3-report.txt',evaluations_file='4Dqaoa-ei-25-3-evals.txt',models_file='4Dqaoa-ei-25-3-models.txt')
+#optimizer.run_optimization(max_iter=n-10, verbosity=True, report_file = path+str(D)+'Dqaoa8.0-noise'+str(s)+'-report' + timestamp + '.txt',evaluations_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-evals' + timestamp + '.txt',models_file=path+str(D)+'Dqaoa8.0-noise'+str(s)+'-models' + timestamp + '.txt')
 
 beta_gamma_angles = optimizer.x_opt
 #The function to run PES to minimize the target function.
@@ -206,6 +206,7 @@ qaoa_state = state_fast(H,
 opt_val_idx = 3 # this must be known for the classical optimization problem
 prob_of_obtaining_correct_answer_1_shot = np.abs(qaoa_state[3])**2
 
+print(prob_of_obtaining_correct_answer_1_shot)
 
 #from plot_energy_landscape import plot_energy_lanscapes
 

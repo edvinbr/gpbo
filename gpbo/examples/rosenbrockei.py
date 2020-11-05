@@ -36,10 +36,6 @@ def f(x,**ev):
     z = z[0]
     sum1 = 0
     for i in range(0,D-1):
-        print(i)
-        print("z")
-        print(z)
-        print(z[0])
         sum1 += 100*(z[i+1] - z[i]**2)**2 + (1-z[i])**2
     y = sum1
     y = sp.log(y -(0) + 1)
