@@ -91,7 +91,7 @@ def f(beta_gamma_angles,**ev):
 #beta_gamma_angles = np.array([gamma, beta])
 #print(beta_gamma_angles)
 
-C = gpbo.core.config.switchdefault(f, p*2, 10, 50, s, 'results/2Dqaoa/', 'qaoa-pes-0-0.csv')
+C = gpbo.core.config.switchdefault(f, p*2, 10, 250, s, 'results/', 'qaoa-test-save-local-0.csv')
 C.choosepara['regretswitch'] = 1e-2
 C.choosepara['pvetol'] = 1e-2
 C.aqpara[1]['tol']=None
